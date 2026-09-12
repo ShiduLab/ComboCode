@@ -1,0 +1,2289 @@
+{
+  "name": "ComboCode Windows Core",
+  "version": "1.0.0",
+  "updated": "2026-09-12",
+  "goals": [
+    {
+      "id": "windows.run",
+      "name": "Esegui",
+      "category": "Windows",
+      "description": "Apre la finestra Esegui.",
+      "aliases": [
+        "run",
+        "finestra esegui",
+        "lancia comando"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + R",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.settings",
+      "name": "Impostazioni",
+      "category": "Windows",
+      "description": "Apre Impostazioni di Windows.",
+      "aliases": [
+        "settings",
+        "impostazioni windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + I",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "windows.explorer",
+      "name": "Esplora file",
+      "category": "Windows",
+      "description": "Apre Esplora file.",
+      "aliases": [
+        "file explorer",
+        "explorer",
+        "gestione file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + E",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        },
+        {
+          "kind": "RUN",
+          "value": "explorer.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "windows.lock",
+      "name": "Blocca PC",
+      "category": "Windows",
+      "description": "Blocca immediatamente la sessione.",
+      "aliases": [
+        "lock",
+        "blocca computer",
+        "blocca sessione"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + L",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.desktop",
+      "name": "Mostra desktop",
+      "category": "Windows",
+      "description": "Mostra o nasconde il desktop.",
+      "aliases": [
+        "desktop",
+        "nascondi finestre"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + D",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.taskview",
+      "name": "Visualizzazione attività",
+      "category": "Windows",
+      "description": "Mostra finestre e desktop virtuali.",
+      "aliases": [
+        "task view",
+        "desktop virtuali"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + TAB",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.clipboard",
+      "name": "Cronologia appunti",
+      "category": "Windows",
+      "description": "Apre la cronologia degli appunti.",
+      "aliases": [
+        "clipboard",
+        "appunti",
+        "clipboard history"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + V",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:clipboard",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "windows.screenshot",
+      "name": "Cattura area schermo",
+      "category": "Windows",
+      "description": "Apre la cattura di una porzione dello schermo.",
+      "aliases": [
+        "screenshot",
+        "snipping",
+        "cattura schermo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + SHIFT + S",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        },
+        {
+          "kind": "RUN",
+          "value": "SnippingTool.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "windows.projection",
+      "name": "Proiezione schermo",
+      "category": "Windows",
+      "description": "Sceglie la modalità di proiezione su monitor esterni.",
+      "aliases": [
+        "secondo schermo",
+        "proietta",
+        "display esterno"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + P",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.cast",
+      "name": "Trasmetti schermo",
+      "category": "Windows",
+      "description": "Apre Cast per collegarsi a uno schermo wireless.",
+      "aliases": [
+        "cast",
+        "schermo wireless"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + K",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.quicksettings",
+      "name": "Impostazioni rapide",
+      "category": "Windows",
+      "description": "Apre le impostazioni rapide di Windows 11.",
+      "aliases": [
+        "quick settings",
+        "wifi volume batteria"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + A",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.poweruser",
+      "name": "Menu amministrazione rapida",
+      "category": "Windows",
+      "description": "Apre il menu Power User.",
+      "aliases": [
+        "win x",
+        "menu avanzato",
+        "power user"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + X",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.taskmanager",
+      "name": "Gestione attività",
+      "category": "Sistema",
+      "description": "Apre Gestione attività.",
+      "aliases": [
+        "task manager",
+        "processi",
+        "prestazioni"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + SHIFT + ESC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        },
+        {
+          "kind": "RUN",
+          "value": "taskmgr.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "windows.switchapps",
+      "name": "Cambia applicazione",
+      "category": "Windows",
+      "description": "Passa tra le applicazioni aperte.",
+      "aliases": [
+        "alt tab",
+        "switch app"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "ALT + TAB",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.close",
+      "name": "Chiudi finestra",
+      "category": "Windows",
+      "description": "Chiude la finestra attiva.",
+      "aliases": [
+        "chiudi programma",
+        "close window"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "ALT + F4",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.rename",
+      "name": "Rinomina elemento",
+      "category": "Esplora file",
+      "description": "Rinomina il file o elemento selezionato.",
+      "aliases": [
+        "rename",
+        "rinomina file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "F2",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.refresh",
+      "name": "Aggiorna finestra",
+      "category": "Windows",
+      "description": "Aggiorna la finestra o vista attiva.",
+      "aliases": [
+        "refresh",
+        "ricarica finestra"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "F5",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.snapleft",
+      "name": "Aggancia finestra a sinistra",
+      "category": "Windows",
+      "description": "Aggancia la finestra attiva alla metà sinistra dello schermo.",
+      "aliases": [
+        "snap left",
+        "finestra sinistra"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + FRECCIA SINISTRA",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.snapright",
+      "name": "Aggancia finestra a destra",
+      "category": "Windows",
+      "description": "Aggancia la finestra attiva alla metà destra dello schermo.",
+      "aliases": [
+        "snap right",
+        "finestra destra"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + FRECCIA DESTRA",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.minimizeall",
+      "name": "Minimizza tutte le finestre",
+      "category": "Windows",
+      "description": "Minimizza tutte le finestre.",
+      "aliases": [
+        "minimize all",
+        "riduci tutto"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + M",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.search",
+      "name": "Ricerca Windows",
+      "category": "Windows",
+      "description": "Apre Ricerca di Windows.",
+      "aliases": [
+        "search",
+        "cerca windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + S",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.emoji",
+      "name": "Pannello emoji",
+      "category": "Windows",
+      "description": "Apre il pannello emoji e simboli.",
+      "aliases": [
+        "emoji",
+        "simboli"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + .",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "windows.quickassist",
+      "name": "Assistenza rapida",
+      "category": "Windows",
+      "description": "Apre Assistenza rapida.",
+      "aliases": [
+        "quick assist",
+        "supporto remoto"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + CTRL + Q",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia Windows documentata da Microsoft."
+        }
+      ]
+    },
+    {
+      "id": "net.connections",
+      "name": "Connessioni di rete",
+      "category": "Networking",
+      "description": "Apre il pannello classico delle schede/connessioni di rete.",
+      "aliases": [
+        "schede di rete",
+        "network adapters",
+        "adattatori di rete",
+        "ethernet",
+        "wifi",
+        "ncpa"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ncpa.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Apre direttamente il pannello classico Connessioni di rete."
+        },
+        {
+          "kind": "CMD",
+          "value": "control netconnections",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows legacy command",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Route classica via control.exe."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-advancedsettings",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "Apre le impostazioni di rete avanzate moderne di Windows."
+        }
+      ]
+    },
+    {
+      "id": "net.status",
+      "name": "Stato rete e Internet",
+      "category": "Networking",
+      "description": "Apre la pagina principale Rete e Internet.",
+      "aliases": [
+        "network status",
+        "stato rete",
+        "internet"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-status",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.wifi",
+      "name": "Wi-Fi",
+      "category": "Networking",
+      "description": "Apre le impostazioni Wi-Fi.",
+      "aliases": [
+        "wireless",
+        "wifi settings"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-wifi",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.ethernet",
+      "name": "Ethernet",
+      "category": "Networking",
+      "description": "Apre le impostazioni Ethernet.",
+      "aliases": [
+        "lan",
+        "rete cablata"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-ethernet",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.vpn",
+      "name": "VPN",
+      "category": "Networking",
+      "description": "Apre le impostazioni VPN.",
+      "aliases": [
+        "virtual private network"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-vpn",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.proxy",
+      "name": "Proxy",
+      "category": "Networking",
+      "description": "Apre le impostazioni Proxy.",
+      "aliases": [
+        "proxy settings"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-proxy",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.hotspot",
+      "name": "Hotspot mobile",
+      "category": "Networking",
+      "description": "Apre le impostazioni hotspot mobile.",
+      "aliases": [
+        "mobile hotspot",
+        "tethering"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:network-mobilehotspot",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "net.ipconfig",
+      "name": "Configurazione IP completa",
+      "category": "Networking",
+      "description": "Mostra la configurazione TCP/IP completa delle interfacce.",
+      "aliases": [
+        "ipconfig",
+        "indirizzo ip",
+        "dns dhcp gateway"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ipconfig /all",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "net.flushdns",
+      "name": "Svuota cache DNS",
+      "category": "Networking",
+      "description": "Svuota la cache DNS locale.",
+      "aliases": [
+        "flush dns",
+        "dns cache",
+        "ipconfig flushdns"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ipconfig /flushdns",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Svuota la cache resolver DNS."
+        }
+      ]
+    },
+    {
+      "id": "net.ping",
+      "name": "Ping",
+      "category": "Networking",
+      "description": "Verifica raggiungibilità e latenza verso un host.",
+      "aliases": [
+        "icmp",
+        "raggiungibilita",
+        "latenza"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ping 8.8.8.8",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esempio: sostituisci 8.8.8.8 con host o IP desiderato."
+        }
+      ]
+    },
+    {
+      "id": "net.tracert",
+      "name": "Traccia percorso rete",
+      "category": "Networking",
+      "description": "Mostra gli hop verso una destinazione.",
+      "aliases": [
+        "traceroute",
+        "tracert",
+        "route path"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "tracert 8.8.8.8",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esempio: sostituisci 8.8.8.8 con la destinazione."
+        }
+      ]
+    },
+    {
+      "id": "net.nslookup",
+      "name": "Interroga DNS",
+      "category": "Networking",
+      "description": "Esegue una query DNS.",
+      "aliases": [
+        "dns lookup",
+        "nslookup"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "nslookup openai.com",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esempio: sostituisci il dominio con quello desiderato."
+        }
+      ]
+    },
+    {
+      "id": "net.netstat",
+      "name": "Connessioni e porte",
+      "category": "Networking",
+      "description": "Mostra connessioni TCP/UDP e PID.",
+      "aliases": [
+        "porte aperte",
+        "connections",
+        "netstat"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "netstat -ano",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "net.route",
+      "name": "Tabella di routing",
+      "category": "Networking",
+      "description": "Mostra la tabella di routing IPv4/IPv6.",
+      "aliases": [
+        "route print",
+        "routing table"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "route print",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "net.arp",
+      "name": "Tabella ARP",
+      "category": "Networking",
+      "description": "Mostra la cache ARP locale.",
+      "aliases": [
+        "arp cache",
+        "mac ip"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "arp -a",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "net.getmac",
+      "name": "Indirizzi MAC",
+      "category": "Networking",
+      "description": "Mostra gli indirizzi MAC degli adattatori.",
+      "aliases": [
+        "mac address",
+        "getmac"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "getmac /v",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "net.hostname",
+      "name": "Nome computer",
+      "category": "Networking",
+      "description": "Mostra il nome host del computer.",
+      "aliases": [
+        "hostname",
+        "computer name"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "hostname",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "sys.controlpanel",
+      "name": "Pannello di controllo",
+      "category": "Sistema",
+      "description": "Apre il Pannello di controllo classico.",
+      "aliases": [
+        "control panel",
+        "pannello controllo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "control.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.programs",
+      "name": "Programmi installati",
+      "category": "Sistema",
+      "description": "Apre Programmi e funzionalità classico o App installate.",
+      "aliases": [
+        "disinstalla programma",
+        "programs features",
+        "app installate"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "appwiz.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:appsfeatures",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.devices",
+      "name": "Gestione dispositivi",
+      "category": "Sistema",
+      "description": "Apre Gestione dispositivi.",
+      "aliases": [
+        "device manager",
+        "hardware devices"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "devmgmt.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Console MMC Gestione dispositivi."
+        }
+      ]
+    },
+    {
+      "id": "sys.diskmgmt",
+      "name": "Gestione disco",
+      "category": "Sistema",
+      "description": "Apre Gestione disco.",
+      "aliases": [
+        "disk management",
+        "partizioni",
+        "dischi"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "diskmgmt.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Console gestione dischi; modifiche manuali possono essere distruttive."
+        }
+      ]
+    },
+    {
+      "id": "sys.compmgmt",
+      "name": "Gestione computer",
+      "category": "Sistema",
+      "description": "Apre Gestione computer.",
+      "aliases": [
+        "computer management",
+        "mmc computer"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "compmgmt.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando eseguibile da Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.services",
+      "name": "Servizi",
+      "category": "Sistema",
+      "description": "Apre la console Servizi.",
+      "aliases": [
+        "services",
+        "servizi windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "services.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando eseguibile da Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.eventviewer",
+      "name": "Visualizzatore eventi",
+      "category": "Sistema",
+      "description": "Apre Visualizzatore eventi.",
+      "aliases": [
+        "event viewer",
+        "log eventi",
+        "eventi windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "eventvwr.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando eseguibile da Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.performance",
+      "name": "Monitor prestazioni",
+      "category": "Sistema",
+      "description": "Apre Performance Monitor.",
+      "aliases": [
+        "perfmon",
+        "performance monitor"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "perfmon.msc",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando eseguibile da Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.resmon",
+      "name": "Monitoraggio risorse",
+      "category": "Sistema",
+      "description": "Apre Monitoraggio risorse.",
+      "aliases": [
+        "resource monitor",
+        "risorse"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "resmon.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.msinfo",
+      "name": "Informazioni di sistema",
+      "category": "Sistema",
+      "description": "Apre Informazioni di sistema.",
+      "aliases": [
+        "msinfo32",
+        "system information",
+        "hardware info"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "msinfo32.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.dxdiag",
+      "name": "Diagnostica DirectX",
+      "category": "Sistema",
+      "description": "Apre lo strumento diagnostica DirectX.",
+      "aliases": [
+        "dxdiag",
+        "directx"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "dxdiag.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.systemprops",
+      "name": "Proprietà del sistema",
+      "category": "Sistema",
+      "description": "Apre Proprietà del sistema classiche.",
+      "aliases": [
+        "sysdm",
+        "system properties",
+        "nome computer avanzate"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "sysdm.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        }
+      ]
+    },
+    {
+      "id": "sys.sound",
+      "name": "Audio",
+      "category": "Sistema",
+      "description": "Apre le impostazioni audio moderne o il pannello classico.",
+      "aliases": [
+        "sound",
+        "suono",
+        "audio devices",
+        "mixer"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:sound",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        },
+        {
+          "kind": "RUN",
+          "value": "mmsys.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        }
+      ]
+    },
+    {
+      "id": "sys.mouse",
+      "name": "Mouse",
+      "category": "Sistema",
+      "description": "Apre le proprietà classiche del mouse.",
+      "aliases": [
+        "mouse settings",
+        "puntatore"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "main.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        }
+      ]
+    },
+    {
+      "id": "sys.datetime",
+      "name": "Data e ora",
+      "category": "Sistema",
+      "description": "Apre data e ora.",
+      "aliases": [
+        "date time",
+        "orologio"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:dateandtime",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        },
+        {
+          "kind": "RUN",
+          "value": "timedate.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        }
+      ]
+    },
+    {
+      "id": "sys.region",
+      "name": "Regione e formato",
+      "category": "Sistema",
+      "description": "Apre impostazioni regionali.",
+      "aliases": [
+        "region",
+        "lingua formato",
+        "locale"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:regionformatting",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        },
+        {
+          "kind": "RUN",
+          "value": "intl.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        }
+      ]
+    },
+    {
+      "id": "sys.power",
+      "name": "Opzioni risparmio energia",
+      "category": "Sistema",
+      "description": "Apre opzioni energia classiche.",
+      "aliases": [
+        "power options",
+        "energia",
+        "batteria"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "powercfg.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:powersleep",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.firewall",
+      "name": "Firewall di Windows",
+      "category": "Sicurezza",
+      "description": "Apre il firewall classico o Sicurezza di Windows.",
+      "aliases": [
+        "firewall",
+        "windows defender firewall"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "firewall.cpl",
+          "handler": "control",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Applet classico del Pannello di controllo."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:windowsdefender",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.optionalfeatures",
+      "name": "Funzionalità Windows",
+      "category": "Sistema",
+      "description": "Apre Attiva o disattiva funzionalità Windows.",
+      "aliases": [
+        "optional features",
+        "funzionalita opzionali"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "optionalfeatures.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:optionalfeatures",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.msconfig",
+      "name": "Configurazione di sistema",
+      "category": "Sistema",
+      "description": "Apre MSCONFIG.",
+      "aliases": [
+        "msconfig",
+        "boot services startup"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "msconfig.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.regedit",
+      "name": "Editor del Registro",
+      "category": "Sistema",
+      "description": "Apre Regedit.",
+      "aliases": [
+        "registry",
+        "registro di sistema"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "regedit.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "ELEVATED",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.cleanmgr",
+      "name": "Pulizia disco",
+      "category": "Sistema",
+      "description": "Apre Pulizia disco.",
+      "aliases": [
+        "disk cleanup",
+        "cleanmgr"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "cleanmgr.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.mrt",
+      "name": "Rimozione malware Microsoft",
+      "category": "Sicurezza",
+      "description": "Apre Microsoft Malicious Software Removal Tool.",
+      "aliases": [
+        "mrt",
+        "malware removal"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "mrt.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Componente integrato di Windows."
+        }
+      ]
+    },
+    {
+      "id": "sys.update",
+      "name": "Windows Update",
+      "category": "Sistema",
+      "description": "Apre Windows Update.",
+      "aliases": [
+        "aggiornamenti",
+        "windows update"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:windowsupdate",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.updatehistory",
+      "name": "Cronologia aggiornamenti",
+      "category": "Sistema",
+      "description": "Apre la cronologia di Windows Update.",
+      "aliases": [
+        "update history",
+        "cronologia update"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:windowsupdate-history",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.defaultapps",
+      "name": "App predefinite",
+      "category": "Sistema",
+      "description": "Apre la pagina App predefinite.",
+      "aliases": [
+        "default apps",
+        "associazioni file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:defaultapps",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.startupapps",
+      "name": "App di avvio",
+      "category": "Sistema",
+      "description": "Apre la gestione delle app in avvio automatico.",
+      "aliases": [
+        "startup apps",
+        "avvio automatico"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:startupapps",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.bluetooth",
+      "name": "Bluetooth",
+      "category": "Sistema",
+      "description": "Apre impostazioni Bluetooth.",
+      "aliases": [
+        "bluetooth settings"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:bluetooth",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.printers",
+      "name": "Stampanti e scanner",
+      "category": "Sistema",
+      "description": "Apre Stampanti e scanner.",
+      "aliases": [
+        "printers",
+        "scanner",
+        "stampanti"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:printers",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.display",
+      "name": "Schermo",
+      "category": "Sistema",
+      "description": "Apre le impostazioni schermo.",
+      "aliases": [
+        "display",
+        "monitor",
+        "risoluzione"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:display",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.about",
+      "name": "Informazioni sul PC",
+      "category": "Sistema",
+      "description": "Apre la pagina Informazioni di sistema nelle Impostazioni.",
+      "aliases": [
+        "about pc",
+        "specifiche pc"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:about",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.recovery",
+      "name": "Ripristino",
+      "category": "Sistema",
+      "description": "Apre le opzioni di ripristino.",
+      "aliases": [
+        "recovery",
+        "reset pc",
+        "ripristino windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:recovery",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "cmd.whoami",
+      "name": "Identità utente e privilegi",
+      "category": "CMD",
+      "description": "Mostra utente, gruppi e privilegi del token corrente.",
+      "aliases": [
+        "whoami",
+        "utente corrente",
+        "privilegi"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "whoami /all",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "cmd.systeminfo",
+      "name": "Systeminfo",
+      "category": "CMD",
+      "description": "Mostra informazioni dettagliate sul sistema operativo e hardware.",
+      "aliases": [
+        "systeminfo",
+        "os info"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "systeminfo",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "cmd.tasklist",
+      "name": "Processi da riga di comando",
+      "category": "CMD",
+      "description": "Elenca i processi attivi.",
+      "aliases": [
+        "tasklist",
+        "process list"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "tasklist",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "cmd.driverquery",
+      "name": "Driver installati",
+      "category": "CMD",
+      "description": "Elenca i driver installati.",
+      "aliases": [
+        "driverquery",
+        "drivers"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "driverquery /v",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "cmd.sfc",
+      "name": "Controllo file di sistema",
+      "category": "CMD",
+      "description": "Verifica e ripara i file di sistema protetti.",
+      "aliases": [
+        "sfc",
+        "system file checker",
+        "ripara windows"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "sfc /scannow",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Può modificare/riparare file di sistema; richiede terminale elevato."
+        }
+      ]
+    },
+    {
+      "id": "cmd.dismcheck",
+      "name": "DISM CheckHealth",
+      "category": "CMD",
+      "description": "Controlla rapidamente se l’immagine Windows è marcata come danneggiata.",
+      "aliases": [
+        "dism",
+        "checkhealth",
+        "component store"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "DISM /Online /Cleanup-Image /CheckHealth",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Richiede terminale elevato."
+        }
+      ]
+    },
+    {
+      "id": "cmd.gpupdate",
+      "name": "Aggiorna criteri di gruppo",
+      "category": "CMD",
+      "description": "Forza l’aggiornamento dei criteri di gruppo.",
+      "aliases": [
+        "group policy update",
+        "gpupdate"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "gpupdate /force",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Aggiorna i criteri; in ambienti gestiti può avere effetti immediati."
+        }
+      ]
+    },
+    {
+      "id": "cmd.gpresult",
+      "name": "Risultato criteri di gruppo",
+      "category": "CMD",
+      "description": "Mostra i criteri di gruppo applicati.",
+      "aliases": [
+        "group policy result",
+        "gpresult"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "gpresult /r",
+          "handler": "cmd_keep",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comando informativo/diagnostico."
+        }
+      ]
+    },
+    {
+      "id": "folders.appdata",
+      "name": "AppData Roaming",
+      "category": "Cartelle",
+      "description": "Apre la cartella AppData\\Roaming dell’utente.",
+      "aliases": [
+        "appdata",
+        "roaming"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "%APPDATA%",
+          "handler": "start",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows environment variable",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Espande la variabile ambiente APPDATA."
+        }
+      ]
+    },
+    {
+      "id": "folders.localappdata",
+      "name": "Local AppData",
+      "category": "Cartelle",
+      "description": "Apre AppData\\Local.",
+      "aliases": [
+        "localappdata",
+        "appdata local"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "%LOCALAPPDATA%",
+          "handler": "start",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows environment variable",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Espande LOCALAPPDATA."
+        }
+      ]
+    },
+    {
+      "id": "folders.temp",
+      "name": "Cartella TEMP",
+      "category": "Cartelle",
+      "description": "Apre la cartella temporanea dell’utente.",
+      "aliases": [
+        "temp",
+        "temporary files"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "%TEMP%",
+          "handler": "start",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows environment variable",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Espande TEMP."
+        }
+      ]
+    },
+    {
+      "id": "folders.startup",
+      "name": "Cartella Esecuzione automatica",
+      "category": "Cartelle",
+      "description": "Apre la cartella Startup dell’utente corrente.",
+      "aliases": [
+        "startup folder",
+        "esecuzione automatica",
+        "shell startup"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "shell:startup",
+          "handler": "explorer",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows shell namespace",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Apre la cartella Startup dell’utente."
+        }
+      ]
+    },
+    {
+      "id": "general.copy",
+      "name": "Copia",
+      "category": "General",
+      "description": "Copia la selezione negli appunti.",
+      "aliases": [
+        "copy"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + C",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia generale; il comportamento dipende dall’app."
+        }
+      ]
+    },
+    {
+      "id": "general.paste",
+      "name": "Incolla",
+      "category": "General",
+      "description": "Incolla dagli appunti.",
+      "aliases": [
+        "paste"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + V",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia generale; il comportamento dipende dall’app."
+        }
+      ]
+    },
+    {
+      "id": "general.cut",
+      "name": "Taglia",
+      "category": "General",
+      "description": "Taglia la selezione.",
+      "aliases": [
+        "cut"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + X",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia generale; il comportamento dipende dall’app."
+        }
+      ]
+    },
+    {
+      "id": "general.undo",
+      "name": "Annulla",
+      "category": "General",
+      "description": "Annulla l’ultima azione.",
+      "aliases": [
+        "undo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + Z",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia generale; il comportamento dipende dall’app."
+        }
+      ]
+    },
+    {
+      "id": "general.redo",
+      "name": "Ripeti",
+      "category": "General",
+      "description": "Ripristina/ripete l’azione annullata in molte applicazioni.",
+      "aliases": [
+        "redo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + Y",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Common application convention",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Non universale: alcune app usano Ctrl+Shift+Z."
+        }
+      ]
+    },
+    {
+      "id": "general.find",
+      "name": "Trova",
+      "category": "General",
+      "description": "Apre la ricerca interna nella maggior parte delle applicazioni.",
+      "aliases": [
+        "find",
+        "cerca nel documento"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + F",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia generale; il comportamento dipende dall’app."
+        }
+      ]
+    },
+    {
+      "id": "general.save",
+      "name": "Salva",
+      "category": "General",
+      "description": "Salva il documento corrente nella maggior parte delle applicazioni.",
+      "aliases": [
+        "save",
+        "salva documento"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + S",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Common application convention",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia applicativa comune."
+        }
+      ]
+    },
+    {
+      "id": "general.print",
+      "name": "Stampa",
+      "category": "General",
+      "description": "Apre la finestra di stampa nella maggior parte delle applicazioni.",
+      "aliases": [
+        "print",
+        "stampa documento"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "CTRL + P",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Common application convention",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorciatoia applicativa comune."
+        }
+      ]
+    }
+  ]
+}
