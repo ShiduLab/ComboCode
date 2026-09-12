@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 import sys
+import uuid
 import tkinter as tk
 from tkinter import filedialog, messagebox, ttk
 import webbrowser
@@ -26,6 +27,7 @@ class ComboCodeUI:
         self.current_goal = None
         self.current_route = None
         self.archive_rows = []
+        self.mine_rows = []
         self.run_buttons = []
         self.archive_sort_col = 'goal'
         self.archive_sort_desc = False
@@ -55,6 +57,9 @@ class ComboCodeUI:
         self.favorite_var = tk.StringVar(value='☆ Preferito')
         self.archive_summary_var = tk.StringVar()
         self.archive_detail_var = tk.StringVar()
+        self.mine_query_var = tk.StringVar()
+        self.mine_summary_var = tk.StringVar()
+        self.mine_detail_var = tk.StringVar()
 
         self._build_ui(brand_png)
         self._bind_keys()
@@ -178,7 +183,7 @@ class ComboCodeUI:
         )
         self.clear_search_button.grid(row=0, column=1, sticky='e', padx=(5, 0))
 
-        cats = ['Tutte', *self.kb.categories()]
+        cats = ['Tutte', *sorted(set([*self.kb.categories(), 'MIE']), key=str.lower)]
         self.category = self._make_dropdown(
             header,
             self.category_var,
@@ -194,11 +199,14 @@ class ComboCodeUI:
 
         self.search_tab = ttk.Frame(self.notebook, style='Panel.TFrame')
         self.all_tab = ttk.Frame(self.notebook, style='Panel.TFrame')
+        self.mine_tab = ttk.Frame(self.notebook, style='Panel.TFrame')
         self.notebook.add(self.search_tab, text='CERCA')
         self.notebook.add(self.all_tab, text='TUTTI')
+        self.notebook.add(self.mine_tab, text='MIE')
 
         self._build_search_tab()
         self._build_all_tab()
+        self._build_mine_tab()
         self._build_footer(brand_png)
 
     def _build_footer(self, brand_png: Path | None):
@@ -289,7 +297,8 @@ class ComboCodeUI:
         ttk.Button(buttons, text='COPIA', command=self.copy_selected).pack(side='left', padx=7)
         ttk.Button(buttons, textvariable=self.favorite_var, command=self.toggle_favorite).pack(side='left')
         ttk.Button(buttons, text='ESPORTA .MD', command=self.export_selected).pack(side='left', padx=7)
-        ttk.Button(buttons, text='FONTE', command=self.open_source).pack(side='left')
+        ttk.Button(buttons, text='SALVA NELLE MIE', command=self.duplicate_selected_to_mine).pack(side='left')
+        ttk.Button(buttons, text='FONTE', command=self.open_source).pack(side='left', padx=(7, 0))
 
     def _build_all_tab(self):
         tab = self.all_tab
@@ -317,7 +326,7 @@ class ComboCodeUI:
         self.archive_type.grid(row=0, column=3, sticky='w', padx=(0, 10))
 
         ttk.Label(bar, text='Categoria:', style='Panel.TLabel').grid(row=0, column=4, sticky='w', padx=(0, 5))
-        archive_cats = ['Tutte', *self.kb.categories()]
+        archive_cats = ['Tutte', *sorted(set([*self.kb.categories(), 'MIE']), key=str.lower)]
         self.archive_category = self._make_dropdown(
             bar,
             self.archive_category_var,
@@ -382,13 +391,375 @@ class ComboCodeUI:
         run_button.pack(side='left')
         self.run_buttons.append(run_button)
         ttk.Button(buttons, text='COPIA', command=self.copy_selected).pack(side='left', padx=7)
-        ttk.Button(buttons, text='FONTE', command=self.open_source).pack(side='left')
+        ttk.Button(buttons, text='SALVA NELLE MIE', command=self.duplicate_selected_to_mine).pack(side='left')
+        ttk.Button(buttons, text='FONTE', command=self.open_source).pack(side='left', padx=(7, 0))
+
+    def _build_mine_tab(self):
+        tab = self.mine_tab
+        tab.columnconfigure(0, weight=1)
+        tab.rowconfigure(1, weight=1)
+
+        bar = ttk.Frame(tab, style='Panel.TFrame', padding=(8, 8, 8, 8))
+        bar.grid(row=0, column=0, sticky='ew')
+        bar.columnconfigure(1, weight=1)
+
+        ttk.Label(bar, text='Le mie shortcut:', style='Panel.TLabel').grid(row=0, column=0, sticky='w', padx=(0, 6))
+        self.mine_search = ttk.Entry(bar, textvariable=self.mine_query_var)
+        self.mine_search.grid(row=0, column=1, sticky='ew', padx=(0, 6))
+        self.mine_search.bind('<KeyRelease>', lambda _e: self.refresh_mine())
+        ttk.Button(bar, text='×', width=3, style='Compact.TButton', command=self.clear_mine_search).grid(row=0, column=2, padx=(0, 12))
+        ttk.Button(bar, text='+ AGGIUNGI SHORTCUT', style='Accent.TButton', command=self.add_user_shortcut).grid(row=0, column=3, padx=(0, 6))
+        ttk.Button(bar, text='IMPORTA', command=self.import_user_shortcuts).grid(row=0, column=4, padx=(0, 6))
+        ttk.Button(bar, text='ESPORTA', command=self.export_user_shortcuts).grid(row=0, column=5)
+
+        table = ttk.Frame(tab, style='Panel.TFrame', padding=(8, 0, 8, 4))
+        table.grid(row=1, column=0, sticky='nsew')
+        table.columnconfigure(0, weight=1)
+        table.rowconfigure(0, weight=1)
+
+        self.mine_tree = ttk.Treeview(
+            table,
+            columns=('goal', 'kind', 'value', 'context', 'safety'),
+            show='headings',
+            selectmode='browse',
+        )
+        cols = [
+            ('goal', 'A cosa serve', 260, 'w'),
+            ('kind', 'Tipo', 110, 'center'),
+            ('value', 'Tasti / stringa / gesto', 365, 'w'),
+            ('context', 'Contesto', 210, 'w'),
+            ('safety', 'Sicurezza', 100, 'center'),
+        ]
+        for col, title, width, align in cols:
+            self.mine_tree.heading(col, text=title)
+            self.mine_tree.column(col, width=width, anchor=align)
+        self.mine_tree.grid(row=0, column=0, sticky='nsew')
+        my = ttk.Scrollbar(table, orient='vertical', command=self.mine_tree.yview)
+        my.grid(row=0, column=1, sticky='ns')
+        mx = ttk.Scrollbar(table, orient='horizontal', command=self.mine_tree.xview)
+        mx.grid(row=1, column=0, sticky='ew')
+        self.mine_tree.configure(yscrollcommand=my.set, xscrollcommand=mx.set)
+        self.mine_tree.bind('<<TreeviewSelect>>', self._on_mine_select)
+        self.mine_tree.bind('<Double-1>', lambda _e: self.execute_selected())
+        self.mine_tree.bind('<Return>', lambda _e: self.execute_selected())
+
+        lower = ttk.Frame(tab, style='Panel.TFrame', padding=(8, 4, 8, 8))
+        lower.grid(row=2, column=0, sticky='ew')
+        lower.columnconfigure(0, weight=1)
+        ttk.Label(lower, textvariable=self.mine_detail_var, style='PanelMuted.TLabel', wraplength=760, justify='left').grid(
+            row=0, column=0, sticky='ew', padx=(0, 10)
+        )
+
+        buttons = ttk.Frame(lower, style='Panel.TFrame')
+        buttons.grid(row=0, column=1, sticky='e')
+        run_button = ttk.Button(buttons, text='APRI / ESEGUI', style='Accent.TButton', command=self.execute_selected)
+        run_button.pack(side='left')
+        self.run_buttons.append(run_button)
+        ttk.Button(buttons, text='COPIA', command=self.copy_selected).pack(side='left', padx=6)
+        ttk.Button(buttons, text='MODIFICA', command=self.edit_user_shortcut).pack(side='left')
+        ttk.Button(buttons, text='ELIMINA', command=self.delete_user_shortcut).pack(side='left', padx=(6, 0))
+
+        summary = ttk.Frame(tab, style='Panel.TFrame', padding=(8, 0, 8, 8))
+        summary.grid(row=3, column=0, sticky='ew')
+        summary.columnconfigure(0, weight=1)
+        ttk.Label(summary, textvariable=self.mine_summary_var, style='PanelMuted.TLabel', anchor='e').grid(row=0, column=0, sticky='e')
+
+    def clear_mine_search(self):
+        self.mine_query_var.set('')
+        self.refresh_mine()
+        self.mine_search.focus_set()
+        return 'break'
+
+    def _route_handler_for_kind(self, kind: str) -> tuple[str, bool]:
+        kind = kind.upper()
+        mapping = {
+            'HOTKEY': ('none', True),
+            'MOUSE': ('manual', False),
+            'KEY+MOUSE': ('manual', False),
+            'RUN': ('cmd_run', True),
+            'CMD': ('cmd_keep', True),
+            'POWERSHELL': ('powershell', True),
+            'URI': ('uri', True),
+            'APP': ('start', True),
+            'ALTRO': ('manual', False),
+        }
+        return mapping.get(kind, ('manual', False))
+
+    def _shortcut_form(self, initial: dict | None = None) -> dict | None:
+        initial = initial or {}
+        initial_route = (initial.get('routes') or [{}])[0]
+        dialog = tk.Toplevel(self.root)
+        dialog.title('ComboCode — Aggiungi shortcut' if not initial.get('id') else 'ComboCode — Modifica shortcut')
+        dialog.transient(self.root)
+        dialog.grab_set()
+        dialog.resizable(True, False)
+        try:
+            if self.icon_ico and self.icon_ico.exists():
+                dialog.iconbitmap(str(self.icon_ico))
+        except Exception:
+            pass
+
+        frame = ttk.Frame(dialog, padding=18)
+        frame.grid(row=0, column=0, sticky='nsew')
+        frame.columnconfigure(1, weight=1)
+
+        name_var = tk.StringVar(value=initial.get('name', ''))
+        kind_var = tk.StringVar(value=initial_route.get('kind', 'HOTKEY'))
+        value_var = tk.StringVar(value=initial_route.get('value', ''))
+        context_var = tk.StringVar(value=initial.get('context', ''))
+        aliases_var = tk.StringVar(value=', '.join(initial.get('aliases', [])))
+        safety_var = tk.StringVar(value=initial_route.get('safety', 'SAFE'))
+
+        ttk.Label(frame, text='A cosa serve', style='Panel.TLabel').grid(row=0, column=0, sticky='w', pady=5, padx=(0, 12))
+        name_entry = ttk.Entry(frame, textvariable=name_var, width=55)
+        name_entry.grid(row=0, column=1, sticky='ew', pady=5)
+
+        ttk.Label(frame, text='Tipo', style='Panel.TLabel').grid(row=1, column=0, sticky='w', pady=5, padx=(0, 12))
+        kind_button = self._make_dropdown(
+            frame, kind_var,
+            ['HOTKEY', 'MOUSE', 'KEY+MOUSE', 'RUN', 'CMD', 'POWERSHELL', 'URI', 'APP', 'ALTRO'],
+            lambda: None, width=20,
+        )
+        kind_button.grid(row=1, column=1, sticky='w', pady=5)
+
+        ttk.Label(frame, text='Tasti / stringa / gesto', style='Panel.TLabel').grid(row=2, column=0, sticky='w', pady=5, padx=(0, 12))
+        value_entry = ttk.Entry(frame, textvariable=value_var)
+        value_entry.grid(row=2, column=1, sticky='ew', pady=5)
+
+        ttk.Label(frame, text='Contesto', style='Panel.TLabel').grid(row=3, column=0, sticky='w', pady=5, padx=(0, 12))
+        ttk.Entry(frame, textvariable=context_var).grid(row=3, column=1, sticky='ew', pady=5)
+
+        ttk.Label(frame, text='Alias (separati da virgola)', style='Panel.TLabel').grid(row=4, column=0, sticky='w', pady=5, padx=(0, 12))
+        ttk.Entry(frame, textvariable=aliases_var).grid(row=4, column=1, sticky='ew', pady=5)
+
+        ttk.Label(frame, text='Sicurezza', style='Panel.TLabel').grid(row=5, column=0, sticky='w', pady=5, padx=(0, 12))
+        safety_button = self._make_dropdown(frame, safety_var, ['SAFE', 'ELEVATED', 'DESTRUCTIVE'], lambda: None, width=20)
+        safety_button.grid(row=5, column=1, sticky='w', pady=5)
+
+        ttk.Label(frame, text='Note', style='Panel.TLabel').grid(row=6, column=0, sticky='nw', pady=5, padx=(0, 12))
+        notes = tk.Text(frame, height=5, width=55, wrap='word')
+        notes.grid(row=6, column=1, sticky='ew', pady=5)
+        notes.insert('1.0', initial_route.get('note', ''))
+        notes.configure(bg=self.palette.field, fg=self.palette.text, insertbackground=self.palette.text, relief='flat', highlightthickness=1, highlightbackground=self.palette.border)
+
+        hint = ttk.Label(
+            frame,
+            text='Esempi: CTRL + ALT + S · CTRL + WHEEL_UP · control keyboard · ms-settings:display',
+            style='PanelMuted.TLabel',
+        )
+        hint.grid(row=7, column=1, sticky='w', pady=(2, 10))
+
+        result: dict[str, dict | None] = {'goal': None}
+
+        def save():
+            name = name_var.get().strip()
+            value = value_var.get().strip()
+            if not name or not value:
+                messagebox.showwarning('ComboCode', 'Compila almeno “A cosa serve” e “Tasti / stringa / gesto”.', parent=dialog)
+                return
+            kind = kind_var.get().strip().upper()
+            handler, executable = self._route_handler_for_kind(kind)
+            aliases = [x.strip() for x in aliases_var.get().split(',') if x.strip()]
+            context = context_var.get().strip() or 'Generale'
+            note = notes.get('1.0', 'end').strip()
+            goal = {
+                'id': initial.get('id') or f'user.{uuid.uuid4().hex}',
+                'name': name,
+                'category': 'MIE',
+                'context': context,
+                'origin': 'user',
+                'description': f'Shortcut personale · {context}',
+                'aliases': aliases,
+                'keywords': ['personale', 'mia', 'shortcut', context, kind, *aliases],
+                'platform': 'Personalizzata',
+                'routes': [{
+                    'kind': kind,
+                    'value': value,
+                    'handler': handler,
+                    'executable': executable,
+                    'safety': safety_var.get().strip().upper() or 'SAFE',
+                    'verified': 'PERSONALE',
+                    'source_label': 'Creata dall’utente',
+                    'note': note,
+                }],
+            }
+            result['goal'] = goal
+            dialog.destroy()
+
+        actions = ttk.Frame(frame)
+        actions.grid(row=8, column=1, sticky='e', pady=(8, 0))
+        ttk.Button(actions, text='ANNULLA', command=dialog.destroy).pack(side='right')
+        ttk.Button(actions, text='SALVA', style='Accent.TButton', command=save).pack(side='right', padx=(0, 7))
+
+        dialog.protocol('WM_DELETE_WINDOW', dialog.destroy)
+        dialog.bind('<Escape>', lambda _e: dialog.destroy())
+        name_entry.focus_set()
+        dialog.wait_window()
+        return result['goal']
+
+    def add_user_shortcut(self):
+        goal = self._shortcut_form()
+        if not goal:
+            return 'break'
+        saved = self.store.upsert_user_goal(goal)
+        self.kb.upsert_goal(saved)
+        self.refresh_all_views()
+        self.refresh_mine(select_id=saved['id'])
+        self.notebook.select(2)
+        self.status_var.set(f"Aggiunta shortcut personale: {saved['name']}")
+        return 'break'
+
+    def edit_user_shortcut(self):
+        if not self.current_goal or self.current_goal.get('origin') != 'user':
+            messagebox.showinfo('ComboCode', 'Seleziona una voce nella pagina MIE.')
+            return 'break'
+        goal = self._shortcut_form(self.current_goal)
+        if not goal:
+            return 'break'
+        saved = self.store.upsert_user_goal(goal)
+        self.kb.upsert_goal(saved)
+        self.refresh_all_views()
+        self.refresh_mine(select_id=saved['id'])
+        self.notebook.select(2)
+        self.status_var.set(f"Modificata shortcut personale: {saved['name']}")
+        return 'break'
+
+    def delete_user_shortcut(self):
+        if not self.current_goal or self.current_goal.get('origin') != 'user':
+            messagebox.showinfo('ComboCode', 'Seleziona una voce personale da eliminare.')
+            return 'break'
+        goal_id = self.current_goal['id']
+        name = self.current_goal.get('name', '')
+        if not messagebox.askyesno('ComboCode — Elimina', f'Eliminare “{name}” dalle MIE?'):
+            return 'break'
+        self.store.delete_user_goal(goal_id)
+        self.kb.remove_goal(goal_id)
+        self.current_goal = None
+        self.current_route = None
+        self.refresh_all_views()
+        self.refresh_mine()
+        self.status_var.set(f'Eliminata shortcut personale: {name}')
+        return 'break'
+
+    def duplicate_selected_to_mine(self):
+        if not self.current_goal or not self.current_route:
+            return 'break'
+        initial = {
+            'name': self.current_goal.get('name', ''),
+            'context': self.current_goal.get('context') or self.current_goal.get('category', ''),
+            'aliases': list(self.current_goal.get('aliases', [])),
+            'routes': [dict(self.current_route)],
+        }
+        initial['routes'][0]['verified'] = 'PERSONALE'
+        initial['routes'][0]['source_label'] = 'Duplicata e personalizzata dall’utente'
+        goal = self._shortcut_form(initial)
+        if not goal:
+            return 'break'
+        saved = self.store.upsert_user_goal(goal)
+        self.kb.upsert_goal(saved)
+        self.refresh_all_views()
+        self.refresh_mine(select_id=saved['id'])
+        self.notebook.select(2)
+        self.status_var.set(f"Salvata nelle MIE: {saved['name']}")
+        return 'break'
+
+    def refresh_mine(self, select_id: str | None = None):
+        if not hasattr(self, 'mine_tree'):
+            return
+        query = self.mine_query_var.get().strip().casefold()
+        rows = []
+        for goal in self.kb.user_goals():
+            route = (goal.get('routes') or [{}])[0]
+            blob = ' '.join([
+                goal.get('name', ''), goal.get('context', ''), goal.get('description', ''),
+                ' '.join(goal.get('aliases', [])), route.get('kind', ''), route.get('value', ''), route.get('note', '')
+            ]).casefold()
+            if query and query not in blob:
+                continue
+            rows.append((goal, route))
+        rows.sort(key=lambda x: (x[0].get('context', '').casefold(), x[0].get('name', '').casefold()))
+        self.mine_rows = rows
+
+        for item in self.mine_tree.get_children():
+            self.mine_tree.delete(item)
+        for idx, (goal, route) in enumerate(rows):
+            tag = 'even' if idx % 2 == 0 else 'odd'
+            self.mine_tree.insert('', 'end', iid=goal['id'], values=(
+                goal.get('name', ''), route.get('kind', ''), route.get('value', ''),
+                goal.get('context', ''), route.get('safety', 'SAFE')
+            ), tags=(tag,))
+        self._retag_tree(self.mine_tree)
+        self.mine_summary_var.set(f'{len(rows)} shortcut personali · archivio: {self.store.shortcuts_path}')
+        self.mine_detail_var.set('')
+
+        if select_id and self.mine_tree.exists(select_id):
+            self.mine_tree.selection_set(select_id)
+            self.mine_tree.focus(select_id)
+            self._on_mine_select()
+        elif rows and self.notebook.index(self.notebook.select()) == 2:
+            first = rows[0][0]['id']
+            self.mine_tree.selection_set(first)
+            self.mine_tree.focus(first)
+            self._on_mine_select()
+        self._update_status_for_tab()
+
+    def _on_mine_select(self, _event=None):
+        sel = self.mine_tree.selection()
+        if not sel:
+            return
+        goal = self.kb.by_id.get(sel[0])
+        if not goal:
+            return
+        route = (goal.get('routes') or [{}])[0]
+        self.current_goal = goal
+        self.current_route = route
+        self.mine_detail_var.set(
+            f"{goal.get('name','')} · {goal.get('context','')}\n"
+            f"{route.get('note','')} · {route.get('kind','')} · {route.get('value','')}"
+        )
+        self._sync_run_buttons()
+
+    def export_user_shortcuts(self):
+        path = filedialog.asksaveasfilename(
+            title='Esporta le MIE shortcut',
+            defaultextension='.json',
+            initialfile='ComboCode_user_shortcuts.json',
+            filetypes=[('JSON', '*.json')],
+        )
+        if path:
+            self.store.export_user_shortcuts(Path(path))
+            self.status_var.set(f'MIE esportate: {path}')
+        return 'break'
+
+    def import_user_shortcuts(self):
+        path = filedialog.askopenfilename(
+            title='Importa shortcut personali',
+            filetypes=[('JSON', '*.json'), ('Tutti i file', '*.*')],
+        )
+        if not path:
+            return 'break'
+        try:
+            count = self.store.import_user_shortcuts(Path(path), merge=True)
+        except Exception as exc:
+            messagebox.showerror('ComboCode', f'Importazione non riuscita:\n{exc}')
+            return 'break'
+        # sincronizza la KB: rimuove i vecchi user e ricarica il file persistente.
+        for goal in list(self.kb.user_goals()):
+            self.kb.remove_goal(goal['id'])
+        for goal in self.store.load_user_goals():
+            self.kb.upsert_goal(goal)
+        self.refresh_all_views()
+        self.refresh_mine()
+        self.status_var.set(f'Importate/aggiornate {count} shortcut personali.')
+        return 'break'
 
     def _bind_keys(self):
         self.root.bind('<Control-k>', lambda _e: self.focus_search())
         self.root.bind('<Control-l>', lambda _e: self.focus_search())
         self.root.bind('<Control-Key-1>', lambda _e: self.select_tab(0))
         self.root.bind('<Control-Key-2>', lambda _e: self.select_tab(1))
+        self.root.bind('<Control-Key-3>', lambda _e: self.select_tab(2))
+        self.root.bind('<Control-Shift-A>', lambda _e: self.add_user_shortcut())
         self.root.bind('<Control-c>', lambda _e: self.copy_selected())
         self.root.bind('<Control-f>', lambda _e: self.toggle_favorite())
         self.root.bind('<Control-m>', lambda _e: self.export_selected())
@@ -400,21 +771,28 @@ class ComboCodeUI:
         self.notebook.select(index)
         if index == 0:
             self.search_entry.focus_set()
-        else:
+        elif index == 1:
             self.archive_tree.focus_set()
+        else:
+            self.mine_search.focus_set()
         self._update_status_for_tab()
         return 'break'
 
     def _smart_down(self, _event):
         focus = self.root.focus_get()
-        if self.notebook.index(self.notebook.select()) == 0:
+        tab_index = self.notebook.index(self.notebook.select())
+        if tab_index == 0:
             if focus != self.search_entry:
                 return None
             tree = self.result_tree
-        else:
+        elif tab_index == 1:
             if focus != self.archive_search:
                 return None
             tree = self.archive_tree
+        else:
+            if focus != self.mine_search:
+                return None
+            tree = self.mine_tree
         children = tree.get_children()
         if children:
             tree.focus_set()
@@ -425,10 +803,13 @@ class ComboCodeUI:
         return None
 
     def focus_search(self):
-        if self.notebook.index(self.notebook.select()) == 0:
+        tab_index = self.notebook.index(self.notebook.select())
+        if tab_index == 0:
             entry = self.search_entry
-        else:
+        elif tab_index == 1:
             entry = self.archive_search
+        else:
+            entry = self.mine_search
         entry.focus_set()
         entry.selection_range(0, tk.END)
         return 'break'
@@ -467,6 +848,7 @@ class ComboCodeUI:
     def refresh_all_views(self):
         self.refresh_results()
         self.refresh_archive()
+        self.refresh_mine()
         self._update_status_for_tab()
 
     def refresh_results(self):
@@ -590,6 +972,8 @@ class ComboCodeUI:
         self._retag_tree(self.result_tree)
         self._retag_tree(self.route_tree)
         self._retag_tree(self.archive_tree)
+        if hasattr(self, 'mine_tree'):
+            self._retag_tree(self.mine_tree)
 
     def _retag_tree(self, tree):
         p = self.palette
@@ -755,19 +1139,30 @@ class ComboCodeUI:
         return 'break'
 
     def _on_tab_changed(self, _event=None):
+        if self.notebook.index(self.notebook.select()) == 2 and hasattr(self, 'mine_tree'):
+            if not self.mine_tree.selection() and self.mine_tree.get_children():
+                first = self.mine_tree.get_children()[0]
+                self.mine_tree.selection_set(first)
+                self.mine_tree.focus(first)
+                self._on_mine_select()
         self._update_status_for_tab()
 
     def _update_status_for_tab(self):
-        if self.notebook.index(self.notebook.select()) == 1:
+        tab_index = self.notebook.index(self.notebook.select())
+        if tab_index == 2:
             self.status_var.set(
-                f'{len(self.archive_rows)} route · intestazioni cliccabili · Ctrl+1 Cerca · Ctrl+2 Tutti · Invio esegui · Ctrl+C copia.'
+                f'{len(self.mine_rows)} shortcut personali · Ctrl+Shift+A aggiunge · Ctrl+1 Cerca · Ctrl+2 Tutti · Ctrl+3 Mie.'
+            )
+        elif tab_index == 1:
+            self.status_var.set(
+                f'{len(self.archive_rows)} route · intestazioni cliccabili · Ctrl+1 Cerca · Ctrl+2 Tutti · Ctrl+3 Mie · Invio esegui.'
             )
         elif self.current_hits:
             self.status_var.set(
-                f'{len(self.current_hits)} risultati · Ctrl+2 apre TUTTI · ↓ scegli · Invio route · Ctrl+C copia.'
+                f'{len(self.current_hits)} risultati · Ctrl+2 TUTTI · Ctrl+3 MIE · ↓ scegli · Invio route · Ctrl+C copia.'
             )
         else:
-            self.status_var.set('Nessun risultato. Prova un sinonimo; Ctrl+2 apre l’intero archivio.')
+            self.status_var.set('Nessun risultato. Prova un sinonimo; Ctrl+2 apre TUTTI, Ctrl+3 apre MIE.')
 
     def show_help(self):
         messagebox.showinfo(

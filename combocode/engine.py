@@ -37,12 +37,34 @@ class KnowledgeBase:
         self._index = {g['id']: self._build_index(g) for g in self.goals}
 
     @classmethod
-    def from_pack_dir(cls, pack_dir: Path) -> 'KnowledgeBase':
+    def from_pack_dir(cls, pack_dir: Path, extra_goals: Iterable[dict] = ()) -> 'KnowledgeBase':
         goals = []
         for path in sorted(pack_dir.glob('*.json')):
             data = json.loads(path.read_text(encoding='utf-8'))
             goals.extend(data.get('goals', []))
+        goals.extend(extra_goals)
         return cls(goals)
+
+    def upsert_goal(self, goal: dict) -> None:
+        goal_id = goal['id']
+        for idx, existing in enumerate(self.goals):
+            if existing.get('id') == goal_id:
+                self.goals[idx] = goal
+                break
+        else:
+            self.goals.append(goal)
+        self.by_id[goal_id] = goal
+        self._index[goal_id] = self._build_index(goal)
+
+    def remove_goal(self, goal_id: str) -> bool:
+        before = len(self.goals)
+        self.goals = [g for g in self.goals if g.get('id') != goal_id]
+        self.by_id.pop(goal_id, None)
+        self._index.pop(goal_id, None)
+        return len(self.goals) != before
+
+    def user_goals(self) -> list[dict]:
+        return [g for g in self.goals if g.get('origin') == 'user']
 
     @staticmethod
     def _build_index(goal: dict) -> dict:
@@ -51,6 +73,8 @@ class KnowledgeBase:
         keywords = [normalize(x) for x in goal.get('keywords', [])]
         description = normalize(goal.get('description', ''))
         category = normalize(goal.get('category', ''))
+        context = normalize(goal.get('context', ''))
+        origin = normalize(goal.get('origin', ''))
         route_values = [normalize(r.get('value', '')) for r in goal.get('routes', [])]
         route_kinds = [normalize(r.get('kind', '')) for r in goal.get('routes', [])]
         route_notes = [normalize(r.get('note', '')) for r in goal.get('routes', [])]
@@ -60,6 +84,8 @@ class KnowledgeBase:
             *keywords,
             description,
             category,
+            context,
+            origin,
             *route_values,
             *route_kinds,
             *route_notes,

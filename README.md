@@ -203,6 +203,45 @@ Dopo il push su `main`, GitHub Actions:
 
 ### v3 — GUI e archivio
 
+<<<<<<< HEAD
+
+## v8 — MIE / Aggiungi shortcut
+
+ComboCode diventa personalizzabile.
+
+Nuova pagina **MIE**:
+- `+ AGGIUNGI SHORTCUT`;
+- modifica ed elimina;
+- ricerca nelle proprie scorciatoie;
+- import/export JSON;
+- persistenza separata dagli aggiornamenti del programma;
+- duplicazione di una route standard dentro MIE per modificarla senza perdere l'originale.
+
+Campi del form:
+- A cosa serve;
+- Tipo: HOTKEY, MOUSE, KEY+MOUSE, RUN, CMD, POWERSHELL, URI, APP, ALTRO;
+- Tasti / stringa / gesto;
+- Contesto;
+- Alias;
+- Sicurezza;
+- Note.
+
+Le personalizzazioni sono salvate in:
+`%APPDATA%\\ShiduLab\\ComboCode\\user_shortcuts.json`
+
+Questo file non fa parte dell'EXE e quindi sopravvive agli aggiornamenti di ComboCode.
+
+Shortcut tastiera: possono essere inviate direttamente da ComboCode.
+Comandi/URI/app: vengono eseguiti dal relativo handler.
+Gesture MOUSE e KEY+MOUSE: vengono registrate, cercate e mostrate, ma restano gesti manuali.
+
+Scorciatoie interne ComboCode:
+- Ctrl+1 = CERCA
+- Ctrl+2 = TUTTI
+- Ctrl+3 = MIE
+- Ctrl+Shift+A = Aggiungi shortcut
+
+=======
 - GUI adattiva chiaro/scuro
 - DPI/scaling
 - pagina TUTTI reale
@@ -228,3 +267,5 @@ Dopo il push su `main`, GitHub Actions:
 ---
 
 **ShiduLab non programma, indica.**
+
+>>>>>>> 7cbb96960aa325b9864b4347a4935ddffb5f1561

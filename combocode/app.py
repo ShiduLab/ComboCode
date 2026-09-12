@@ -14,7 +14,7 @@ def _prepare_windows_process() -> None:
         return
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v7')
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v8')
     except Exception:
         pass
     try:
@@ -35,8 +35,11 @@ def main() -> None:
     from .ui import ComboCodeUI
 
     _prepare_windows_process()
-    kb = KnowledgeBase.from_pack_dir(resource_path('combocode/data/packs'))
     store = UserStore()
+    kb = KnowledgeBase.from_pack_dir(
+        resource_path('combocode/data/packs'),
+        extra_goals=store.load_user_goals(),
+    )
     app = ComboCodeUI(
         kb,
         store,

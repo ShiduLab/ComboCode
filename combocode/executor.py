@@ -123,6 +123,9 @@ def execute_route(route: dict) -> None:
             _send_hotkey(value)
             return
 
+        if kind in {'MOUSE', 'KEY+MOUSE', 'TASTIERA+MOUSE'} or handler == 'manual':
+            raise ExecutionError(f'Gesto manuale: {value}')
+
         # Route marcate ELEVATED: UAC, poi esecuzione.
         if safety == 'ELEVATED':
             _run_elevated_cmd(value, keep_open=(kind == 'CMD'))
@@ -147,6 +150,8 @@ def execute_route(route: dict) -> None:
             subprocess.Popen(['cmd.exe', '/c', value])
         elif handler == 'start':
             os.startfile(os.path.expandvars(value))  # type: ignore[attr-defined]
+        elif handler == 'powershell' or kind == 'POWERSHELL':
+            subprocess.Popen(['powershell.exe', '-NoProfile', '-Command', value])
         else:
             # Fallback intenzionale v4:
             # le voci importate/legacy non restano più solo informative.

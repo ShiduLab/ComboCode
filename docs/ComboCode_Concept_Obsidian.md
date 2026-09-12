@@ -579,3 +579,34 @@ Copertura iniziale:
 Totale nuove voci browser: **314**.
 
 Principio: le shortcut applicative non vengono mischiate alle shortcut del sistema operativo, ma restano cercabili nello stesso motore ComboCode.
+
+
+## Stato implementazione v8 — [[ComboCode MIE]]
+
+ComboCode acquisisce una terza dimensione oltre a CERCA e TUTTI:
+
+**MIE** — archivio personale dell'utente.
+
+Principio:
+> Catalogo pubblico + conoscenza personale.
+
+Ogni utente può aggiungere una propria route specificando:
+- obiettivo;
+- tipo;
+- tasti/stringa/gesto;
+- contesto;
+- alias;
+- note;
+- sicurezza.
+
+Tipi personali:
+`HOTKEY`, `MOUSE`, `KEY+MOUSE`, `RUN`, `CMD`, `POWERSHELL`, `URI`, `APP`, `ALTRO`.
+
+Le route personali sono conservate fuori dal programma nel file:
+`%APPDATA%\\ShiduLab\\ComboCode\\user_shortcuts.json`
+
+In questo modo un aggiornamento di ComboCode non sovrascrive il sapere costruito dall'utente.
+
+Una route del catalogo standard può essere duplicata nelle MIE e poi modificata: l'originale resta intatto.
+
+[[ComboCode]] → [[ComboCode MIE]] → [[OlogrammIo]]
