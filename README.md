@@ -3,7 +3,7 @@
 > L'utente non deve ricordare **come** si raggiunge qualcosa.  
 > Deve sapere soltanto **cosa vuole ottenere**.
 
-**Versione attuale: 8.0.0**
+**Versione attuale: 8.0.1**
 
 ComboCode è un motore locale, keyboard-first, per trovare e usare shortcut, comandi, pannelli e route di accesso a Windows e alle applicazioni.
 
@@ -33,7 +33,15 @@ ComboCode ha tre aree principali:
 
 Per quando sai **cosa vuoi ottenere**.
 
-La ricerca indicizza obiettivo, alias, descrizione, categoria, keyword, comando/stringa, note e contesto.
+La ricerca indicizza:
+- obiettivo;
+- alias;
+- descrizione;
+- categoria;
+- keyword;
+- comando/stringa;
+- note;
+- contesto.
 
 La `×` a destra del campo ricerca azzera immediatamente la query.
 
@@ -43,13 +51,25 @@ Il menu Categoria usa un menu popup dedicato, non il vecchio `ttk.Combobox`.
 
 È l'atlante completo dell'archivio.
 
-Permette di vedere tutte le route, filtrare per testo/tipo/categoria e ordinare cliccando sulle intestazioni. Un secondo click inverte crescente/decrescente.
+Permette di:
+- vedere tutte le route;
+- filtrare per testo;
+- filtrare per tipo;
+- filtrare per categoria;
+- ordinare cliccando sulle intestazioni;
+- invertire crescente/decrescente con un secondo click.
 
 ### MIE
 
 Archivio personale dell'utente.
 
-Permette di aggiungere, modificare, eliminare, cercare, duplicare una route standard e personalizzarla, importare ed esportare JSON.
+Permette di:
+- aggiungere shortcut;
+- modificare;
+- eliminare;
+- cercare;
+- duplicare una route standard e personalizzarla;
+- importare/esportare JSON.
 
 Le personalizzazioni vengono salvate fuori dall'EXE in:
 
@@ -71,45 +91,71 @@ Campi disponibili:
 
 Tipi previsti:
 
-`HOTKEY · MOUSE · KEY+MOUSE · RUN · CMD · POWERSHELL · URI · APP · ALTRO`
+- `HOTKEY`
+- `MOUSE`
+- `KEY+MOUSE`
+- `RUN`
+- `CMD`
+- `POWERSHELL`
+- `URI`
+- `APP`
+- `ALTRO`
 
 Questo permette di registrare anche shortcut personali di Windows o di qualunque programma, oltre a gesture tipo `CTRL + rotellina`.
 
 ## Windows
 
-Il catalogo Windows comprende shortcut contestuali per modifica testo, desktop, tasto WIN, Prompt dei comandi, finestre di dialogo, Esplora file, desktop virtuali, barra delle applicazioni, Impostazioni, Accessibilità e Lente d'ingrandimento.
+Il catalogo Windows comprende shortcut contestuali per:
 
-Sono inoltre presenti route RUN, CMD, CPL, MSC, URI e materiale storico ESEGUI/DOS. Le voci legacy restano distinguibili dalle route moderne.
+- modifica testo;
+- desktop e comandi generali;
+- combinazioni col tasto WIN;
+- Prompt dei comandi;
+- finestre di dialogo;
+- Esplora file;
+- desktop virtuali;
+- barra delle applicazioni;
+- Impostazioni;
+- Accessibilità;
+- Lente d'ingrandimento.
+
+Sono inoltre presenti route RUN, CMD, CPL, MSC, URI e materiale storico ESEGUI/DOS.
+
+Le voci legacy restano distinguibili dalle route moderne.
 
 ## Browser
 
 Sono presenti pack separati per:
 
-- Browser comuni
-- Opera
-- Google Chrome
-- Microsoft Edge
-- Mozilla Firefox
+- Browser comuni;
+- Opera;
+- Google Chrome;
+- Microsoft Edge;
+- Mozilla Firefox.
 
-Le stesse combinazioni possono comparire in più browser quando il contesto cambia. Il contesto applicativo è parte del dato.
+Le stesse combinazioni possono comparire in più browser quando il contesto cambia.
+
+Il contesto applicativo è parte del dato: ComboCode non considera una shortcut soltanto come una sequenza di tasti.
 
 ## Esecuzione
 
 `APRI / ESEGUI` prova a lanciare la route selezionata.
 
-- `SAFE`: esecuzione diretta
-- `ELEVATED`: conferma, poi richiesta privilegi quando necessaria
-- `DESTRUCTIVE`: conferma esplicita prima dell'esecuzione
+- `SAFE`: esecuzione diretta;
+- `ELEVATED`: conferma, poi richiesta privilegi quando necessaria;
+- `DESTRUCTIVE`: conferma esplicita prima dell'esecuzione.
 
-Le HOTKEY supportate possono essere inviate direttamente da ComboCode su Windows. Le gesture `MOUSE` e `KEY+MOUSE` vengono archiviate e mostrate come istruzioni operative.
+Le HOTKEY supportate possono essere inviate direttamente da ComboCode su Windows.
+
+Le gesture `MOUSE` e `KEY+MOUSE` vengono archiviate e mostrate come istruzioni operative.
 
 ## Grafica
 
-- tema chiaro/scuro adattato al sistema
-- scaling/DPI Windows
-- icona ComboCode nell'EXE, taskbar e finestra
-- **Botolo + ShiduLab in basso a destra**
-- testo ShiduLab adattato ai colori del tema
+- tema chiaro/scuro adattato al sistema;
+- scaling/DPI Windows;
+- icona ComboCode nell'EXE, taskbar e finestra;
+- **Botolo + ShiduLab in basso a destra**;
+- testo ShiduLab adattato ai colori del tema.
 
 ## Shortcut interne ComboCode
 
@@ -136,10 +182,15 @@ La documentazione del progetto è in `docs/`.
 
 ## Fonti e provenienza
 
-Le fonti moderne sono elencate in `docs/SOURCES.md`.
+Le fonti moderne sono elencate in:
 
-L'archivio storico fornito durante lo sviluppo è documentato in `docs/USER_ARCHIVE_SOURCES.md` e comprende:
+`docs/SOURCES.md`
 
+L'archivio storico fornito durante lo sviluppo è documentato in:
+
+`docs/USER_ARCHIVE_SOURCES.md`
+
+Tra le fonti storiche:
 - `comandi Esegui_dos.docx`
 - `Comandi Esegui_Dos2.docx`
 - `Comandi Esegui_Dos3.docx`
@@ -156,116 +207,84 @@ python main.py
 
 Dopo il push su `main`, GitHub Actions:
 
-1. esegue i test
-2. installa PyInstaller
-3. genera **`ComboCode v8.exe`**
-4. pubblica l'artifact **`ComboCode-Windows-v8`**
+1. esegue i test;
+2. installa PyInstaller;
+3. genera **`ComboCode v8.exe`**;
+4. pubblica l'artifact **`ComboCode-Windows-v8`**.
 
 ## Cronologia
 
+
+### v8.0.1 — Fix build Windows
+
+- chiusura esplicita della connessione SQLite;
+- test delle shortcut personali compatibili con il file locking di Windows;
+- chiusura del database alla terminazione della GUI;
+- GitHub Actions aggiornate a `actions/checkout@v5` e `actions/setup-python@v6` per Node 24.
+
+
 ### v8 — Personalizzazione
 
-- nuova pagina **MIE**
-- `+ AGGIUNGI SHORTCUT`
-- tipi MOUSE e KEY+MOUSE
-- contesto personalizzabile
-- modifica/elimina
-- import/export JSON
-- duplicazione di route standard
-- persistenza separata dagli aggiornamenti
+- nuova pagina **MIE**;
+- `+ AGGIUNGI SHORTCUT`;
+- tipi MOUSE e KEY+MOUSE;
+- contesto personalizzabile;
+- modifica/elimina;
+- import/export JSON;
+- duplicazione di route standard;
+- persistenza separata dagli aggiornamenti.
 
 ### v7 — Browser
 
-- Browser comuni
-- Opera
-- Chrome
-- Edge
-- Firefox
-- centinaia di route di navigazione e controllo browser
+- Browser comuni;
+- Opera;
+- Chrome;
+- Edge;
+- Firefox;
+- centinaia di route di navigazione e controllo browser.
 
 ### v6 — Shortcut Windows
 
-- ampliamento massiccio delle scorciatoie da tastiera Windows
-- catalogazione per contesto
-- accessibilità e navigazione incluse
+- ampliamento massiccio delle scorciatoie da tastiera Windows;
+- catalogazione per contesto;
+- accessibilità e navigazione incluse.
 
 ### v5 — Menu a tendina
 
-- eliminato `ttk.Combobox`
-- introdotti `Menubutton + Menu` per i filtri
+- eliminato `ttk.Combobox`;
+- introdotti `Menubutton + Menu` per i filtri.
 
 ### v4 — Smussature operative
 
-- Botolo + ShiduLab spostati a destra
-- `×` nella ricerca
-- ordinamento CERCA/TUTTI
-- esecuzione route legacy sbloccata con conferme di sicurezza
+- Botolo + ShiduLab spostati a destra;
+- `×` nella ricerca;
+- ordinamento CERCA/TUTTI;
+- esecuzione route legacy sbloccata con conferme di sicurezza.
 
 ### v3 — GUI e archivio
 
-<<<<<<< HEAD
-
-## v8 — MIE / Aggiungi shortcut
-
-ComboCode diventa personalizzabile.
-
-Nuova pagina **MIE**:
-- `+ AGGIUNGI SHORTCUT`;
-- modifica ed elimina;
-- ricerca nelle proprie scorciatoie;
-- import/export JSON;
-- persistenza separata dagli aggiornamenti del programma;
-- duplicazione di una route standard dentro MIE per modificarla senza perdere l'originale.
-
-Campi del form:
-- A cosa serve;
-- Tipo: HOTKEY, MOUSE, KEY+MOUSE, RUN, CMD, POWERSHELL, URI, APP, ALTRO;
-- Tasti / stringa / gesto;
-- Contesto;
-- Alias;
-- Sicurezza;
-- Note.
-
-Le personalizzazioni sono salvate in:
-`%APPDATA%\\ShiduLab\\ComboCode\\user_shortcuts.json`
-
-Questo file non fa parte dell'EXE e quindi sopravvive agli aggiornamenti di ComboCode.
-
-Shortcut tastiera: possono essere inviate direttamente da ComboCode.
-Comandi/URI/app: vengono eseguiti dal relativo handler.
-Gesture MOUSE e KEY+MOUSE: vengono registrate, cercate e mostrate, ma restano gesti manuali.
-
-Scorciatoie interne ComboCode:
-- Ctrl+1 = CERCA
-- Ctrl+2 = TUTTI
-- Ctrl+3 = MIE
-- Ctrl+Shift+A = Aggiungi shortcut
-
-=======
-- GUI adattiva chiaro/scuro
-- DPI/scaling
-- pagina TUTTI reale
-- ordinamento colonne
-- import archivio storico
+- GUI adattiva chiaro/scuro;
+- DPI/scaling;
+- pagina TUTTI reale;
+- ordinamento colonne;
+- import archivio storico.
 
 ### v2 — Primo ampliamento
 
-- ricerca semantica più ampia
-- famiglia Tastiera
-- archivio CMD ampliato
-- pagina TUTTI
+- ricerca semantica più ampia;
+- famiglia Tastiera;
+- archivio CMD ampliato;
+- pagina TUTTI.
 
 ### v1 — Primo prototipo operativo
 
-- ricerca per intenzione
-- HOTKEY / RUN / CMD
-- preferiti
-- copia
-- export Markdown
-- database a pack JSON
+- ricerca per intenzione;
+- HOTKEY / RUN / CMD;
+- preferiti;
+- copia;
+- export Markdown;
+- database a pack JSON.
 
 ---
 
 **ShiduLab non programma, indica.**
-
->>>>>>> 7cbb96960aa325b9864b4347a4935ddffb5f1561

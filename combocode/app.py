@@ -47,7 +47,10 @@ def main() -> None:
         icon_ico=resource_path('assets/combocode-icon.ico'),
         brand_png=resource_path('assets/shidulab-botolo-mark.png'),
     )
-    app.run()
+    try:
+        app.run()
+    finally:
+        store.close()
 
 
 if __name__ == '__main__':

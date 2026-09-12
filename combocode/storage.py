@@ -20,6 +20,27 @@ class UserStore:
         if not self.shortcuts_path.exists():
             self._write_shortcuts([])
 
+    def close(self) -> None:
+        conn = getattr(self, 'conn', None)
+        if conn is not None:
+            try:
+                conn.close()
+            finally:
+                self.conn = None
+
+    def __enter__(self):
+        return self
+
+    def __exit__(self, exc_type, exc, tb):
+        self.close()
+        return False
+
+    def __del__(self):
+        try:
+            self.close()
+        except Exception:
+            pass
+
     def is_favorite(self, goal_id: str) -> bool:
         row = self.conn.execute('SELECT 1 FROM favorites WHERE goal_id=?', (goal_id,)).fetchone()
         return bool(row)
