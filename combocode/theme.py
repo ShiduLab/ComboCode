@@ -162,6 +162,14 @@ def apply_ttk_theme(root, style, dark: bool) -> Palette:
         background=[('active', palette.border), ('pressed', palette.border), ('disabled', palette.panel_alt)],
         foreground=[('disabled', palette.muted)],
     )
+    style.configure('Compact.TButton', background=palette.field, foreground=palette.muted, padding=(6, 6), font=('Segoe UI Semibold', 13))
+    style.map(
+        'Compact.TButton',
+        background=[('active', palette.border), ('pressed', palette.border)],
+        foreground=[('active', palette.text)],
+    )
+    style.configure('Brand.TLabel', background=palette.bg, foreground=palette.text, font=('Segoe UI Semibold', 10))
+
     style.configure('Accent.TButton', background=palette.accent, foreground='#ffffff', padding=(13, 8))
     style.map(
         'Accent.TButton',

@@ -7,6 +7,7 @@ datas = [
     ('assets/combocode-icon.png', 'assets'),
     ('assets/combocode-icon.ico', 'assets'),
     ('assets/shidulab-botolo-small.png', 'assets'),
+    ('assets/shidulab-botolo-mark.png', 'assets'),
 ]
 
 a = Analysis(
@@ -28,7 +29,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='ComboCode v3',
+    name='ComboCode v4',
     icon='assets/combocode-icon.ico',
     debug=False,
     bootloader_ignore_signals=False,

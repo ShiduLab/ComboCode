@@ -29,6 +29,8 @@ class ComboCodeUI:
         self.run_buttons = []
         self.archive_sort_col = 'goal'
         self.archive_sort_desc = False
+        self.search_sort_col = None
+        self.search_sort_desc = False
         self._system_dark = system_prefers_dark()
         self._icon_image = None
         self._brand_image = None
@@ -119,14 +121,24 @@ class ComboCodeUI:
         header.grid(row=0, column=0, sticky='ew')
         header.columnconfigure(0, weight=1)
 
-        self.search_entry = ttk.Entry(header, textvariable=self.search_var, style='Search.TEntry')
-        self.search_entry.grid(row=0, column=0, sticky='ew', padx=(0, 10))
+        search_box = ttk.Frame(header)
+        search_box.grid(row=0, column=0, sticky='ew', padx=(0, 10))
+        search_box.columnconfigure(0, weight=1)
+
+        self.search_entry = ttk.Entry(search_box, textvariable=self.search_var, style='Search.TEntry')
+        self.search_entry.grid(row=0, column=0, sticky='ew')
         self.search_entry.bind('<KeyRelease>', lambda _e: self.refresh_results())
+
+        self.clear_search_button = ttk.Button(
+            search_box, text='×', width=3, style='Compact.TButton', command=self.clear_search
+        )
+        self.clear_search_button.grid(row=0, column=1, sticky='e', padx=(5, 0))
 
         cats = ['Tutte', *self.kb.categories()]
         self.category = ttk.Combobox(header, textvariable=self.category_var, values=cats, state='readonly', width=22)
         self.category.grid(row=0, column=1, sticky='e')
-        self.category.bind('<<ComboboxSelected>>', lambda _e: self.refresh_results())
+        self.category.bind('<<ComboboxSelected>>', self._on_category_changed)
+        self.category_var.trace_add('write', lambda *_args: self._on_category_changed())
 
         self.notebook = ttk.Notebook(root)
         self.notebook.grid(row=1, column=0, sticky='nsew', padx=16, pady=(0, 8))
@@ -144,22 +156,33 @@ class ComboCodeUI:
     def _build_footer(self, brand_png: Path | None):
         footer = ttk.Frame(self.root, style='Footer.TFrame', padding=(14, 4, 14, 10))
         footer.grid(row=2, column=0, sticky='ew')
-        footer.columnconfigure(1, weight=1)
+        footer.columnconfigure(0, weight=1)
 
-        brand = ttk.Label(footer, style='Muted.TLabel', cursor='hand2')
-        brand.grid(row=0, column=0, sticky='sw', padx=(0, 12))
-        brand.bind('<Button-1>', lambda _e: webbrowser.open('https://github.com/ShiduLab'))
+        status = ttk.Label(footer, textvariable=self.status_var, style='Muted.TLabel', anchor='w')
+        status.grid(row=0, column=0, sticky='sw', padx=(0, 16))
+
+        brand_frame = ttk.Frame(footer, style='Footer.TFrame', cursor='hand2')
+        brand_frame.grid(row=0, column=1, sticky='se')
+        brand_frame.bind('<Button-1>', lambda _e: webbrowser.open('https://github.com/ShiduLab'))
+
+        brand_img = ttk.Label(brand_frame, style='Muted.TLabel', cursor='hand2')
+        brand_img.grid(row=0, column=0, sticky='se', padx=(0, 7))
+        brand_img.bind('<Button-1>', lambda _e: webbrowser.open('https://github.com/ShiduLab'))
+
         try:
             if brand_png and brand_png.exists():
                 self._brand_image = tk.PhotoImage(file=str(brand_png))
-                brand.configure(image=self._brand_image)
+                brand_img.configure(image=self._brand_image)
             else:
-                brand.configure(text='ShiduLab')
+                brand_img.configure(text='☠')
         except Exception:
-            brand.configure(text='ShiduLab')
+            brand_img.configure(text='☠')
 
-        status = ttk.Label(footer, textvariable=self.status_var, style='Muted.TLabel', anchor='w')
-        status.grid(row=0, column=1, sticky='sw')
+        brand_text = ttk.Label(
+            brand_frame, text='ShiduLab', style='Brand.TLabel', cursor='hand2'
+        )
+        brand_text.grid(row=0, column=1, sticky='s', pady=(0, 3))
+        brand_text.bind('<Button-1>', lambda _e: webbrowser.open('https://github.com/ShiduLab'))
 
     def _build_search_tab(self):
         tab = self.search_tab
@@ -177,8 +200,8 @@ class ComboCodeUI:
         left.rowconfigure(0, weight=1)
         left.columnconfigure(0, weight=1)
         self.result_tree = ttk.Treeview(left, columns=('cat',), show='tree headings', selectmode='browse')
-        self.result_tree.heading('#0', text='Obiettivo')
-        self.result_tree.heading('cat', text='Categoria')
+        self.result_tree.heading('#0', text='Obiettivo', command=lambda: self.sort_search_results('goal'))
+        self.result_tree.heading('cat', text='Categoria', command=lambda: self.sort_search_results('cat'))
         self.result_tree.column('#0', width=345, anchor='w')
         self.result_tree.column('cat', width=145, anchor='w')
         self.result_tree.grid(row=0, column=0, sticky='nsew')
@@ -354,6 +377,37 @@ class ComboCodeUI:
         entry.selection_range(0, tk.END)
         return 'break'
 
+    def clear_search(self):
+        self.search_var.set('')
+        self.search_sort_col = None
+        self.search_sort_desc = False
+        self.refresh_results()
+        self.search_entry.focus_set()
+        return 'break'
+
+    def _on_category_changed(self, _event=None):
+        if not hasattr(self, 'result_tree'):
+            return
+        self.refresh_results()
+
+    def sort_search_results(self, column: str):
+        if self.search_sort_col == column:
+            self.search_sort_desc = not self.search_sort_desc
+        else:
+            self.search_sort_col = column
+            self.search_sort_desc = False
+        self.refresh_results()
+
+    def _update_search_headings(self):
+        goal_label = 'Obiettivo'
+        cat_label = 'Categoria'
+        if self.search_sort_col == 'goal':
+            goal_label += ' ↓' if self.search_sort_desc else ' ↑'
+        elif self.search_sort_col == 'cat':
+            cat_label += ' ↓' if self.search_sort_desc else ' ↑'
+        self.result_tree.heading('#0', text=goal_label, command=lambda: self.sort_search_results('goal'))
+        self.result_tree.heading('cat', text=cat_label, command=lambda: self.sort_search_results('cat'))
+
     def refresh_all_views(self):
         self.refresh_results()
         self.refresh_archive()
@@ -363,6 +417,20 @@ class ComboCodeUI:
         query = self.search_var.get()
         category = self.category_var.get()
         self.current_hits = self.kb.search(query, category)
+        if self.search_sort_col == 'goal':
+            self.current_hits.sort(
+                key=lambda h: h.goal.get('name', '').casefold(),
+                reverse=self.search_sort_desc,
+            )
+        elif self.search_sort_col == 'cat':
+            self.current_hits.sort(
+                key=lambda h: (
+                    h.goal.get('category', '').casefold(),
+                    h.goal.get('name', '').casefold(),
+                ),
+                reverse=self.search_sort_desc,
+            )
+        self._update_search_headings()
         for item in self.result_tree.get_children():
             self.result_tree.delete(item)
         for idx, hit in enumerate(self.current_hits):
@@ -457,6 +525,8 @@ class ComboCodeUI:
         self.archive_category_var.set('Tutte')
         self.archive_sort_col = 'goal'
         self.archive_sort_desc = False
+        self.search_sort_col = None
+        self.search_sort_desc = False
         self.refresh_archive()
         self.archive_search.focus_set()
 
@@ -547,11 +617,7 @@ class ComboCodeUI:
         self._sync_run_buttons()
 
     def _sync_run_buttons(self):
-        can_run = bool(
-            self.current_route
-            and self.current_route.get('executable', False)
-            and self.current_route.get('safety') != 'DESTRUCTIVE'
-        )
+        can_run = bool(self.current_route)
         for button in self.run_buttons:
             if can_run:
                 button.state(['!disabled'])
@@ -570,8 +636,20 @@ class ComboCodeUI:
     def execute_selected(self):
         if not self.current_goal or not self.current_route:
             return 'break'
-        if self.current_route.get('safety') == 'ELEVATED':
-            ok = messagebox.askyesno('ComboCode', 'Questa route può richiedere privilegi amministrativi. Continuare?')
+        safety = str(self.current_route.get('safety', 'SAFE')).upper()
+        value = self.current_route.get('value', '')
+        if safety == 'ELEVATED':
+            ok = messagebox.askyesno(
+                'ComboCode — Conferma',
+                f'Questa route può richiedere privilegi amministrativi.\n\n{value}\n\nEseguire?'
+            )
+            if not ok:
+                return 'break'
+        elif safety == 'DESTRUCTIVE':
+            ok = messagebox.askyesno(
+                'ComboCode — ATTENZIONE',
+                f'Questa route può modificare o cancellare dati/configurazioni.\n\n{value}\n\nVuoi eseguirla davvero?'
+            )
             if not ok:
                 return 'break'
         try:

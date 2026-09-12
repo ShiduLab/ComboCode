@@ -462,7 +462,7 @@ Non è quindi soltanto un archivio di stringhe.
 
 ## Regola grafica ShiduLab
 
-**Botolo + ShiduLab devono essere sempre presenti in basso a sinistra nell'interfaccia di ComboCode.**
+**Botolo + ShiduLab devono essere sempre presenti in basso a destra nell'interfaccia di ComboCode.**
 
 Regola permanente del progetto:
 - discreti;
@@ -470,7 +470,7 @@ Regola permanente del progetto:
 - senza card, riquadri o fondi aggiuntivi;
 - sempre leggibili;
 - non devono interferire con i controlli;
-- posizione canonica: **basso a sinistra**.
+- posizione canonica: **basso a destra**.
 
 ## Smussature emerse dal test v2
 
@@ -515,3 +515,20 @@ La v3 incorpora le smussature emerse dall'uso reale della v2:
 - [[Windows 2000 XP]]
 - [[Botolo]]
 - [[ShiduLab]]
+
+
+## Stato implementazione v4
+
+Smussature nate dal test reale della v3:
+
+- Botolo + ShiduLab spostati in **basso a destra** per non interferire con le informazioni di stato;
+- `ShiduLab` non è più testo raster nero nell'immagine: viene disegnato dalla GUI e segue il tema chiaro/scuro;
+- pulsante `×` alla fine della ricerca per azzerare immediatamente la query;
+- filtro Categoria della pagina CERCA reso esplicitamente reattivo;
+- intestazioni `Obiettivo` e `Categoria` della pagina CERCA ordinabili crescente/decrescente;
+- intestazioni della pagina TUTTI restano ordinabili;
+- APRI/ESEGUI disponibile per ogni route;
+- ELEVATED e DESTRUCTIVE chiedono conferma ma non vengono bloccati;
+- fallback di esecuzione per le route storiche importate;
+- invio diretto delle HOTKEY su Windows.
+

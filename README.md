@@ -7,6 +7,20 @@
 
 La ricerca parte dall'intenzione: scrivi `Connessioni di rete`, `schede di rete`, `ncpa`, `ethernet` o `wifi` e ComboCode converge sullo stesso obiettivo mostrando le route disponibili.
 
+
+## v4 — smussature dal test reale
+
+- Botolo + **ShiduLab** spostati in basso a destra.
+- Scritta ShiduLab renderizzata dalla GUI: segue automaticamente i colori del tema.
+- X nella casella di ricerca per azzerare subito la query.
+- Filtro categoria in alto collegato direttamente al motore di ricerca.
+- Ordinamento cliccabile anche nella pagina **CERCA** (`Obiettivo`, `Categoria`), crescente/decrescente.
+- Ordinamento della pagina **TUTTI** mantenuto su tutte le colonne.
+- `APRI / ESEGUI` non blocca più le route importate/legacy.
+- Route `ELEVATED` e `DESTRUCTIVE`: conferma esplicita, poi esecuzione.
+- Le HOTKEY possono essere inviate direttamente da ComboCode su Windows.
+- Le route archivistiche non riconosciute usano un fallback CMD: se Windows le supporta vengono eseguite, altrimenti restituiscono l'errore reale del sistema.
+
 ## v3 — GUI moderna + archivio vero
 
 La v3 nasce direttamente dalle prime prove d'uso reali.

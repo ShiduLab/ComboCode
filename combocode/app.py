@@ -14,7 +14,7 @@ def _prepare_windows_process() -> None:
         return
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v3')
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v4')
     except Exception:
         pass
     try:
@@ -42,7 +42,7 @@ def main() -> None:
         store,
         icon_png=resource_path('assets/combocode-icon.png'),
         icon_ico=resource_path('assets/combocode-icon.ico'),
-        brand_png=resource_path('assets/shidulab-botolo-small.png'),
+        brand_png=resource_path('assets/shidulab-botolo-mark.png'),
     )
     app.run()
 
