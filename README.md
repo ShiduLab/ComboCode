@@ -3,219 +3,228 @@
 > L'utente non deve ricordare **come** si raggiunge qualcosa.  
 > Deve sapere soltanto **cosa vuole ottenere**.
 
-**ComboCode** è un motore locale di accesso rapido a funzioni, pannelli, shortcut e comandi Windows.
+**Versione attuale: 8.0.0**
 
-La ricerca parte dall'intenzione: scrivi `Connessioni di rete`, `schede di rete`, `ncpa`, `ethernet` o `wifi` e ComboCode converge sullo stesso obiettivo mostrando le route disponibili.
+ComboCode è un motore locale, keyboard-first, per trovare e usare shortcut, comandi, pannelli e route di accesso a Windows e alle applicazioni.
 
+L'idea centrale è semplice:
 
+**un obiettivo → più route**
 
-## v5 — dropdown rifatto
+Per esempio, cercando `Connessioni di rete`, ComboCode può proporre più strade per arrivare allo stesso punto: RUN, CMD, URI o altre route disponibili.
 
-Il filtro in alto a destra non usa più `ttk.Combobox`.
+## Stato archivio v8
 
-È stato sostituito con un **Menubutton + Menu nativo Tk**, più semplice e affidabile:
-- click apre sempre la lista;
-- scelta categoria aggiorna immediatamente CERCA;
-- stessa soluzione applicata anche ai filtri Tipo/Categoria nella pagina TUTTI;
-- menu ricolorato quando Windows passa da tema chiaro a scuro.
+Archivio standard incluso:
 
-## v4 — smussature dal test reale
-
-- Botolo + **ShiduLab** spostati in basso a destra.
-- Scritta ShiduLab renderizzata dalla GUI: segue automaticamente i colori del tema.
-- X nella casella di ricerca per azzerare subito la query.
-- Filtro categoria in alto collegato direttamente al motore di ricerca.
-- Ordinamento cliccabile anche nella pagina **CERCA** (`Obiettivo`, `Categoria`), crescente/decrescente.
-- Ordinamento della pagina **TUTTI** mantenuto su tutte le colonne.
-- `APRI / ESEGUI` non blocca più le route importate/legacy.
-- Route `ELEVATED` e `DESTRUCTIVE`: conferma esplicita, poi esecuzione.
-- Le HOTKEY possono essere inviate direttamente da ComboCode su Windows.
-- Le route archivistiche non riconosciute usano un fallback CMD: se Windows le supporta vengono eseguite, altrimenti restituiscono l'errore reale del sistema.
-
-## v3 — GUI moderna + archivio vero
-
-La v3 nasce direttamente dalle prime prove d'uso reali.
-
-- GUI ridisegnata con `ttk` moderno: niente look Win95.
-- Tema **automatico Sistema**: segue il tema chiaro/scuro di Windows anche se viene cambiato mentre ComboCode è aperto.
-- DPI/scaling Windows gestito in modalità per-monitor quando disponibile.
-- Icona ComboCode forzata anche nella **barra del titolo**, oltre a EXE e taskbar.
-- **Botolo + ShiduLab** canonici, trasparenti, sempre in basso a sinistra.
-- La pagina **TUTTI** ha filtri propri e non eredita più la categoria della pagina CERCA: a filtri azzerati mostra realmente l'intero archivio.
-- Tutte le intestazioni di TUTTI sono cliccabili: `Obiettivo`, `Tipo`, `Comando`, `Categoria`, `Sicurezza`, `Verifica`.
-- Secondo click sulla stessa intestazione inverte crescente/decrescente.
-- Archivio ampliato con le liste storiche ESEGUI/DOS fornite dall'utente.
-- Le voci storiche non vengono corrette o rese eseguibili di nascosto: sono marcate `LEGACY` o `da verificare`.
-
-### Dimensione archivio v3
-
-- **290 obiettivi**
-- **308 route**
+- **861 obiettivi**
+- **941 route**
+- **667 HOTKEY**
 - **149 RUN**
 - **125 CMD**
-- **34 HOTKEY**
 
-## Ricerca e archivio sono due cose diverse
+A questo archivio si aggiungono le shortcut personali create dall'utente nella pagina **MIE**.
+
+## Interfaccia
+
+ComboCode ha tre aree principali:
 
 ### CERCA
 
-Serve quando sai **cosa vuoi ottenere**.
+Per quando sai **cosa vuoi ottenere**.
 
-La ricerca usa:
-- nome;
-- alias;
-- descrizione;
-- categoria;
-- keyword;
-- stringa del comando;
-- note della route.
+La ricerca indicizza obiettivo, alias, descrizione, categoria, keyword, comando/stringa, note e contesto.
+
+La `×` a destra del campo ricerca azzera immediatamente la query.
+
+Il menu Categoria usa un menu popup dedicato, non il vecchio `ttk.Combobox`.
 
 ### TUTTI
 
-È l'atlante completo di ciò che ComboCode conosce.
+È l'atlante completo dell'archivio.
 
-Ha filtri indipendenti per:
-- testo;
-- tipo;
-- categoria.
+Permette di vedere tutte le route, filtrare per testo/tipo/categoria e ordinare cliccando sulle intestazioni. Un secondo click inverte crescente/decrescente.
 
-`AZZERA` riporta immediatamente alla vista completa.
+### MIE
 
-## Esempi
+Archivio personale dell'utente.
 
-Cerca:
+Permette di aggiungere, modificare, eliminare, cercare, duplicare una route standard e personalizzarla, importare ed esportare JSON.
 
-`Esegui`
+Le personalizzazioni vengono salvate fuori dall'EXE in:
 
-Risposta:
+`%APPDATA%\ShiduLab\ComboCode\user_shortcuts.json`
 
-`HOTKEY — WIN + R`
+Quindi non vengono perse aggiornando ComboCode.
 
-Cerca:
+## Aggiungi shortcut
 
-`Connessioni di rete`
+Campi disponibili:
 
-Tra le route:
+- **A cosa serve**
+- **Tipo**
+- **Tasti / stringa / gesto**
+- **Contesto**
+- **Alias**
+- **Sicurezza**
+- **Note**
 
-`RUN — ncpa.cpl`
+Tipi previsti:
 
-`CMD — control netconnections`
+`HOTKEY · MOUSE · KEY+MOUSE · RUN · CMD · POWERSHELL · URI · APP · ALTRO`
 
-`RUN — ms-settings:network-advancedsettings`
+Questo permette di registrare anche shortcut personali di Windows o di qualunque programma, oltre a gesture tipo `CTRL + rotellina`.
 
-Cerca:
+## Windows
 
-`tastiera`
+Il catalogo Windows comprende shortcut contestuali per modifica testo, desktop, tasto WIN, Prompt dei comandi, finestre di dialogo, Esplora file, desktop virtuali, barra delle applicazioni, Impostazioni, Accessibilità e Lente d'ingrandimento.
 
-Trovi, fra le altre:
-- Tastiera su schermo;
-- Impostazioni digitazione;
-- Accessibilità tastiera;
-- Tastiera virtuale/touch;
-- Proprietà tastiera classiche;
-- Lingua e layout tastiera.
+Sono inoltre presenti route RUN, CMD, CPL, MSC, URI e materiale storico ESEGUI/DOS. Le voci legacy restano distinguibili dalle route moderne.
 
-## Archivio storico dell'utente
+## Browser
 
-La v3 incorpora, come **fonte archivistica**, i tre documenti forniti durante lo sviluppo:
+Sono presenti pack separati per:
 
-- `comandi Esegui_dos.docx`
-- `Comandi Esegui_Dos2.docx`
-- `Comandi Esegui_Dos3.docx`
+- Browser comuni
+- Opera
+- Google Chrome
+- Microsoft Edge
+- Mozilla Firefox
 
-La terza lista è stata usata come base più estesa; le precedenti restano parte della provenienza del materiale.
+Le stesse combinazioni possono comparire in più browser quando il contesto cambia. Il contesto applicativo è parte del dato.
 
-Le voci non già presenti nei pack moderni verificati sono conservate con:
-- fonte;
-- descrizione originaria;
-- stato `LEGACY` oppure `da verificare`;
-- esecuzione disabilitata finché non vengono controllate sulla versione corrente di Windows.
+## Esecuzione
 
-Questa distinzione evita di trasformare materiale storico Windows 2000/XP in falsi comandi “attuali”.
+`APRI / ESEGUI` prova a lanciare la route selezionata.
 
-## Sicurezza
+- `SAFE`: esecuzione diretta
+- `ELEVATED`: conferma, poi richiesta privilegi quando necessaria
+- `DESTRUCTIVE`: conferma esplicita prima dell'esecuzione
 
-ComboCode distingue:
+Le HOTKEY supportate possono essere inviate direttamente da ComboCode su Windows. Le gesture `MOUSE` e `KEY+MOUSE` vengono archiviate e mostrate come istruzioni operative.
 
-- `SAFE`
-- `ELEVATED`
-- `DESTRUCTIVE`
+## Grafica
 
-Le voci archivistiche non verificate sono informative/copiabili e non vengono eseguite automaticamente.
+- tema chiaro/scuro adattato al sistema
+- scaling/DPI Windows
+- icona ComboCode nell'EXE, taskbar e finestra
+- **Botolo + ShiduLab in basso a destra**
+- testo ShiduLab adattato ai colori del tema
 
-## Tastiera
+## Shortcut interne ComboCode
 
 | Tasto | Azione |
 |---|---|
-| `Ctrl+K` / `Ctrl+L` | focus sulla ricerca della pagina attiva |
+| `Ctrl+K` / `Ctrl+L` | focus ricerca |
 | `Ctrl+1` | CERCA |
 | `Ctrl+2` | TUTTI |
-| `↓` | passa dalla ricerca alla lista |
-| `Invio` | apri/esegui la route selezionata |
-| `Ctrl+C` | copia la route |
+| `Ctrl+3` | MIE |
+| `Ctrl+Shift+A` | Aggiungi shortcut |
+| `↓` | passa alla lista |
+| `Invio` | Apri / Esegui |
+| `Ctrl+C` | copia route |
 | `Ctrl+F` | preferito |
-| `Ctrl+M` | esporta il nodo come Markdown Obsidian |
+| `Ctrl+M` | esporta Markdown |
 | `F1` | aiuto |
 | `Esc` | chiudi |
 
 ## Obsidian
 
-Il pulsante **ESPORTA .MD** produce una nota con frontmatter, route e WikiLink per `[[OlogrammIo]]`.
+ComboCode può esportare una voce come nota Markdown con frontmatter e WikiLink per `[[OlogrammIo]]`.
 
-Il progetto stesso mantiene documentazione Obsidian-ready in `docs/`.
+La documentazione del progetto è in `docs/`.
+
+## Fonti e provenienza
+
+Le fonti moderne sono elencate in `docs/SOURCES.md`.
+
+L'archivio storico fornito durante lo sviluppo è documentato in `docs/USER_ARCHIVE_SOURCES.md` e comprende:
+
+- `comandi Esegui_dos.docx`
+- `Comandi Esegui_Dos2.docx`
+- `Comandi Esegui_Dos3.docx`
 
 ## Avvio da sorgente
 
-Richiede Python 3.10+ su Windows. Tkinter e SQLite fanno parte della distribuzione standard di Python.
+Richiede Python 3.10+ su Windows.
 
 ```bash
 python main.py
 ```
 
-## EXE con GitHub Actions
+## Build EXE con GitHub Actions
 
-Dopo il push su `main`, Actions:
+Dopo il push su `main`, GitHub Actions:
 
-1. esegue i test;
-2. installa PyInstaller;
-3. genera `ComboCode v3.exe` senza console;
-4. pubblica l'artifact `ComboCode-Windows-v3`.
+1. esegue i test
+2. installa PyInstaller
+3. genera **`ComboCode v8.exe`**
+4. pubblica l'artifact **`ComboCode-Windows-v8`**
+
+## Cronologia
+
+### v8 — Personalizzazione
+
+- nuova pagina **MIE**
+- `+ AGGIUNGI SHORTCUT`
+- tipi MOUSE e KEY+MOUSE
+- contesto personalizzabile
+- modifica/elimina
+- import/export JSON
+- duplicazione di route standard
+- persistenza separata dagli aggiornamenti
+
+### v7 — Browser
+
+- Browser comuni
+- Opera
+- Chrome
+- Edge
+- Firefox
+- centinaia di route di navigazione e controllo browser
+
+### v6 — Shortcut Windows
+
+- ampliamento massiccio delle scorciatoie da tastiera Windows
+- catalogazione per contesto
+- accessibilità e navigazione incluse
+
+### v5 — Menu a tendina
+
+- eliminato `ttk.Combobox`
+- introdotti `Menubutton + Menu` per i filtri
+
+### v4 — Smussature operative
+
+- Botolo + ShiduLab spostati a destra
+- `×` nella ricerca
+- ordinamento CERCA/TUTTI
+- esecuzione route legacy sbloccata con conferme di sicurezza
+
+### v3 — GUI e archivio
+
+- GUI adattiva chiaro/scuro
+- DPI/scaling
+- pagina TUTTI reale
+- ordinamento colonne
+- import archivio storico
+
+### v2 — Primo ampliamento
+
+- ricerca semantica più ampia
+- famiglia Tastiera
+- archivio CMD ampliato
+- pagina TUTTI
+
+### v1 — Primo prototipo operativo
+
+- ricerca per intenzione
+- HOTKEY / RUN / CMD
+- preferiti
+- copia
+- export Markdown
+- database a pack JSON
 
 ---
 
 **ShiduLab non programma, indica.**
-
-## v6 — catalogo completo scorciatoie Windows
-
-La v6 smette di trattare le HOTKEY come un campione iniziale e importa un catalogo strutturato dalle pagine ufficiali Microsoft per Windows 11/10.
-
-Aggiunte **257 voci contestuali HOTKEY** suddivise in:
-- modifica testo;
-- desktop e comandi generali;
-- combinazioni con tasto WIN;
-- tastiera del Prompt dei comandi;
-- finestre di dialogo;
-- Esplora file;
-- desktop virtuali;
-- barra delle applicazioni;
-- Impostazioni;
-- Accessibilità / Lente.
-
-Le stesse combinazioni possono comparire più volte quando Windows assegna loro un significato diverso in contesti differenti: è voluto.
-
-Fonte primaria: Microsoft Support — Keyboard shortcuts in Windows e Windows keyboard shortcuts for accessibility.
-
-## v7 — navigazione browser
-
-La v7 aggiunge **314 obiettivi browser** con route HOTKEY per Windows.
-
-Pack:
-- Browser comuni;
-- Opera;
-- Google Chrome;
-- Microsoft Edge;
-- Mozilla Firefox.
-
-Le voci sono mantenute separate per browser anche quando la combinazione coincide, perché il contesto applicativo è parte del dato.
-
-Fonti: documentazione ufficiale Opera, Google Chrome, Microsoft Edge e Mozilla Firefox.
