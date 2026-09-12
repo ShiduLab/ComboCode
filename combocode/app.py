@@ -9,14 +9,30 @@ def resource_path(relative: str) -> Path:
     return base / relative
 
 
+def _set_windows_app_id() -> None:
+    if sys.platform != 'win32':
+        return
+    try:
+        import ctypes
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v2')
+    except Exception:
+        pass
+
+
 def main() -> None:
     from .engine import KnowledgeBase
     from .storage import UserStore
     from .ui import ComboCodeUI
 
+    _set_windows_app_id()
     kb = KnowledgeBase.from_pack_dir(resource_path('combocode/data/packs'))
     store = UserStore()
-    app = ComboCodeUI(kb, store)
+    app = ComboCodeUI(
+        kb,
+        store,
+        icon_png=resource_path('assets/combocode-icon.png'),
+        icon_ico=resource_path('assets/combocode-icon.ico'),
+    )
     app.run()
 
 

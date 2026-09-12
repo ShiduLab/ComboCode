@@ -1,0 +1,2864 @@
+{
+  "name": "Windows CMD Reference",
+  "version": "2.0.0",
+  "updated": "2026-09-12",
+  "goals": [
+    {
+      "id": "cmd.ref.assoc",
+      "name": "ASSOC — Associazioni estensioni file",
+      "category": "CMD",
+      "description": "Visualizza o modifica le associazioni tra estensioni e tipi di file.",
+      "aliases": [
+        "assoc",
+        "associazioni estensioni file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "associazioni",
+        "file",
+        "estensioni"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "assoc",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica le associazioni tra estensioni e tipi di file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.attrib",
+      "name": "ATTRIB — Attributi file",
+      "category": "CMD",
+      "description": "Visualizza o modifica gli attributi di file e cartelle.",
+      "aliases": [
+        "attrib",
+        "attributi file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "hidden",
+        "readonly",
+        "system",
+        "archive"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "attrib",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica gli attributi di file e cartelle. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.bcdedit",
+      "name": "BCDEDIT — Configurazione avvio BCD",
+      "category": "CMD",
+      "description": "Visualizza o modifica il Boot Configuration Data di Windows.",
+      "aliases": [
+        "bcdedit",
+        "configurazione avvio bcd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "boot",
+        "avvio",
+        "bootloader"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "bcdedit",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica il Boot Configuration Data di Windows. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.call",
+      "name": "CALL — Richiama batch",
+      "category": "CMD",
+      "description": "Richiama un altro file batch da uno script CMD.",
+      "aliases": [
+        "call",
+        "richiama batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "script"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "call",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Richiama un altro file batch da uno script CMD. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.cd",
+      "name": "CD — Cambia directory",
+      "category": "CMD",
+      "description": "Mostra o cambia la directory corrente.",
+      "aliases": [
+        "cd",
+        "cambia directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "chdir",
+        "cartella",
+        "percorso"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "cd",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o cambia la directory corrente. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.chcp",
+      "name": "CHCP — Code page console",
+      "category": "CMD",
+      "description": "Mostra o imposta la code page attiva della console.",
+      "aliases": [
+        "chcp",
+        "code page console"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "encoding",
+        "charset",
+        "console"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "chcp",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o imposta la code page attiva della console. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.chkdsk",
+      "name": "CHKDSK — Controllo disco",
+      "category": "CMD",
+      "description": "Controlla un volume e, con opzioni specifiche, può correggere errori.",
+      "aliases": [
+        "chkdsk",
+        "controllo disco"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "check",
+        "filesystem"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "chkdsk",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Controlla un volume e, con opzioni specifiche, può correggere errori. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.chkntfs",
+      "name": "CHKNTFS — Controllo CHKDSK all’avvio",
+      "category": "CMD",
+      "description": "Visualizza o modifica il controllo automatico dei volumi all’avvio.",
+      "aliases": [
+        "chkntfs",
+        "controllo chkdsk all’avvio"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "boot",
+        "disk",
+        "check"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "chkntfs",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica il controllo automatico dei volumi all’avvio. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.choice",
+      "name": "CHOICE — Scelta interattiva",
+      "category": "CMD",
+      "description": "Richiede una scelta all’utente in batch e restituisce un codice di uscita.",
+      "aliases": [
+        "choice",
+        "scelta interattiva"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "menu",
+        "prompt"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "choice",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Richiede una scelta all’utente in batch e restituisce un codice di uscita. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.cipher",
+      "name": "CIPHER — Crittografia EFS",
+      "category": "CMD",
+      "description": "Gestisce la crittografia EFS su volumi NTFS.",
+      "aliases": [
+        "cipher",
+        "crittografia efs"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "efs",
+        "encryption",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "cipher",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Gestisce la crittografia EFS su volumi NTFS. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.clip",
+      "name": "CLIP — Copia output negli appunti",
+      "category": "CMD",
+      "description": "Reindirizza l’output della riga di comando negli appunti di Windows.",
+      "aliases": [
+        "clip",
+        "copia output negli appunti"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "clipboard",
+        "appunti",
+        "pipe"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "clip",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Reindirizza l’output della riga di comando negli appunti di Windows. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.cls",
+      "name": "CLS — Pulisci schermo CMD",
+      "category": "CMD",
+      "description": "Cancella il contenuto visualizzato nella finestra del Prompt dei comandi.",
+      "aliases": [
+        "cls",
+        "pulisci schermo cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "clear",
+        "screen",
+        "console"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "cls",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Cancella il contenuto visualizzato nella finestra del Prompt dei comandi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.cmd",
+      "name": "CMD — Prompt dei comandi",
+      "category": "CMD",
+      "description": "Avvia una nuova istanza di cmd.exe.",
+      "aliases": [
+        "cmd",
+        "prompt dei comandi"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "command",
+        "prompt",
+        "dos",
+        "shell",
+        "terminale"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "cmd",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Avvia una nuova istanza di cmd.exe. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.cmdkey",
+      "name": "CMDKEY — Credenziali memorizzate",
+      "category": "CMD",
+      "description": "Crea, elenca o rimuove credenziali salvate.",
+      "aliases": [
+        "cmdkey",
+        "credenziali memorizzate"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "credentials",
+        "password"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "cmdkey",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea, elenca o rimuove credenziali salvate. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.color",
+      "name": "COLOR — Colori console",
+      "category": "CMD",
+      "description": "Imposta i colori di primo piano e sfondo della console CMD.",
+      "aliases": [
+        "color",
+        "colori console"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "console",
+        "colore"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "color",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Imposta i colori di primo piano e sfondo della console CMD. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.comp",
+      "name": "COMP — Confronta file",
+      "category": "CMD",
+      "description": "Confronta il contenuto di due file o insiemi di file.",
+      "aliases": [
+        "comp",
+        "confronta file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "compare",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "comp",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Confronta il contenuto di due file o insiemi di file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.compact",
+      "name": "COMPACT — Compressione NTFS",
+      "category": "CMD",
+      "description": "Visualizza o modifica la compressione NTFS di file e directory.",
+      "aliases": [
+        "compact",
+        "compressione ntfs"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "ntfs",
+        "compressione"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "compact",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica la compressione NTFS di file e directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.copy",
+      "name": "COPY — Copia file",
+      "category": "CMD",
+      "description": "Copia uno o più file in un’altra posizione.",
+      "aliases": [
+        "copy",
+        "copia file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "file",
+        "copia"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "copy",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Copia uno o più file in un’altra posizione. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.date",
+      "name": "DATE — Data di sistema",
+      "category": "CMD",
+      "description": "Visualizza o imposta la data del sistema.",
+      "aliases": [
+        "date",
+        "data di sistema"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "orologio",
+        "data"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "date",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o imposta la data del sistema. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.del",
+      "name": "DEL — Elimina file",
+      "category": "CMD",
+      "description": "Elimina uno o più file.",
+      "aliases": [
+        "del",
+        "elimina file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "erase",
+        "delete",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "del",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Elimina uno o più file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.dir",
+      "name": "DIR — Elenca directory",
+      "category": "CMD",
+      "description": "Mostra file e sottocartelle di una directory.",
+      "aliases": [
+        "dir",
+        "elenca directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "list",
+        "ls",
+        "cartella"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "dir",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra file e sottocartelle di una directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.diskpart",
+      "name": "DISKPART — Gestione dischi DiskPart",
+      "category": "CMD",
+      "description": "Avvia l’interprete DiskPart per dischi, volumi e partizioni.",
+      "aliases": [
+        "diskpart",
+        "gestione dischi diskpart"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "partition",
+        "volume",
+        "disk"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "diskpart",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Avvia l’interprete DiskPart per dischi, volumi e partizioni. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.doskey",
+      "name": "DOSKEY — Cronologia e macro CMD",
+      "category": "CMD",
+      "description": "Gestisce cronologia, editing e macro del Prompt dei comandi.",
+      "aliases": [
+        "doskey",
+        "cronologia e macro cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "history",
+        "macro",
+        "command",
+        "prompt"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "doskey",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Gestisce cronologia, editing e macro del Prompt dei comandi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.echo",
+      "name": "ECHO — Stampa testo / echo batch",
+      "category": "CMD",
+      "description": "Visualizza messaggi o abilita/disabilita l’eco dei comandi nei batch.",
+      "aliases": [
+        "echo",
+        "stampa testo / echo batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "output",
+        "testo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "echo",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza messaggi o abilita/disabilita l’eco dei comandi nei batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.endlocal",
+      "name": "ENDLOCAL — Fine ambiente locale batch",
+      "category": "CMD",
+      "description": "Termina la localizzazione delle variabili avviata con SETLOCAL.",
+      "aliases": [
+        "endlocal",
+        "fine ambiente locale batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "variabili"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "endlocal",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Termina la localizzazione delle variabili avviata con SETLOCAL. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.erase",
+      "name": "ERASE — Elimina file (ERASE)",
+      "category": "CMD",
+      "description": "Alias funzionale di DEL per eliminare file.",
+      "aliases": [
+        "erase",
+        "elimina file (erase)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "delete",
+        "del",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "erase",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Alias funzionale di DEL per eliminare file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.exit",
+      "name": "EXIT — Esci da CMD",
+      "category": "CMD",
+      "description": "Chiude l’istanza corrente del Prompt dei comandi o termina uno script.",
+      "aliases": [
+        "exit",
+        "esci da cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "chiudi",
+        "shell",
+        "terminale"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "exit",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Chiude l’istanza corrente del Prompt dei comandi o termina uno script. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.fc",
+      "name": "FC — Confronta file (FC)",
+      "category": "CMD",
+      "description": "Confronta due file o gruppi di file e mostra le differenze.",
+      "aliases": [
+        "fc",
+        "confronta file (fc)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "file",
+        "compare",
+        "differenze"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "fc",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Confronta due file o gruppi di file e mostra le differenze. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.find",
+      "name": "FIND — Trova testo",
+      "category": "CMD",
+      "description": "Cerca una stringa di testo in uno o più file o nello standard input.",
+      "aliases": [
+        "find",
+        "trova testo"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "search",
+        "grep",
+        "testo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "find",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Cerca una stringa di testo in uno o più file o nello standard input. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.findstr",
+      "name": "FINDSTR — Ricerca testo avanzata",
+      "category": "CMD",
+      "description": "Cerca stringhe o espressioni regolari in file e input.",
+      "aliases": [
+        "findstr",
+        "ricerca testo avanzata"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "grep",
+        "regex",
+        "ricerca",
+        "testo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "findstr",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Cerca stringhe o espressioni regolari in file e input. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.for",
+      "name": "FOR — Ciclo FOR",
+      "category": "CMD",
+      "description": "Esegue un comando ripetutamente su file, stringhe o risultati.",
+      "aliases": [
+        "for",
+        "ciclo for"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "loop",
+        "ciclo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "for",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esegue un comando ripetutamente su file, stringhe o risultati. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.format",
+      "name": "FORMAT — Formatta volume",
+      "category": "CMD",
+      "description": "Formatta un disco o volume.",
+      "aliases": [
+        "format",
+        "formatta volume"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "volume",
+        "filesystem"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "format",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Formatta un disco o volume. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.fsutil",
+      "name": "FSUTIL — Utility file system",
+      "category": "CMD",
+      "description": "Esegue operazioni avanzate su file system e volumi.",
+      "aliases": [
+        "fsutil",
+        "utility file system"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "filesystem",
+        "ntfs",
+        "advanced"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "fsutil",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esegue operazioni avanzate su file system e volumi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.ftype",
+      "name": "FTYPE — Tipi di file",
+      "category": "CMD",
+      "description": "Visualizza o modifica i comandi associati ai tipi di file.",
+      "aliases": [
+        "ftype",
+        "tipi di file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "file",
+        "type",
+        "associazione"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ftype",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica i comandi associati ai tipi di file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.goto",
+      "name": "GOTO — Salta a etichetta batch",
+      "category": "CMD",
+      "description": "Trasferisce l’esecuzione a un’etichetta in un file batch.",
+      "aliases": [
+        "goto",
+        "salta a etichetta batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "label",
+        "jump"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "goto",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Trasferisce l’esecuzione a un’etichetta in un file batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.help",
+      "name": "HELP — Guida comandi CMD",
+      "category": "CMD",
+      "description": "Elenca i comandi disponibili o mostra la guida di un comando.",
+      "aliases": [
+        "help",
+        "guida comandi cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "manuale",
+        "guida",
+        "dos",
+        "prompt"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "help",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Elenca i comandi disponibili o mostra la guida di un comando. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.icacls",
+      "name": "ICACLS — Permessi NTFS",
+      "category": "CMD",
+      "description": "Visualizza o modifica ACL e permessi di file e cartelle.",
+      "aliases": [
+        "icacls",
+        "permessi ntfs"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "permissions",
+        "acl",
+        "sicurezza"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "icacls",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o modifica ACL e permessi di file e cartelle. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.if",
+      "name": "IF — Condizione IF",
+      "category": "CMD",
+      "description": "Esegue condizioni logiche nei file batch.",
+      "aliases": [
+        "if",
+        "condizione if"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "condition"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "if",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Esegue condizioni logiche nei file batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.label",
+      "name": "LABEL — Etichetta volume",
+      "category": "CMD",
+      "description": "Crea, modifica o elimina l’etichetta di un volume.",
+      "aliases": [
+        "label",
+        "etichetta volume"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "volume",
+        "name"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "label",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea, modifica o elimina l’etichetta di un volume. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.md",
+      "name": "MD — Crea directory",
+      "category": "CMD",
+      "description": "Crea una o più directory.",
+      "aliases": [
+        "md",
+        "crea directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "mkdir",
+        "cartella"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "md",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea una o più directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.mkdir",
+      "name": "MKDIR — Crea directory (MKDIR)",
+      "category": "CMD",
+      "description": "Crea una o più directory.",
+      "aliases": [
+        "mkdir",
+        "crea directory (mkdir)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "md",
+        "cartella"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "mkdir",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea una o più directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.mklink",
+      "name": "MKLINK — Collegamenti simbolici",
+      "category": "CMD",
+      "description": "Crea link simbolici, hard link o junction.",
+      "aliases": [
+        "mklink",
+        "collegamenti simbolici"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "symlink",
+        "junction",
+        "hardlink"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "mklink",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea link simbolici, hard link o junction. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.mode",
+      "name": "MODE — Configura dispositivi console",
+      "category": "CMD",
+      "description": "Configura porte, dispositivi e parametri della console.",
+      "aliases": [
+        "mode",
+        "configura dispositivi console"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "com",
+        "lpt",
+        "console"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "mode",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Configura porte, dispositivi e parametri della console. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.more",
+      "name": "MORE — Paginazione testo",
+      "category": "CMD",
+      "description": "Visualizza output o file una schermata alla volta.",
+      "aliases": [
+        "more",
+        "paginazione testo"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "pager",
+        "testo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "more",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza output o file una schermata alla volta. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.move",
+      "name": "MOVE — Sposta file",
+      "category": "CMD",
+      "description": "Sposta file o rinomina cartelle.",
+      "aliases": [
+        "move",
+        "sposta file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "file",
+        "sposta"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "move",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Sposta file o rinomina cartelle. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.openfiles",
+      "name": "OPENFILES — File aperti remoti/locali",
+      "category": "CMD",
+      "description": "Visualizza o disconnette file e cartelle aperti da utenti remoti.",
+      "aliases": [
+        "openfiles",
+        "file aperti remoti/locali"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "shared",
+        "files",
+        "sessioni"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "openfiles",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o disconnette file e cartelle aperti da utenti remoti. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.path",
+      "name": "PATH — Percorso eseguibili",
+      "category": "CMD",
+      "description": "Mostra o modifica la variabile PATH della sessione CMD.",
+      "aliases": [
+        "path",
+        "percorso eseguibili"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "environment",
+        "executable",
+        "path"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "path",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o modifica la variabile PATH della sessione CMD. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.pathping",
+      "name": "PATHPING — Diagnostica percorso rete",
+      "category": "CMD",
+      "description": "Combina funzioni di ping e tracert e misura perdita di pacchetti per hop.",
+      "aliases": [
+        "pathping",
+        "diagnostica percorso rete"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "ping",
+        "tracert"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "pathping",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Combina funzioni di ping e tracert e misura perdita di pacchetti per hop. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.pause",
+      "name": "PAUSE — Pausa batch",
+      "category": "CMD",
+      "description": "Sospende un file batch finché l’utente non preme un tasto.",
+      "aliases": [
+        "pause",
+        "pausa batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "wait"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "pause",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Sospende un file batch finché l’utente non preme un tasto. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.popd",
+      "name": "POPD — Ripristina directory",
+      "category": "CMD",
+      "description": "Torna alla directory salvata con PUSHD.",
+      "aliases": [
+        "popd",
+        "ripristina directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "directory",
+        "stack"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "popd",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Torna alla directory salvata con PUSHD. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.print",
+      "name": "PRINT — Stampa file di testo",
+      "category": "CMD",
+      "description": "Invia un file di testo a una stampante.",
+      "aliases": [
+        "print",
+        "stampa file di testo"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "printer",
+        "lpt"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "print",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Invia un file di testo a una stampante. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.prompt",
+      "name": "PROMPT — Prompt personalizzato",
+      "category": "CMD",
+      "description": "Modifica l’aspetto del prompt CMD.",
+      "aliases": [
+        "prompt",
+        "prompt personalizzato"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "shell",
+        "prompt",
+        "console"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "prompt",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Modifica l’aspetto del prompt CMD. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.pushd",
+      "name": "PUSHD — Salva/cambia directory",
+      "category": "CMD",
+      "description": "Salva la directory corrente e passa a un’altra.",
+      "aliases": [
+        "pushd",
+        "salva/cambia directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "directory",
+        "stack"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "pushd",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Salva la directory corrente e passa a un’altra. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.rd",
+      "name": "RD — Rimuovi directory",
+      "category": "CMD",
+      "description": "Elimina una directory; con opzioni può eliminarne tutto il contenuto.",
+      "aliases": [
+        "rd",
+        "rimuovi directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "rmdir",
+        "cartella",
+        "delete"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "rd",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Elimina una directory; con opzioni può eliminarne tutto il contenuto. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.recover",
+      "name": "RECOVER — Recupera dati disco",
+      "category": "CMD",
+      "description": "Tenta di recuperare informazioni leggibili da un disco danneggiato.",
+      "aliases": [
+        "recover",
+        "recupera dati disco"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "recovery"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "recover",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Tenta di recuperare informazioni leggibili da un disco danneggiato. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.rem",
+      "name": "REM — Commento batch",
+      "category": "CMD",
+      "description": "Inserisce commenti in un file batch.",
+      "aliases": [
+        "rem",
+        "commento batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "comment"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "rem",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Inserisce commenti in un file batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.ren",
+      "name": "REN — Rinomina file",
+      "category": "CMD",
+      "description": "Rinomina file o directory.",
+      "aliases": [
+        "ren",
+        "rinomina file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "rename",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ren",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Rinomina file o directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.rename",
+      "name": "RENAME — Rinomina file (RENAME)",
+      "category": "CMD",
+      "description": "Alias di REN per rinominare file o directory.",
+      "aliases": [
+        "rename",
+        "rinomina file (rename)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "ren",
+        "file"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "rename",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Alias di REN per rinominare file o directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.replace",
+      "name": "REPLACE — Sostituisci file",
+      "category": "CMD",
+      "description": "Sostituisce file in una directory di destinazione.",
+      "aliases": [
+        "replace",
+        "sostituisci file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "file",
+        "update",
+        "replace"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "replace",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Sostituisce file in una directory di destinazione. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.robocopy",
+      "name": "ROBOCOPY — Copia robusta file",
+      "category": "CMD",
+      "description": "Copia file e directory con opzioni avanzate di replica e resilienza.",
+      "aliases": [
+        "robocopy",
+        "copia robusta file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "backup",
+        "mirror",
+        "copy"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "robocopy",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Copia file e directory con opzioni avanzate di replica e resilienza. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.rmdir",
+      "name": "RMDIR — Rimuovi directory (RMDIR)",
+      "category": "CMD",
+      "description": "Alias di RD per eliminare directory.",
+      "aliases": [
+        "rmdir",
+        "rimuovi directory (rmdir)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "rd",
+        "cartella",
+        "delete"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "rmdir",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Alias di RD per eliminare directory. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.sc",
+      "name": "SC — Service Control",
+      "category": "CMD",
+      "description": "Comunica con Service Control Manager per interrogare o gestire servizi.",
+      "aliases": [
+        "sc",
+        "service control"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "services",
+        "service",
+        "control"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "sc",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Comunica con Service Control Manager per interrogare o gestire servizi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.schtasks",
+      "name": "SCHTASKS — Attività pianificate",
+      "category": "CMD",
+      "description": "Crea, modifica, esegue o rimuove attività pianificate.",
+      "aliases": [
+        "schtasks",
+        "attività pianificate"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "task",
+        "scheduler",
+        "pianificazione"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "schtasks",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Crea, modifica, esegue o rimuove attività pianificate. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.set",
+      "name": "SET — Variabili ambiente CMD",
+      "category": "CMD",
+      "description": "Visualizza, imposta o elimina variabili d’ambiente della sessione.",
+      "aliases": [
+        "set",
+        "variabili ambiente cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "environment",
+        "variables",
+        "batch"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "set",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza, imposta o elimina variabili d’ambiente della sessione. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.setlocal",
+      "name": "SETLOCAL — Ambiente locale batch",
+      "category": "CMD",
+      "description": "Localizza modifiche alle variabili d’ambiente in un file batch.",
+      "aliases": [
+        "setlocal",
+        "ambiente locale batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "environment"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "setlocal",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Localizza modifiche alle variabili d’ambiente in un file batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.shift",
+      "name": "SHIFT — Shift parametri batch",
+      "category": "CMD",
+      "description": "Sposta la posizione dei parametri %0…%9 in un file batch.",
+      "aliases": [
+        "shift",
+        "shift parametri batch"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "batch",
+        "arguments"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "shift",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Sposta la posizione dei parametri %0…%9 in un file batch. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.shutdown",
+      "name": "SHUTDOWN — Arresto / riavvio sistema",
+      "category": "CMD",
+      "description": "Arresta, riavvia o disconnette un computer con parametri specifici.",
+      "aliases": [
+        "shutdown",
+        "arresto / riavvio sistema"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "restart",
+        "reboot",
+        "spegni"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "shutdown",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Arresta, riavvia o disconnette un computer con parametri specifici. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.sort",
+      "name": "SORT — Ordina testo",
+      "category": "CMD",
+      "description": "Ordina input testuale alfabeticamente.",
+      "aliases": [
+        "sort",
+        "ordina testo"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "text",
+        "sort",
+        "pipe"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "sort",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Ordina input testuale alfabeticamente. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.start",
+      "name": "START — Avvia programma",
+      "category": "CMD",
+      "description": "Avvia un programma, comando o documento in una nuova finestra/processo.",
+      "aliases": [
+        "start",
+        "avvia programma"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "launch",
+        "open",
+        "process"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "start",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Avvia un programma, comando o documento in una nuova finestra/processo. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.subst",
+      "name": "SUBST — Unità virtuale da percorso",
+      "category": "CMD",
+      "description": "Associa una lettera di unità a un percorso.",
+      "aliases": [
+        "subst",
+        "unità virtuale da percorso"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "drive",
+        "mapping",
+        "cartella"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "subst",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Associa una lettera di unità a un percorso. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.taskkill",
+      "name": "TASKKILL — Termina processi",
+      "category": "CMD",
+      "description": "Termina processi per nome o PID.",
+      "aliases": [
+        "taskkill",
+        "termina processi"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "kill",
+        "processi"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "taskkill",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Termina processi per nome o PID. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.time",
+      "name": "TIME — Ora di sistema",
+      "category": "CMD",
+      "description": "Visualizza o imposta l’ora del sistema.",
+      "aliases": [
+        "time",
+        "ora di sistema"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "clock",
+        "time"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "time",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza o imposta l’ora del sistema. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.title",
+      "name": "TITLE — Titolo finestra CMD",
+      "category": "CMD",
+      "description": "Imposta il titolo della finestra del Prompt dei comandi.",
+      "aliases": [
+        "title",
+        "titolo finestra cmd"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "console",
+        "window"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "title",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Imposta il titolo della finestra del Prompt dei comandi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.tree",
+      "name": "TREE — Albero directory",
+      "category": "CMD",
+      "description": "Mostra graficamente la struttura di cartelle di un percorso.",
+      "aliases": [
+        "tree",
+        "albero directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "directory",
+        "tree"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "tree",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra graficamente la struttura di cartelle di un percorso. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.type",
+      "name": "TYPE — Mostra contenuto file",
+      "category": "CMD",
+      "description": "Visualizza il contenuto di uno o più file di testo.",
+      "aliases": [
+        "type",
+        "mostra contenuto file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "cat",
+        "file",
+        "testo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "type",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Visualizza il contenuto di uno o più file di testo. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.ver",
+      "name": "VER — Versione Windows",
+      "category": "CMD",
+      "description": "Mostra la versione di Windows nel Prompt dei comandi.",
+      "aliases": [
+        "ver",
+        "versione windows"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "version",
+        "os"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ver",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra la versione di Windows nel Prompt dei comandi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.verify",
+      "name": "VERIFY — Verifica scrittura file",
+      "category": "CMD",
+      "description": "Mostra o imposta la verifica della corretta scrittura dei file.",
+      "aliases": [
+        "verify",
+        "verifica scrittura file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "write",
+        "verify"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "verify",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o imposta la verifica della corretta scrittura dei file. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.vol",
+      "name": "VOL — Etichetta e seriale volume",
+      "category": "CMD",
+      "description": "Mostra etichetta e numero seriale di un volume.",
+      "aliases": [
+        "vol",
+        "etichetta e seriale volume"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "disk",
+        "volume",
+        "serial"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "vol",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra etichetta e numero seriale di un volume. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.where",
+      "name": "WHERE — Trova eseguibili/file",
+      "category": "CMD",
+      "description": "Localizza file che corrispondono a un pattern, anche lungo PATH.",
+      "aliases": [
+        "where",
+        "trova eseguibili/file"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "which",
+        "path",
+        "executable"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "where",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Localizza file che corrispondono a un pattern, anche lungo PATH. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.wmic",
+      "name": "WMIC — WMIC (legacy)",
+      "category": "CMD",
+      "description": "Interfaccia a riga di comando WMI; deprecata nelle versioni recenti di Windows.",
+      "aliases": [
+        "wmic",
+        "wmic (legacy)"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "wmi",
+        "legacy",
+        "sistema"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "wmic",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Interfaccia a riga di comando WMI; deprecata nelle versioni recenti di Windows. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.xcopy",
+      "name": "XCOPY — Copia file e directory",
+      "category": "CMD",
+      "description": "Copia file e alberi di directory con opzioni più estese di COPY.",
+      "aliases": [
+        "xcopy",
+        "copia file e directory"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "backup",
+        "copy",
+        "legacy"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "xcopy",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Copia file e alberi di directory con opzioni più estese di COPY. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.arp",
+      "name": "ARP — ARP",
+      "category": "CMD",
+      "description": "Mostra o modifica la cache ARP.",
+      "aliases": [
+        "arp",
+        "arp"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "mac",
+        "ip"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "arp",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o modifica la cache ARP. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.getmac",
+      "name": "GETMAC — Indirizzi MAC",
+      "category": "CMD",
+      "description": "Mostra gli indirizzi MAC degli adattatori di rete.",
+      "aliases": [
+        "getmac",
+        "indirizzi mac"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "mac"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "getmac",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra gli indirizzi MAC degli adattatori di rete. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.ipconfig",
+      "name": "IPCONFIG — Configurazione IP",
+      "category": "CMD",
+      "description": "Mostra e gestisce la configurazione TCP/IP degli adattatori.",
+      "aliases": [
+        "ipconfig",
+        "configurazione ip"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "ip",
+        "dns",
+        "dhcp"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ipconfig",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra e gestisce la configurazione TCP/IP degli adattatori. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.netstat",
+      "name": "NETSTAT — Connessioni e porte",
+      "category": "CMD",
+      "description": "Mostra connessioni TCP, porte in ascolto e statistiche di rete.",
+      "aliases": [
+        "netstat",
+        "connessioni e porte"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "sockets",
+        "porte"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "netstat",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra connessioni TCP, porte in ascolto e statistiche di rete. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.nslookup",
+      "name": "NSLOOKUP — Interroga DNS",
+      "category": "CMD",
+      "description": "Interroga server DNS e risolve nomi/indirizzi.",
+      "aliases": [
+        "nslookup",
+        "interroga dns"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "dns",
+        "resolver"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "nslookup",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Interroga server DNS e risolve nomi/indirizzi. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.ping",
+      "name": "PING — Ping",
+      "category": "CMD",
+      "description": "Verifica raggiungibilità e latenza tramite ICMP.",
+      "aliases": [
+        "ping",
+        "ping"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "icmp",
+        "reachability"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "ping",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Verifica raggiungibilità e latenza tramite ICMP. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.route",
+      "name": "ROUTE — Tabella routing",
+      "category": "CMD",
+      "description": "Mostra o modifica la tabella di routing IP locale.",
+      "aliases": [
+        "route",
+        "tabella routing"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "routing"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "route",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra o modifica la tabella di routing IP locale. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.tracert",
+      "name": "TRACERT — Traccia percorso",
+      "category": "CMD",
+      "description": "Mostra gli hop verso una destinazione IP.",
+      "aliases": [
+        "tracert",
+        "traccia percorso"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "traceroute"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "tracert",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Mostra gli hop verso una destinazione IP. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    },
+    {
+      "id": "cmd.ref.netsh",
+      "name": "NETSH — Network Shell",
+      "category": "CMD",
+      "description": "Configura e interroga componenti di rete tramite Network Shell.",
+      "aliases": [
+        "netsh",
+        "network shell"
+      ],
+      "keywords": [
+        "cmd",
+        "dos",
+        "prompt dei comandi",
+        "command line",
+        "network",
+        "firewall",
+        "wifi",
+        "tcpip"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "netsh",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Microsoft command reference",
+          "source": "https://learn.microsoft.com/en-us/windows-server/administration/windows-commands/windows-commands",
+          "note": "Configura e interroga componenti di rete tramite Network Shell. Voce di catalogo: copia il comando oppure apri la fonte per sintassi e parametri."
+        }
+      ]
+    }
+  ]
+}

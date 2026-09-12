@@ -36,6 +36,39 @@ class EngineTests(unittest.TestCase):
         self.assertTrue(hits)
         self.assertEqual(hits[0].goal['id'], 'net.ipconfig')
 
+    def test_keyboard_query_returns_family(self):
+        hits = self.kb.search('tastiera', limit=None)
+        names = {h.goal['name'] for h in hits}
+        self.assertIn('Tastiera su schermo', names)
+        self.assertIn('Impostazioni digitazione', names)
+        self.assertIn('Accessibilità tastiera', names)
+        self.assertIn('Proprietà tastiera classiche', names)
+        self.assertGreaterEqual(len(hits), 5)
+
+    def test_osk_routes(self):
+        goal = self.kb.by_id['keyboard.onscreen']
+        values = {r['value'] for r in goal['routes']}
+        self.assertIn('WIN + CTRL + O', values)
+        self.assertIn('osk.exe', values)
+
+    def test_archive_contains_every_route(self):
+        expected = sum(len(g.get('routes', [])) for g in self.kb.goals)
+        rows = self.kb.route_rows()
+        self.assertEqual(len(rows), expected)
+
+    def test_archive_cmd_filter(self):
+        rows = self.kb.route_rows(kind='CMD')
+        self.assertGreater(len(rows), 50)
+        self.assertTrue(all(row.route.get('kind') == 'CMD' for row in rows))
+        values = {row.route.get('value') for row in rows}
+        self.assertIn('dir', values)
+        self.assertIn('help', values)
+        self.assertIn('ipconfig /all', values)
+
+    def test_unique_goal_ids(self):
+        ids = [g['id'] for g in self.kb.goals]
+        self.assertEqual(len(ids), len(set(ids)))
+
 
 if __name__ == '__main__':
     unittest.main()

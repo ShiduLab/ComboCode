@@ -178,6 +178,54 @@ Possibili pacchetti:
 
 ---
 
+
+## Pagina TUTTI
+
+ComboCode deve avere una pagina dedicata che raccolga **tutte le voci disponibili**, non solo i risultati di ricerca.
+
+La pagina `TUTTI` deve permettere di vedere l'intero archivio in modo ordinato e filtrabile.
+
+Possibile struttura:
+
+- TUTTI
+- HOTKEY
+- RUN
+- CMD
+- PowerShell
+- CPL
+- MSC
+- URI Windows
+- Applicazioni
+
+Ogni riga mostra almeno:
+- Obiettivo
+- Tipo
+- Comando / combinazione
+- Categoria
+- Stato
+- Versione / compatibilità
+
+Funzioni:
+- ordinamento per colonna;
+- filtro per categoria;
+- ricerca interna;
+- apertura/esecuzione;
+- copia;
+- preferiti;
+- esportazione Markdown;
+- conteggio totale delle voci.
+
+La pagina TUTTI serve anche come **indice generale dell'archivio**, utile per esplorare ciò che l'utente non sa ancora di poter cercare.
+
+In pratica ComboCode deve avere due modalità complementari:
+
+**Ricerca intenzionale**  
+> So cosa voglio ottenere.
+
+**Esplorazione archivio**  
+> Voglio vedere tutto ciò che ComboCode conosce.
+
+
 ## Struttura di una voce
 
 Esempio:
@@ -386,6 +434,23 @@ Non è quindi soltanto un archivio di stringhe.
 È una **mappa delle vie d'accesso operative**.
 
 ---
+
+## Stato implementazione v2
+
+La v2 operativa introduce:
+
+- pagina `TUTTI` con l'intero archivio delle route;
+- filtri per tipo di route;
+- ricerca estesa per famiglie semantiche;
+- nodo/famiglia `Tastiera` con Tastiera su schermo, digitazione, accessibilità, touch keyboard, layout lingua e proprietà classiche;
+- archivio CMD ampliato;
+- icona ComboCode trasparente e centrata;
+- icona incorporata nell'EXE Windows;
+- icona applicata alla finestra e alla taskbar;
+- build GitHub Actions `ComboCode v2.exe`.
+
+Stato v2: **prototipo operativo da smussare mediante uso reale**.
+
 
 ## Formula sintetica
 

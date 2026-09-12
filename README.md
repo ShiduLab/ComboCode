@@ -7,6 +7,16 @@
 
 La ricerca parte dall'intenzione: scrivi `Connessioni di rete`, `schede di rete`, `ncpa`, `ethernet` o `wifi` e ComboCode converge sullo stesso obiettivo mostrando le route disponibili.
 
+## v2 — cosa cambia
+
+- Pagina **TUTTI**: indice completo e filtrabile di tutte le route.
+- Filtro per tipo: HOTKEY, RUN, CMD e le altre famiglie presenti nel database.
+- Ricerca semantica ampliata: una query generica come `tastiera` restituisce la famiglia di funzioni collegate.
+- Nuovo pack **Tastiera Windows**: OSK, digitazione, accessibilità, touch keyboard e proprietà classiche.
+- Pack **CMD reference** ampliato per esplorare direttamente i comandi da prompt.
+- Icona ComboCode integrata nell'EXE, nella finestra e nella taskbar Windows.
+- Versione Windows: **ComboCode v2.exe**.
+
 ## v1 — cosa c'è già
 
 - 92 obiettivi / 106 route iniziali.
@@ -104,8 +114,8 @@ Dopo il push su `main`, Actions:
 
 1. esegue i test;
 2. installa PyInstaller;
-3. genera `ComboCode v1.exe` senza console;
-4. pubblica l'artifact `ComboCode-Windows-v1`.
+3. genera `ComboCode v2.exe` senza console;
+4. pubblica l'artifact `ComboCode-Windows-v2`.
 
 ## Fonti iniziali del pack Windows
 

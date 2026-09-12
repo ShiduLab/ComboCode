@@ -1,0 +1,237 @@
+{
+  "name": "Windows Keyboard",
+  "version": "2.0.0",
+  "updated": "2026-09-12",
+  "goals": [
+    {
+      "id": "keyboard.onscreen",
+      "name": "Tastiera su schermo",
+      "category": "Tastiera",
+      "description": "Apre o attiva la tastiera su schermo (OSK) integrata in Windows.",
+      "aliases": [
+        "tastiera",
+        "tastiera virtuale",
+        "osk",
+        "on screen keyboard",
+        "keyboard on screen"
+      ],
+      "keywords": [
+        "accessibilita",
+        "input",
+        "digitazione",
+        "keyboard"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + CTRL + O",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/it-it/accessibility/windows/windows-keyboard-shortcuts-for-accessibility",
+          "note": "Scorciatoia Windows per attivare/disattivare la tastiera su schermo."
+        },
+        {
+          "kind": "RUN",
+          "value": "osk.exe",
+          "handler": "exe",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://support.microsoft.com/it-it/accessibility/windows/use-the-on-screen-keyboard-osk-to-type",
+          "note": "Avvia direttamente la Tastiera su schermo."
+        }
+      ]
+    },
+    {
+      "id": "keyboard.typing",
+      "name": "Impostazioni digitazione",
+      "category": "Tastiera",
+      "description": "Apre le impostazioni Windows dedicate alla digitazione e ai suggerimenti di testo.",
+      "aliases": [
+        "tastiera",
+        "impostazioni tastiera",
+        "typing",
+        "digitazione",
+        "scrittura"
+      ],
+      "keywords": [
+        "keyboard",
+        "input",
+        "testo",
+        "suggerimenti"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:typing",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale della pagina Digitazione."
+        }
+      ]
+    },
+    {
+      "id": "keyboard.accessibility",
+      "name": "Accessibilità tastiera",
+      "category": "Tastiera",
+      "description": "Apre le opzioni di accessibilità della tastiera: tasti permanenti, filtro tasti e tastiera su schermo.",
+      "aliases": [
+        "tastiera",
+        "accessibilita tastiera",
+        "sticky keys",
+        "filter keys",
+        "tasti permanenti",
+        "filtro tasti"
+      ],
+      "keywords": [
+        "keyboard",
+        "accessibility",
+        "osk"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:easeofaccess-keyboard",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale delle impostazioni Accessibilità > Tastiera."
+        },
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + U",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://support.microsoft.com/it-it/accessibility/windows/windows-keyboard-shortcuts-for-accessibility",
+          "note": "Apre la sezione Accessibilità; da lì è raggiungibile Tastiera."
+        }
+      ]
+    },
+    {
+      "id": "keyboard.touch",
+      "name": "Tastiera virtuale / touch",
+      "category": "Tastiera",
+      "description": "Apre la personalizzazione della tastiera virtuale/touch di Windows.",
+      "aliases": [
+        "tastiera",
+        "touch keyboard",
+        "tastiera touch",
+        "tastiera virtuale"
+      ],
+      "keywords": [
+        "keyboard",
+        "input",
+        "touch"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "ms-settings:personalization-touchkeyboard",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "URI ufficiale della pagina Touch Keyboard; disponibilità dipendente dalla versione di Windows."
+        }
+      ]
+    },
+    {
+      "id": "keyboard.classic",
+      "name": "Proprietà tastiera classiche",
+      "category": "Tastiera",
+      "description": "Apre il pannello classico delle proprietà della tastiera.",
+      "aliases": [
+        "tastiera",
+        "control keyboard",
+        "velocita tastiera",
+        "ripetizione tasti",
+        "keyboard properties"
+      ],
+      "keywords": [
+        "pannello di controllo",
+        "keyboard",
+        "repeat rate"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "control keyboard",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "Apre il pannello classico delle proprietà della tastiera tramite Control Panel."
+        }
+      ]
+    },
+    {
+      "id": "keyboard.language",
+      "name": "Lingua e layout tastiera",
+      "category": "Tastiera",
+      "description": "Cambia layout di input oppure apre lingua e impostazioni avanzate della tastiera.",
+      "aliases": [
+        "tastiera",
+        "lingua tastiera",
+        "layout tastiera",
+        "cambia lingua",
+        "keyboard layout",
+        "input language"
+      ],
+      "keywords": [
+        "keyboard",
+        "language",
+        "layout",
+        "input"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "HOTKEY",
+          "value": "WIN + SPACE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Windows",
+          "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
+          "note": "Scorre tra lingue e layout di input installati."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:regionlanguage",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "Apre le impostazioni di lingua e area geografica."
+        },
+        {
+          "kind": "RUN",
+          "value": "ms-settings:keyboard-advanced",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Microsoft",
+          "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
+          "note": "Apre le impostazioni avanzate della tastiera."
+        }
+      ]
+    }
+  ]
+}

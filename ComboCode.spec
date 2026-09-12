@@ -1,9 +1,12 @@
 # -*- mode: python ; coding: utf-8 -*-
-from PyInstaller.utils.hooks import collect_data_files
 
 block_cipher = None
 
-datas = [('combocode/data/packs', 'combocode/data/packs')]
+datas = [
+    ('combocode/data/packs', 'combocode/data/packs'),
+    ('assets/combocode-icon.png', 'assets'),
+    ('assets/combocode-icon.ico', 'assets'),
+]
 
 a = Analysis(
     ['main.py'],
@@ -24,7 +27,8 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='ComboCode v1',
+    name='ComboCode v2',
+    icon='assets/combocode-icon.ico',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
