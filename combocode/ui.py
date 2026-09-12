@@ -35,6 +35,7 @@ class ComboCodeUI:
         self._icon_image = None
         self._brand_image = None
         self._native_icon_handles = []
+        self._dropdown_menus = []
         self.icon_ico = icon_ico
 
         self.root = tk.Tk()
@@ -110,7 +111,50 @@ class ComboCodeUI:
             self._system_dark = dark
             self.palette = apply_ttk_theme(self.root, self.style, dark)
             self._retag_trees()
+            self._restyle_dropdown_menus()
         self.root.after(1500, self._poll_system_theme)
+
+    def _make_dropdown(self, parent, variable, values, callback, width=18):
+        button = ttk.Menubutton(
+            parent,
+            textvariable=variable,
+            style='Dropdown.TMenubutton',
+            width=width,
+        )
+        menu = tk.Menu(button, tearoff=False)
+        for value in values:
+            menu.add_command(
+                label=value,
+                command=lambda v=value, var=variable, cb=callback: self._select_dropdown(var, v, cb),
+            )
+        button.configure(menu=menu)
+        self._dropdown_menus.append(menu)
+        self._style_dropdown_menu(menu)
+        return button
+
+    def _select_dropdown(self, variable, value, callback):
+        variable.set(value)
+        callback()
+
+    def _style_dropdown_menu(self, menu):
+        p = self.palette
+        try:
+            menu.configure(
+                background=p.field,
+                foreground=p.text,
+                activebackground=p.accent,
+                activeforeground=p.selection_text,
+                selectcolor=p.accent,
+                borderwidth=1,
+                relief='solid',
+                font=('Segoe UI', 10),
+            )
+        except Exception:
+            pass
+
+    def _restyle_dropdown_menus(self):
+        for menu in self._dropdown_menus:
+            self._style_dropdown_menu(menu)
 
     def _build_ui(self, brand_png: Path | None):
         root = self.root
@@ -135,10 +179,14 @@ class ComboCodeUI:
         self.clear_search_button.grid(row=0, column=1, sticky='e', padx=(5, 0))
 
         cats = ['Tutte', *self.kb.categories()]
-        self.category = ttk.Combobox(header, textvariable=self.category_var, values=cats, state='readonly', width=22)
+        self.category = self._make_dropdown(
+            header,
+            self.category_var,
+            cats,
+            self._on_category_changed,
+            width=22,
+        )
         self.category.grid(row=0, column=1, sticky='e')
-        self.category.bind('<<ComboboxSelected>>', self._on_category_changed)
-        self.category_var.trace_add('write', lambda *_args: self._on_category_changed())
 
         self.notebook = ttk.Notebook(root)
         self.notebook.grid(row=1, column=0, sticky='nsew', padx=16, pady=(0, 8))
@@ -259,17 +307,25 @@ class ComboCodeUI:
 
         ttk.Label(bar, text='Tipo:', style='Panel.TLabel').grid(row=0, column=2, sticky='w', padx=(0, 5))
         kinds = ['TUTTI', *self.kb.route_kinds()]
-        self.archive_type = ttk.Combobox(bar, textvariable=self.archive_type_var, values=kinds, state='readonly', width=12)
+        self.archive_type = self._make_dropdown(
+            bar,
+            self.archive_type_var,
+            kinds,
+            self.refresh_archive,
+            width=12,
+        )
         self.archive_type.grid(row=0, column=3, sticky='w', padx=(0, 10))
-        self.archive_type.bind('<<ComboboxSelected>>', lambda _e: self.refresh_archive())
 
         ttk.Label(bar, text='Categoria:', style='Panel.TLabel').grid(row=0, column=4, sticky='w', padx=(0, 5))
         archive_cats = ['Tutte', *self.kb.categories()]
-        self.archive_category = ttk.Combobox(
-            bar, textvariable=self.archive_category_var, values=archive_cats, state='readonly', width=19
+        self.archive_category = self._make_dropdown(
+            bar,
+            self.archive_category_var,
+            archive_cats,
+            self.refresh_archive,
+            width=19,
         )
         self.archive_category.grid(row=0, column=5, sticky='w', padx=(0, 10))
-        self.archive_category.bind('<<ComboboxSelected>>', lambda _e: self.refresh_archive())
 
         ttk.Button(bar, text='AZZERA', command=self.reset_archive_filters).grid(row=0, column=6, sticky='e')
 

@@ -532,3 +532,50 @@ Smussature nate dal test reale della v3:
 - fallback di esecuzione per le route storiche importate;
 - invio diretto delle HOTKEY su Windows.
 
+
+
+## Stato implementazione v5
+
+Il menu Categoria che in v3/v4 appariva come `ttk.Combobox` ma non si apriva su Windows è stato eliminato alla radice.
+
+Nuova implementazione:
+- `ttk.Menubutton`;
+- menu popup esplicito;
+- callback diretta alla selezione;
+- stesso meccanismo per i filtri della pagina TUTTI;
+- colori del menu aggiornati insieme al tema di sistema.
+
+
+## Stato implementazione v6
+
+La sezione [[ComboCode Windows]] ora include un catalogo molto più esteso delle scorciatoie di Windows 11/10, organizzate per contesto e derivate dalle pagine ufficiali Microsoft.
+
+Aggiunte 257 voci HOTKEY contestuali. Il principio è: **non una lista esemplificativa, ma un archivio da consultazione**.
+
+Nodi naturali:
+- [[Windows Keyboard Shortcuts]]
+- [[Windows Text Editing]]
+- [[Windows Desktop Shortcuts]]
+- [[Windows Key Shortcuts]]
+- [[Windows Command Prompt Shortcuts]]
+- [[Windows File Explorer Shortcuts]]
+- [[Windows Virtual Desktop Shortcuts]]
+- [[Windows Taskbar Shortcuts]]
+- [[Windows Accessibility Shortcuts]]
+
+Prossimo pack separato: [[Browser Keyboard Shortcuts]], per non confondere shortcut del sistema operativo con shortcut delle applicazioni/browser.
+
+
+## Stato implementazione v7
+
+Aggiunto [[Browser Keyboard Shortcuts]] come pack separato da Windows.
+
+Copertura iniziale:
+- [[Opera Keyboard Shortcuts]]
+- [[Chrome Keyboard Shortcuts]]
+- [[Edge Keyboard Shortcuts]]
+- [[Firefox Keyboard Shortcuts]]
+
+Totale nuove voci browser: **314**.
+
+Principio: le shortcut applicative non vengono mischiate alle shortcut del sistema operativo, ma restano cercabili nello stesso motore ComboCode.

@@ -31,3 +31,11 @@ Una fonte documenta una famiglia di route, ma non rende eterno il comportamento 
 - `Comandi Esegui_Dos3.docx`
 
 Queste fonti sono materiale storico dell'utente. Le voci derivate restano marcate come archivio/legacy finché non vengono verificate sulla versione corrente di Windows.
+
+- Windows keyboard shortcuts: https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec
+- Windows accessibility keyboard shortcuts: https://support.microsoft.com/en-us/accessibility/windows/windows-keyboard-shortcuts-for-accessibility
+
+- Opera keyboard shortcuts: https://help.opera.com/en/latest/shortcuts/
+- Google Chrome keyboard shortcuts: https://support.google.com/chrome/answer/157179?co=GENIE.Platform%3DDesktop&hl=en
+- Microsoft Edge keyboard shortcuts: https://support.microsoft.com/it-it/edge/keyboard-shortcuts-in-microsoft-edge
+- Mozilla Firefox keyboard shortcuts: https://support.mozilla.org/it/kb/scorciatoie-tastiera-firefox

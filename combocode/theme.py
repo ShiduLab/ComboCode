@@ -162,6 +162,23 @@ def apply_ttk_theme(root, style, dark: bool) -> Palette:
         background=[('active', palette.border), ('pressed', palette.border), ('disabled', palette.panel_alt)],
         foreground=[('disabled', palette.muted)],
     )
+    style.configure(
+        'Dropdown.TMenubutton',
+        background=palette.field,
+        foreground=palette.text,
+        bordercolor=palette.border,
+        lightcolor=palette.border,
+        darkcolor=palette.border,
+        relief='flat',
+        padding=(10, 7),
+        arrowcolor=palette.text,
+    )
+    style.map(
+        'Dropdown.TMenubutton',
+        background=[('active', palette.border), ('pressed', palette.border)],
+        foreground=[('disabled', palette.muted)],
+    )
+
     style.configure('Compact.TButton', background=palette.field, foreground=palette.muted, padding=(6, 6), font=('Segoe UI Semibold', 13))
     style.map(
         'Compact.TButton',

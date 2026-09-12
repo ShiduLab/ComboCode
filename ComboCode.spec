@@ -29,7 +29,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='ComboCode v4',
+    name='ComboCode v7',
     icon='assets/combocode-icon.ico',
     debug=False,
     bootloader_ignore_signals=False,

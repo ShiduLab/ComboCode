@@ -8,6 +8,17 @@
 La ricerca parte dall'intenzione: scrivi `Connessioni di rete`, `schede di rete`, `ncpa`, `ethernet` o `wifi` e ComboCode converge sullo stesso obiettivo mostrando le route disponibili.
 
 
+
+## v5 — dropdown rifatto
+
+Il filtro in alto a destra non usa più `ttk.Combobox`.
+
+È stato sostituito con un **Menubutton + Menu nativo Tk**, più semplice e affidabile:
+- click apre sempre la lista;
+- scelta categoria aggiorna immediatamente CERCA;
+- stessa soluzione applicata anche ai filtri Tipo/Categoria nella pagina TUTTI;
+- menu ricolorato quando Windows passa da tema chiaro a scuro.
+
 ## v4 — smussature dal test reale
 
 - Botolo + **ShiduLab** spostati in basso a destra.
@@ -173,3 +184,38 @@ Dopo il push su `main`, Actions:
 ---
 
 **ShiduLab non programma, indica.**
+
+## v6 — catalogo completo scorciatoie Windows
+
+La v6 smette di trattare le HOTKEY come un campione iniziale e importa un catalogo strutturato dalle pagine ufficiali Microsoft per Windows 11/10.
+
+Aggiunte **257 voci contestuali HOTKEY** suddivise in:
+- modifica testo;
+- desktop e comandi generali;
+- combinazioni con tasto WIN;
+- tastiera del Prompt dei comandi;
+- finestre di dialogo;
+- Esplora file;
+- desktop virtuali;
+- barra delle applicazioni;
+- Impostazioni;
+- Accessibilità / Lente.
+
+Le stesse combinazioni possono comparire più volte quando Windows assegna loro un significato diverso in contesti differenti: è voluto.
+
+Fonte primaria: Microsoft Support — Keyboard shortcuts in Windows e Windows keyboard shortcuts for accessibility.
+
+## v7 — navigazione browser
+
+La v7 aggiunge **314 obiettivi browser** con route HOTKEY per Windows.
+
+Pack:
+- Browser comuni;
+- Opera;
+- Google Chrome;
+- Microsoft Edge;
+- Mozilla Firefox.
+
+Le voci sono mantenute separate per browser anche quando la combinazione coincide, perché il contesto applicativo è parte del dato.
+
+Fonti: documentazione ufficiale Opera, Google Chrome, Microsoft Edge e Mozilla Firefox.

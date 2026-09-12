@@ -34,6 +34,13 @@ def _send_hotkey(combo: str) -> None:
         'SPACE': 0x20,
         'SPAZIO': 0x20,
         'BACKSPACE': 0x08,
+        'INSERT': 0x2D,
+        'INS': 0x2D,
+        'PRTSCN': 0x2C,
+        'PRINT SCREEN': 0x2C,
+        'PAUSE': 0x13,
+        'NUM LOCK': 0x90,
+        'CAPS LOCK': 0x14,
         'DELETE': 0x2E,
         'DEL': 0x2E,
         'HOME': 0x24,
@@ -57,6 +64,11 @@ def _send_hotkey(combo: str) -> None:
         '\\': 0xDC,
         '-': 0xBD,
         '+': 0xBB,
+        '=': 0xBB,
+        '[': 0xDB,
+        ']': 0xDD,
+        "'": 0xDE,
+        '`': 0xC0,
     }
 
     for n in range(1, 25):
