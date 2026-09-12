@@ -120,6 +120,8 @@ class KnowledgeBase:
         query: str = '',
         category: str | None = None,
         kind: str | None = None,
+        sort_by: str = 'goal',
+        descending: bool = False,
     ) -> list[RouteRow]:
         hits = self.search(query, category, limit=None)
         rows: list[RouteRow] = []
@@ -129,13 +131,25 @@ class KnowledgeBase:
                 if kind and kind != 'TUTTI' and route.get('kind') != kind:
                     continue
                 rows.append(RouteRow(goal=goal, route_index=idx, route=route))
-        rows.sort(
-            key=lambda row: (
-                row.goal.get('name', '').lower(),
-                row.route.get('kind', '').lower(),
-                row.route.get('value', '').lower(),
+
+        def value(row: RouteRow):
+            mapping = {
+                'goal': row.goal.get('name', ''),
+                'kind': row.route.get('kind', ''),
+                'value': row.route.get('value', ''),
+                'cat': row.goal.get('category', ''),
+                'safety': row.route.get('safety', 'SAFE'),
+                'verified': row.route.get('verified', ''),
+            }
+            primary = normalize(str(mapping.get(sort_by, mapping['goal'])))
+            return (
+                primary,
+                normalize(row.goal.get('name', '')),
+                normalize(row.route.get('kind', '')),
+                normalize(row.route.get('value', '')),
             )
-        )
+
+        rows.sort(key=value, reverse=descending)
         return rows
 
     @staticmethod

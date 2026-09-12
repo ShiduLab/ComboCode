@@ -59,3 +59,12 @@ Ogni `route` rappresenta **come arrivarci**:
 - `EXTERNAL`
 
 La v1 non esegue automaticamente route `DESTRUCTIVE`.
+
+## Campi v3 aggiuntivi per la provenienza
+
+Una route può usare:
+
+- `source`: URL apribile;
+- `source_label`: descrizione testuale della fonte quando non esiste un URL (per esempio un documento archivistico locale).
+
+Le route storiche possono essere mantenute con `executable: false` e `verified: LEGACY ...` senza alterare il testo originario della fonte.

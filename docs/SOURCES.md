@@ -23,3 +23,11 @@ Usata come riferimento per i comandi della shell Windows.
 ## Regola del database
 
 Una fonte documenta una famiglia di route, ma non rende eterno il comportamento di ogni comando. Per questo ComboCode conserva anche versione, stato e data di verifica: il database deve poter distinguere `verificato`, `legacy`, `deprecato` e `dipende dalla versione`.
+
+## Archivio personale aggiunto in v3
+
+- `comandi Esegui_dos.docx`
+- `Comandi Esegui_Dos2.docx`
+- `Comandi Esegui_Dos3.docx`
+
+Queste fonti sono materiale storico dell'utente. Le voci derivate restano marcate come archivio/legacy finché non vengono verificate sulla versione corrente di Windows.

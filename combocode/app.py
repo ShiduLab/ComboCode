@@ -9,14 +9,24 @@ def resource_path(relative: str) -> Path:
     return base / relative
 
 
-def _set_windows_app_id() -> None:
+def _prepare_windows_process() -> None:
     if sys.platform != 'win32':
         return
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v2')
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v3')
     except Exception:
         pass
+    try:
+        import ctypes
+        # Per-monitor DPI awareness v2 when available.
+        ctypes.windll.user32.SetProcessDpiAwarenessContext(ctypes.c_void_p(-4))
+    except Exception:
+        try:
+            import ctypes
+            ctypes.windll.shcore.SetProcessDpiAwareness(2)
+        except Exception:
+            pass
 
 
 def main() -> None:
@@ -24,7 +34,7 @@ def main() -> None:
     from .storage import UserStore
     from .ui import ComboCodeUI
 
-    _set_windows_app_id()
+    _prepare_windows_process()
     kb = KnowledgeBase.from_pack_dir(resource_path('combocode/data/packs'))
     store = UserStore()
     app = ComboCodeUI(
@@ -32,6 +42,7 @@ def main() -> None:
         store,
         icon_png=resource_path('assets/combocode-icon.png'),
         icon_ico=resource_path('assets/combocode-icon.ico'),
+        brand_png=resource_path('assets/shidulab-botolo-small.png'),
     )
     app.run()
 

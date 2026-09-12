@@ -7,38 +7,62 @@
 
 La ricerca parte dall'intenzione: scrivi `Connessioni di rete`, `schede di rete`, `ncpa`, `ethernet` o `wifi` e ComboCode converge sullo stesso obiettivo mostrando le route disponibili.
 
-## v2 — cosa cambia
+## v3 — GUI moderna + archivio vero
 
-- Pagina **TUTTI**: indice completo e filtrabile di tutte le route.
-- Filtro per tipo: HOTKEY, RUN, CMD e le altre famiglie presenti nel database.
-- Ricerca semantica ampliata: una query generica come `tastiera` restituisce la famiglia di funzioni collegate.
-- Nuovo pack **Tastiera Windows**: OSK, digitazione, accessibilità, touch keyboard e proprietà classiche.
-- Pack **CMD reference** ampliato per esplorare direttamente i comandi da prompt.
-- Icona ComboCode integrata nell'EXE, nella finestra e nella taskbar Windows.
-- Versione Windows: **ComboCode v2.exe**.
+La v3 nasce direttamente dalle prime prove d'uso reali.
 
-## v1 — cosa c'è già
+- GUI ridisegnata con `ttk` moderno: niente look Win95.
+- Tema **automatico Sistema**: segue il tema chiaro/scuro di Windows anche se viene cambiato mentre ComboCode è aperto.
+- DPI/scaling Windows gestito in modalità per-monitor quando disponibile.
+- Icona ComboCode forzata anche nella **barra del titolo**, oltre a EXE e taskbar.
+- **Botolo + ShiduLab** canonici, trasparenti, sempre in basso a sinistra.
+- La pagina **TUTTI** ha filtri propri e non eredita più la categoria della pagina CERCA: a filtri azzerati mostra realmente l'intero archivio.
+- Tutte le intestazioni di TUTTI sono cliccabili: `Obiettivo`, `Tipo`, `Comando`, `Categoria`, `Sicurezza`, `Verifica`.
+- Secondo click sulla stessa intestazione inverte crescente/decrescente.
+- Archivio ampliato con le liste storiche ESEGUI/DOS fornite dall'utente.
+- Le voci storiche non vengono corrette o rese eseguibili di nascosto: sono marcate `LEGACY` o `da verificare`.
 
-- 92 obiettivi / 106 route iniziali.
-- Ricerca istantanea per nome, alias, descrizione, categoria e stringa di comando.
-- Route `HOTKEY`, `RUN` e `CMD`, con predisposizione per URI, PowerShell e altri tipi.
-- Apertura/esecuzione diretta delle route compatibili su Windows.
-- Copia immediata della stringa.
-- Preferiti persistenti in SQLite locale.
-- Ricerca e navigazione pensate prima di tutto per la tastiera.
-- Filtro per categoria.
-- Esportazione del nodo selezionato come nota Markdown pronta per Obsidian.
-- Link alla fonte associata alla route.
-- Classificazione `SAFE`, `ELEVATED`, `DESTRUCTIVE`.
-- Database a pacchetti JSON, espandibile senza riscrivere il motore.
+### Dimensione archivio v3
 
-## Due prove immediate
+- **290 obiettivi**
+- **308 route**
+- **149 RUN**
+- **125 CMD**
+- **34 HOTKEY**
+
+## Ricerca e archivio sono due cose diverse
+
+### CERCA
+
+Serve quando sai **cosa vuoi ottenere**.
+
+La ricerca usa:
+- nome;
+- alias;
+- descrizione;
+- categoria;
+- keyword;
+- stringa del comando;
+- note della route.
+
+### TUTTI
+
+È l'atlante completo di ciò che ComboCode conosce.
+
+Ha filtri indipendenti per:
+- testo;
+- tipo;
+- categoria.
+
+`AZZERA` riporta immediatamente alla vista completa.
+
+## Esempi
 
 Cerca:
 
 `Esegui`
 
-Risposta principale:
+Risposta:
 
 `HOTKEY — WIN + R`
 
@@ -54,12 +78,54 @@ Tra le route:
 
 `RUN — ms-settings:network-advancedsettings`
 
+Cerca:
+
+`tastiera`
+
+Trovi, fra le altre:
+- Tastiera su schermo;
+- Impostazioni digitazione;
+- Accessibilità tastiera;
+- Tastiera virtuale/touch;
+- Proprietà tastiera classiche;
+- Lingua e layout tastiera.
+
+## Archivio storico dell'utente
+
+La v3 incorpora, come **fonte archivistica**, i tre documenti forniti durante lo sviluppo:
+
+- `comandi Esegui_dos.docx`
+- `Comandi Esegui_Dos2.docx`
+- `Comandi Esegui_Dos3.docx`
+
+La terza lista è stata usata come base più estesa; le precedenti restano parte della provenienza del materiale.
+
+Le voci non già presenti nei pack moderni verificati sono conservate con:
+- fonte;
+- descrizione originaria;
+- stato `LEGACY` oppure `da verificare`;
+- esecuzione disabilitata finché non vengono controllate sulla versione corrente di Windows.
+
+Questa distinzione evita di trasformare materiale storico Windows 2000/XP in falsi comandi “attuali”.
+
+## Sicurezza
+
+ComboCode distingue:
+
+- `SAFE`
+- `ELEVATED`
+- `DESTRUCTIVE`
+
+Le voci archivistiche non verificate sono informative/copiabili e non vengono eseguite automaticamente.
+
 ## Tastiera
 
 | Tasto | Azione |
 |---|---|
-| `Ctrl+K` / `Ctrl+L` | focus sulla ricerca |
-| `↓` | dai risultati della ricerca alla lista |
+| `Ctrl+K` / `Ctrl+L` | focus sulla ricerca della pagina attiva |
+| `Ctrl+1` | CERCA |
+| `Ctrl+2` | TUTTI |
+| `↓` | passa dalla ricerca alla lista |
 | `Invio` | apri/esegui la route selezionata |
 | `Ctrl+C` | copia la route |
 | `Ctrl+F` | preferito |
@@ -67,40 +133,15 @@ Tra le route:
 | `F1` | aiuto |
 | `Esc` | chiudi |
 
-## Database
-
-Il primo pack è:
-
-`combocode/data/packs/windows_core.json`
-
-Ogni obiettivo può avere più route. Esempio concettuale:
-
-```text
-Connessioni di rete
-├── RUN  ncpa.cpl
-├── CMD  control netconnections
-└── RUN  ms-settings:network-advancedsettings
-```
-
-È questo il principio strutturale di ComboCode: **stesso obiettivo, più route**.
-
-## Sicurezza
-
-ComboCode distingue il tipo di route prima dell'esecuzione.
-
-- `SAFE`: apertura di pannelli, strumenti o comandi informativi.
-- `ELEVATED`: può richiedere privilegi amministrativi; ComboCode chiede conferma.
-- `DESTRUCTIVE`: previsto dal modello dati ma non viene eseguito automaticamente.
-
-Le HOTKEY sono mostrate e copiabili, non simulate dal programma.
-
 ## Obsidian
 
-Il pulsante **ESPORTA .MD** produce una nota con frontmatter, route e primi WikiLink, per inserirla direttamente nel futuro `[[OlogrammIo]]`.
+Il pulsante **ESPORTA .MD** produce una nota con frontmatter, route e WikiLink per `[[OlogrammIo]]`.
+
+Il progetto stesso mantiene documentazione Obsidian-ready in `docs/`.
 
 ## Avvio da sorgente
 
-Richiede Python 3.10+ su Windows; Tkinter e SQLite sono già nella distribuzione standard di Python.
+Richiede Python 3.10+ su Windows. Tkinter e SQLite fanno parte della distribuzione standard di Python.
 
 ```bash
 python main.py
@@ -108,37 +149,12 @@ python main.py
 
 ## EXE con GitHub Actions
 
-Il repository include `.github/workflows/windows.yml`.
-
 Dopo il push su `main`, Actions:
 
 1. esegue i test;
 2. installa PyInstaller;
-3. genera `ComboCode v2.exe` senza console;
-4. pubblica l'artifact `ComboCode-Windows-v2`.
-
-## Fonti iniziali del pack Windows
-
-Il primo dataset usa come riferimenti principali la documentazione Microsoft su:
-
-- shortcut Windows;
-- schema URI `ms-settings:`;
-- Windows command-line reference.
-
-Il database è volutamente versionato: una route potrà essere segnata come verificata, legacy, deprecata o dipendente dalla versione.
-
-## Prossimo giro di smussatura
-
-La v1 serve a mettere le mani sul concept. I candidati naturali per v2 sono:
-
-- editor interno per aggiungere/modificare nodi e alias;
-- import/export di pack ComboCode;
-- pacchetti Word, Excel, Obsidian, VS Code, Git e ChatGPT;
-- hotkey globale richiamabile sopra qualunque programma;
-- ranking `più rapido / più universale / legacy / admin`;
-- verifica automatica della disponibilità di comandi e applicazioni;
-- modalità portable completa;
-- tema e identità grafica ShiduLab.
+3. genera `ComboCode v3.exe` senza console;
+4. pubblica l'artifact `ComboCode-Windows-v3`.
 
 ---
 

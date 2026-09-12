@@ -1,0 +1,3170 @@
+{
+  "pack": "windows_user_archive_legacy",
+  "title": "Archivio storico ESEGUI / DOS dell’utente",
+  "source": "Comandi Esegui_Dos3.docx (lista più estesa; confrontata con gli altri due documenti forniti)",
+  "note": "Voci storiche importate senza correzioni silenziose. Le voci non già presenti nei pack verificati vengono mantenute come archivio e marcate da verificare/legacy.",
+  "goals": [
+    {
+      "id": "archive.user.run.b737bafdd6",
+      "name": "CALC — calcolatrice",
+      "category": "ESEGUI (archivio)",
+      "description": "calcolatrice",
+      "aliases": [
+        "CALC",
+        "calcolatrice"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CALC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.9561953b15",
+      "name": "CIADV.MSC — servizio di indicizzazione",
+      "category": "ESEGUI (archivio)",
+      "description": "servizio di indicizzazione",
+      "aliases": [
+        "CIADV.MSC",
+        "servizio di indicizzazione"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CIADV.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.fe2956e2b3",
+      "name": "CERTMGR.MSC — gestione certificati",
+      "category": "ESEGUI (archivio)",
+      "description": "gestione certificati",
+      "aliases": [
+        "CERTMGR.MSC",
+        "gestione certificati"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CERTMGR.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.70248ccd4a",
+      "name": "CLEANMGR — pulitura disco",
+      "category": "ESEGUI (archivio)",
+      "description": "pulitura disco",
+      "aliases": [
+        "CLEANMGR",
+        "pulitura disco"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CLEANMGR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.470fc52e2a",
+      "name": "CLICONFG — utilità di rete del client di SQL server",
+      "category": "ESEGUI (archivio)",
+      "description": "utilità di rete del client di SQL server",
+      "aliases": [
+        "CLICONFG",
+        "utilità di rete del client di SQL server"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CLICONFG",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.01cc05e077",
+      "name": "CLIPBRD — visualizza il contenuto degli appunti",
+      "category": "ESEGUI (archivio)",
+      "description": "visualizza il contenuto degli appunti",
+      "aliases": [
+        "CLIPBRD",
+        "visualizza il contenuto degli appunti"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CLIPBRD",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.814beae3c0",
+      "name": "CMSTP — programma di installazione profilo connection manager",
+      "category": "ESEGUI (archivio)",
+      "description": "programma di installazione profilo connection manager",
+      "aliases": [
+        "CMSTP",
+        "programma di installazione profilo connection manager"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CMSTP",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.314dd057bf",
+      "name": "CONF — esegue la configurazione di Net meeting",
+      "category": "ESEGUI (archivio)",
+      "description": "esegue la configurazione di Net meeting",
+      "aliases": [
+        "CONF",
+        "esegue la configurazione di Net meeting"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONF",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.79120fdbf5",
+      "name": "CONTROL USERPASSWORDS2 — account utenti avanzato",
+      "category": "ESEGUI (archivio)",
+      "description": "account utenti avanzato",
+      "aliases": [
+        "CONTROL USERPASSWORDS2",
+        "account utenti avanzato"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL USERPASSWORDS2",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.c2a0adffdd",
+      "name": "CONTROL ADMINTOOLS — strumenti di amministrazione",
+      "category": "ESEGUI (archivio)",
+      "description": "strumenti di amministrazione",
+      "aliases": [
+        "CONTROL ADMINTOOLS",
+        "strumenti di amministrazione"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL ADMINTOOLS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.ec117701c7",
+      "name": "CONTROL COLOR — proprietà schermo",
+      "category": "ESEGUI (archivio)",
+      "description": "proprietà schermo",
+      "aliases": [
+        "CONTROL COLOR",
+        "proprietà schermo"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL COLOR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.1cf631776f",
+      "name": "CONTROL DESKTOP — proprietà desktop",
+      "category": "ESEGUI (archivio)",
+      "description": "proprietà desktop",
+      "aliases": [
+        "CONTROL DESKTOP",
+        "proprietà desktop"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL DESKTOP",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.1d19e4cd2a",
+      "name": "CONTROL FOLDERS — proprietà cartella",
+      "category": "ESEGUI (archivio)",
+      "description": "proprietà cartella",
+      "aliases": [
+        "CONTROL FOLDERS",
+        "proprietà cartella"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL FOLDERS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.249d9554dc",
+      "name": "CONTROL FONTS — cartella caratteri",
+      "category": "ESEGUI (archivio)",
+      "description": "cartella caratteri",
+      "aliases": [
+        "CONTROL FONTS",
+        "cartella caratteri"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL FONTS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.2405ee95f3",
+      "name": "CONTROL INTERNATIONAL — opzioni internazionali e della lingua",
+      "category": "ESEGUI (archivio)",
+      "description": "opzioni internazionali e della lingua",
+      "aliases": [
+        "CONTROL INTERNATIONAL",
+        "opzioni internazionali e della lingua"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL INTERNATIONAL",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.464ff86ba4",
+      "name": "CONTROL MOUSE — proprietà mouse",
+      "category": "ESEGUI (archivio)",
+      "description": "proprietà mouse",
+      "aliases": [
+        "CONTROL MOUSE",
+        "proprietà mouse"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL MOUSE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.56e6b4482e",
+      "name": "CONTROL PRINTERS — stampanti",
+      "category": "ESEGUI (archivio)",
+      "description": "stampanti",
+      "aliases": [
+        "CONTROL PRINTERS",
+        "stampanti"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL PRINTERS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.fe8870858a",
+      "name": "CONTROL TELEPHONY — opzioni modem telefono",
+      "category": "ESEGUI (archivio)",
+      "description": "opzioni modem telefono",
+      "aliases": [
+        "CONTROL TELEPHONY",
+        "opzioni modem telefono"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL TELEPHONY",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.38961883d6",
+      "name": "CONTROL USERPASSWORDS — account utenti",
+      "category": "ESEGUI (archivio)",
+      "description": "account utenti",
+      "aliases": [
+        "CONTROL USERPASSWORDS",
+        "account utenti"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "CONTROL USERPASSWORDS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.4259c04658",
+      "name": "DCPROMO — Inizia l'installazione di active directory",
+      "category": "ESEGUI (archivio)",
+      "description": "Inizia l'installazione di active directory",
+      "aliases": [
+        "DCPROMO",
+        "Inizia l'installazione di active directory"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DCPROMO",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a3ddb11d7f",
+      "name": "DCOMCNFG — servizi componenti",
+      "category": "ESEGUI (archivio)",
+      "description": "servizi componenti",
+      "aliases": [
+        "DCOMCNFG",
+        "servizi componenti"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DCOMCNFG",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.16fcad253b",
+      "name": "DDESHARE — strumento per la creazione e gestione di condivisioni DDE",
+      "category": "ESEGUI (archivio)",
+      "description": "strumento per la creazione e gestione di condivisioni DDE",
+      "aliases": [
+        "DDESHARE",
+        "strumento per la creazione e gestione di condivisioni DDE"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DDESHARE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.84509c1e36",
+      "name": "DEFRAG C: -B — riorganizzazione facilitata dei files tramite Prefetching",
+      "category": "ESEGUI (archivio)",
+      "description": "riorganizzazione facilitata dei files tramite Prefetching",
+      "aliases": [
+        "DEFRAG C: -B",
+        "riorganizzazione facilitata dei files tramite Prefetching"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DEFRAG C: -B",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.cf3e280221",
+      "name": "DFRG.MSC — strumento per la deframmentazione",
+      "category": "ESEGUI (archivio)",
+      "description": "strumento per la deframmentazione",
+      "aliases": [
+        "DFRG.MSC",
+        "strumento per la deframmentazione"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DFRG.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.2b70071764",
+      "name": "DIALER — connessione telefonica",
+      "category": "ESEGUI (archivio)",
+      "description": "connessione telefonica",
+      "aliases": [
+        "DIALER",
+        "connessione telefonica"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DIALER",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.b13ed1bafa",
+      "name": "DRWTSN32 — dottor Watson",
+      "category": "ESEGUI (archivio)",
+      "description": "dottor Watson",
+      "aliases": [
+        "DRWTSN32",
+        "dottor Watson"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DRWTSN32",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.78c460e9a9",
+      "name": "DVDPLAY.exe — Windows Media player",
+      "category": "ESEGUI (archivio)",
+      "description": "Windows Media player",
+      "aliases": [
+        "DVDPLAY.exe",
+        "Windows Media player"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DVDPLAY.exe",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.51d12a1b45",
+      "name": "DXDIAG — diagnostica directx",
+      "category": "ESEGUI (archivio)",
+      "description": "diagnostica directx",
+      "aliases": [
+        "DXDIAG",
+        "diagnostica directx"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "DXDIAG",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.4021078f11",
+      "name": "EXCEL — Excel",
+      "category": "ESEGUI (archivio)",
+      "description": "Excel",
+      "aliases": [
+        "EXCEL",
+        "Excel"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "EXCEL",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a297e4ee34",
+      "name": "EXPLORER — esplora risorse",
+      "category": "ESEGUI (archivio)",
+      "description": "esplora risorse",
+      "aliases": [
+        "EXPLORER",
+        "esplora risorse"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "EXPLORER",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.229bef455a",
+      "name": "EUDCEDIT — editor di caratteri personalizzati",
+      "category": "ESEGUI (archivio)",
+      "description": "editor di caratteri personalizzati",
+      "aliases": [
+        "EUDCEDIT",
+        "editor di caratteri personalizzati"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "EUDCEDIT",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.67781b4d03",
+      "name": "EVENTVWR — visualizzatore eventi",
+      "category": "ESEGUI (archivio)",
+      "description": "visualizzatore eventi",
+      "aliases": [
+        "EVENTVWR",
+        "visualizzatore eventi"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "EVENTVWR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a6ff2141e8",
+      "name": "FSMGMT.MSC — condivisione cartelle",
+      "category": "ESEGUI (archivio)",
+      "description": "condivisione cartelle",
+      "aliases": [
+        "FSMGMT.MSC",
+        "condivisione cartelle"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "FSMGMT.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.0e7be7c997",
+      "name": "GPEDIT.MSC — criteri di gruppo (solo per windows prosessional)",
+      "category": "ESEGUI (archivio)",
+      "description": "criteri di gruppo (solo per windows prosessional)",
+      "aliases": [
+        "GPEDIT.MSC",
+        "criteri di gruppo (solo per windows prosessional)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "GPEDIT.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.304fc865c8",
+      "name": "HELPCTR — avvia guida in linea e supporto tecnico",
+      "category": "ESEGUI (archivio)",
+      "description": "avvia guida in linea e supporto tecnico",
+      "aliases": [
+        "HELPCTR",
+        "avvia guida in linea e supporto tecnico"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "HELPCTR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.080750e7ee",
+      "name": "HYPERTRM — avvio di hyper terminal",
+      "category": "ESEGUI (archivio)",
+      "description": "avvio di hyper terminal",
+      "aliases": [
+        "HYPERTRM",
+        "avvio di hyper terminal"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "HYPERTRM",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.7894429306",
+      "name": "IEXPRESS — procedura guidata che permette di creare archivi autoestraenti e autoins",
+      "category": "ESEGUI (archivio)",
+      "description": "procedura guidata che permette di creare archivi autoestraenti e autoinstallanti",
+      "aliases": [
+        "IEXPRESS",
+        "procedura guidata che permette di creare archivi autoestraenti e autoinstallanti"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "IEXPRESS",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a1bc0135fe",
+      "name": "IRFTP — collegamento senza fili",
+      "category": "ESEGUI (archivio)",
+      "description": "collegamento senza fili",
+      "aliases": [
+        "IRFTP",
+        "collegamento senza fili"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "IRFTP",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.b131f37b5f",
+      "name": "JETCOMP — database compact utility",
+      "category": "ESEGUI (archivio)",
+      "description": "database compact utility",
+      "aliases": [
+        "JETCOMP",
+        "database compact utility"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "JETCOMP",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a1508a5de7",
+      "name": "LUSRMGR.MSC — gestione utenti locali e gruppi",
+      "category": "ESEGUI (archivio)",
+      "description": "gestione utenti locali e gruppi",
+      "aliases": [
+        "LUSRMGR.MSC",
+        "gestione utenti locali e gruppi"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "LUSRMGR.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.72f1c6c120",
+      "name": "MMC — Microsoft Management Console",
+      "category": "ESEGUI (archivio)",
+      "description": "Microsoft Management Console",
+      "aliases": [
+        "MMC",
+        "Microsoft Management Console"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MMC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.f5c836f9a3",
+      "name": "MPLAYER2.EXE — MediaPlayer 6.4",
+      "category": "ESEGUI (archivio)",
+      "description": "MediaPlayer 6.4",
+      "aliases": [
+        "MPLAYER2.EXE",
+        "MediaPlayer 6.4"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MPLAYER2.EXE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a9c16d43df",
+      "name": "MOZZILLA — Mozzilla Firefox(Browser)",
+      "category": "ESEGUI (archivio)",
+      "description": "Mozzilla Firefox(Browser)",
+      "aliases": [
+        "MOZZILLA",
+        "Mozzilla Firefox(Browser)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MOZZILLA",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.6f98a4dc47",
+      "name": "MSCONFIG — utilità configurazione Microsoft",
+      "category": "ESEGUI (archivio)",
+      "description": "utilità configurazione Microsoft",
+      "aliases": [
+        "MSCONFIG",
+        "utilità configurazione Microsoft"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSCONFIG",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.739853855a",
+      "name": "MSINFO32 — Microsoft System Information",
+      "category": "ESEGUI (archivio)",
+      "description": "Microsoft System Information",
+      "aliases": [
+        "MSINFO32",
+        "Microsoft System Information"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.807ca6ed32",
+      "name": "MSINFO32 /? — opzioni della riga di comando per Microsoft System Information",
+      "category": "ESEGUI (archivio)",
+      "description": "opzioni della riga di comando per Microsoft System Information",
+      "aliases": [
+        "MSINFO32 /?",
+        "opzioni della riga di comando per Microsoft System Information"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /?",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.756acca546",
+      "name": "MSINFO32 /COMPUTER BIGSERVER — visualizzazione di Microsoft System Information da un computer remoto",
+      "category": "ESEGUI (archivio)",
+      "description": "visualizzazione di Microsoft System Information da un computer remoto",
+      "aliases": [
+        "MSINFO32 /COMPUTER BIGSERVER",
+        "visualizzazione di Microsoft System Information da un computer remoto"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /COMPUTER BIGSERVER",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.ef2c7b1d47",
+      "name": "MSINFO32 /MOSTRACATEGORIE — lista delle categorie di Microsoft System Information (in italiano)",
+      "category": "ESEGUI (archivio)",
+      "description": "lista delle categorie di Microsoft System Information (in italiano)",
+      "aliases": [
+        "MSINFO32 /MOSTRACATEGORIE",
+        "lista delle categorie di Microsoft System Information (in italiano)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /MOSTRACATEGORIE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.8716047572",
+      "name": "MSINFO32 /NFO C:\\NOME CARTELLA\\CONFIG.NFO — creazione di un file nfo sulla configurazione del computer",
+      "category": "ESEGUI (archivio)",
+      "description": "creazione di un file nfo sulla configurazione del computer",
+      "aliases": [
+        "MSINFO32 /NFO C:\\NOME CARTELLA\\CONFIG.NFO",
+        "creazione di un file nfo sulla configurazione del computer"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /NFO C:\\NOME CARTELLA\\CONFIG.NFO",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.873f9bba73",
+      "name": "MSINFO32 /PCH — cronologia del sistema da Microsoft System Information",
+      "category": "ESEGUI (archivio)",
+      "description": "cronologia del sistema da Microsoft System Information",
+      "aliases": [
+        "MSINFO32 /PCH",
+        "cronologia del sistema da Microsoft System Information"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /PCH",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.c29e30a4c7",
+      "name": "MSINFO32 /REPORT C:\\NOME CARTELLA\\CONFIG.TXT — creazione di un file txt sulla configurazione del computer",
+      "category": "ESEGUI (archivio)",
+      "description": "creazione di un file txt sulla configurazione del computer",
+      "aliases": [
+        "MSINFO32 /REPORT C:\\NOME CARTELLA\\CONFIG.TXT",
+        "creazione di un file txt sulla configurazione del computer"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /REPORT C:\\NOME CARTELLA\\CONFIG.TXT",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.b21fe9831a",
+      "name": "MSINFO32 /SHOWCATEGORIES — lista delle categorie di Microsoft System Information (in inglese)",
+      "category": "ESEGUI (archivio)",
+      "description": "lista delle categorie di Microsoft System Information (in inglese)",
+      "aliases": [
+        "MSINFO32 /SHOWCATEGORIES",
+        "lista delle categorie di Microsoft System Information (in inglese)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSINFO32 /SHOWCATEGORIES",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.8ada25dc39",
+      "name": "MSPAINT — paint",
+      "category": "ESEGUI (archivio)",
+      "description": "paint",
+      "aliases": [
+        "MSPAINT",
+        "paint"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "MSPAINT",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.6686a38f39",
+      "name": "NERO — Ahead Nero",
+      "category": "ESEGUI (archivio)",
+      "description": "Ahead Nero",
+      "aliases": [
+        "NERO",
+        "Ahead Nero"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "NERO",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.9a967863f3",
+      "name": "NETSH DIAG GUI — diagnosi delle connessioni di rete",
+      "category": "ESEGUI (archivio)",
+      "description": "diagnosi delle connessioni di rete",
+      "aliases": [
+        "NETSH DIAG GUI",
+        "diagnosi delle connessioni di rete"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "NETSH DIAG GUI",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.4b53587686",
+      "name": "NOTEPAD C:BOOT.INI — visualizzazione boot.ini",
+      "category": "ESEGUI (archivio)",
+      "description": "visualizzazione boot.ini",
+      "aliases": [
+        "NOTEPAD C:BOOT.INI",
+        "visualizzazione boot.ini"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "NOTEPAD C:BOOT.INI",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.29f3b19ab5",
+      "name": "NTMSMGR.MSC — gestione archivi rimovibili",
+      "category": "ESEGUI (archivio)",
+      "description": "gestione archivi rimovibili",
+      "aliases": [
+        "NTMSMGR.MSC",
+        "gestione archivi rimovibili"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "NTMSMGR.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.45b66f841e",
+      "name": "NTMSOPRQ.MSC — richiesta operatore su gestione archivi rimovibili",
+      "category": "ESEGUI (archivio)",
+      "description": "richiesta operatore su gestione archivi rimovibili",
+      "aliases": [
+        "NTMSOPRQ.MSC",
+        "richiesta operatore su gestione archivi rimovibili"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "NTMSOPRQ.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.c693648ef6",
+      "name": "OSK — tastiera su schermo",
+      "category": "ESEGUI (archivio)",
+      "description": "tastiera su schermo",
+      "aliases": [
+        "OSK",
+        "tastiera su schermo"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "OSK",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.baa746af26",
+      "name": "PERFMON — prestazioni del pc",
+      "category": "ESEGUI (archivio)",
+      "description": "prestazioni del pc",
+      "aliases": [
+        "PERFMON",
+        "prestazioni del pc"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "PERFMON",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.b0e5c96d70",
+      "name": "RASPHONE — connessione di rete",
+      "category": "ESEGUI (archivio)",
+      "description": "connessione di rete",
+      "aliases": [
+        "RASPHONE",
+        "connessione di rete"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "RASPHONE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.6a98c49eae",
+      "name": "REGEDIT — registro di sistema",
+      "category": "ESEGUI (archivio)",
+      "description": "registro di sistema",
+      "aliases": [
+        "REGEDIT",
+        "registro di sistema"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "REGEDIT",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.c8a0301bc8",
+      "name": "REGEDT32 — registro di sistema",
+      "category": "ESEGUI (archivio)",
+      "description": "registro di sistema",
+      "aliases": [
+        "REGEDT32",
+        "registro di sistema"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "REGEDT32",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.f9418fc064",
+      "name": "REGSVR32 /U [nome libreria] — disabilitazione di una libreria",
+      "category": "ESEGUI (archivio)",
+      "description": "disabilitazione di una libreria",
+      "aliases": [
+        "REGSVR32 /U [nome libreria]",
+        "disabilitazione di una libreria"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "REGSVR32 /U [nome libreria]",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.52fdfa5c28",
+      "name": "REGSVR32 [nome libreria] — registrazione di una libreria",
+      "category": "ESEGUI (archivio)",
+      "description": "registrazione di una libreria",
+      "aliases": [
+        "REGSVR32 [nome libreria]",
+        "registrazione di una libreria"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "REGSVR32 [nome libreria]",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.6cb858f51c",
+      "name": "RTCSHARE — apre una sessione per la condivisione di applicazioni RTC",
+      "category": "ESEGUI (archivio)",
+      "description": "apre una sessione per la condivisione di applicazioni RTC",
+      "aliases": [
+        "RTCSHARE",
+        "apre una sessione per la condivisione di applicazioni RTC"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "RTCSHARE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.43d99b7245",
+      "name": "SECPOL.MSC — impostazioni di sicurezza",
+      "category": "ESEGUI (archivio)",
+      "description": "impostazioni di sicurezza",
+      "aliases": [
+        "SECPOL.MSC",
+        "impostazioni di sicurezza"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SECPOL.MSC",
+          "handler": "none",
+          "executable": false,
+          "safety": "ELEVATED",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.ef68b376c7",
+      "name": "SIGVERIF — verifica firma file e driver",
+      "category": "ESEGUI (archivio)",
+      "description": "verifica firma file e driver",
+      "aliases": [
+        "SIGVERIF",
+        "verifica firma file e driver"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SIGVERIF",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.fae9288382",
+      "name": "SHUTDOWN -s -t 00 — arresto sistema",
+      "category": "ESEGUI (archivio)",
+      "description": "arresto sistema",
+      "aliases": [
+        "SHUTDOWN -s -t 00",
+        "arresto sistema"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SHUTDOWN -s -t 00",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.be019cfcf9",
+      "name": "SHRPUBW — condivisione file e cartelle",
+      "category": "ESEGUI (archivio)",
+      "description": "condivisione file e cartelle",
+      "aliases": [
+        "SHRPUBW",
+        "condivisione file e cartelle"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SHRPUBW",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.e8e455a950",
+      "name": "SYSEDIT — apre in modifica tutti i file critici del sistema (AUTOEXEC.BAT, CONFIG.",
+      "category": "ESEGUI (archivio)",
+      "description": "apre in modifica tutti i file critici del sistema (AUTOEXEC.BAT, CONFIG.SYS, WIN.INI, SYSTEM.INI)",
+      "aliases": [
+        "SYSEDIT",
+        "apre in modifica tutti i file critici del sistema (AUTOEXEC.BAT, CONFIG.SYS, WIN.INI, SYSTEM.INI)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SYSEDIT",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.fdf988d702",
+      "name": "SNDVOL32 — controllo volume",
+      "category": "ESEGUI (archivio)",
+      "description": "controllo volume",
+      "aliases": [
+        "SNDVOL32",
+        "controllo volume"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "SNDVOL32",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.fd6c2dd99c",
+      "name": "TASKMGR — task manager windows",
+      "category": "ESEGUI (archivio)",
+      "description": "task manager windows",
+      "aliases": [
+        "TASKMGR",
+        "task manager windows"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "TASKMGR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.a13360191b",
+      "name": "TCMSETUP — guida all'installazione del cliente di telefonia",
+      "category": "ESEGUI (archivio)",
+      "description": "guida all'installazione del cliente di telefonia",
+      "aliases": [
+        "TCMSETUP",
+        "guida all'installazione del cliente di telefonia"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "TCMSETUP",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.5107a4925d",
+      "name": "TELNET — telnet",
+      "category": "ESEGUI (archivio)",
+      "description": "telnet",
+      "aliases": [
+        "TELNET",
+        "telnet"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "TELNET",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.9f7937edbb",
+      "name": "UNDELETE — Ripristina i file cancellati precendentemente(delete)",
+      "category": "ESEGUI (archivio)",
+      "description": "Ripristina i file cancellati precendentemente(delete)",
+      "aliases": [
+        "UNDELETE",
+        "Ripristina i file cancellati precendentemente(delete)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "UNDELETE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.38132cfddb",
+      "name": "UNFORMAT — Ripristina i file cancellati precendentemente(format)",
+      "category": "ESEGUI (archivio)",
+      "description": "Ripristina i file cancellati precendentemente(format)",
+      "aliases": [
+        "UNFORMAT",
+        "Ripristina i file cancellati precendentemente(format)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "UNFORMAT",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.40fb2826c0",
+      "name": "VERIFIER — utilità diagnostica dei drivers di sistema",
+      "category": "ESEGUI (archivio)",
+      "description": "utilità diagnostica dei drivers di sistema",
+      "aliases": [
+        "VERIFIER",
+        "utilità diagnostica dei drivers di sistema"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "VERIFIER",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.370cfa5efa",
+      "name": "WIAACMGR — acquisizione guidata immagini",
+      "category": "ESEGUI (archivio)",
+      "description": "acquisizione guidata immagini",
+      "aliases": [
+        "WIAACMGR",
+        "acquisizione guidata immagini"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WIAACMGR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.816bc4fbf4",
+      "name": "WBEMTEST — tester di strumentazione gestione windows",
+      "category": "ESEGUI (archivio)",
+      "description": "tester di strumentazione gestione windows",
+      "aliases": [
+        "WBEMTEST",
+        "tester di strumentazione gestione windows"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WBEMTEST",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.b802ac4052",
+      "name": "WINCHAT — utility per chattare della microsoft",
+      "category": "ESEGUI (archivio)",
+      "description": "utility per chattare della microsoft",
+      "aliases": [
+        "WINCHAT",
+        "utility per chattare della microsoft"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WINCHAT",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.90e1c59703",
+      "name": "WINVER — mostra la versione di windows installata sul pc",
+      "category": "ESEGUI (archivio)",
+      "description": "mostra la versione di windows installata sul pc",
+      "aliases": [
+        "WINVER",
+        "mostra la versione di windows installata sul pc"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WINVER",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.4fd622af77",
+      "name": "WIN.INI — visualizzazione win.ini",
+      "category": "ESEGUI (archivio)",
+      "description": "visualizzazione win.ini",
+      "aliases": [
+        "WIN.INI",
+        "visualizzazione win.ini"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WIN.INI",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.602e4c7cc2",
+      "name": "WINWORD — Word",
+      "category": "ESEGUI (archivio)",
+      "description": "Word",
+      "aliases": [
+        "WINWORD",
+        "Word"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "WINWORD",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.3ebf59f0d4",
+      "name": "%SYSTEMROOT%\\SYSTEM32\\RESTORE\\RSTRUI.EXE — avvio di ripristino configurazione di sistema",
+      "category": "ESEGUI (archivio)",
+      "description": "avvio di ripristino configurazione di sistema",
+      "aliases": [
+        "%SYSTEMROOT%\\SYSTEM32\\RESTORE\\RSTRUI.EXE",
+        "avvio di ripristino configurazione di sistema"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "%SYSTEMROOT%\\SYSTEM32\\RESTORE\\RSTRUI.EXE",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.run.580f8f585d",
+      "name": "%windir%\\Help\\keyshort.chm — tasti scelta rapida",
+      "category": "ESEGUI (archivio)",
+      "description": "tasti scelta rapida",
+      "aliases": [
+        "%windir%\\Help\\keyshort.chm",
+        "tasti scelta rapida"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "esegui",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "%windir%\\Help\\keyshort.chm",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.3457288cb5",
+      "name": "CHDIR — Cambia la directory corrente o ne visualizza il nome.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Cambia la directory corrente o ne visualizza il nome.",
+      "aliases": [
+        "CHDIR",
+        "Cambia la directory corrente o ne visualizza il nome."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "CHDIR",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.000132925b",
+      "name": "COMMAND — Avvia un nuovo inteprete dei comandi MS-DOS.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Avvia un nuovo inteprete dei comandi MS-DOS.",
+      "aliases": [
+        "COMMAND",
+        "Avvia un nuovo inteprete dei comandi MS-DOS."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "COMMAND",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.e8b3ff14b5",
+      "name": "DEFRAG — Riorganizza i file su un disco per ottimizzarne l'uso.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Riorganizza i file su un disco per ottimizzarne l'uso.",
+      "aliases": [
+        "DEFRAG",
+        "Riorganizza i file su un disco per ottimizzarne l'uso."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "DEFRAG",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.918eea8934",
+      "name": "DELTREE — Elimina una directory e tutti i file e le sottodirectory in essa contenu",
+      "category": "DOS/CMD (archivio)",
+      "description": "Elimina una directory e tutti i file e le sottodirectory in essa contenuti.",
+      "aliases": [
+        "DELTREE",
+        "Elimina una directory e tutti i file e le sottodirectory in essa contenuti."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "DELTREE",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.6554bfedd1",
+      "name": "DISKCOPY — Copia il contenuto di un disco floppy in un altro disco floppy.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Copia il contenuto di un disco floppy in un altro disco floppy.",
+      "aliases": [
+        "DISKCOPY",
+        "Copia il contenuto di un disco floppy in un altro disco floppy."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "DISKCOPY",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.5a17a3c6fd",
+      "name": "DRIVERQUERY — Elenco drivers installati",
+      "category": "DOS/CMD (archivio)",
+      "description": "Elenco drivers installati",
+      "aliases": [
+        "DRIVERQUERY",
+        "Elenco drivers installati"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "DRIVERQUERY",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.743a4fa872",
+      "name": "EDIT — Avvia MS-DOS Editor per creare e modificare i file ASCII.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Avvia MS-DOS Editor per creare e modificare i file ASCII.",
+      "aliases": [
+        "EDIT",
+        "Avvia MS-DOS Editor per creare e modificare i file ASCII."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "EDIT",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.1bb641bb15",
+      "name": "EMM386 — Abilita o disabilita la memoria espansa di EMM386.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Abilita o disabilita la memoria espansa di EMM386.",
+      "aliases": [
+        "EMM386",
+        "Abilita o disabilita la memoria espansa di EMM386."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "EMM386",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.e2e576ddfa",
+      "name": "EXPAND — Decomprime uno o piu' file compressi.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Decomprime uno o piu' file compressi.",
+      "aliases": [
+        "EXPAND",
+        "Decomprime uno o piu' file compressi."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "EXPAND",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.2db2b48185",
+      "name": "FDISK — Configura un disco rigido per l'utilizzo con MS-DOS.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Configura un disco rigido per l'utilizzo con MS-DOS.",
+      "aliases": [
+        "FDISK",
+        "Configura un disco rigido per l'utilizzo con MS-DOS."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "FDISK",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.61a58fa035",
+      "name": "FSUTIL FSINFO — Informazioni generali sul filesystem, volumi, ecc.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Informazioni generali sul filesystem, volumi, ecc.",
+      "aliases": [
+        "FSUTIL FSINFO",
+        "Informazioni generali sul filesystem, volumi, ecc."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "FSUTIL FSINFO",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.1807184b81",
+      "name": "KEYB — Configura la tastiera per la lingua specificata.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Configura la tastiera per la lingua specificata.",
+      "aliases": [
+        "KEYB",
+        "Configura la tastiera per la lingua specificata."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "KEYB",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.265b026186",
+      "name": "MEM — Visualizza la quantità di memoria usata e libera del sistema.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Visualizza la quantità di memoria usata e libera del sistema.",
+      "aliases": [
+        "MEM",
+        "Visualizza la quantità di memoria usata e libera del sistema."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "MEM",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.79c607446e",
+      "name": "NET SEND ip — Messaggio (es: NET SEND 192.168.0.33 Ciao)",
+      "category": "DOS/CMD (archivio)",
+      "description": "Messaggio (es: NET SEND 192.168.0.33 Ciao)",
+      "aliases": [
+        "NET SEND ip",
+        "Messaggio (es: NET SEND 192.168.0.33 Ciao)"
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "NET SEND ip",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.16e1909515",
+      "name": "SYS — Copia i file di sistema di MS-DOS e l'inteprete dei comandi sul disco sp",
+      "category": "DOS/CMD (archivio)",
+      "description": "Copia i file di sistema di MS-DOS e l'inteprete dei comandi sul disco specificato.",
+      "aliases": [
+        "SYS",
+        "Copia i file di sistema di MS-DOS e l'inteprete dei comandi sul disco specificato."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows 2000/XP (archivio)",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "SYS",
+          "handler": "none",
+          "executable": false,
+          "safety": "DESTRUCTIVE",
+          "verified": "LEGACY — archivio Windows 2000/XP",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    },
+    {
+      "id": "archive.user.cmd.c1f4db19b1",
+      "name": "TASKLIST /SVC — Lista processi attivi con relativi servizi di dipendenza.",
+      "category": "DOS/CMD (archivio)",
+      "description": "Lista processi attivi con relativi servizi di dipendenza.",
+      "aliases": [
+        "TASKLIST /SVC",
+        "Lista processi attivi con relativi servizi di dipendenza."
+      ],
+      "keywords": [
+        "archivio",
+        "storico",
+        "windows",
+        "dos",
+        "cmd"
+      ],
+      "platform": "Windows — compatibilità da verificare",
+      "routes": [
+        {
+          "kind": "CMD",
+          "value": "TASKLIST /SVC",
+          "handler": "none",
+          "executable": false,
+          "safety": "SAFE",
+          "verified": "Archivio utente — da verificare su Windows 10/11",
+          "source": "",
+          "source_label": "Archivio utente: comandi Esegui_dos.docx · Comandi Esegui_Dos2.docx · Comandi Esegui_Dos3.docx",
+          "note": "Voce importata dall’archivio storico fornito dall’utente. Conservata come riferimento; non viene eseguita finché non è verificata sulla versione corrente di Windows."
+        }
+      ]
+    }
+  ]
+}

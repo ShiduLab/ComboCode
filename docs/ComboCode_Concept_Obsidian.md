@@ -435,23 +435,6 @@ Non è quindi soltanto un archivio di stringhe.
 
 ---
 
-## Stato implementazione v2
-
-La v2 operativa introduce:
-
-- pagina `TUTTI` con l'intero archivio delle route;
-- filtri per tipo di route;
-- ricerca estesa per famiglie semantiche;
-- nodo/famiglia `Tastiera` con Tastiera su schermo, digitazione, accessibilità, touch keyboard, layout lingua e proprietà classiche;
-- archivio CMD ampliato;
-- icona ComboCode trasparente e centrata;
-- icona incorporata nell'EXE Windows;
-- icona applicata alla finestra e alla taskbar;
-- build GitHub Actions `ComboCode v2.exe`.
-
-Stato v2: **prototipo operativo da smussare mediante uso reale**.
-
-
 ## Formula sintetica
 
 > L'utente non deve ricordare **come** si raggiunge qualcosa.
@@ -475,3 +458,60 @@ Stato v2: **prototipo operativo da smussare mediante uso reale**.
 - [[Networking]]
 - [[KUNTA]]
 - [[MyJong]]
+
+
+## Regola grafica ShiduLab
+
+**Botolo + ShiduLab devono essere sempre presenti in basso a sinistra nell'interfaccia di ComboCode.**
+
+Regola permanente del progetto:
+- discreti;
+- trasparenti;
+- senza card, riquadri o fondi aggiuntivi;
+- sempre leggibili;
+- non devono interferire con i controlli;
+- posizione canonica: **basso a sinistra**.
+
+## Smussature emerse dal test v2
+
+- `TUTTI` deve mostrare realmente **tutto l'archivio**, non un sottoinsieme iniziale di 25 route;
+- le intestazioni delle colonne (`Obiettivo`, `Tipo`, `Comando/combinazione`, `Categoria`, `Stato`) devono essere cliccabili e ordinare realmente la tabella;
+- l'ordinamento deve poter essere crescente/decrescente;
+- l'icona ComboCode deve apparire anche nell'angolo alto sinistro della finestra, oltre che nella taskbar;
+- i documenti storici di comandi ESEGUI/CMD forniti dall'utente sono una fonte da incorporare, verificando e marcando le voci obsolete/legacy;
+- la pagina `TUTTI` deve essere anche un vero atlante esplorabile dell'archivio.
+
+
+## Stato implementazione v3 — 2026-09-12
+
+La v3 incorpora le smussature emerse dall'uso reale della v2:
+
+- GUI adattiva al tema di sistema Windows;
+- passaggio automatico chiaro/scuro anche a programma aperto;
+- DPI/scaling per-monitor;
+- icona ComboCode rinforzata anche nella barra del titolo;
+- [[Botolo]] + [[ShiduLab]] canonici in basso a sinistra;
+- `TUTTI` diventa davvero l'intero archivio, con filtri separati dalla pagina CERCA;
+- ordinamento crescente/decrescente cliccando tutte le intestazioni;
+- colonna `Verifica` distinta dalla sicurezza;
+- archivio storico dell'utente importato come fonte senza modernizzazioni silenziose;
+- le route legacy/non verificate sono conservate ma non eseguite automaticamente.
+
+### Numeri v3
+
+- 290 obiettivi
+- 308 route
+- 149 RUN
+- 125 CMD
+- 34 HOTKEY
+
+### Nuovi nodi naturali
+
+- [[ComboCode Archivio ESEGUI]]
+- [[ComboCode Archivio DOS]]
+- [[ComboCode GUI adattiva]]
+- [[ComboCode Fonti]]
+- [[Windows Legacy]]
+- [[Windows 2000 XP]]
+- [[Botolo]]
+- [[ShiduLab]]

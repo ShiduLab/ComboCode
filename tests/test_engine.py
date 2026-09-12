@@ -55,15 +55,33 @@ class EngineTests(unittest.TestCase):
         expected = sum(len(g.get('routes', [])) for g in self.kb.goals)
         rows = self.kb.route_rows()
         self.assertEqual(len(rows), expected)
+        self.assertGreaterEqual(len(rows), 300)
 
     def test_archive_cmd_filter(self):
         rows = self.kb.route_rows(kind='CMD')
-        self.assertGreater(len(rows), 50)
+        self.assertGreater(len(rows), 100)
         self.assertTrue(all(row.route.get('kind') == 'CMD' for row in rows))
         values = {row.route.get('value') for row in rows}
         self.assertIn('dir', values)
         self.assertIn('help', values)
         self.assertIn('ipconfig /all', values)
+
+    def test_legacy_user_archive_imported(self):
+        values = {
+            row.route.get('value', '').lower()
+            for row in self.kb.route_rows(category='ESEGUI (archivio)')
+        }
+        self.assertIn('ciadv.msc', values)
+        self.assertIn('control userpasswords2', values)
+        self.assertIn('winver', values)
+
+    def test_sort_by_category(self):
+        rows = self.kb.route_rows(sort_by='cat')
+        categories = [row.goal.get('category', '').lower() for row in rows]
+        self.assertEqual(categories, sorted(categories))
+        rows_desc = self.kb.route_rows(sort_by='cat', descending=True)
+        categories_desc = [row.goal.get('category', '').lower() for row in rows_desc]
+        self.assertEqual(categories_desc, sorted(categories_desc, reverse=True))
 
     def test_unique_goal_ids(self):
         ids = [g['id'] for g in self.kb.goals]
