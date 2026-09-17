@@ -17,6 +17,20 @@ def normalize(text: str) -> str:
     return ' '.join(text.split())
 
 
+def _legacy_ideator_labels(value):
+    if isinstance(value, str):
+        return (value
+                .replace('Archivio utente', 'Archivio dell’ideatore')
+                .replace('archivio utente', 'archivio dell’ideatore')
+                .replace('dell’utente', 'dell’ideatore')
+                .replace('dall’utente', 'dall’ideatore'))
+    if isinstance(value, list):
+        return [_legacy_ideator_labels(item) for item in value]
+    if isinstance(value, dict):
+        return {key: _legacy_ideator_labels(item) for key, item in value.items()}
+    return value
+
+
 @dataclass(frozen=True)
 class SearchHit:
     score: float
@@ -41,7 +55,10 @@ class KnowledgeBase:
         goals = []
         for path in sorted(pack_dir.glob('*.json')):
             data = json.loads(path.read_text(encoding='utf-8'))
-            goals.extend(data.get('goals', []))
+            pack_goals = data.get('goals', [])
+            if path.name == 'windows_user_archive_legacy.json':
+                pack_goals = _legacy_ideator_labels(pack_goals)
+            goals.extend(pack_goals)
         goals.extend(extra_goals)
         return cls(goals)
 
