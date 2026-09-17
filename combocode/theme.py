@@ -47,7 +47,7 @@ DARK = Palette(
 
 def system_prefers_dark() -> bool:
     if sys.platform != 'win32':
-        return False
+        return True
     try:
         import winreg
         key = winreg.OpenKey(
@@ -57,7 +57,7 @@ def system_prefers_dark() -> bool:
         value, _ = winreg.QueryValueEx(key, 'AppsUseLightTheme')
         return int(value) == 0
     except Exception:
-        return False
+        return True
 
 
 def apply_titlebar_mode(root, dark: bool) -> None:
