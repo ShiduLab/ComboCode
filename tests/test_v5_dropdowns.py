@@ -14,6 +14,12 @@ class V5DropdownTests(unittest.TestCase):
         self.assertIn('def _make_dropdown', text)
         self.assertIn('def _select_dropdown', text)
 
+    def test_dropdown_popup_belongs_to_triggering_window(self):
+        text = (ROOT / 'combocode/ui.py').read_text(encoding='utf-8')
+        self.assertIn('owner = button.winfo_toplevel()', text)
+        self.assertIn('popup = tk.Toplevel(owner)', text)
+        self.assertNotIn('popup = tk.Toplevel(self.root)', text)
+
     def test_dropdown_popup_supports_mouse_wheel_scrolling(self):
         text = (ROOT / 'combocode/ui.py').read_text(encoding='utf-8')
         self.assertIn('tk.Toplevel', text)
