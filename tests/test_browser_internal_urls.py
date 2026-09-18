@@ -150,6 +150,15 @@ class BrowserLauncherTests(unittest.TestCase):
         popen.assert_called_once_with([r'C:\\Chrome\\chrome.exe'])
         navigate.assert_called_once_with('chrome://extensions/shortcuts', 'chrome')
 
+    def test_non_opera_internal_navigation_maximizes_browser_window(self):
+        source = (ROOT / 'combocode' / 'browser_internal.py').read_text(encoding='utf-8')
+        self.assertIn('SW_MAXIMIZE = 3', source)
+        self.assertIn(
+            "show_cmd = SW_RESTORE if browser_name == 'opera' else SW_MAXIMIZE",
+            source,
+        )
+        self.assertIn('user32.ShowWindow(hwnd, show_cmd)', source)
+
     @patch('combocode.executor.launch_browser_internal')
     def test_executor_dispatches_generic_browser_internal_handler(self, launch):
         route = {
