@@ -7,7 +7,7 @@
     {
       "id": "browser.opera.internal.about.001",
       "name": "Informazioni — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://about in Opera.",
       "aliases": [
         "Informazioni",
@@ -45,7 +45,7 @@
     {
       "id": "browser.opera.internal.accessibility.002",
       "name": "Accessibilità — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://accessibility in Opera.",
       "aliases": [
         "Accessibilità",
@@ -83,7 +83,7 @@
     {
       "id": "browser.opera.internal.activity.003",
       "name": "Attività — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://activity in Opera.",
       "aliases": [
         "Attività",
@@ -121,7 +121,7 @@
     {
       "id": "browser.opera.internal.address-bar-dropdown.004",
       "name": "Menu barra indirizzi — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://address-bar-dropdown in Opera.",
       "aliases": [
         "Menu barra indirizzi",
@@ -164,7 +164,7 @@
     {
       "id": "browser.opera.internal.ai-mode-bar.005",
       "name": "Barra modalità AI — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://ai-mode-bar in Opera.",
       "aliases": [
         "Barra modalità AI",
@@ -207,7 +207,7 @@
     {
       "id": "browser.opera.internal.autofill-internals.006",
       "name": "Diagnostica compilazione automatica — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://autofill-internals in Opera.",
       "aliases": [
         "Diagnostica compilazione automatica",
@@ -249,7 +249,7 @@
     {
       "id": "browser.opera.internal.blob-internals.007",
       "name": "Diagnostica Blob — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://blob-internals in Opera.",
       "aliases": [
         "Diagnostica Blob",
@@ -291,7 +291,7 @@
     {
       "id": "browser.opera.internal.bluetooth-internals.008",
       "name": "Diagnostica Bluetooth — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://bluetooth-internals in Opera.",
       "aliases": [
         "Diagnostica Bluetooth",
@@ -333,7 +333,7 @@
     {
       "id": "browser.opera.internal.bookmarks.009",
       "name": "Segnalibri — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://bookmarks in Opera.",
       "aliases": [
         "Segnalibri",
@@ -371,7 +371,7 @@
     {
       "id": "browser.opera.internal.bookmarks-panel.010",
       "name": "Pannello segnalibri — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://bookmarks-panel in Opera.",
       "aliases": [
         "Pannello segnalibri",
@@ -412,7 +412,7 @@
     {
       "id": "browser.opera.internal.browserjs.011",
       "name": "BrowserJS — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://browserjs in Opera.",
       "aliases": [
         "browserjs",
@@ -449,7 +449,7 @@
     {
       "id": "browser.opera.internal.certificate-manager.012",
       "name": "Gestore certificati — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://certificate-manager in Opera.",
       "aliases": [
         "Gestore certificati",
@@ -490,7 +490,7 @@
     {
       "id": "browser.opera.internal.chrome-urls.013",
       "name": "Elenco URL interni — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://chrome-urls in Opera.",
       "aliases": [
         "Elenco URL interni",
@@ -531,7 +531,7 @@
     {
       "id": "browser.opera.internal.components.014",
       "name": "Componenti — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://components in Opera.",
       "aliases": [
         "Componenti",
@@ -569,7 +569,7 @@
     {
       "id": "browser.opera.internal.conflicts.015",
       "name": "Conflitti — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://conflicts in Opera.",
       "aliases": [
         "Conflitti",
@@ -607,7 +607,7 @@
     {
       "id": "browser.opera.internal.connection-help.016",
       "name": "Aiuto connessione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://connection-help in Opera.",
       "aliases": [
         "Aiuto connessione",
@@ -648,7 +648,7 @@
     {
       "id": "browser.opera.internal.connection-monitoring-detected.017",
       "name": "Monitoraggio connessione rilevato — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://connection-monitoring-detected in Opera.",
       "aliases": [
         "Monitoraggio connessione rilevato",
@@ -691,7 +691,7 @@
     {
       "id": "browser.opera.internal.consent-flow-dialog.018",
       "name": "Finestra consenso — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://consent-flow-dialog in Opera.",
       "aliases": [
         "Finestra consenso",
@@ -734,7 +734,7 @@
     {
       "id": "browser.opera.internal.constrained-test.019",
       "name": "Test vincolato — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://constrained-test in Opera.",
       "aliases": [
         "Test vincolato",
@@ -776,7 +776,7 @@
     {
       "id": "browser.opera.internal.crashes.020",
       "name": "Crash registrati — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crashes in Opera.",
       "aliases": [
         "Crash registrati",
@@ -814,7 +814,7 @@
     {
       "id": "browser.opera.internal.credits.021",
       "name": "Crediti — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://credits in Opera.",
       "aliases": [
         "Crediti",
@@ -852,7 +852,7 @@
     {
       "id": "browser.opera.internal.debug-webuis-disabled.022",
       "name": "WebUI di debug disabilitate — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://debug-webuis-disabled in Opera.",
       "aliases": [
         "WebUI di debug disabilitate",
@@ -896,7 +896,7 @@
     {
       "id": "browser.opera.internal.dino.023",
       "name": "Dino — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://dino in Opera.",
       "aliases": [
         "dino",
@@ -933,7 +933,7 @@
     {
       "id": "browser.opera.internal.downloads.024",
       "name": "Download — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://downloads in Opera.",
       "aliases": [
         "Download",
@@ -971,7 +971,7 @@
     {
       "id": "browser.opera.internal.easy-files.025",
       "name": "Easy Files — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://easy-files in Opera.",
       "aliases": [
         "easy files",
@@ -1011,7 +1011,7 @@
     {
       "id": "browser.opera.internal.easy-setup.026",
       "name": "Configurazione facile — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://easy-setup in Opera.",
       "aliases": [
         "Configurazione facile",
@@ -1052,7 +1052,7 @@
     {
       "id": "browser.opera.internal.emoji-picker.027",
       "name": "Selettore emoji — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://emoji-picker in Opera.",
       "aliases": [
         "Selettore emoji",
@@ -1093,7 +1093,7 @@
     {
       "id": "browser.opera.internal.extensions.028",
       "name": "Estensioni — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://extensions in Opera.",
       "aliases": [
         "Estensioni",
@@ -1131,7 +1131,7 @@
     {
       "id": "browser.opera.internal.extensions-internals.029",
       "name": "Diagnostica estensioni — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://extensions-internals in Opera.",
       "aliases": [
         "Diagnostica estensioni",
@@ -1173,7 +1173,7 @@
     {
       "id": "browser.opera.internal.feedback.030",
       "name": "Feedback — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://feedback in Opera.",
       "aliases": [
         "feedback",
@@ -1210,7 +1210,7 @@
     {
       "id": "browser.opera.internal.flags.031",
       "name": "Funzioni sperimentali (Flags) — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://flags in Opera.",
       "aliases": [
         "Funzioni sperimentali (Flags)",
@@ -1249,7 +1249,7 @@
     {
       "id": "browser.opera.internal.gcm-internals.032",
       "name": "Diagnostica GCM — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://gcm-internals in Opera.",
       "aliases": [
         "Diagnostica GCM",
@@ -1291,7 +1291,7 @@
     {
       "id": "browser.opera.internal.gpu.033",
       "name": "GPU — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://gpu in Opera.",
       "aliases": [
         "gpu",
@@ -1328,7 +1328,7 @@
     {
       "id": "browser.opera.internal.histograms.034",
       "name": "Istogrammi — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://histograms in Opera.",
       "aliases": [
         "Istogrammi",
@@ -1366,7 +1366,7 @@
     {
       "id": "browser.opera.internal.history.035",
       "name": "Cronologia — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://history in Opera.",
       "aliases": [
         "Cronologia",
@@ -1404,7 +1404,7 @@
     {
       "id": "browser.opera.internal.history-panel.036",
       "name": "Pannello cronologia — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://history-panel in Opera.",
       "aliases": [
         "Pannello cronologia",
@@ -1445,7 +1445,7 @@
     {
       "id": "browser.opera.internal.indexeddb-internals.037",
       "name": "Diagnostica IndexedDB — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://indexeddb-internals in Opera.",
       "aliases": [
         "Diagnostica IndexedDB",
@@ -1487,7 +1487,7 @@
     {
       "id": "browser.opera.internal.injection-protection.038",
       "name": "Protezione injection — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://injection-protection in Opera.",
       "aliases": [
         "Protezione injection",
@@ -1528,7 +1528,7 @@
     {
       "id": "browser.opera.internal.inspect.039",
       "name": "Ispezione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://inspect in Opera.",
       "aliases": [
         "Ispezione",
@@ -1567,7 +1567,7 @@
     {
       "id": "browser.opera.internal.media-engagement.040",
       "name": "Coinvolgimento media — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://media-engagement in Opera.",
       "aliases": [
         "Coinvolgimento media",
@@ -1608,7 +1608,7 @@
     {
       "id": "browser.opera.internal.media-internals.041",
       "name": "Diagnostica media — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://media-internals in Opera.",
       "aliases": [
         "Diagnostica media",
@@ -1650,7 +1650,7 @@
     {
       "id": "browser.opera.internal.mods.042",
       "name": "Mods — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://mods in Opera.",
       "aliases": [
         "mods",
@@ -1687,7 +1687,7 @@
     {
       "id": "browser.opera.internal.net-export.043",
       "name": "Esporta log rete — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://net-export in Opera.",
       "aliases": [
         "Esporta log rete",
@@ -1729,7 +1729,7 @@
     {
       "id": "browser.opera.internal.net-internals.044",
       "name": "Diagnostica rete — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://net-internals in Opera.",
       "aliases": [
         "Diagnostica rete",
@@ -1771,7 +1771,7 @@
     {
       "id": "browser.opera.internal.news.045",
       "name": "News — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://news in Opera.",
       "aliases": [
         "news",
@@ -1808,7 +1808,7 @@
     {
       "id": "browser.opera.internal.opera-account.046",
       "name": "Account Opera — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://opera-account in Opera.",
       "aliases": [
         "Account Opera",
@@ -1848,7 +1848,7 @@
     {
       "id": "browser.opera.internal.opera-diagnostics.047",
       "name": "Diagnostica Opera — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://opera-diagnostics in Opera.",
       "aliases": [
         "Diagnostica Opera",
@@ -1889,7 +1889,7 @@
     {
       "id": "browser.opera.internal.password-manager.048",
       "name": "Gestore password — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://password-manager in Opera.",
       "aliases": [
         "Gestore password",
@@ -1930,7 +1930,7 @@
     {
       "id": "browser.opera.internal.password-manager-internals.049",
       "name": "Diagnostica gestore password — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://password-manager-internals in Opera.",
       "aliases": [
         "Diagnostica gestore password",
@@ -1974,7 +1974,7 @@
     {
       "id": "browser.opera.internal.player-service.050",
       "name": "Servizio player — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://player-service in Opera.",
       "aliases": [
         "Servizio player",
@@ -2015,7 +2015,7 @@
     {
       "id": "browser.opera.internal.predictors.051",
       "name": "Predittori — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://predictors in Opera.",
       "aliases": [
         "Predittori",
@@ -2053,7 +2053,7 @@
     {
       "id": "browser.opera.internal.prefs-internals.052",
       "name": "Preferenze interne — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://prefs-internals in Opera.",
       "aliases": [
         "Preferenze interne",
@@ -2095,7 +2095,7 @@
     {
       "id": "browser.opera.internal.print.053",
       "name": "Stampa — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://print in Opera.",
       "aliases": [
         "Stampa",
@@ -2133,7 +2133,7 @@
     {
       "id": "browser.opera.internal.process-internals.054",
       "name": "Diagnostica processi — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://process-internals in Opera.",
       "aliases": [
         "Diagnostica processi",
@@ -2175,7 +2175,7 @@
     {
       "id": "browser.opera.internal.profile-internals.055",
       "name": "Diagnostica profilo — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://profile-internals in Opera.",
       "aliases": [
         "Diagnostica profilo",
@@ -2217,7 +2217,7 @@
     {
       "id": "browser.opera.internal.quota-internals.056",
       "name": "Diagnostica quota — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://quota-internals in Opera.",
       "aliases": [
         "Diagnostica quota",
@@ -2259,7 +2259,7 @@
     {
       "id": "browser.opera.internal.rich-hints-console.057",
       "name": "Console rich hints — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://rich-hints-console in Opera.",
       "aliases": [
         "Console rich hints",
@@ -2303,7 +2303,7 @@
     {
       "id": "browser.opera.internal.rich-wallpaper.058",
       "name": "Wallpaper avanzati — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://rich-wallpaper in Opera.",
       "aliases": [
         "Wallpaper avanzati",
@@ -2344,7 +2344,7 @@
     {
       "id": "browser.opera.internal.sandbox.059",
       "name": "Sandbox — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://sandbox in Opera.",
       "aliases": [
         "sandbox",
@@ -2382,7 +2382,7 @@
     {
       "id": "browser.opera.internal.serviceworker-internals.060",
       "name": "Diagnostica Service Worker — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://serviceworker-internals in Opera.",
       "aliases": [
         "Diagnostica Service Worker",
@@ -2424,7 +2424,7 @@
     {
       "id": "browser.opera.internal.settings.061",
       "name": "Impostazioni — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://settings in Opera.",
       "aliases": [
         "Impostazioni",
@@ -2462,7 +2462,7 @@
     {
       "id": "browser.opera.internal.sidebar-setup.062",
       "name": "Configurazione barra laterale — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://sidebar-setup in Opera.",
       "aliases": [
         "Configurazione barra laterale",
@@ -2503,7 +2503,7 @@
     {
       "id": "browser.opera.internal.site-engagement.063",
       "name": "Coinvolgimento siti — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://site-engagement in Opera.",
       "aliases": [
         "Coinvolgimento siti",
@@ -2544,7 +2544,7 @@
     {
       "id": "browser.opera.internal.snapshot-selfie.064",
       "name": "Snapshot selfie — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://snapshot-selfie in Opera.",
       "aliases": [
         "snapshot selfie",
@@ -2584,7 +2584,7 @@
     {
       "id": "browser.opera.internal.startpage.065",
       "name": "Pagina iniziale — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://startpage in Opera.",
       "aliases": [
         "Pagina iniziale",
@@ -2622,7 +2622,7 @@
     {
       "id": "browser.opera.internal.startpageshared.066",
       "name": "Pagina iniziale condivisa — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://startpageshared in Opera.",
       "aliases": [
         "Pagina iniziale condivisa",
@@ -2660,7 +2660,7 @@
     {
       "id": "browser.opera.internal.styleguide.067",
       "name": "Style guide — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://styleguide in Opera.",
       "aliases": [
         "Style guide",
@@ -2698,7 +2698,7 @@
     {
       "id": "browser.opera.internal.sync-internals.068",
       "name": "Diagnostica sincronizzazione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://sync-internals in Opera.",
       "aliases": [
         "Diagnostica sincronizzazione",
@@ -2740,7 +2740,7 @@
     {
       "id": "browser.opera.internal.sync-login.069",
       "name": "Login sincronizzazione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://sync-login in Opera.",
       "aliases": [
         "Login sincronizzazione",
@@ -2781,7 +2781,7 @@
     {
       "id": "browser.opera.internal.system.070",
       "name": "Sistema — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://system in Opera.",
       "aliases": [
         "Sistema",
@@ -2820,7 +2820,7 @@
     {
       "id": "browser.opera.internal.themes.071",
       "name": "Temi — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://themes in Opera.",
       "aliases": [
         "Temi",
@@ -2858,7 +2858,7 @@
     {
       "id": "browser.opera.internal.traces.072",
       "name": "Tracce — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://traces in Opera.",
       "aliases": [
         "Tracce",
@@ -2897,7 +2897,7 @@
     {
       "id": "browser.opera.internal.traces-internals.073",
       "name": "Diagnostica tracce — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://traces-internals in Opera.",
       "aliases": [
         "Diagnostica tracce",
@@ -2939,7 +2939,7 @@
     {
       "id": "browser.opera.internal.update.074",
       "name": "Aggiornamento — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://update in Opera.",
       "aliases": [
         "Aggiornamento",
@@ -2977,7 +2977,7 @@
     {
       "id": "browser.opera.internal.usb-internals.075",
       "name": "Diagnostica USB — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://usb-internals in Opera.",
       "aliases": [
         "Diagnostica USB",
@@ -3019,7 +3019,7 @@
     {
       "id": "browser.opera.internal.version.076",
       "name": "Versione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://version in Opera.",
       "aliases": [
         "Versione",
@@ -3057,7 +3057,7 @@
     {
       "id": "browser.opera.internal.video-conference-detached.077",
       "name": "Videoconferenza separata — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://video-conference-detached in Opera.",
       "aliases": [
         "Videoconferenza separata",
@@ -3100,7 +3100,7 @@
     {
       "id": "browser.opera.internal.view-cert.078",
       "name": "Visualizza certificato — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://view-cert in Opera.",
       "aliases": [
         "Visualizza certificato",
@@ -3141,7 +3141,7 @@
     {
       "id": "browser.opera.internal.vpn-pro.079",
       "name": "VPN Pro — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://vpn-pro in Opera.",
       "aliases": [
         "vpn pro",
@@ -3181,7 +3181,7 @@
     {
       "id": "browser.opera.internal.web3-selector.080",
       "name": "Selettore Web3 — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://web3-selector in Opera.",
       "aliases": [
         "Selettore Web3",
@@ -3222,7 +3222,7 @@
     {
       "id": "browser.opera.internal.webnn-internals.081",
       "name": "Diagnostica WebNN — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://webnn-internals in Opera.",
       "aliases": [
         "Diagnostica WebNN",
@@ -3264,7 +3264,7 @@
     {
       "id": "browser.opera.internal.webrtc-internals.082",
       "name": "Diagnostica WebRTC — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://webrtc-internals in Opera.",
       "aliases": [
         "Diagnostica WebRTC",
@@ -3306,7 +3306,7 @@
     {
       "id": "browser.opera.internal.print.083",
       "name": "Stampa — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna chrome-untrusted://print in Opera.",
       "aliases": [
         "Stampa",
@@ -3344,7 +3344,7 @@
     {
       "id": "browser.opera.internal.discards.084",
       "name": "Schede scartate — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://discards in Opera.",
       "aliases": [
         "Schede scartate",
@@ -3383,7 +3383,7 @@
     {
       "id": "browser.opera.internal.interstitials.085",
       "name": "Pagine interstiziali — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://interstitials in Opera.",
       "aliases": [
         "Pagine interstiziali",
@@ -3422,7 +3422,7 @@
     {
       "id": "browser.opera.internal.local-state.086",
       "name": "Stato locale — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://local-state in Opera.",
       "aliases": [
         "Stato locale",
@@ -3464,7 +3464,7 @@
     {
       "id": "browser.opera.internal.location-internals.087",
       "name": "Diagnostica posizione — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://location-internals in Opera.",
       "aliases": [
         "Diagnostica posizione",
@@ -3506,7 +3506,7 @@
     {
       "id": "browser.opera.internal.media-router-internals.088",
       "name": "Diagnostica router media — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://media-router-internals in Opera.",
       "aliases": [
         "Diagnostica router media",
@@ -3550,7 +3550,7 @@
     {
       "id": "browser.opera.internal.memory-internals.089",
       "name": "Diagnostica memoria — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://memory-internals in Opera.",
       "aliases": [
         "Diagnostica memoria",
@@ -3592,7 +3592,7 @@
     {
       "id": "browser.opera.internal.network-errors.090",
       "name": "Errori rete — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://network-errors in Opera.",
       "aliases": [
         "Errori rete",
@@ -3634,7 +3634,7 @@
     {
       "id": "browser.opera.internal.safe-browsing.091",
       "name": "Safe Browsing — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://safe-browsing in Opera.",
       "aliases": [
         "safe browsing",
@@ -3675,7 +3675,7 @@
     {
       "id": "browser.opera.internal.tracing.092",
       "name": "Tracing — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://tracing in Opera.",
       "aliases": [
         "tracing",
@@ -3713,7 +3713,7 @@
     {
       "id": "browser.opera.internal.ukm.093",
       "name": "UKM — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://ukm in Opera.",
       "aliases": [
         "ukm",
@@ -3751,7 +3751,7 @@
     {
       "id": "browser.opera.internal.badcastcrash.094",
       "name": "Crash BadCast — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://badcastcrash in Opera.",
       "aliases": [
         "Crash BadCast",
@@ -3790,7 +3790,7 @@
     {
       "id": "browser.opera.internal.inducebrowsercrashforrealz.095",
       "name": "Crash intenzionale browser — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://inducebrowsercrashforrealz in Opera.",
       "aliases": [
         "Crash intenzionale browser",
@@ -3829,7 +3829,7 @@
     {
       "id": "browser.opera.internal.inducebrowserdcheckforrealz.096",
       "name": "DCHECK intenzionale browser — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://inducebrowserdcheckforrealz in Opera.",
       "aliases": [
         "DCHECK intenzionale browser",
@@ -3868,7 +3868,7 @@
     {
       "id": "browser.opera.internal.uithreadhang.097",
       "name": "Blocco intenzionale UI thread — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://uithreadhang in Opera.",
       "aliases": [
         "Blocco intenzionale UI thread",
@@ -3907,7 +3907,7 @@
     {
       "id": "browser.opera.internal.crash-browser-member-dereference-after-free.098",
       "name": "Crash intenzionale: browser · member dereference after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/browser/member-dereference-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: browser · member dereference after free",
@@ -3956,7 +3956,7 @@
     {
       "id": "browser.opera.internal.crash-browser-heap-overflow.099",
       "name": "Crash intenzionale: browser · heap overflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/browser/heap-overflow in Opera.",
       "aliases": [
         "Crash intenzionale: browser · heap overflow",
@@ -4001,7 +4001,7 @@
     {
       "id": "browser.opera.internal.crash-browser-use-after-free.100",
       "name": "Crash intenzionale: browser · use after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/browser/use-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: browser · use after free",
@@ -4048,7 +4048,7 @@
     {
       "id": "browser.opera.internal.crash-browser-heap-underflow.101",
       "name": "Crash intenzionale: browser · heap underflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/browser/heap-underflow in Opera.",
       "aliases": [
         "Crash intenzionale: browser · heap underflow",
@@ -4093,7 +4093,7 @@
     {
       "id": "browser.opera.internal.crash-gpu-member-dereference-after-free.102",
       "name": "Crash intenzionale: gpu · member dereference after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/gpu/member-dereference-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: gpu · member dereference after free",
@@ -4142,7 +4142,7 @@
     {
       "id": "browser.opera.internal.crash-gpu-heap-overflow.103",
       "name": "Crash intenzionale: gpu · heap overflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/gpu/heap-overflow in Opera.",
       "aliases": [
         "Crash intenzionale: gpu · heap overflow",
@@ -4187,7 +4187,7 @@
     {
       "id": "browser.opera.internal.crash-gpu-use-after-free.104",
       "name": "Crash intenzionale: gpu · use after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/gpu/use-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: gpu · use after free",
@@ -4234,7 +4234,7 @@
     {
       "id": "browser.opera.internal.crash-gpu-heap-underflow.105",
       "name": "Crash intenzionale: gpu · heap underflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/gpu/heap-underflow in Opera.",
       "aliases": [
         "Crash intenzionale: gpu · heap underflow",
@@ -4279,7 +4279,7 @@
     {
       "id": "browser.opera.internal.crash-renderer-member-dereference-after-free.106",
       "name": "Crash intenzionale: renderer · member dereference after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/renderer/member-dereference-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: renderer · member dereference after free",
@@ -4328,7 +4328,7 @@
     {
       "id": "browser.opera.internal.crash-renderer-heap-overflow.107",
       "name": "Crash intenzionale: renderer · heap overflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/renderer/heap-overflow in Opera.",
       "aliases": [
         "Crash intenzionale: renderer · heap overflow",
@@ -4373,7 +4373,7 @@
     {
       "id": "browser.opera.internal.crash-renderer-use-after-free.108",
       "name": "Crash intenzionale: renderer · use after free — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/renderer/use-after-free in Opera.",
       "aliases": [
         "Crash intenzionale: renderer · use after free",
@@ -4420,7 +4420,7 @@
     {
       "id": "browser.opera.internal.crash-renderer-heap-underflow.109",
       "name": "Crash intenzionale: renderer · heap underflow — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/renderer/heap-underflow in Opera.",
       "aliases": [
         "Crash intenzionale: renderer · heap underflow",
@@ -4465,7 +4465,7 @@
     {
       "id": "browser.opera.internal.crash.110",
       "name": "Crash intenzionale — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash in Opera.",
       "aliases": [
         "Crash intenzionale",
@@ -4504,7 +4504,7 @@
     {
       "id": "browser.opera.internal.crash-rust.111",
       "name": "Crash intenzionale: rust — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/rust in Opera.",
       "aliases": [
         "Crash intenzionale: rust",
@@ -4545,7 +4545,7 @@
     {
       "id": "browser.opera.internal.crashdump.112",
       "name": "Crash dump — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crashdump in Opera.",
       "aliases": [
         "Crash dump",
@@ -4584,7 +4584,7 @@
     {
       "id": "browser.opera.internal.kill.113",
       "name": "Termina browser — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://kill in Opera.",
       "aliases": [
         "Termina browser",
@@ -4623,7 +4623,7 @@
     {
       "id": "browser.opera.internal.hang.114",
       "name": "Blocca browser — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://hang in Opera.",
       "aliases": [
         "Blocca browser",
@@ -4662,7 +4662,7 @@
     {
       "id": "browser.opera.internal.shorthang.115",
       "name": "Blocco breve browser — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://shorthang in Opera.",
       "aliases": [
         "Blocco breve browser",
@@ -4701,7 +4701,7 @@
     {
       "id": "browser.opera.internal.gpuclean.116",
       "name": "Pulizia processo GPU — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://gpuclean in Opera.",
       "aliases": [
         "Pulizia processo GPU",
@@ -4740,7 +4740,7 @@
     {
       "id": "browser.opera.internal.gpucrash.117",
       "name": "Crash processo GPU — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://gpucrash in Opera.",
       "aliases": [
         "Crash processo GPU",
@@ -4779,7 +4779,7 @@
     {
       "id": "browser.opera.internal.gpuhang.118",
       "name": "Blocco processo GPU — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://gpuhang in Opera.",
       "aliases": [
         "Blocco processo GPU",
@@ -4818,7 +4818,7 @@
     {
       "id": "browser.opera.internal.memory-exhaust.119",
       "name": "Esaurimento memoria — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://memory-exhaust in Opera.",
       "aliases": [
         "Esaurimento memoria",
@@ -4860,7 +4860,7 @@
     {
       "id": "browser.opera.internal.memory-pressure-critical.120",
       "name": "Pressione memoria critica — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://memory-pressure-critical in Opera.",
       "aliases": [
         "Pressione memoria critica",
@@ -4904,7 +4904,7 @@
     {
       "id": "browser.opera.internal.memory-pressure-moderate.121",
       "name": "Pressione memoria moderata — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://memory-pressure-moderate in Opera.",
       "aliases": [
         "Pressione memoria moderata",
@@ -4948,7 +4948,7 @@
     {
       "id": "browser.opera.internal.inducebrowserheapcorruption.122",
       "name": "Corruzione heap intenzionale — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://inducebrowserheapcorruption in Opera.",
       "aliases": [
         "Corruzione heap intenzionale",
@@ -4987,7 +4987,7 @@
     {
       "id": "browser.opera.internal.crash-cfg.123",
       "name": "Crash intenzionale: cfg — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://crash/cfg in Opera.",
       "aliases": [
         "Crash intenzionale: cfg",
@@ -5028,7 +5028,7 @@
     {
       "id": "browser.opera.internal.heapcorruptioncrash.124",
       "name": "Crash per corruzione heap — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://heapcorruptioncrash in Opera.",
       "aliases": [
         "Crash per corruzione heap",
@@ -5067,7 +5067,7 @@
     {
       "id": "browser.opera.internal.webuijserror.125",
       "name": "Errore WebUI JavaScript — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://webuijserror in Opera.",
       "aliases": [
         "Errore WebUI JavaScript",
@@ -5106,7 +5106,7 @@
     {
       "id": "browser.opera.internal.quit.126",
       "name": "Chiudi Opera — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://quit in Opera.",
       "aliases": [
         "Chiudi Opera",
@@ -5145,7 +5145,7 @@
     {
       "id": "browser.opera.internal.restart.127",
       "name": "Riavvia Opera — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre la pagina interna opera://restart in Opera.",
       "aliases": [
         "Riavvia Opera",
@@ -5184,7 +5184,7 @@
     {
       "id": "browser.opera.internal.settings-keyboard-shortcuts.128",
       "name": "Scorciatoie da tastiera — Opera",
-      "category": "Browser · Opera",
+      "category": "Browser url's",
       "description": "Apre direttamente la pagina delle scorciatoie da tastiera di Opera.",
       "aliases": [
         "Scorciatoie da tastiera",

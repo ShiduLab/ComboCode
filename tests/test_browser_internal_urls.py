@@ -34,6 +34,13 @@ class BrowserInternalPackTests(unittest.TestCase):
         self.assertEqual(route['handler'], 'opera_internal')
         self.assertTrue(route['executable'])
 
+    def test_browser_urls_category_populates_left_list(self):
+        self.assertEqual({g['category'] for g in self.goals}, {"Browser url's"})
+        kb = KnowledgeBase(self.goals)
+        self.assertIn("Browser url's", kb.categories())
+        hits = kb.search('', category="Browser url's", limit=None)
+        self.assertEqual(len(hits), 128)
+
     def test_shortcuts_search_finds_keyboard_shortcuts_page(self):
         kb = KnowledgeBase(self.goals)
         hits = kb.search('shortcuts')
