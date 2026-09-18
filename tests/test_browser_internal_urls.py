@@ -134,19 +134,21 @@ class BrowserLauncherTests(unittest.TestCase):
             executable=r'C:\\Opera\\opera.exe',
         )
         popen.assert_called_once_with([r'C:\\Opera\\opera.exe'])
-        navigate.assert_called_once_with('opera://settings')
+        navigate.assert_called_once_with('opera://settings', 'opera')
 
     @patch('combocode.browser_internal.subprocess.Popen')
-    def test_generic_chrome_internal_launcher_targets_chrome(self, popen):
+    @patch(
+        'combocode.browser_internal._navigate_internal_via_address_bar',
+        create=True,
+    )
+    def test_generic_chrome_internal_launcher_uses_address_bar(self, navigate, popen):
         launch_browser_internal(
             'chrome://extensions/shortcuts',
             'chrome',
             executable=r'C:\\Chrome\\chrome.exe',
         )
-        popen.assert_called_once_with([
-            r'C:\\Chrome\\chrome.exe',
-            'chrome://extensions/shortcuts',
-        ])
+        popen.assert_called_once_with([r'C:\\Chrome\\chrome.exe'])
+        navigate.assert_called_once_with('chrome://extensions/shortcuts', 'chrome')
 
     @patch('combocode.executor.launch_browser_internal')
     def test_executor_dispatches_generic_browser_internal_handler(self, launch):
