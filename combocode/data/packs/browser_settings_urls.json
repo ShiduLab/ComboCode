@@ -6,12 +6,12 @@
   "goals": [
     {
       "id": "browser.chrome.internal.extension-shortcuts",
-      "name": "Scorciatoie estensioni — Chrome",
+      "name": "Personalizza scorciatoie da tastiera — Chrome",
       "category": "Browser url's",
       "domains": [
         "Browser · Chrome"
       ],
-      "description": "Apre la pagina di Chrome per visualizzare e modificare le scorciatoie assegnate alle estensioni.",
+      "description": "Apre la pagina di Chrome per visualizzare e personalizzare le scorciatoie assegnate alle estensioni.",
       "aliases": [
         "scorciatoie chrome",
         "shortcut chrome",
@@ -47,12 +47,12 @@
     },
     {
       "id": "browser.edge.internal.extension-shortcuts",
-      "name": "Scorciatoie estensioni — Edge",
+      "name": "Personalizza scorciatoie da tastiera — Edge",
       "category": "Browser url's",
       "domains": [
         "Browser · Edge"
       ],
-      "description": "Apre la pagina di Edge per visualizzare e modificare le scorciatoie assegnate alle estensioni.",
+      "description": "Apre la pagina di Edge per visualizzare e personalizzare le scorciatoie assegnate alle estensioni.",
       "aliases": [
         "scorciatoie edge",
         "shortcut edge",
