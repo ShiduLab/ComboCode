@@ -6,7 +6,7 @@ from unittest.mock import patch
 
 from combocode.engine import KnowledgeBase
 from combocode.executor import execute_route
-from combocode.browser_internal import canonical_opera_url, launch_opera_internal
+from combocode.browser_internal import canonical_opera_url, launch_opera_internal, launch_browser_internal
 from combocode.safety import confirmation_for_route
 
 
@@ -135,6 +135,31 @@ class BrowserLauncherTests(unittest.TestCase):
         )
         popen.assert_called_once_with([r'C:\\Opera\\opera.exe'])
         navigate.assert_called_once_with('opera://settings')
+
+    @patch('combocode.browser_internal.subprocess.Popen')
+    def test_generic_chrome_internal_launcher_targets_chrome(self, popen):
+        launch_browser_internal(
+            'chrome://extensions/shortcuts',
+            'chrome',
+            executable=r'C:\\Chrome\\chrome.exe',
+        )
+        popen.assert_called_once_with([
+            r'C:\\Chrome\\chrome.exe',
+            'chrome://extensions/shortcuts',
+        ])
+
+    @patch('combocode.executor.launch_browser_internal')
+    def test_executor_dispatches_generic_browser_internal_handler(self, launch):
+        route = {
+            'kind': 'URI',
+            'value': 'edge://extensions/shortcuts',
+            'handler': 'browser_internal',
+            'browser': 'edge',
+            'safety': 'SAFE',
+        }
+        with patch.object(sys, 'platform', 'win32'):
+            execute_route(route)
+        launch.assert_called_once_with('edge://extensions/shortcuts', 'edge')
 
     @patch('combocode.executor.launch_opera_internal')
     def test_executor_dispatches_opera_internal_handler(self, launch):
