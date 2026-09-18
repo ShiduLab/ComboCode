@@ -165,6 +165,11 @@ class SafetyConfirmationTests(unittest.TestCase):
         self.assertIn('PERICOLO', title)
         self.assertIn('Provoca intenzionalmente un crash', message)
 
+    def test_route_detail_shows_goal_description_before_technical_note(self):
+        source = (ROOT / 'combocode' / 'ui.py').read_text(encoding='utf-8')
+        self.assertIn("description = self.current_goal.get('description', '')", source)
+        self.assertIn("lines = [description, note, f'Verifica: {verified}']", source)
+
     def test_ui_exposes_caution_and_uses_common_confirmation_helper(self):
         source = (ROOT / 'combocode' / 'ui.py').read_text(encoding='utf-8')
         self.assertIn("['SAFE', 'CAUTION', 'ELEVATED', 'DESTRUCTIVE']", source)
