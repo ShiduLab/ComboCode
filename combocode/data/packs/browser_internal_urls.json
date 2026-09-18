@@ -8,7 +8,7 @@
       "id": "browser.opera.internal.about.001",
       "name": "Informazioni — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://about in Opera.",
+      "description": "Mostra informazioni generali e l’accesso alle pagine interne disponibili nel browser.",
       "aliases": [
         "Informazioni",
         "about",
@@ -46,7 +46,7 @@
       "id": "browser.opera.internal.accessibility.002",
       "name": "Accessibilità — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://accessibility in Opera.",
+      "description": "Mostra lo stato e le informazioni interne delle funzioni di accessibilità del browser.",
       "aliases": [
         "Accessibilità",
         "accessibility",
@@ -84,7 +84,7 @@
       "id": "browser.opera.internal.activity.003",
       "name": "Attività — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://activity in Opera.",
+      "description": "Apre la WebUI interna dedicata all’attività del browser.",
       "aliases": [
         "Attività",
         "activity",
@@ -122,7 +122,7 @@
       "id": "browser.opera.internal.address-bar-dropdown.004",
       "name": "Menu barra indirizzi — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://address-bar-dropdown in Opera.",
+      "description": "Apre la WebUI che gestisce il menu a discesa della barra degli indirizzi.",
       "aliases": [
         "Menu barra indirizzi",
         "address bar dropdown",
@@ -165,7 +165,7 @@
       "id": "browser.opera.internal.ai-mode-bar.005",
       "name": "Barra modalità AI — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://ai-mode-bar in Opera.",
+      "description": "Apre la WebUI interna della barra Modalità AI.",
       "aliases": [
         "Barra modalità AI",
         "ai mode bar",
@@ -208,7 +208,7 @@
       "id": "browser.opera.internal.autofill-internals.006",
       "name": "Diagnostica compilazione automatica — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://autofill-internals in Opera.",
+      "description": "Mostra log e stato interno dei servizi di compilazione automatica.",
       "aliases": [
         "Diagnostica compilazione automatica",
         "autofill internals",
@@ -250,7 +250,7 @@
       "id": "browser.opera.internal.blob-internals.007",
       "name": "Diagnostica Blob — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://blob-internals in Opera.",
+      "description": "Mostra i Blob gestiti dal browser e le relative informazioni interne.",
       "aliases": [
         "Diagnostica Blob",
         "blob internals",
@@ -292,7 +292,7 @@
       "id": "browser.opera.internal.bluetooth-internals.008",
       "name": "Diagnostica Bluetooth — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://bluetooth-internals in Opera.",
+      "description": "Mostra informazioni e diagnostica Bluetooth esposte dal browser.",
       "aliases": [
         "Diagnostica Bluetooth",
         "bluetooth internals",
@@ -334,7 +334,7 @@
       "id": "browser.opera.internal.bookmarks.009",
       "name": "Segnalibri — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://bookmarks in Opera.",
+      "description": "Apre il gestore dei segnalibri.",
       "aliases": [
         "Segnalibri",
         "bookmarks",
@@ -372,7 +372,7 @@
       "id": "browser.opera.internal.bookmarks-panel.010",
       "name": "Pannello segnalibri — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://bookmarks-panel in Opera.",
+      "description": "Apre il pannello interno dei segnalibri.",
       "aliases": [
         "Pannello segnalibri",
         "bookmarks panel",
@@ -413,7 +413,7 @@
       "id": "browser.opera.internal.browserjs.011",
       "name": "BrowserJS — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://browserjs in Opera.",
+      "description": "Mostra la sezione BrowserJS, il sistema di compatibilità specifico di Opera.",
       "aliases": [
         "browserjs",
         "chrome://browserjs",
@@ -450,7 +450,7 @@
       "id": "browser.opera.internal.certificate-manager.012",
       "name": "Gestore certificati — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://certificate-manager in Opera.",
+      "description": "Apre il gestore dei certificati usati dal browser.",
       "aliases": [
         "Gestore certificati",
         "certificate manager",
@@ -491,7 +491,7 @@
       "id": "browser.opera.internal.chrome-urls.013",
       "name": "Elenco URL interni — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://chrome-urls in Opera.",
+      "description": "Elenca le URL interne disponibili nel browser, comprese quelle di diagnostica e debug.",
       "aliases": [
         "Elenco URL interni",
         "chrome urls",
@@ -532,7 +532,7 @@
       "id": "browser.opera.internal.components.014",
       "name": "Componenti — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://components in Opera.",
+      "description": "Elenca i componenti interni del browser con stato e versione.",
       "aliases": [
         "Componenti",
         "components",
@@ -570,7 +570,7 @@
       "id": "browser.opera.internal.conflicts.015",
       "name": "Conflitti — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://conflicts in Opera.",
+      "description": "Mostra eventuali componenti o software rilevati come in conflitto con il browser.",
       "aliases": [
         "Conflitti",
         "conflicts",
@@ -608,7 +608,7 @@
       "id": "browser.opera.internal.connection-help.016",
       "name": "Aiuto connessione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://connection-help in Opera.",
+      "description": "Mostra gli strumenti interni di aiuto per problemi di connessione.",
       "aliases": [
         "Aiuto connessione",
         "connection help",
@@ -649,7 +649,7 @@
       "id": "browser.opera.internal.connection-monitoring-detected.017",
       "name": "Monitoraggio connessione rilevato — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://connection-monitoring-detected in Opera.",
+      "description": "Mostra la pagina interna usata quando il browser rileva monitoraggio della connessione.",
       "aliases": [
         "Monitoraggio connessione rilevato",
         "connection monitoring detected",
@@ -692,7 +692,7 @@
       "id": "browser.opera.internal.consent-flow-dialog.018",
       "name": "Finestra consenso — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://consent-flow-dialog in Opera.",
+      "description": "Apre la WebUI interna della finestra di consenso.",
       "aliases": [
         "Finestra consenso",
         "consent flow dialog",
@@ -735,7 +735,7 @@
       "id": "browser.opera.internal.constrained-test.019",
       "name": "Test vincolato — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://constrained-test in Opera.",
+      "description": "Apre una pagina interna di test vincolato, destinata alla diagnostica.",
       "aliases": [
         "Test vincolato",
         "constrained test",
@@ -777,7 +777,7 @@
       "id": "browser.opera.internal.crashes.020",
       "name": "Crash registrati — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crashes in Opera.",
+      "description": "Mostra i crash registrati dal browser e le informazioni disponibili sui relativi report.",
       "aliases": [
         "Crash registrati",
         "crashes",
@@ -815,7 +815,7 @@
       "id": "browser.opera.internal.credits.021",
       "name": "Crediti — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://credits in Opera.",
+      "description": "Mostra crediti e licenze dei componenti open source usati dal browser.",
       "aliases": [
         "Crediti",
         "credits",
@@ -853,7 +853,7 @@
       "id": "browser.opera.internal.debug-webuis-disabled.022",
       "name": "WebUI di debug disabilitate — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://debug-webuis-disabled in Opera.",
+      "description": "Mostra lo stato delle WebUI interne di debug quando risultano disabilitate.",
       "aliases": [
         "WebUI di debug disabilitate",
         "debug webuis disabled",
@@ -897,7 +897,7 @@
       "id": "browser.opera.internal.dino.023",
       "name": "Dino — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://dino in Opera.",
+      "description": "Apre il gioco offline Dino di Chromium.",
       "aliases": [
         "dino",
         "chrome://dino",
@@ -934,7 +934,7 @@
       "id": "browser.opera.internal.downloads.024",
       "name": "Download — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://downloads in Opera.",
+      "description": "Apre l’elenco dei file scaricati e dei download in corso.",
       "aliases": [
         "Download",
         "downloads",
@@ -972,7 +972,7 @@
       "id": "browser.opera.internal.easy-files.025",
       "name": "Easy Files — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://easy-files in Opera.",
+      "description": "Apre la WebUI di Easy Files per scegliere rapidamente file recenti.",
       "aliases": [
         "easy files",
         "chrome://easy-files",
@@ -1012,7 +1012,7 @@
       "id": "browser.opera.internal.easy-setup.026",
       "name": "Configurazione facile — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://easy-setup in Opera.",
+      "description": "Apre il pannello Configurazione facile di Opera.",
       "aliases": [
         "Configurazione facile",
         "easy setup",
@@ -1053,7 +1053,7 @@
       "id": "browser.opera.internal.emoji-picker.027",
       "name": "Selettore emoji — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://emoji-picker in Opera.",
+      "description": "Apre il selettore interno di emoji.",
       "aliases": [
         "Selettore emoji",
         "emoji picker",
@@ -1094,7 +1094,7 @@
       "id": "browser.opera.internal.extensions.028",
       "name": "Estensioni — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://extensions in Opera.",
+      "description": "Apre la gestione delle estensioni installate.",
       "aliases": [
         "Estensioni",
         "extensions",
@@ -1132,7 +1132,7 @@
       "id": "browser.opera.internal.extensions-internals.029",
       "name": "Diagnostica estensioni — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://extensions-internals in Opera.",
+      "description": "Mostra dati diagnostici e stato interno delle estensioni.",
       "aliases": [
         "Diagnostica estensioni",
         "extensions internals",
@@ -1174,7 +1174,7 @@
       "id": "browser.opera.internal.feedback.030",
       "name": "Feedback — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://feedback in Opera.",
+      "description": "Mostra il modulo interno per inviare feedback sul browser.",
       "aliases": [
         "feedback",
         "chrome://feedback",
@@ -1211,7 +1211,7 @@
       "id": "browser.opera.internal.flags.031",
       "name": "Funzioni sperimentali (Flags) — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://flags in Opera.",
+      "description": "Apre le funzioni sperimentali che possono essere attivate o disattivate nel browser.",
       "aliases": [
         "Funzioni sperimentali (Flags)",
         "flags",
@@ -1250,7 +1250,7 @@
       "id": "browser.opera.internal.gcm-internals.032",
       "name": "Diagnostica GCM — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://gcm-internals in Opera.",
+      "description": "Mostra stato e diagnostica del servizio di messaggistica GCM usato dal browser.",
       "aliases": [
         "Diagnostica GCM",
         "gcm internals",
@@ -1292,7 +1292,7 @@
       "id": "browser.opera.internal.gpu.033",
       "name": "GPU — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://gpu in Opera.",
+      "description": "Mostra stato, funzionalità attive e diagnostica dell’accelerazione grafica e della GPU.",
       "aliases": [
         "gpu",
         "chrome://gpu",
@@ -1329,7 +1329,7 @@
       "id": "browser.opera.internal.histograms.034",
       "name": "Istogrammi — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://histograms in Opera.",
+      "description": "Mostra gli istogrammi delle metriche interne raccolte dal browser.",
       "aliases": [
         "Istogrammi",
         "histograms",
@@ -1367,7 +1367,7 @@
       "id": "browser.opera.internal.history.035",
       "name": "Cronologia — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://history in Opera.",
+      "description": "Apre la cronologia di navigazione.",
       "aliases": [
         "Cronologia",
         "history",
@@ -1405,7 +1405,7 @@
       "id": "browser.opera.internal.history-panel.036",
       "name": "Pannello cronologia — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://history-panel in Opera.",
+      "description": "Apre il pannello interno della cronologia.",
       "aliases": [
         "Pannello cronologia",
         "history panel",
@@ -1446,7 +1446,7 @@
       "id": "browser.opera.internal.indexeddb-internals.037",
       "name": "Diagnostica IndexedDB — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://indexeddb-internals in Opera.",
+      "description": "Mostra i database IndexedDB locali e le relative informazioni diagnostiche.",
       "aliases": [
         "Diagnostica IndexedDB",
         "indexeddb internals",
@@ -1488,7 +1488,7 @@
       "id": "browser.opera.internal.injection-protection.038",
       "name": "Protezione injection — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://injection-protection in Opera.",
+      "description": "Mostra la pagina interna relativa alla protezione dalle iniezioni di codice nel browser.",
       "aliases": [
         "Protezione injection",
         "injection protection",
@@ -1529,7 +1529,7 @@
       "id": "browser.opera.internal.inspect.039",
       "name": "Ispezione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://inspect in Opera.",
+      "description": "Apre gli strumenti per ispezionare target, pagine e processi disponibili per il debug.",
       "aliases": [
         "Ispezione",
         "inspect",
@@ -1568,7 +1568,7 @@
       "id": "browser.opera.internal.media-engagement.040",
       "name": "Coinvolgimento media — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://media-engagement in Opera.",
+      "description": "Mostra il livello di interazione multimediale registrato per i siti visitati.",
       "aliases": [
         "Coinvolgimento media",
         "media engagement",
@@ -1609,7 +1609,7 @@
       "id": "browser.opera.internal.media-internals.041",
       "name": "Diagnostica media — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://media-internals in Opera.",
+      "description": "Mostra log e diagnostica interna della riproduzione audio e video.",
       "aliases": [
         "Diagnostica media",
         "media internals",
@@ -1651,7 +1651,7 @@
       "id": "browser.opera.internal.mods.042",
       "name": "Mods — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://mods in Opera.",
+      "description": "Apre la WebUI interna dedicata ai Mods di Opera.",
       "aliases": [
         "mods",
         "chrome://mods",
@@ -1688,7 +1688,7 @@
       "id": "browser.opera.internal.net-export.043",
       "name": "Esporta log rete — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://net-export in Opera.",
+      "description": "Permette di registrare ed esportare un log degli eventi di rete del browser.",
       "aliases": [
         "Esporta log rete",
         "net export",
@@ -1730,7 +1730,7 @@
       "id": "browser.opera.internal.net-internals.044",
       "name": "Diagnostica rete — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://net-internals in Opera.",
+      "description": "Mostra strumenti e diagnostica interna della rete.",
       "aliases": [
         "Diagnostica rete",
         "net internals",
@@ -1772,7 +1772,7 @@
       "id": "browser.opera.internal.news.045",
       "name": "News — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://news in Opera.",
+      "description": "Apre la WebUI interna dedicata alle notizie.",
       "aliases": [
         "news",
         "chrome://news",
@@ -1809,7 +1809,7 @@
       "id": "browser.opera.internal.opera-account.046",
       "name": "Account Opera — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://opera-account in Opera.",
+      "description": "Mostra la gestione interna dell’account Opera.",
       "aliases": [
         "Account Opera",
         "opera account",
@@ -1849,7 +1849,7 @@
       "id": "browser.opera.internal.opera-diagnostics.047",
       "name": "Diagnostica Opera — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://opera-diagnostics in Opera.",
+      "description": "Mostra strumenti e informazioni diagnostiche specifiche di Opera.",
       "aliases": [
         "Diagnostica Opera",
         "opera diagnostics",
@@ -1890,7 +1890,7 @@
       "id": "browser.opera.internal.password-manager.048",
       "name": "Gestore password — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://password-manager in Opera.",
+      "description": "Apre il gestore delle password salvate.",
       "aliases": [
         "Gestore password",
         "password manager",
@@ -1931,7 +1931,7 @@
       "id": "browser.opera.internal.password-manager-internals.049",
       "name": "Diagnostica gestore password — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://password-manager-internals in Opera.",
+      "description": "Mostra diagnostica e stato interno del gestore delle password.",
       "aliases": [
         "Diagnostica gestore password",
         "password manager internals",
@@ -1975,7 +1975,7 @@
       "id": "browser.opera.internal.player-service.050",
       "name": "Servizio player — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://player-service in Opera.",
+      "description": "Apre la WebUI interna del servizio Player di Opera.",
       "aliases": [
         "Servizio player",
         "player service",
@@ -2016,7 +2016,7 @@
       "id": "browser.opera.internal.predictors.051",
       "name": "Predittori — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://predictors in Opera.",
+      "description": "Mostra i dati dei predittori interni usati dal browser per anticipare navigazione e caricamenti.",
       "aliases": [
         "Predittori",
         "predictors",
@@ -2054,7 +2054,7 @@
       "id": "browser.opera.internal.prefs-internals.052",
       "name": "Preferenze interne — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://prefs-internals in Opera.",
+      "description": "Mostra le preferenze interne del browser e i loro valori correnti.",
       "aliases": [
         "Preferenze interne",
         "prefs internals",
@@ -2096,7 +2096,7 @@
       "id": "browser.opera.internal.print.053",
       "name": "Stampa — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://print in Opera.",
+      "description": "Apre l’anteprima di stampa interna del browser.",
       "aliases": [
         "Stampa",
         "print",
@@ -2134,7 +2134,7 @@
       "id": "browser.opera.internal.process-internals.054",
       "name": "Diagnostica processi — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://process-internals in Opera.",
+      "description": "Mostra informazioni diagnostiche sui processi interni del browser.",
       "aliases": [
         "Diagnostica processi",
         "process internals",
@@ -2176,7 +2176,7 @@
       "id": "browser.opera.internal.profile-internals.055",
       "name": "Diagnostica profilo — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://profile-internals in Opera.",
+      "description": "Mostra informazioni interne sul profilo Opera in uso.",
       "aliases": [
         "Diagnostica profilo",
         "profile internals",
@@ -2218,7 +2218,7 @@
       "id": "browser.opera.internal.quota-internals.056",
       "name": "Diagnostica quota — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://quota-internals in Opera.",
+      "description": "Mostra quote e utilizzo dello spazio di archiviazione assegnato ai siti.",
       "aliases": [
         "Diagnostica quota",
         "quota internals",
@@ -2260,7 +2260,7 @@
       "id": "browser.opera.internal.rich-hints-console.057",
       "name": "Console rich hints — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://rich-hints-console in Opera.",
+      "description": "Apre la console interna relativa ai Rich Hints.",
       "aliases": [
         "Console rich hints",
         "rich hints console",
@@ -2304,7 +2304,7 @@
       "id": "browser.opera.internal.rich-wallpaper.058",
       "name": "Wallpaper avanzati — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://rich-wallpaper in Opera.",
+      "description": "Apre la WebUI interna dedicata agli sfondi avanzati.",
       "aliases": [
         "Wallpaper avanzati",
         "rich wallpaper",
@@ -2345,7 +2345,7 @@
       "id": "browser.opera.internal.sandbox.059",
       "name": "Sandbox — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://sandbox in Opera.",
+      "description": "Mostra lo stato della sandbox di sicurezza applicata ai processi del browser.",
       "aliases": [
         "sandbox",
         "chrome://sandbox",
@@ -2383,7 +2383,7 @@
       "id": "browser.opera.internal.serviceworker-internals.060",
       "name": "Diagnostica Service Worker — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://serviceworker-internals in Opera.",
+      "description": "Mostra i Service Worker registrati e le relative informazioni diagnostiche.",
       "aliases": [
         "Diagnostica Service Worker",
         "serviceworker internals",
@@ -2425,7 +2425,7 @@
       "id": "browser.opera.internal.settings.061",
       "name": "Impostazioni — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://settings in Opera.",
+      "description": "Apre le impostazioni di Opera.",
       "aliases": [
         "Impostazioni",
         "settings",
@@ -2463,7 +2463,7 @@
       "id": "browser.opera.internal.sidebar-setup.062",
       "name": "Configurazione barra laterale — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://sidebar-setup in Opera.",
+      "description": "Apre la configurazione della barra laterale di Opera.",
       "aliases": [
         "Configurazione barra laterale",
         "sidebar setup",
@@ -2504,7 +2504,7 @@
       "id": "browser.opera.internal.site-engagement.063",
       "name": "Coinvolgimento siti — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://site-engagement in Opera.",
+      "description": "Mostra il livello di interazione registrato da Opera/Chromium per ciascun sito visitato.",
       "aliases": [
         "Coinvolgimento siti",
         "site engagement",
@@ -2545,7 +2545,7 @@
       "id": "browser.opera.internal.snapshot-selfie.064",
       "name": "Snapshot selfie — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://snapshot-selfie in Opera.",
+      "description": "Apre la WebUI interna usata dalla funzione Snapshot/Selfie.",
       "aliases": [
         "snapshot selfie",
         "chrome://snapshot-selfie",
@@ -2585,7 +2585,7 @@
       "id": "browser.opera.internal.startpage.065",
       "name": "Pagina iniziale — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://startpage in Opera.",
+      "description": "Apre la pagina iniziale interna di Opera.",
       "aliases": [
         "Pagina iniziale",
         "startpage",
@@ -2623,7 +2623,7 @@
       "id": "browser.opera.internal.startpageshared.066",
       "name": "Pagina iniziale condivisa — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://startpageshared in Opera.",
+      "description": "Apre i componenti interni condivisi usati dalla pagina iniziale di Opera.",
       "aliases": [
         "Pagina iniziale condivisa",
         "startpageshared",
@@ -2661,7 +2661,7 @@
       "id": "browser.opera.internal.styleguide.067",
       "name": "Style guide — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://styleguide in Opera.",
+      "description": "Apre la guida di stile interna delle WebUI del browser.",
       "aliases": [
         "Style guide",
         "styleguide",
@@ -2699,7 +2699,7 @@
       "id": "browser.opera.internal.sync-internals.068",
       "name": "Diagnostica sincronizzazione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://sync-internals in Opera.",
+      "description": "Mostra stato, eventi e diagnostica della sincronizzazione.",
       "aliases": [
         "Diagnostica sincronizzazione",
         "sync internals",
@@ -2741,7 +2741,7 @@
       "id": "browser.opera.internal.sync-login.069",
       "name": "Login sincronizzazione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://sync-login in Opera.",
+      "description": "Apre la WebUI interna usata per l’accesso alla sincronizzazione.",
       "aliases": [
         "Login sincronizzazione",
         "sync login",
@@ -2782,7 +2782,7 @@
       "id": "browser.opera.internal.system.070",
       "name": "Sistema — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://system in Opera.",
+      "description": "Mostra informazioni di sistema e dati diagnostici raccolti dal browser.",
       "aliases": [
         "Sistema",
         "system",
@@ -2821,7 +2821,7 @@
       "id": "browser.opera.internal.themes.071",
       "name": "Temi — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://themes in Opera.",
+      "description": "Apre la gestione interna dei temi.",
       "aliases": [
         "Temi",
         "themes",
@@ -2859,7 +2859,7 @@
       "id": "browser.opera.internal.traces.072",
       "name": "Tracce — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://traces in Opera.",
+      "description": "Apre la raccolta e la visualizzazione delle tracce diagnostiche del browser.",
       "aliases": [
         "Tracce",
         "traces",
@@ -2898,7 +2898,7 @@
       "id": "browser.opera.internal.traces-internals.073",
       "name": "Diagnostica tracce — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://traces-internals in Opera.",
+      "description": "Mostra stato e configurazione interna del sistema di tracing.",
       "aliases": [
         "Diagnostica tracce",
         "traces internals",
@@ -2940,7 +2940,7 @@
       "id": "browser.opera.internal.update.074",
       "name": "Aggiornamento — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://update in Opera.",
+      "description": "Mostra lo stato e gli strumenti interni di aggiornamento di Opera.",
       "aliases": [
         "Aggiornamento",
         "update",
@@ -2978,7 +2978,7 @@
       "id": "browser.opera.internal.usb-internals.075",
       "name": "Diagnostica USB — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://usb-internals in Opera.",
+      "description": "Mostra dispositivi e diagnostica USB visibili al browser.",
       "aliases": [
         "Diagnostica USB",
         "usb internals",
@@ -3020,7 +3020,7 @@
       "id": "browser.opera.internal.version.076",
       "name": "Versione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://version in Opera.",
+      "description": "Mostra versione di Opera, versione Chromium, profilo e parametri di avvio.",
       "aliases": [
         "Versione",
         "version",
@@ -3058,7 +3058,7 @@
       "id": "browser.opera.internal.video-conference-detached.077",
       "name": "Videoconferenza separata — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://video-conference-detached in Opera.",
+      "description": "Apre la WebUI separata usata dalle funzioni di videoconferenza.",
       "aliases": [
         "Videoconferenza separata",
         "video conference detached",
@@ -3101,7 +3101,7 @@
       "id": "browser.opera.internal.view-cert.078",
       "name": "Visualizza certificato — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://view-cert in Opera.",
+      "description": "Apre il visualizzatore interno dei dettagli di un certificato.",
       "aliases": [
         "Visualizza certificato",
         "view cert",
@@ -3142,7 +3142,7 @@
       "id": "browser.opera.internal.vpn-pro.079",
       "name": "VPN Pro — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://vpn-pro in Opera.",
+      "description": "Apre la WebUI interna di Opera VPN Pro.",
       "aliases": [
         "vpn pro",
         "chrome://vpn-pro",
@@ -3182,7 +3182,7 @@
       "id": "browser.opera.internal.web3-selector.080",
       "name": "Selettore Web3 — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://web3-selector in Opera.",
+      "description": "Apre il selettore interno relativo alle funzioni Web3.",
       "aliases": [
         "Selettore Web3",
         "web3 selector",
@@ -3223,7 +3223,7 @@
       "id": "browser.opera.internal.webnn-internals.081",
       "name": "Diagnostica WebNN — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://webnn-internals in Opera.",
+      "description": "Mostra informazioni diagnostiche sulle funzioni WebNN disponibili nel browser.",
       "aliases": [
         "Diagnostica WebNN",
         "webnn internals",
@@ -3265,7 +3265,7 @@
       "id": "browser.opera.internal.webrtc-internals.082",
       "name": "Diagnostica WebRTC — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://webrtc-internals in Opera.",
+      "description": "Mostra connessioni, statistiche e log diagnostici delle sessioni WebRTC.",
       "aliases": [
         "Diagnostica WebRTC",
         "webrtc internals",
@@ -3307,7 +3307,7 @@
       "id": "browser.opera.internal.print.083",
       "name": "Stampa — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna chrome-untrusted://print in Opera.",
+      "description": "Apre il componente di stampa in contesto WebUI non attendibile usato dall’anteprima di stampa.",
       "aliases": [
         "Stampa",
         "print",
@@ -3345,7 +3345,7 @@
       "id": "browser.opera.internal.discards.084",
       "name": "Schede scartate — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://discards in Opera.",
+      "description": "Mostra le schede aperte, il loro stato e quelle che Chromium può sospendere o scartare per liberare memoria.",
       "aliases": [
         "Schede scartate",
         "discards",
@@ -3384,7 +3384,7 @@
       "id": "browser.opera.internal.interstitials.085",
       "name": "Pagine interstiziali — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://interstitials in Opera.",
+      "description": "Mostra esempi e test delle pagine interstiziali di avviso del browser.",
       "aliases": [
         "Pagine interstiziali",
         "interstitials",
@@ -3423,7 +3423,7 @@
       "id": "browser.opera.internal.local-state.086",
       "name": "Stato locale — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://local-state in Opera.",
+      "description": "Mostra lo stato locale interno del browser.",
       "aliases": [
         "Stato locale",
         "local state",
@@ -3465,7 +3465,7 @@
       "id": "browser.opera.internal.location-internals.087",
       "name": "Diagnostica posizione — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://location-internals in Opera.",
+      "description": "Mostra informazioni e diagnostica dei servizi di localizzazione del browser.",
       "aliases": [
         "Diagnostica posizione",
         "location internals",
@@ -3507,7 +3507,7 @@
       "id": "browser.opera.internal.media-router-internals.088",
       "name": "Diagnostica router media — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://media-router-internals in Opera.",
+      "description": "Mostra diagnostica del Media Router usato per casting e dispositivi multimediali.",
       "aliases": [
         "Diagnostica router media",
         "media router internals",
@@ -3551,7 +3551,7 @@
       "id": "browser.opera.internal.memory-internals.089",
       "name": "Diagnostica memoria — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://memory-internals in Opera.",
+      "description": "Mostra informazioni diagnostiche sull’uso della memoria.",
       "aliases": [
         "Diagnostica memoria",
         "memory internals",
@@ -3593,7 +3593,7 @@
       "id": "browser.opera.internal.network-errors.090",
       "name": "Errori rete — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://network-errors in Opera.",
+      "description": "Mostra pagine e test relativi agli errori di rete gestiti dal browser.",
       "aliases": [
         "Errori rete",
         "network errors",
@@ -3635,7 +3635,7 @@
       "id": "browser.opera.internal.safe-browsing.091",
       "name": "Safe Browsing — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://safe-browsing in Opera.",
+      "description": "Mostra stato e diagnostica delle funzioni Safe Browsing.",
       "aliases": [
         "safe browsing",
         "chrome://safe-browsing",
@@ -3676,7 +3676,7 @@
       "id": "browser.opera.internal.tracing.092",
       "name": "Tracing — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://tracing in Opera.",
+      "description": "Apre gli strumenti di tracing per registrare eventi interni e analizzare il comportamento del browser.",
       "aliases": [
         "tracing",
         "chrome://tracing",
@@ -3714,7 +3714,7 @@
       "id": "browser.opera.internal.ukm.093",
       "name": "UKM — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://ukm in Opera.",
+      "description": "Mostra dati e stato delle metriche UKM raccolte internamente dal browser.",
       "aliases": [
         "ukm",
         "chrome://ukm",
@@ -3752,7 +3752,7 @@
       "id": "browser.opera.internal.badcastcrash.094",
       "name": "Crash BadCast — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://badcastcrash in Opera.",
+      "description": "Provoca intenzionalmente un crash tramite un cast non valido, per test di debug.",
       "aliases": [
         "Crash BadCast",
         "badcastcrash",
@@ -3791,7 +3791,7 @@
       "id": "browser.opera.internal.inducebrowsercrashforrealz.095",
       "name": "Crash intenzionale browser — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://inducebrowsercrashforrealz in Opera.",
+      "description": "Provoca intenzionalmente il crash del processo browser.",
       "aliases": [
         "Crash intenzionale browser",
         "inducebrowsercrashforrealz",
@@ -3830,7 +3830,7 @@
       "id": "browser.opera.internal.inducebrowserdcheckforrealz.096",
       "name": "DCHECK intenzionale browser — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://inducebrowserdcheckforrealz in Opera.",
+      "description": "Provoca intenzionalmente un DCHECK nel processo browser.",
       "aliases": [
         "DCHECK intenzionale browser",
         "inducebrowserdcheckforrealz",
@@ -3869,7 +3869,7 @@
       "id": "browser.opera.internal.uithreadhang.097",
       "name": "Blocco intenzionale UI thread — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://uithreadhang in Opera.",
+      "description": "Blocca intenzionalmente il thread dell’interfaccia del browser per test diagnostici.",
       "aliases": [
         "Blocco intenzionale UI thread",
         "uithreadhang",
@@ -3908,7 +3908,7 @@
       "id": "browser.opera.internal.crash-browser-member-dereference-after-free.098",
       "name": "Crash intenzionale: browser · member dereference after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/browser/member-dereference-after-free in Opera.",
+      "description": "Provoca un crash del processo browser tramite dereferenziazione intenzionale di memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: browser · member dereference after free",
         "crash",
@@ -3957,7 +3957,7 @@
       "id": "browser.opera.internal.crash-browser-heap-overflow.099",
       "name": "Crash intenzionale: browser · heap overflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/browser/heap-overflow in Opera.",
+      "description": "Provoca un crash del processo browser tramite overflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: browser · heap overflow",
         "crash",
@@ -4002,7 +4002,7 @@
       "id": "browser.opera.internal.crash-browser-use-after-free.100",
       "name": "Crash intenzionale: browser · use after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/browser/use-after-free in Opera.",
+      "description": "Provoca un crash del processo browser tramite accesso intenzionale a memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: browser · use after free",
         "crash",
@@ -4049,7 +4049,7 @@
       "id": "browser.opera.internal.crash-browser-heap-underflow.101",
       "name": "Crash intenzionale: browser · heap underflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/browser/heap-underflow in Opera.",
+      "description": "Provoca un crash del processo browser tramite underflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: browser · heap underflow",
         "crash",
@@ -4094,7 +4094,7 @@
       "id": "browser.opera.internal.crash-gpu-member-dereference-after-free.102",
       "name": "Crash intenzionale: gpu · member dereference after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/gpu/member-dereference-after-free in Opera.",
+      "description": "Provoca un crash del processo GPU tramite dereferenziazione intenzionale di memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: gpu · member dereference after free",
         "crash",
@@ -4143,7 +4143,7 @@
       "id": "browser.opera.internal.crash-gpu-heap-overflow.103",
       "name": "Crash intenzionale: gpu · heap overflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/gpu/heap-overflow in Opera.",
+      "description": "Provoca un crash del processo GPU tramite overflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: gpu · heap overflow",
         "crash",
@@ -4188,7 +4188,7 @@
       "id": "browser.opera.internal.crash-gpu-use-after-free.104",
       "name": "Crash intenzionale: gpu · use after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/gpu/use-after-free in Opera.",
+      "description": "Provoca un crash del processo GPU tramite accesso intenzionale a memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: gpu · use after free",
         "crash",
@@ -4235,7 +4235,7 @@
       "id": "browser.opera.internal.crash-gpu-heap-underflow.105",
       "name": "Crash intenzionale: gpu · heap underflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/gpu/heap-underflow in Opera.",
+      "description": "Provoca un crash del processo GPU tramite underflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: gpu · heap underflow",
         "crash",
@@ -4280,7 +4280,7 @@
       "id": "browser.opera.internal.crash-renderer-member-dereference-after-free.106",
       "name": "Crash intenzionale: renderer · member dereference after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/renderer/member-dereference-after-free in Opera.",
+      "description": "Provoca un crash del processo renderer tramite dereferenziazione intenzionale di memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: renderer · member dereference after free",
         "crash",
@@ -4329,7 +4329,7 @@
       "id": "browser.opera.internal.crash-renderer-heap-overflow.107",
       "name": "Crash intenzionale: renderer · heap overflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/renderer/heap-overflow in Opera.",
+      "description": "Provoca un crash del processo renderer tramite overflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: renderer · heap overflow",
         "crash",
@@ -4374,7 +4374,7 @@
       "id": "browser.opera.internal.crash-renderer-use-after-free.108",
       "name": "Crash intenzionale: renderer · use after free — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/renderer/use-after-free in Opera.",
+      "description": "Provoca un crash del processo renderer tramite accesso intenzionale a memoria già liberata, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: renderer · use after free",
         "crash",
@@ -4421,7 +4421,7 @@
       "id": "browser.opera.internal.crash-renderer-heap-underflow.109",
       "name": "Crash intenzionale: renderer · heap underflow — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/renderer/heap-underflow in Opera.",
+      "description": "Provoca un crash del processo renderer tramite underflow intenzionale dell’heap, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: renderer · heap underflow",
         "crash",
@@ -4466,7 +4466,7 @@
       "id": "browser.opera.internal.crash.110",
       "name": "Crash intenzionale — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash in Opera.",
+      "description": "Provoca intenzionalmente un crash del browser per test diagnostici.",
       "aliases": [
         "Crash intenzionale",
         "crash",
@@ -4505,7 +4505,7 @@
       "id": "browser.opera.internal.crash-rust.111",
       "name": "Crash intenzionale: rust — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/rust in Opera.",
+      "description": "Provoca intenzionalmente un crash tramite codice Rust, per test diagnostici.",
       "aliases": [
         "Crash intenzionale: rust",
         "crash",
@@ -4546,7 +4546,7 @@
       "id": "browser.opera.internal.crashdump.112",
       "name": "Crash dump — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crashdump in Opera.",
+      "description": "Genera intenzionalmente un crash dump per test diagnostici.",
       "aliases": [
         "Crash dump",
         "crashdump",
@@ -4585,7 +4585,7 @@
       "id": "browser.opera.internal.kill.113",
       "name": "Termina browser — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://kill in Opera.",
+      "description": "Termina intenzionalmente il browser o un suo processo per test diagnostici.",
       "aliases": [
         "Termina browser",
         "kill",
@@ -4624,7 +4624,7 @@
       "id": "browser.opera.internal.hang.114",
       "name": "Blocca browser — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://hang in Opera.",
+      "description": "Blocca intenzionalmente il browser per test diagnostici.",
       "aliases": [
         "Blocca browser",
         "hang",
@@ -4663,7 +4663,7 @@
       "id": "browser.opera.internal.shorthang.115",
       "name": "Blocco breve browser — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://shorthang in Opera.",
+      "description": "Provoca intenzionalmente un blocco breve del browser.",
       "aliases": [
         "Blocco breve browser",
         "shorthang",
@@ -4702,7 +4702,7 @@
       "id": "browser.opera.internal.gpuclean.116",
       "name": "Pulizia processo GPU — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://gpuclean in Opera.",
+      "description": "Esegue il comando interno di debug per la pulizia del processo GPU.",
       "aliases": [
         "Pulizia processo GPU",
         "gpuclean",
@@ -4741,7 +4741,7 @@
       "id": "browser.opera.internal.gpucrash.117",
       "name": "Crash processo GPU — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://gpucrash in Opera.",
+      "description": "Provoca intenzionalmente il crash del processo GPU.",
       "aliases": [
         "Crash processo GPU",
         "gpucrash",
@@ -4780,7 +4780,7 @@
       "id": "browser.opera.internal.gpuhang.118",
       "name": "Blocco processo GPU — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://gpuhang in Opera.",
+      "description": "Blocca intenzionalmente il processo GPU.",
       "aliases": [
         "Blocco processo GPU",
         "gpuhang",
@@ -4819,7 +4819,7 @@
       "id": "browser.opera.internal.memory-exhaust.119",
       "name": "Esaurimento memoria — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://memory-exhaust in Opera.",
+      "description": "Consuma intenzionalmente memoria fino all’esaurimento per test diagnostici.",
       "aliases": [
         "Esaurimento memoria",
         "memory exhaust",
@@ -4861,7 +4861,7 @@
       "id": "browser.opera.internal.memory-pressure-critical.120",
       "name": "Pressione memoria critica — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://memory-pressure-critical in Opera.",
+      "description": "Simula una condizione di pressione di memoria critica.",
       "aliases": [
         "Pressione memoria critica",
         "memory pressure critical",
@@ -4905,7 +4905,7 @@
       "id": "browser.opera.internal.memory-pressure-moderate.121",
       "name": "Pressione memoria moderata — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://memory-pressure-moderate in Opera.",
+      "description": "Simula una condizione di pressione di memoria moderata.",
       "aliases": [
         "Pressione memoria moderata",
         "memory pressure moderate",
@@ -4949,7 +4949,7 @@
       "id": "browser.opera.internal.inducebrowserheapcorruption.122",
       "name": "Corruzione heap intenzionale — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://inducebrowserheapcorruption in Opera.",
+      "description": "Corrompe intenzionalmente l’heap del browser per test diagnostici.",
       "aliases": [
         "Corruzione heap intenzionale",
         "inducebrowserheapcorruption",
@@ -4988,7 +4988,7 @@
       "id": "browser.opera.internal.crash-cfg.123",
       "name": "Crash intenzionale: cfg — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://crash/cfg in Opera.",
+      "description": "Provoca intenzionalmente un crash relativo a CFG per test diagnostici.",
       "aliases": [
         "Crash intenzionale: cfg",
         "crash",
@@ -5029,7 +5029,7 @@
       "id": "browser.opera.internal.heapcorruptioncrash.124",
       "name": "Crash per corruzione heap — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://heapcorruptioncrash in Opera.",
+      "description": "Provoca intenzionalmente un crash da corruzione dell’heap.",
       "aliases": [
         "Crash per corruzione heap",
         "heapcorruptioncrash",
@@ -5068,7 +5068,7 @@
       "id": "browser.opera.internal.webuijserror.125",
       "name": "Errore WebUI JavaScript — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://webuijserror in Opera.",
+      "description": "Genera intenzionalmente un errore JavaScript in una WebUI interna.",
       "aliases": [
         "Errore WebUI JavaScript",
         "webuijserror",
@@ -5107,7 +5107,7 @@
       "id": "browser.opera.internal.quit.126",
       "name": "Chiudi Opera — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://quit in Opera.",
+      "description": "Chiude Opera.",
       "aliases": [
         "Chiudi Opera",
         "quit",
@@ -5146,7 +5146,7 @@
       "id": "browser.opera.internal.restart.127",
       "name": "Riavvia Opera — Opera",
       "category": "Browser url's",
-      "description": "Apre la pagina interna opera://restart in Opera.",
+      "description": "Riavvia Opera.",
       "aliases": [
         "Riavvia Opera",
         "restart",
@@ -5185,7 +5185,7 @@
       "id": "browser.opera.internal.settings-keyboard-shortcuts.128",
       "name": "Scorciatoie da tastiera — Opera",
       "category": "Browser url's",
-      "description": "Apre direttamente la pagina delle scorciatoie da tastiera di Opera.",
+      "description": "Apre la pagina delle scorciatoie da tastiera di Opera, dove visualizzarle e modificarle.",
       "aliases": [
         "Scorciatoie da tastiera",
         "shortcuts",
