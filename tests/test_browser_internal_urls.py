@@ -65,6 +65,15 @@ class BrowserInternalPackTests(unittest.TestCase):
             for h in hits
         ))
 
+    def test_keyboard_shortcuts_page_is_visible_from_opera_domain(self):
+        kb = KnowledgeBase.from_pack_dir(ROOT / 'combocode' / 'data' / 'packs')
+        hits = kb.search('shortcut', category='Browser · Opera', limit=None)
+        self.assertTrue(any(
+            route.get('value') == 'opera://settings/keyboardShortcuts'
+            for hit in hits
+            for route in hit.goal.get('routes', [])
+        ))
+
     def test_all_routes_remain_executable(self):
         routes = [r for g in self.goals for r in g['routes']]
         self.assertEqual(len(routes), 128)
