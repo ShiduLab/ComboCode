@@ -117,9 +117,12 @@ def launch_browser_internal(
         raise FileNotFoundError(
             f'{browser.capitalize()} non trovato. ComboCode conosce la route ma non trova il browser.'
         )
-    subprocess.Popen([browser_exe, value])
 
-def _navigate_internal_via_address_bar(value: str) -> None:
+    subprocess.Popen([browser_exe])
+    _navigate_internal_via_address_bar(value, name)
+
+
+def _navigate_internal_via_address_bar(value: str, browser: str = 'opera') -> None:
     user32 = ctypes.windll.user32
     SW_RESTORE = 9
     KEYEVENTF_KEYUP = 0x0002
@@ -137,12 +140,28 @@ def _navigate_internal_via_address_bar(value: str) -> None:
         user32.GetWindowTextW(hwnd, buffer, length + 1)
         return buffer.value
 
-    def is_opera_window(hwnd: int) -> bool:
-        return bool(hwnd and user32.IsWindowVisible(hwnd) and 'opera' in window_title(hwnd).lower())
+    browser_name = str(browser or '').strip().lower()
+    title_markers = {
+        'opera': ('opera',),
+        'chrome': ('google chrome',),
+        'edge': ('microsoft edge',),
+        'firefox': ('mozilla firefox',),
+    }
+    markers = title_markers.get(browser_name)
+    if not markers:
+        raise OSError(f'Browser non supportato per la navigazione interna: {browser}')
+
+    def is_browser_window(hwnd: int) -> bool:
+        title = window_title(hwnd).lower()
+        return bool(
+            hwnd
+            and user32.IsWindowVisible(hwnd)
+            and any(marker in title for marker in markers)
+        )
 
     def find_window() -> int | None:
         foreground = user32.GetForegroundWindow()
-        if is_opera_window(foreground):
+        if is_browser_window(foreground):
             return int(foreground)
 
         found: list[int] = []
@@ -150,7 +169,7 @@ def _navigate_internal_via_address_bar(value: str) -> None:
 
         @callback_type
         def enum_proc(hwnd, _lparam):
-            if is_opera_window(hwnd):
+            if is_browser_window(hwnd):
                 found.append(int(hwnd))
                 return False
             return True
@@ -167,7 +186,7 @@ def _navigate_internal_via_address_bar(value: str) -> None:
         time.sleep(0.05)
 
     if not hwnd:
-        raise OSError('Finestra di Opera non trovata.')
+        raise OSError(f'Finestra di {browser_name} non trovata.')
 
     user32.ShowWindow(hwnd, SW_RESTORE)
     user32.BringWindowToTop(hwnd)
@@ -181,7 +200,7 @@ def _navigate_internal_via_address_bar(value: str) -> None:
         time.sleep(0.08)
 
     if int(user32.GetForegroundWindow()) != int(hwnd):
-        raise OSError('Impossibile portare Opera in primo piano.')
+        raise OSError(f'Impossibile portare {browser_name} in primo piano.')
 
     def press(vk: int) -> None:
         user32.keybd_event(vk, 0, 0, 0)
@@ -231,4 +250,4 @@ def launch_opera_internal(url: str, executable: str | None = None) -> None:
         )
 
     subprocess.Popen([opera])
-    _navigate_internal_via_address_bar(value)
+    _navigate_internal_via_address_bar(value, 'opera')
