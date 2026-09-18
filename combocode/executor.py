@@ -5,6 +5,8 @@ import subprocess
 import sys
 import time
 
+from .browser_internal import launch_opera_internal
+
 
 class ExecutionError(RuntimeError):
     pass
@@ -132,7 +134,9 @@ def execute_route(route: dict) -> None:
             return
 
         # Handler espliciti del database.
-        if handler == 'uri':
+        if handler == 'opera_internal':
+            launch_opera_internal(value)
+        elif handler == 'uri':
             os.startfile(value)  # type: ignore[attr-defined]
         elif handler == 'control':
             subprocess.Popen(['control.exe', value])
@@ -161,5 +165,5 @@ def execute_route(route: dict) -> None:
                 os.startfile(value)  # type: ignore[attr-defined]
             else:
                 subprocess.Popen(['cmd.exe', '/c', value])
-    except OSError as exc:
+    except (OSError, ValueError) as exc:
         raise ExecutionError(str(exc)) from exc

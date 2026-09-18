@@ -1,0 +1,5227 @@
+{
+  "name": "Opera / Chromium Internal URLs — Windows",
+  "version": "1.0.0",
+  "updated": "2026-09-18",
+  "note": "Pagine interne Opera/Chromium raccolte da chrome://chrome-urls in Opera, più opera://settings/keyboardShortcuts verificata direttamente dall’ideatore. Tutte eseguibili con livelli di avviso proporzionati.",
+  "goals": [
+    {
+      "id": "browser.opera.internal.about.001",
+      "name": "Informazioni — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://about in Opera.",
+      "aliases": [
+        "Informazioni",
+        "about",
+        "chrome://about",
+        "opera://about",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "about",
+        "about"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://about",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://about",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.accessibility.002",
+      "name": "Accessibilità — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://accessibility in Opera.",
+      "aliases": [
+        "Accessibilità",
+        "accessibility",
+        "chrome://accessibility",
+        "opera://accessibility",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "accessibility",
+        "accessibility"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://accessibility",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://accessibility",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.activity.003",
+      "name": "Attività — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://activity in Opera.",
+      "aliases": [
+        "Attività",
+        "activity",
+        "chrome://activity",
+        "opera://activity",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "activity",
+        "activity"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://activity",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://activity",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.address-bar-dropdown.004",
+      "name": "Menu barra indirizzi — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://address-bar-dropdown in Opera.",
+      "aliases": [
+        "Menu barra indirizzi",
+        "address bar dropdown",
+        "chrome://address-bar-dropdown",
+        "opera://address-bar-dropdown",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "address",
+        "bar",
+        "dropdown"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "address-bar-dropdown",
+        "address",
+        "bar",
+        "dropdown"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://address-bar-dropdown",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://address-bar-dropdown",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.ai-mode-bar.005",
+      "name": "Barra modalità AI — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://ai-mode-bar in Opera.",
+      "aliases": [
+        "Barra modalità AI",
+        "ai mode bar",
+        "chrome://ai-mode-bar",
+        "opera://ai-mode-bar",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "ai",
+        "mode",
+        "bar"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "ai-mode-bar",
+        "ai",
+        "mode",
+        "bar"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://ai-mode-bar",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://ai-mode-bar",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.autofill-internals.006",
+      "name": "Diagnostica compilazione automatica — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://autofill-internals in Opera.",
+      "aliases": [
+        "Diagnostica compilazione automatica",
+        "autofill internals",
+        "chrome://autofill-internals",
+        "opera://autofill-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "autofill",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "autofill-internals",
+        "autofill",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://autofill-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://autofill-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.blob-internals.007",
+      "name": "Diagnostica Blob — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://blob-internals in Opera.",
+      "aliases": [
+        "Diagnostica Blob",
+        "blob internals",
+        "chrome://blob-internals",
+        "opera://blob-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "blob",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "blob-internals",
+        "blob",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://blob-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://blob-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.bluetooth-internals.008",
+      "name": "Diagnostica Bluetooth — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://bluetooth-internals in Opera.",
+      "aliases": [
+        "Diagnostica Bluetooth",
+        "bluetooth internals",
+        "chrome://bluetooth-internals",
+        "opera://bluetooth-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "bluetooth",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "bluetooth-internals",
+        "bluetooth",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://bluetooth-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://bluetooth-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.bookmarks.009",
+      "name": "Segnalibri — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://bookmarks in Opera.",
+      "aliases": [
+        "Segnalibri",
+        "bookmarks",
+        "chrome://bookmarks",
+        "opera://bookmarks",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "bookmarks",
+        "bookmarks"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://bookmarks",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://bookmarks",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.bookmarks-panel.010",
+      "name": "Pannello segnalibri — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://bookmarks-panel in Opera.",
+      "aliases": [
+        "Pannello segnalibri",
+        "bookmarks panel",
+        "chrome://bookmarks-panel",
+        "opera://bookmarks-panel",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "bookmarks",
+        "panel"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "bookmarks-panel",
+        "bookmarks",
+        "panel"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://bookmarks-panel",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://bookmarks-panel",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.browserjs.011",
+      "name": "BrowserJS — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://browserjs in Opera.",
+      "aliases": [
+        "browserjs",
+        "chrome://browserjs",
+        "opera://browserjs",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "browserjs",
+        "browserjs"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://browserjs",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://browserjs",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.certificate-manager.012",
+      "name": "Gestore certificati — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://certificate-manager in Opera.",
+      "aliases": [
+        "Gestore certificati",
+        "certificate manager",
+        "chrome://certificate-manager",
+        "opera://certificate-manager",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "certificate",
+        "manager"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "certificate-manager",
+        "certificate",
+        "manager"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://certificate-manager",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://certificate-manager",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.chrome-urls.013",
+      "name": "Elenco URL interni — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://chrome-urls in Opera.",
+      "aliases": [
+        "Elenco URL interni",
+        "chrome urls",
+        "chrome://chrome-urls",
+        "opera://chrome-urls",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "chrome",
+        "urls"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "chrome-urls",
+        "chrome",
+        "urls"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://chrome-urls",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://chrome-urls",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.components.014",
+      "name": "Componenti — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://components in Opera.",
+      "aliases": [
+        "Componenti",
+        "components",
+        "chrome://components",
+        "opera://components",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "components",
+        "components"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://components",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://components",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.conflicts.015",
+      "name": "Conflitti — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://conflicts in Opera.",
+      "aliases": [
+        "Conflitti",
+        "conflicts",
+        "chrome://conflicts",
+        "opera://conflicts",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "conflicts",
+        "conflicts"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://conflicts",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://conflicts",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.connection-help.016",
+      "name": "Aiuto connessione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://connection-help in Opera.",
+      "aliases": [
+        "Aiuto connessione",
+        "connection help",
+        "chrome://connection-help",
+        "opera://connection-help",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "connection",
+        "help"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "connection-help",
+        "connection",
+        "help"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://connection-help",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://connection-help",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.connection-monitoring-detected.017",
+      "name": "Monitoraggio connessione rilevato — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://connection-monitoring-detected in Opera.",
+      "aliases": [
+        "Monitoraggio connessione rilevato",
+        "connection monitoring detected",
+        "chrome://connection-monitoring-detected",
+        "opera://connection-monitoring-detected",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "connection",
+        "monitoring",
+        "detected"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "connection-monitoring-detected",
+        "connection",
+        "monitoring",
+        "detected"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://connection-monitoring-detected",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://connection-monitoring-detected",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.consent-flow-dialog.018",
+      "name": "Finestra consenso — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://consent-flow-dialog in Opera.",
+      "aliases": [
+        "Finestra consenso",
+        "consent flow dialog",
+        "chrome://consent-flow-dialog",
+        "opera://consent-flow-dialog",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "consent",
+        "flow",
+        "dialog"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "consent-flow-dialog",
+        "consent",
+        "flow",
+        "dialog"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://consent-flow-dialog",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://consent-flow-dialog",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.constrained-test.019",
+      "name": "Test vincolato — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://constrained-test in Opera.",
+      "aliases": [
+        "Test vincolato",
+        "constrained test",
+        "chrome://constrained-test",
+        "opera://constrained-test",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "constrained",
+        "test"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "constrained-test",
+        "constrained",
+        "test"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://constrained-test",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://constrained-test",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crashes.020",
+      "name": "Crash registrati — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crashes in Opera.",
+      "aliases": [
+        "Crash registrati",
+        "crashes",
+        "chrome://crashes",
+        "opera://crashes",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crashes",
+        "crashes"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crashes",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crashes",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.credits.021",
+      "name": "Crediti — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://credits in Opera.",
+      "aliases": [
+        "Crediti",
+        "credits",
+        "chrome://credits",
+        "opera://credits",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "credits",
+        "credits"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://credits",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://credits",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.debug-webuis-disabled.022",
+      "name": "WebUI di debug disabilitate — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://debug-webuis-disabled in Opera.",
+      "aliases": [
+        "WebUI di debug disabilitate",
+        "debug webuis disabled",
+        "chrome://debug-webuis-disabled",
+        "opera://debug-webuis-disabled",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "debug",
+        "webuis",
+        "disabled"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "debug-webuis-disabled",
+        "debug",
+        "webuis",
+        "disabled"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://debug-webuis-disabled",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://debug-webuis-disabled",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.dino.023",
+      "name": "Dino — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://dino in Opera.",
+      "aliases": [
+        "dino",
+        "chrome://dino",
+        "opera://dino",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "dino",
+        "dino"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://dino",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://dino",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.downloads.024",
+      "name": "Download — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://downloads in Opera.",
+      "aliases": [
+        "Download",
+        "downloads",
+        "chrome://downloads",
+        "opera://downloads",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "downloads",
+        "downloads"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://downloads",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://downloads",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.easy-files.025",
+      "name": "Easy Files — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://easy-files in Opera.",
+      "aliases": [
+        "easy files",
+        "chrome://easy-files",
+        "opera://easy-files",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "easy",
+        "files"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "easy-files",
+        "easy",
+        "files"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://easy-files",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://easy-files",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.easy-setup.026",
+      "name": "Configurazione facile — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://easy-setup in Opera.",
+      "aliases": [
+        "Configurazione facile",
+        "easy setup",
+        "chrome://easy-setup",
+        "opera://easy-setup",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "easy",
+        "setup"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "easy-setup",
+        "easy",
+        "setup"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://easy-setup",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://easy-setup",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.emoji-picker.027",
+      "name": "Selettore emoji — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://emoji-picker in Opera.",
+      "aliases": [
+        "Selettore emoji",
+        "emoji picker",
+        "chrome://emoji-picker",
+        "opera://emoji-picker",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "emoji",
+        "picker"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "emoji-picker",
+        "emoji",
+        "picker"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://emoji-picker",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://emoji-picker",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.extensions.028",
+      "name": "Estensioni — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://extensions in Opera.",
+      "aliases": [
+        "Estensioni",
+        "extensions",
+        "chrome://extensions",
+        "opera://extensions",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "extensions",
+        "extensions"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://extensions",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://extensions",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.extensions-internals.029",
+      "name": "Diagnostica estensioni — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://extensions-internals in Opera.",
+      "aliases": [
+        "Diagnostica estensioni",
+        "extensions internals",
+        "chrome://extensions-internals",
+        "opera://extensions-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "extensions",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "extensions-internals",
+        "extensions",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://extensions-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://extensions-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.feedback.030",
+      "name": "Feedback — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://feedback in Opera.",
+      "aliases": [
+        "feedback",
+        "chrome://feedback",
+        "opera://feedback",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "feedback",
+        "feedback"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://feedback",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://feedback",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.flags.031",
+      "name": "Funzioni sperimentali (Flags) — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://flags in Opera.",
+      "aliases": [
+        "Funzioni sperimentali (Flags)",
+        "flags",
+        "chrome://flags",
+        "opera://flags",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "flags",
+        "flags"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://flags",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://flags",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Apre le funzioni sperimentali di Opera. Modificare i flag può rendere il browser instabile o alterarne il comportamento."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.gcm-internals.032",
+      "name": "Diagnostica GCM — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://gcm-internals in Opera.",
+      "aliases": [
+        "Diagnostica GCM",
+        "gcm internals",
+        "chrome://gcm-internals",
+        "opera://gcm-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "gcm",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "gcm-internals",
+        "gcm",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://gcm-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://gcm-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.gpu.033",
+      "name": "GPU — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://gpu in Opera.",
+      "aliases": [
+        "gpu",
+        "chrome://gpu",
+        "opera://gpu",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "gpu",
+        "gpu"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://gpu",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://gpu",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.histograms.034",
+      "name": "Istogrammi — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://histograms in Opera.",
+      "aliases": [
+        "Istogrammi",
+        "histograms",
+        "chrome://histograms",
+        "opera://histograms",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "histograms",
+        "histograms"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://histograms",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://histograms",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.history.035",
+      "name": "Cronologia — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://history in Opera.",
+      "aliases": [
+        "Cronologia",
+        "history",
+        "chrome://history",
+        "opera://history",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "history",
+        "history"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://history",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://history",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.history-panel.036",
+      "name": "Pannello cronologia — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://history-panel in Opera.",
+      "aliases": [
+        "Pannello cronologia",
+        "history panel",
+        "chrome://history-panel",
+        "opera://history-panel",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "history",
+        "panel"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "history-panel",
+        "history",
+        "panel"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://history-panel",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://history-panel",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.indexeddb-internals.037",
+      "name": "Diagnostica IndexedDB — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://indexeddb-internals in Opera.",
+      "aliases": [
+        "Diagnostica IndexedDB",
+        "indexeddb internals",
+        "chrome://indexeddb-internals",
+        "opera://indexeddb-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "indexeddb",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "indexeddb-internals",
+        "indexeddb",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://indexeddb-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://indexeddb-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.injection-protection.038",
+      "name": "Protezione injection — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://injection-protection in Opera.",
+      "aliases": [
+        "Protezione injection",
+        "injection protection",
+        "chrome://injection-protection",
+        "opera://injection-protection",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "injection",
+        "protection"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "injection-protection",
+        "injection",
+        "protection"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://injection-protection",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://injection-protection",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.inspect.039",
+      "name": "Ispezione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://inspect in Opera.",
+      "aliases": [
+        "Ispezione",
+        "inspect",
+        "chrome://inspect",
+        "opera://inspect",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "inspect",
+        "inspect"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://inspect",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://inspect",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.media-engagement.040",
+      "name": "Coinvolgimento media — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://media-engagement in Opera.",
+      "aliases": [
+        "Coinvolgimento media",
+        "media engagement",
+        "chrome://media-engagement",
+        "opera://media-engagement",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "media",
+        "engagement"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "media-engagement",
+        "media",
+        "engagement"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://media-engagement",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://media-engagement",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.media-internals.041",
+      "name": "Diagnostica media — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://media-internals in Opera.",
+      "aliases": [
+        "Diagnostica media",
+        "media internals",
+        "chrome://media-internals",
+        "opera://media-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "media",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "media-internals",
+        "media",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://media-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://media-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.mods.042",
+      "name": "Mods — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://mods in Opera.",
+      "aliases": [
+        "mods",
+        "chrome://mods",
+        "opera://mods",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "mods",
+        "mods"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://mods",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://mods",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.net-export.043",
+      "name": "Esporta log rete — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://net-export in Opera.",
+      "aliases": [
+        "Esporta log rete",
+        "net export",
+        "chrome://net-export",
+        "opera://net-export",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "net",
+        "export"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "net-export",
+        "net",
+        "export"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://net-export",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://net-export",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.net-internals.044",
+      "name": "Diagnostica rete — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://net-internals in Opera.",
+      "aliases": [
+        "Diagnostica rete",
+        "net internals",
+        "chrome://net-internals",
+        "opera://net-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "net",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "net-internals",
+        "net",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://net-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://net-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.news.045",
+      "name": "News — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://news in Opera.",
+      "aliases": [
+        "news",
+        "chrome://news",
+        "opera://news",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "news",
+        "news"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://news",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://news",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.opera-account.046",
+      "name": "Account Opera — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://opera-account in Opera.",
+      "aliases": [
+        "Account Opera",
+        "opera account",
+        "chrome://opera-account",
+        "opera://opera-account",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "account"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "opera-account",
+        "opera",
+        "account"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://opera-account",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://opera-account",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.opera-diagnostics.047",
+      "name": "Diagnostica Opera — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://opera-diagnostics in Opera.",
+      "aliases": [
+        "Diagnostica Opera",
+        "opera diagnostics",
+        "chrome://opera-diagnostics",
+        "opera://opera-diagnostics",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "diagnostics"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "opera-diagnostics",
+        "opera",
+        "diagnostics"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://opera-diagnostics",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://opera-diagnostics",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.password-manager.048",
+      "name": "Gestore password — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://password-manager in Opera.",
+      "aliases": [
+        "Gestore password",
+        "password manager",
+        "chrome://password-manager",
+        "opera://password-manager",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "password",
+        "manager"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "password-manager",
+        "password",
+        "manager"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://password-manager",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://password-manager",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.password-manager-internals.049",
+      "name": "Diagnostica gestore password — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://password-manager-internals in Opera.",
+      "aliases": [
+        "Diagnostica gestore password",
+        "password manager internals",
+        "chrome://password-manager-internals",
+        "opera://password-manager-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "password",
+        "manager",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "password-manager-internals",
+        "password",
+        "manager",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://password-manager-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://password-manager-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.player-service.050",
+      "name": "Servizio player — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://player-service in Opera.",
+      "aliases": [
+        "Servizio player",
+        "player service",
+        "chrome://player-service",
+        "opera://player-service",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "player",
+        "service"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "player-service",
+        "player",
+        "service"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://player-service",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://player-service",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.predictors.051",
+      "name": "Predittori — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://predictors in Opera.",
+      "aliases": [
+        "Predittori",
+        "predictors",
+        "chrome://predictors",
+        "opera://predictors",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "predictors",
+        "predictors"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://predictors",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://predictors",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.prefs-internals.052",
+      "name": "Preferenze interne — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://prefs-internals in Opera.",
+      "aliases": [
+        "Preferenze interne",
+        "prefs internals",
+        "chrome://prefs-internals",
+        "opera://prefs-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "prefs",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "prefs-internals",
+        "prefs",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://prefs-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://prefs-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.print.053",
+      "name": "Stampa — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://print in Opera.",
+      "aliases": [
+        "Stampa",
+        "print",
+        "chrome://print",
+        "opera://print",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "print",
+        "print"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://print",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://print",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.process-internals.054",
+      "name": "Diagnostica processi — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://process-internals in Opera.",
+      "aliases": [
+        "Diagnostica processi",
+        "process internals",
+        "chrome://process-internals",
+        "opera://process-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "process",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "process-internals",
+        "process",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://process-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://process-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.profile-internals.055",
+      "name": "Diagnostica profilo — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://profile-internals in Opera.",
+      "aliases": [
+        "Diagnostica profilo",
+        "profile internals",
+        "chrome://profile-internals",
+        "opera://profile-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "profile",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "profile-internals",
+        "profile",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://profile-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://profile-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.quota-internals.056",
+      "name": "Diagnostica quota — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://quota-internals in Opera.",
+      "aliases": [
+        "Diagnostica quota",
+        "quota internals",
+        "chrome://quota-internals",
+        "opera://quota-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "quota",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "quota-internals",
+        "quota",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://quota-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://quota-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.rich-hints-console.057",
+      "name": "Console rich hints — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://rich-hints-console in Opera.",
+      "aliases": [
+        "Console rich hints",
+        "rich hints console",
+        "chrome://rich-hints-console",
+        "opera://rich-hints-console",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "rich",
+        "hints",
+        "console"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "rich-hints-console",
+        "rich",
+        "hints",
+        "console"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://rich-hints-console",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://rich-hints-console",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.rich-wallpaper.058",
+      "name": "Wallpaper avanzati — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://rich-wallpaper in Opera.",
+      "aliases": [
+        "Wallpaper avanzati",
+        "rich wallpaper",
+        "chrome://rich-wallpaper",
+        "opera://rich-wallpaper",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "rich",
+        "wallpaper"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "rich-wallpaper",
+        "rich",
+        "wallpaper"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://rich-wallpaper",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://rich-wallpaper",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.sandbox.059",
+      "name": "Sandbox — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://sandbox in Opera.",
+      "aliases": [
+        "sandbox",
+        "chrome://sandbox",
+        "opera://sandbox",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "sandbox",
+        "sandbox"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://sandbox",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://sandbox",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.serviceworker-internals.060",
+      "name": "Diagnostica Service Worker — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://serviceworker-internals in Opera.",
+      "aliases": [
+        "Diagnostica Service Worker",
+        "serviceworker internals",
+        "chrome://serviceworker-internals",
+        "opera://serviceworker-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "serviceworker",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "serviceworker-internals",
+        "serviceworker",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://serviceworker-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://serviceworker-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.settings.061",
+      "name": "Impostazioni — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://settings in Opera.",
+      "aliases": [
+        "Impostazioni",
+        "settings",
+        "chrome://settings",
+        "opera://settings",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "settings",
+        "settings"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://settings",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://settings",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.sidebar-setup.062",
+      "name": "Configurazione barra laterale — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://sidebar-setup in Opera.",
+      "aliases": [
+        "Configurazione barra laterale",
+        "sidebar setup",
+        "chrome://sidebar-setup",
+        "opera://sidebar-setup",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "sidebar",
+        "setup"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "sidebar-setup",
+        "sidebar",
+        "setup"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://sidebar-setup",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://sidebar-setup",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.site-engagement.063",
+      "name": "Coinvolgimento siti — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://site-engagement in Opera.",
+      "aliases": [
+        "Coinvolgimento siti",
+        "site engagement",
+        "chrome://site-engagement",
+        "opera://site-engagement",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "site",
+        "engagement"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "site-engagement",
+        "site",
+        "engagement"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://site-engagement",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://site-engagement",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.snapshot-selfie.064",
+      "name": "Snapshot selfie — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://snapshot-selfie in Opera.",
+      "aliases": [
+        "snapshot selfie",
+        "chrome://snapshot-selfie",
+        "opera://snapshot-selfie",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "snapshot",
+        "selfie"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "snapshot-selfie",
+        "snapshot",
+        "selfie"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://snapshot-selfie",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://snapshot-selfie",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.startpage.065",
+      "name": "Pagina iniziale — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://startpage in Opera.",
+      "aliases": [
+        "Pagina iniziale",
+        "startpage",
+        "chrome://startpage",
+        "opera://startpage",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "startpage",
+        "startpage"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://startpage",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://startpage",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.startpageshared.066",
+      "name": "Pagina iniziale condivisa — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://startpageshared in Opera.",
+      "aliases": [
+        "Pagina iniziale condivisa",
+        "startpageshared",
+        "chrome://startpageshared",
+        "opera://startpageshared",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "startpageshared",
+        "startpageshared"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://startpageshared",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://startpageshared",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.styleguide.067",
+      "name": "Style guide — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://styleguide in Opera.",
+      "aliases": [
+        "Style guide",
+        "styleguide",
+        "chrome://styleguide",
+        "opera://styleguide",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "styleguide",
+        "styleguide"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://styleguide",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://styleguide",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.sync-internals.068",
+      "name": "Diagnostica sincronizzazione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://sync-internals in Opera.",
+      "aliases": [
+        "Diagnostica sincronizzazione",
+        "sync internals",
+        "chrome://sync-internals",
+        "opera://sync-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "sync",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "sync-internals",
+        "sync",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://sync-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://sync-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.sync-login.069",
+      "name": "Login sincronizzazione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://sync-login in Opera.",
+      "aliases": [
+        "Login sincronizzazione",
+        "sync login",
+        "chrome://sync-login",
+        "opera://sync-login",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "sync",
+        "login"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "sync-login",
+        "sync",
+        "login"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://sync-login",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://sync-login",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.system.070",
+      "name": "Sistema — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://system in Opera.",
+      "aliases": [
+        "Sistema",
+        "system",
+        "chrome://system",
+        "opera://system",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "system",
+        "system"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://system",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://system",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.themes.071",
+      "name": "Temi — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://themes in Opera.",
+      "aliases": [
+        "Temi",
+        "themes",
+        "chrome://themes",
+        "opera://themes",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "themes",
+        "themes"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://themes",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://themes",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.traces.072",
+      "name": "Tracce — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://traces in Opera.",
+      "aliases": [
+        "Tracce",
+        "traces",
+        "chrome://traces",
+        "opera://traces",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "traces",
+        "traces"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://traces",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://traces",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.traces-internals.073",
+      "name": "Diagnostica tracce — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://traces-internals in Opera.",
+      "aliases": [
+        "Diagnostica tracce",
+        "traces internals",
+        "chrome://traces-internals",
+        "opera://traces-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "traces",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "traces-internals",
+        "traces",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://traces-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://traces-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.update.074",
+      "name": "Aggiornamento — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://update in Opera.",
+      "aliases": [
+        "Aggiornamento",
+        "update",
+        "chrome://update",
+        "opera://update",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "update",
+        "update"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://update",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://update",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.usb-internals.075",
+      "name": "Diagnostica USB — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://usb-internals in Opera.",
+      "aliases": [
+        "Diagnostica USB",
+        "usb internals",
+        "chrome://usb-internals",
+        "opera://usb-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "usb",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "usb-internals",
+        "usb",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://usb-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://usb-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.version.076",
+      "name": "Versione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://version in Opera.",
+      "aliases": [
+        "Versione",
+        "version",
+        "chrome://version",
+        "opera://version",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "version",
+        "version"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://version",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://version",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.video-conference-detached.077",
+      "name": "Videoconferenza separata — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://video-conference-detached in Opera.",
+      "aliases": [
+        "Videoconferenza separata",
+        "video conference detached",
+        "chrome://video-conference-detached",
+        "opera://video-conference-detached",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "video",
+        "conference",
+        "detached"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "video-conference-detached",
+        "video",
+        "conference",
+        "detached"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://video-conference-detached",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://video-conference-detached",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.view-cert.078",
+      "name": "Visualizza certificato — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://view-cert in Opera.",
+      "aliases": [
+        "Visualizza certificato",
+        "view cert",
+        "chrome://view-cert",
+        "opera://view-cert",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "view",
+        "cert"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "view-cert",
+        "view",
+        "cert"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://view-cert",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://view-cert",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.vpn-pro.079",
+      "name": "VPN Pro — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://vpn-pro in Opera.",
+      "aliases": [
+        "vpn pro",
+        "chrome://vpn-pro",
+        "opera://vpn-pro",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "vpn",
+        "pro"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "vpn-pro",
+        "vpn",
+        "pro"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://vpn-pro",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://vpn-pro",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.web3-selector.080",
+      "name": "Selettore Web3 — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://web3-selector in Opera.",
+      "aliases": [
+        "Selettore Web3",
+        "web3 selector",
+        "chrome://web3-selector",
+        "opera://web3-selector",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "web3",
+        "selector"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "web3-selector",
+        "web3",
+        "selector"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://web3-selector",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://web3-selector",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.webnn-internals.081",
+      "name": "Diagnostica WebNN — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://webnn-internals in Opera.",
+      "aliases": [
+        "Diagnostica WebNN",
+        "webnn internals",
+        "chrome://webnn-internals",
+        "opera://webnn-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "webnn",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "webnn-internals",
+        "webnn",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://webnn-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://webnn-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.webrtc-internals.082",
+      "name": "Diagnostica WebRTC — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://webrtc-internals in Opera.",
+      "aliases": [
+        "Diagnostica WebRTC",
+        "webrtc internals",
+        "chrome://webrtc-internals",
+        "opera://webrtc-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "webrtc",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "webrtc-internals",
+        "webrtc",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://webrtc-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://webrtc-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.print.083",
+      "name": "Stampa — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna chrome-untrusted://print in Opera.",
+      "aliases": [
+        "Stampa",
+        "print",
+        "chrome-untrusted://print",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "print",
+        "print"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "chrome-untrusted://print",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome-untrusted://print",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Apre una WebUI interna in contesto untrusted. Usare solo se si conosce lo scopo della pagina."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.discards.084",
+      "name": "Schede scartate — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://discards in Opera.",
+      "aliases": [
+        "Schede scartate",
+        "discards",
+        "chrome://discards",
+        "opera://discards",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "discards",
+        "discards"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://discards",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://discards",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.interstitials.085",
+      "name": "Pagine interstiziali — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://interstitials in Opera.",
+      "aliases": [
+        "Pagine interstiziali",
+        "interstitials",
+        "chrome://interstitials",
+        "opera://interstitials",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "interstitials",
+        "interstitials"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://interstitials",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://interstitials",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.local-state.086",
+      "name": "Stato locale — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://local-state in Opera.",
+      "aliases": [
+        "Stato locale",
+        "local state",
+        "chrome://local-state",
+        "opera://local-state",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "local",
+        "state"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "local-state",
+        "local",
+        "state"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://local-state",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://local-state",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.location-internals.087",
+      "name": "Diagnostica posizione — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://location-internals in Opera.",
+      "aliases": [
+        "Diagnostica posizione",
+        "location internals",
+        "chrome://location-internals",
+        "opera://location-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "location",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "location-internals",
+        "location",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://location-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://location-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.media-router-internals.088",
+      "name": "Diagnostica router media — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://media-router-internals in Opera.",
+      "aliases": [
+        "Diagnostica router media",
+        "media router internals",
+        "chrome://media-router-internals",
+        "opera://media-router-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "media",
+        "router",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "media-router-internals",
+        "media",
+        "router",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://media-router-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://media-router-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.memory-internals.089",
+      "name": "Diagnostica memoria — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://memory-internals in Opera.",
+      "aliases": [
+        "Diagnostica memoria",
+        "memory internals",
+        "chrome://memory-internals",
+        "opera://memory-internals",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "memory",
+        "internals"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "memory-internals",
+        "memory",
+        "internals"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://memory-internals",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://memory-internals",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.network-errors.090",
+      "name": "Errori rete — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://network-errors in Opera.",
+      "aliases": [
+        "Errori rete",
+        "network errors",
+        "chrome://network-errors",
+        "opera://network-errors",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "network",
+        "errors"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "network-errors",
+        "network",
+        "errors"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://network-errors",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://network-errors",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.safe-browsing.091",
+      "name": "Safe Browsing — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://safe-browsing in Opera.",
+      "aliases": [
+        "safe browsing",
+        "chrome://safe-browsing",
+        "opera://safe-browsing",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "safe",
+        "browsing"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "safe-browsing",
+        "safe",
+        "browsing"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://safe-browsing",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://safe-browsing",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.tracing.092",
+      "name": "Tracing — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://tracing in Opera.",
+      "aliases": [
+        "tracing",
+        "chrome://tracing",
+        "opera://tracing",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "tracing",
+        "tracing"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://tracing",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://tracing",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.ukm.093",
+      "name": "UKM — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://ukm in Opera.",
+      "aliases": [
+        "ukm",
+        "chrome://ukm",
+        "opera://ukm",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "ukm",
+        "ukm"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://ukm",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://ukm",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Pagina interna avanzata di diagnostica/debug. Evita modifiche se non conosci l’effetto delle opzioni presenti."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.badcastcrash.094",
+      "name": "Crash BadCast — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://badcastcrash in Opera.",
+      "aliases": [
+        "Crash BadCast",
+        "badcastcrash",
+        "chrome://badcastcrash",
+        "opera://badcastcrash",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "badcastcrash",
+        "badcastcrash"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://badcastcrash",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://badcastcrash",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.inducebrowsercrashforrealz.095",
+      "name": "Crash intenzionale browser — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://inducebrowsercrashforrealz in Opera.",
+      "aliases": [
+        "Crash intenzionale browser",
+        "inducebrowsercrashforrealz",
+        "chrome://inducebrowsercrashforrealz",
+        "opera://inducebrowsercrashforrealz",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "inducebrowsercrashforrealz",
+        "inducebrowsercrashforrealz"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://inducebrowsercrashforrealz",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://inducebrowsercrashforrealz",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.inducebrowserdcheckforrealz.096",
+      "name": "DCHECK intenzionale browser — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://inducebrowserdcheckforrealz in Opera.",
+      "aliases": [
+        "DCHECK intenzionale browser",
+        "inducebrowserdcheckforrealz",
+        "chrome://inducebrowserdcheckforrealz",
+        "opera://inducebrowserdcheckforrealz",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "inducebrowserdcheckforrealz",
+        "inducebrowserdcheckforrealz"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://inducebrowserdcheckforrealz",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://inducebrowserdcheckforrealz",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.uithreadhang.097",
+      "name": "Blocco intenzionale UI thread — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://uithreadhang in Opera.",
+      "aliases": [
+        "Blocco intenzionale UI thread",
+        "uithreadhang",
+        "chrome://uithreadhang",
+        "opera://uithreadhang",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "uithreadhang",
+        "uithreadhang"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://uithreadhang",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://uithreadhang",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Provoca intenzionalmente un blocco del browser o di un suo processo. Potrebbe essere necessario terminare Opera manualmente."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-browser-member-dereference-after-free.098",
+      "name": "Crash intenzionale: browser · member dereference after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/browser/member-dereference-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: browser · member dereference after free",
+        "crash",
+        "chrome://crash/browser/member-dereference-after-free",
+        "opera://crash/browser/member-dereference-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "browser",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "browser",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/browser/member-dereference-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/browser/member-dereference-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-browser-heap-overflow.099",
+      "name": "Crash intenzionale: browser · heap overflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/browser/heap-overflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: browser · heap overflow",
+        "crash",
+        "chrome://crash/browser/heap-overflow",
+        "opera://crash/browser/heap-overflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "browser",
+        "heap",
+        "overflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "browser",
+        "heap",
+        "overflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/browser/heap-overflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/browser/heap-overflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-browser-use-after-free.100",
+      "name": "Crash intenzionale: browser · use after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/browser/use-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: browser · use after free",
+        "crash",
+        "chrome://crash/browser/use-after-free",
+        "opera://crash/browser/use-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "browser",
+        "use",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "browser",
+        "use",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/browser/use-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/browser/use-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-browser-heap-underflow.101",
+      "name": "Crash intenzionale: browser · heap underflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/browser/heap-underflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: browser · heap underflow",
+        "crash",
+        "chrome://crash/browser/heap-underflow",
+        "opera://crash/browser/heap-underflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "browser",
+        "heap",
+        "underflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "browser",
+        "heap",
+        "underflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/browser/heap-underflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/browser/heap-underflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-gpu-member-dereference-after-free.102",
+      "name": "Crash intenzionale: gpu · member dereference after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/gpu/member-dereference-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: gpu · member dereference after free",
+        "crash",
+        "chrome://crash/gpu/member-dereference-after-free",
+        "opera://crash/gpu/member-dereference-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "gpu",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "gpu",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/gpu/member-dereference-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/gpu/member-dereference-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-gpu-heap-overflow.103",
+      "name": "Crash intenzionale: gpu · heap overflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/gpu/heap-overflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: gpu · heap overflow",
+        "crash",
+        "chrome://crash/gpu/heap-overflow",
+        "opera://crash/gpu/heap-overflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "gpu",
+        "heap",
+        "overflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "gpu",
+        "heap",
+        "overflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/gpu/heap-overflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/gpu/heap-overflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-gpu-use-after-free.104",
+      "name": "Crash intenzionale: gpu · use after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/gpu/use-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: gpu · use after free",
+        "crash",
+        "chrome://crash/gpu/use-after-free",
+        "opera://crash/gpu/use-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "gpu",
+        "use",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "gpu",
+        "use",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/gpu/use-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/gpu/use-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-gpu-heap-underflow.105",
+      "name": "Crash intenzionale: gpu · heap underflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/gpu/heap-underflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: gpu · heap underflow",
+        "crash",
+        "chrome://crash/gpu/heap-underflow",
+        "opera://crash/gpu/heap-underflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "gpu",
+        "heap",
+        "underflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "gpu",
+        "heap",
+        "underflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/gpu/heap-underflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/gpu/heap-underflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-renderer-member-dereference-after-free.106",
+      "name": "Crash intenzionale: renderer · member dereference after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/renderer/member-dereference-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: renderer · member dereference after free",
+        "crash",
+        "chrome://crash/renderer/member-dereference-after-free",
+        "opera://crash/renderer/member-dereference-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "renderer",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "renderer",
+        "member",
+        "dereference",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/renderer/member-dereference-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/renderer/member-dereference-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-renderer-heap-overflow.107",
+      "name": "Crash intenzionale: renderer · heap overflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/renderer/heap-overflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: renderer · heap overflow",
+        "crash",
+        "chrome://crash/renderer/heap-overflow",
+        "opera://crash/renderer/heap-overflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "renderer",
+        "heap",
+        "overflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "renderer",
+        "heap",
+        "overflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/renderer/heap-overflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/renderer/heap-overflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-renderer-use-after-free.108",
+      "name": "Crash intenzionale: renderer · use after free — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/renderer/use-after-free in Opera.",
+      "aliases": [
+        "Crash intenzionale: renderer · use after free",
+        "crash",
+        "chrome://crash/renderer/use-after-free",
+        "opera://crash/renderer/use-after-free",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "renderer",
+        "use",
+        "after",
+        "free"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "renderer",
+        "use",
+        "after",
+        "free"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/renderer/use-after-free",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/renderer/use-after-free",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-renderer-heap-underflow.109",
+      "name": "Crash intenzionale: renderer · heap underflow — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/renderer/heap-underflow in Opera.",
+      "aliases": [
+        "Crash intenzionale: renderer · heap underflow",
+        "crash",
+        "chrome://crash/renderer/heap-underflow",
+        "opera://crash/renderer/heap-underflow",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "renderer",
+        "heap",
+        "underflow"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "renderer",
+        "heap",
+        "underflow"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/renderer/heap-underflow",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/renderer/heap-underflow",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash.110",
+      "name": "Crash intenzionale — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash in Opera.",
+      "aliases": [
+        "Crash intenzionale",
+        "crash",
+        "chrome://crash",
+        "opera://crash",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-rust.111",
+      "name": "Crash intenzionale: rust — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/rust in Opera.",
+      "aliases": [
+        "Crash intenzionale: rust",
+        "crash",
+        "chrome://crash/rust",
+        "opera://crash/rust",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "rust"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "rust"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/rust",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/rust",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crashdump.112",
+      "name": "Crash dump — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crashdump in Opera.",
+      "aliases": [
+        "Crash dump",
+        "crashdump",
+        "chrome://crashdump",
+        "opera://crashdump",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crashdump",
+        "crashdump"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crashdump",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crashdump",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.kill.113",
+      "name": "Termina browser — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://kill in Opera.",
+      "aliases": [
+        "Termina browser",
+        "kill",
+        "chrome://kill",
+        "opera://kill",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "kill",
+        "kill"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://kill",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://kill",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Termina intenzionalmente un processo del browser. Dati non salvati nelle pagine aperte potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.hang.114",
+      "name": "Blocca browser — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://hang in Opera.",
+      "aliases": [
+        "Blocca browser",
+        "hang",
+        "chrome://hang",
+        "opera://hang",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "hang",
+        "hang"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://hang",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://hang",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Provoca intenzionalmente un blocco del browser o di un suo processo. Potrebbe essere necessario terminare Opera manualmente."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.shorthang.115",
+      "name": "Blocco breve browser — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://shorthang in Opera.",
+      "aliases": [
+        "Blocco breve browser",
+        "shorthang",
+        "chrome://shorthang",
+        "opera://shorthang",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "shorthang",
+        "shorthang"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://shorthang",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://shorthang",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Provoca intenzionalmente un blocco del browser o di un suo processo. Potrebbe essere necessario terminare Opera manualmente."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.gpuclean.116",
+      "name": "Pulizia processo GPU — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://gpuclean in Opera.",
+      "aliases": [
+        "Pulizia processo GPU",
+        "gpuclean",
+        "chrome://gpuclean",
+        "opera://gpuclean",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "gpuclean",
+        "gpuclean"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://gpuclean",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://gpuclean",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.gpucrash.117",
+      "name": "Crash processo GPU — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://gpucrash in Opera.",
+      "aliases": [
+        "Crash processo GPU",
+        "gpucrash",
+        "chrome://gpucrash",
+        "opera://gpucrash",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "gpucrash",
+        "gpucrash"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://gpucrash",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://gpucrash",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue un comando di debug sul processo GPU che può provocarne crash o blocco e interrompere il rendering."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.gpuhang.118",
+      "name": "Blocco processo GPU — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://gpuhang in Opera.",
+      "aliases": [
+        "Blocco processo GPU",
+        "gpuhang",
+        "chrome://gpuhang",
+        "opera://gpuhang",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "gpuhang",
+        "gpuhang"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://gpuhang",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://gpuhang",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Provoca intenzionalmente un blocco del browser o di un suo processo. Potrebbe essere necessario terminare Opera manualmente."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.memory-exhaust.119",
+      "name": "Esaurimento memoria — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://memory-exhaust in Opera.",
+      "aliases": [
+        "Esaurimento memoria",
+        "memory exhaust",
+        "chrome://memory-exhaust",
+        "opera://memory-exhaust",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "memory",
+        "exhaust"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "memory-exhaust",
+        "memory",
+        "exhaust"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://memory-exhaust",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://memory-exhaust",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Tenta intenzionalmente di esaurire la memoria del browser. Può bloccare Opera o rendere instabile il sistema."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.memory-pressure-critical.120",
+      "name": "Pressione memoria critica — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://memory-pressure-critical in Opera.",
+      "aliases": [
+        "Pressione memoria critica",
+        "memory pressure critical",
+        "chrome://memory-pressure-critical",
+        "opera://memory-pressure-critical",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "memory",
+        "pressure",
+        "critical"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "memory-pressure-critical",
+        "memory",
+        "pressure",
+        "critical"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://memory-pressure-critical",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://memory-pressure-critical",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Simula pressione di memoria nel browser. Può rallentare o rendere instabile Opera."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.memory-pressure-moderate.121",
+      "name": "Pressione memoria moderata — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://memory-pressure-moderate in Opera.",
+      "aliases": [
+        "Pressione memoria moderata",
+        "memory pressure moderate",
+        "chrome://memory-pressure-moderate",
+        "opera://memory-pressure-moderate",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "memory",
+        "pressure",
+        "moderate"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "memory-pressure-moderate",
+        "memory",
+        "pressure",
+        "moderate"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://memory-pressure-moderate",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://memory-pressure-moderate",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Simula pressione di memoria nel browser. Può rallentare o rendere instabile Opera."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.inducebrowserheapcorruption.122",
+      "name": "Corruzione heap intenzionale — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://inducebrowserheapcorruption in Opera.",
+      "aliases": [
+        "Corruzione heap intenzionale",
+        "inducebrowserheapcorruption",
+        "chrome://inducebrowserheapcorruption",
+        "opera://inducebrowserheapcorruption",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "inducebrowserheapcorruption",
+        "inducebrowserheapcorruption"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://inducebrowserheapcorruption",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://inducebrowserheapcorruption",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.crash-cfg.123",
+      "name": "Crash intenzionale: cfg — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://crash/cfg in Opera.",
+      "aliases": [
+        "Crash intenzionale: cfg",
+        "crash",
+        "chrome://crash/cfg",
+        "opera://crash/cfg",
+        "opera",
+        "url interno",
+        "pagina interna",
+        "cfg"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "crash",
+        "crash",
+        "cfg"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://crash/cfg",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://crash/cfg",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Comando di debug intenzionalmente progettato per provocare crash o comportamento anomalo del browser. Dati non salvati potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.heapcorruptioncrash.124",
+      "name": "Crash per corruzione heap — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://heapcorruptioncrash in Opera.",
+      "aliases": [
+        "Crash per corruzione heap",
+        "heapcorruptioncrash",
+        "chrome://heapcorruptioncrash",
+        "opera://heapcorruptioncrash",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "heapcorruptioncrash",
+        "heapcorruptioncrash"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://heapcorruptioncrash",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://heapcorruptioncrash",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Esegue intenzionalmente un test di corruzione/errore di memoria che può provocare il crash del browser o di un suo processo."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.webuijserror.125",
+      "name": "Errore WebUI JavaScript — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://webuijserror in Opera.",
+      "aliases": [
+        "Errore WebUI JavaScript",
+        "webuijserror",
+        "chrome://webuijserror",
+        "opera://webuijserror",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "webuijserror",
+        "webuijserror"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://webuijserror",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "DESTRUCTIVE",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://webuijserror",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Genera intenzionalmente un errore JavaScript nella WebUI interna. La pagina o il browser possono diventare instabili."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.quit.126",
+      "name": "Chiudi Opera — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://quit in Opera.",
+      "aliases": [
+        "Chiudi Opera",
+        "quit",
+        "chrome://quit",
+        "opera://quit",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "quit",
+        "quit"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://quit",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://quit",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Chiude Opera. Schede o dati non salvati nelle pagine aperte potrebbero andare persi."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.restart.127",
+      "name": "Riavvia Opera — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre la pagina interna opera://restart in Opera.",
+      "aliases": [
+        "Riavvia Opera",
+        "restart",
+        "chrome://restart",
+        "opera://restart",
+        "opera",
+        "url interno",
+        "pagina interna"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "url interno",
+        "pagina interna",
+        "restart",
+        "restart"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://restart",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "CAUTION",
+          "verified": "Elenco interno Opera/Chromium fornito dall’ideatore (18/09/2026)",
+          "source": "chrome://chrome-urls",
+          "source_value": "chrome://restart",
+          "note": "Route interna elencata da Opera tramite chrome://chrome-urls; Opera normalizza le route chrome:// compatibili nel proprio schema opera://.",
+          "warning": "Riavvia Opera e interrompe la sessione corrente; le pagine aperte possono essere ricaricate."
+        }
+      ]
+    },
+    {
+      "id": "browser.opera.internal.settings-keyboard-shortcuts.128",
+      "name": "Scorciatoie da tastiera — Opera",
+      "category": "Browser · Opera",
+      "description": "Apre direttamente la pagina delle scorciatoie da tastiera di Opera.",
+      "aliases": [
+        "Scorciatoie da tastiera",
+        "shortcuts",
+        "keyboard shortcuts",
+        "tasti rapidi",
+        "scorciatoie",
+        "shortcut",
+        "chrome://settings/keyboardShortcuts",
+        "opera://settings/keyboardShortcuts",
+        "Opera"
+      ],
+      "keywords": [
+        "browser",
+        "opera",
+        "chromium",
+        "shortcut",
+        "shortcuts",
+        "keyboard",
+        "scorciatoie",
+        "tasti rapidi",
+        "settings"
+      ],
+      "platform": "Windows 10/11 · Opera",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "opera://settings/keyboardShortcuts",
+          "handler": "opera_internal",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Verificata direttamente dall’ideatore in Opera (18/09/2026)",
+          "source": "Verifica diretta dell’ideatore",
+          "source_value": "chrome://settings/keyboardShortcuts",
+          "note": "Opera accetta chrome://settings/keyboardShortcuts e lo normalizza a opera://settings/keyboardShortcuts."
+        }
+      ]
+    }
+  ]
+}

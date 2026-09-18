@@ -8,6 +8,7 @@ import webbrowser
 from pathlib import Path
 
 from .executor import ExecutionError, execute_route
+from .safety import confirmation_for_route
 from .exporter import export_goal
 from .theme import apply_ttk_theme, system_prefers_dark
 
@@ -533,7 +534,7 @@ class ComboCodeUI:
         ttk.Entry(frame, textvariable=aliases_var).grid(row=4, column=1, sticky='ew', pady=5)
 
         ttk.Label(frame, text='Sicurezza', style='Panel.TLabel').grid(row=5, column=0, sticky='w', pady=5, padx=(0, 12))
-        safety_button = self._make_dropdown(frame, safety_var, ['SAFE', 'ELEVATED', 'DESTRUCTIVE'], lambda: None, width=20)
+        safety_button = self._make_dropdown(frame, safety_var, ['SAFE', 'CAUTION', 'ELEVATED', 'DESTRUCTIVE'], lambda: None, width=20)
         safety_button.grid(row=5, column=1, sticky='w', pady=5)
 
         ttk.Label(frame, text='Note', style='Panel.TLabel').grid(row=6, column=0, sticky='nw', pady=5, padx=(0, 12))
@@ -1076,21 +1077,10 @@ class ComboCodeUI:
     def execute_selected(self):
         if not self.current_goal or not self.current_route:
             return 'break'
-        safety = str(self.current_route.get('safety', 'SAFE')).upper()
-        value = self.current_route.get('value', '')
-        if safety == 'ELEVATED':
-            ok = messagebox.askyesno(
-                'ComboCode — Conferma',
-                f'Questa route può richiedere privilegi amministrativi.\n\n{value}\n\nEseguire?'
-            )
-            if not ok:
-                return 'break'
-        elif safety == 'DESTRUCTIVE':
-            ok = messagebox.askyesno(
-                'ComboCode — ATTENZIONE',
-                f'Questa route può modificare o cancellare dati/configurazioni.\n\n{value}\n\nVuoi eseguirla davvero?'
-            )
-            if not ok:
+        confirmation = confirmation_for_route(self.current_route)
+        if confirmation is not None:
+            title, message = confirmation
+            if not messagebox.askyesno(title, message):
                 return 'break'
         try:
             execute_route(self.current_route)
