@@ -1028,10 +1028,11 @@ class ComboCodeUI:
         if not 0 <= idx < len(routes):
             return
         self.current_route = routes[idx]
+        description = self.current_goal.get('description', '')
         note = self.current_route.get('note', '')
         verified = self.current_route.get('verified', 'non verificato')
         platform = self.current_goal.get('platform', '')
-        lines = [note, f'Verifica: {verified}']
+        lines = [description, note, f'Verifica: {verified}']
         if platform:
             lines.append(f'Compatibilità: {platform}')
         self.route_detail.configure(text='\n'.join(x for x in lines if x).strip())
