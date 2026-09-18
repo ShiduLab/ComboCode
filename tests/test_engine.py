@@ -110,6 +110,27 @@ class EngineTests(unittest.TestCase):
         self.assertNotIn('sicurezza', ctrl_alt_del[0].get('name', '').lower())
         self.assertNotIn('sicurezza', ctrl_alt_del[0].get('description', '').lower())
 
+    def test_transparent_domains_match_primary_and_additional_domain(self):
+        goal = {
+            'id': 'test.transparent',
+            'name': 'Scorciatoie da tastiera — Opera',
+            'category': "Browser url's",
+            'domains': ['Browser · Opera'],
+            'routes': [{'kind': 'URI', 'value': 'opera://settings/keyboardShortcuts'}],
+        }
+        kb = KnowledgeBase([goal])
+
+        self.assertEqual(
+            [h.goal['id'] for h in kb.search('', category="Browser url's", limit=None)],
+            ['test.transparent'],
+        )
+        self.assertEqual(
+            [h.goal['id'] for h in kb.search('', category='Browser · Opera', limit=None)],
+            ['test.transparent'],
+        )
+        self.assertIn("Browser url's", kb.categories())
+        self.assertIn('Browser · Opera', kb.categories())
+
     def test_unique_goal_ids(self):
         ids = [g['id'] for g in self.kb.goals]
         self.assertEqual(len(ids), len(set(ids)))
