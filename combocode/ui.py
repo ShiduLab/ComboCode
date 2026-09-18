@@ -750,7 +750,9 @@ class ComboCodeUI:
         return result['goal']
 
     def add_user_shortcut(self):
-        goal = self._shortcut_form()
+        value = self.mine_query_var.get()
+        initial = {'routes': [{'value': value}]} if value else None
+        goal = self._shortcut_form(initial)
         if not goal:
             return 'break'
         saved = self.store.upsert_user_goal(goal)
