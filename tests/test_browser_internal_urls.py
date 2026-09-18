@@ -41,6 +41,22 @@ class BrowserInternalPackTests(unittest.TestCase):
         hits = kb.search('', category="Browser url's", limit=None)
         self.assertEqual(len(hits), 128)
 
+    def test_browser_url_descriptions_explain_the_destination(self):
+        generic = [
+            g['name']
+            for g in self.goals
+            if g.get('description', '').startswith('Apre la pagina interna ')
+        ]
+        self.assertEqual(generic, [])
+        self.assertIn(
+            'interazione',
+            self.by_value['opera://site-engagement'][0]['description'].lower(),
+        )
+        self.assertIn(
+            'graf',
+            self.by_value['opera://gpu'][0]['description'].lower(),
+        )
+
     def test_shortcuts_search_finds_keyboard_shortcuts_page(self):
         kb = KnowledgeBase(self.goals)
         hits = kb.search('shortcuts')
@@ -97,14 +113,19 @@ class BrowserLauncherTests(unittest.TestCase):
         )
 
     @patch('combocode.browser_internal.subprocess.Popen')
-    def test_launch_passes_internal_url_directly_to_opera(self, popen):
+    @patch(
+        'combocode.browser_internal._navigate_internal_via_address_bar',
+        create=True,
+    )
+    def test_launch_navigates_internal_url_through_opera_address_bar(
+        self, navigate, popen
+    ):
         launch_opera_internal(
             'opera://settings',
             executable=r'C:\\Opera\\opera.exe',
         )
-        popen.assert_called_once_with(
-            [r'C:\\Opera\\opera.exe', 'opera://settings']
-        )
+        popen.assert_called_once_with([r'C:\\Opera\\opera.exe'])
+        navigate.assert_called_once_with('opera://settings')
 
     @patch('combocode.executor.launch_opera_internal')
     def test_executor_dispatches_opera_internal_handler(self, launch):
