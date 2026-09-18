@@ -125,6 +125,7 @@ def launch_browser_internal(
 def _navigate_internal_via_address_bar(value: str, browser: str = 'opera') -> None:
     user32 = ctypes.windll.user32
     SW_RESTORE = 9
+    SW_MAXIMIZE = 3
     KEYEVENTF_KEYUP = 0x0002
     VK_CONTROL = 0x11
     VK_MENU = 0x12
@@ -188,7 +189,8 @@ def _navigate_internal_via_address_bar(value: str, browser: str = 'opera') -> No
     if not hwnd:
         raise OSError(f'Finestra di {browser_name} non trovata.')
 
-    user32.ShowWindow(hwnd, SW_RESTORE)
+    show_cmd = SW_RESTORE if browser_name == 'opera' else SW_MAXIMIZE
+    user32.ShowWindow(hwnd, show_cmd)
     user32.BringWindowToTop(hwnd)
     user32.SetForegroundWindow(hwnd)
     time.sleep(0.12)
