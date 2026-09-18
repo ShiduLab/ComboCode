@@ -83,6 +83,33 @@ class EngineTests(unittest.TestCase):
         categories_desc = [row.goal.get('category', '').lower() for row in rows_desc]
         self.assertEqual(categories_desc, sorted(categories_desc, reverse=True))
 
+    def test_sicurezza_opens_windows_security_app(self):
+        hits = self.kb.search('sicurezza', limit=None)
+        self.assertTrue(hits)
+        self.assertEqual(hits[0].goal['id'], 'sys.windows-security')
+        values = {r['value'] for r in hits[0].goal['routes']}
+        self.assertIn('windowsdefender:', values)
+
+    def test_sicurezza_search_never_returns_ctrl_alt_del(self):
+        hits = self.kb.search('sicurezza', limit=None)
+        values = {
+            route.get('value')
+            for hit in hits
+            for route in hit.goal.get('routes', [])
+        }
+        self.assertNotIn('CTRL + ALT + DEL', values)
+
+    def test_ctrl_alt_del_is_session_management(self):
+        hits = self.kb.search('gestione sessione', limit=None)
+        self.assertTrue(hits)
+        ctrl_alt_del = [
+            hit.goal for hit in hits
+            if any(r.get('value') == 'CTRL + ALT + DEL' for r in hit.goal.get('routes', []))
+        ]
+        self.assertEqual(len(ctrl_alt_del), 1)
+        self.assertNotIn('sicurezza', ctrl_alt_del[0].get('name', '').lower())
+        self.assertNotIn('sicurezza', ctrl_alt_del[0].get('description', '').lower())
+
     def test_unique_goal_ids(self):
         ids = [g['id'] for g in self.kb.goals]
         self.assertEqual(len(ids), len(set(ids)))
