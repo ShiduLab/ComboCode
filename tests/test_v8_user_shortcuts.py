@@ -32,6 +32,51 @@ class V8UserShortcutTests(unittest.TestCase):
         hits = kb.search('segretissimo')
         self.assertEqual(hits[0].goal['id'], 'user.test')
 
+    def test_add_shortcut_prefills_value_from_mie_input(self):
+        class Var:
+            def get(self):
+                return 'CTRL + ALT + S'
+
+        class FakeUI:
+            mine_query_var = Var()
+
+            def __init__(self):
+                self.initial = 'not-called'
+
+            def _shortcut_form(self, initial=None):
+                self.initial = initial
+                return None
+
+        fake = FakeUI()
+        from combocode.ui import ComboCodeUI
+        ComboCodeUI.add_user_shortcut(fake)
+
+        self.assertEqual(
+            fake.initial,
+            {'routes': [{'value': 'CTRL + ALT + S'}]},
+        )
+
+    def test_add_shortcut_keeps_empty_form_when_mie_input_is_empty(self):
+        class Var:
+            def get(self):
+                return ''
+
+        class FakeUI:
+            mine_query_var = Var()
+
+            def __init__(self):
+                self.initial = 'not-called'
+
+            def _shortcut_form(self, initial=None):
+                self.initial = initial
+                return None
+
+        fake = FakeUI()
+        from combocode.ui import ComboCodeUI
+        ComboCodeUI.add_user_shortcut(fake)
+
+        self.assertIsNone(fake.initial)
+
     def test_import_export(self):
         with tempfile.TemporaryDirectory() as td:
             base = Path(td)
