@@ -3,7 +3,7 @@
 > L'utente non deve ricordare **come** si raggiunge qualcosa.  
 > Deve sapere soltanto **cosa vuole ottenere**.
 
-**Versione attuale: 8.0.1**
+**Salto attuale: J8.0.1**
 
 **Download Windows:** [ComboCode v8.0.1](https://github.com/ShiduLab/ComboCode/releases/tag/v8.0.1) 
 <img width="1920" height="1082" alt="ComboCode v8 2 J" src="https://github.com/user-attachments/assets/cfc4465d-e931-45d3-93fb-b0b39374a7e6" />
@@ -18,7 +18,7 @@ L'idea centrale è semplice:
 
 Per esempio, cercando `Connessioni di rete`, ComboCode può proporre più strade per arrivare allo stesso punto: RUN, CMD, URI o altre route disponibili.
 
-## Stato archivio v8
+## Stato archivio J8
 
 Archivio standard incluso:
 
@@ -214,8 +214,8 @@ Dopo il push su `main`, GitHub Actions:
 
 1. esegue i test;
 2. installa PyInstaller;
-3. genera **`ComboCode v8.exe`**;
-4. pubblica l'artifact **`ComboCode-Windows-v8`**.
+3. genera **`ComboCode J8.0.1.exe`**;
+4. pubblica l'artifact **`ComboCode-Windows-J8.0.1`**.
 
 ## Cronologia
 
