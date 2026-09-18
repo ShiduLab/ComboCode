@@ -2080,23 +2080,25 @@
     },
     {
       "id": "kb.full.windows-desktop-e-generali.ctrl-alt-del.062",
-      "name": "Apri la schermata di sicurezza di Windows",
-      "category": "Windows · Desktop e generali",
-      "description": "Scorciatoia di Windows: Apri la schermata di sicurezza di Windows.",
+      "name": "Apri la schermata di gestione sessione",
+      "category": "Windows · Sessione e accesso",
+      "description": "Apre la schermata di gestione della sessione Windows: blocco, cambio utente, disconnessione, cambio password e Task Manager.",
       "aliases": [
         "CTRL + ALT + DEL",
-        "Apri la schermata di sicurezza di Windows",
-        "desktop",
-        "generale"
+        "Apri la schermata di gestione sessione",
+        "sessione",
+        "accesso"
       ],
       "keywords": [
         "windows",
         "tastiera",
         "shortcut",
         "scorciatoia",
-        "desktop e generali",
-        "desktop",
-        "generale"
+        "sessione e accesso",
+        "sessione",
+        "accesso",
+        "logout",
+        "cambio utente"
       ],
       "platform": "Windows 11/10",
       "routes": [
@@ -2108,7 +2110,7 @@
           "safety": "SAFE",
           "verified": "Microsoft Support — Windows keyboard shortcuts",
           "source": "https://support.microsoft.com/en-us/windows/keyboard-shortcuts-in-windows-dcc61a57-8ff0-cffe-9796-cb9706c75eec",
-          "note": "Combinazione ufficiale Microsoft per apri la schermata di sicurezza di windows. Alcune scorciatoie dipendono dal contesto, dalla versione di Windows o dall’hardware."
+          "note": "Apre la schermata di gestione della sessione Windows con le opzioni di blocco, cambio utente, disconnessione, cambio password e Task Manager."
         }
       ]
     },
