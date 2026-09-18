@@ -14,7 +14,7 @@ def _prepare_windows_process() -> None:
         return
     try:
         import ctypes
-        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.v8')
+        ctypes.windll.shell32.SetCurrentProcessExplicitAppUserModelID('ShiduLab.ComboCode.J8.0.1')
     except Exception:
         pass
     try:
