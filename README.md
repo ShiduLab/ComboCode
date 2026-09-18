@@ -181,7 +181,7 @@ Le gesture `MOUSE` e `KEY+MOUSE` vengono archiviate e mostrate come istruzioni o
 
 ## Obsidian
 
-ComboCode può esportare una voce come nota Markdown con frontmatter e WikiLink per `[[OlogrammIo]]`.
+ComboCode può esportare una voce come nota Markdown con frontmatter e WikiLink, pronta per essere integrata in un vault Obsidian.
 
 La documentazione del progetto è in `docs/`.
 
