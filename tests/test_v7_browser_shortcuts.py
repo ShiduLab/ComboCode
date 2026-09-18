@@ -39,12 +39,12 @@ class V7BrowserShortcuts(unittest.TestCase):
                 ]
                 self.assertTrue(any(url in value for value in values), (category, url))
 
-    def test_shortcut_settings_use_consistent_action_name(self):
+    def test_shortcut_settings_use_semantically_correct_action_name(self):
         kb = KnowledgeBase.from_pack_dir(ROOT/'combocode/data/packs')
         expected = {
             'opera://settings/keyboardShortcuts': 'Personalizza scorciatoie da tastiera — Opera',
-            'chrome://extensions/shortcuts': 'Personalizza scorciatoie da tastiera — Chrome',
-            'edge://extensions/shortcuts': 'Personalizza scorciatoie da tastiera — Edge',
+            'chrome://extensions/shortcuts': 'Scorciatoie estensioni — Chrome',
+            'edge://extensions/shortcuts': 'Scorciatoie estensioni — Edge',
             'about:keyboard': 'Personalizza scorciatoie da tastiera — Firefox',
         }
         for url, expected_name in expected.items():
