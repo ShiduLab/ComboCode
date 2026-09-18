@@ -84,12 +84,25 @@ class KnowledgeBase:
         return [g for g in self.goals if g.get('origin') == 'user']
 
     @staticmethod
+    def _goal_domains(goal: dict) -> list[str]:
+        memberships: list[str] = []
+        primary = goal.get('category', 'Altro')
+        extras = goal.get('domains', [])
+        if isinstance(extras, str):
+            extras = [extras]
+        for value in [primary, *extras]:
+            if value and value not in memberships:
+                memberships.append(value)
+        return memberships
+
+    @staticmethod
     def _build_index(goal: dict) -> dict:
         name = normalize(goal.get('name', ''))
         aliases = [normalize(x) for x in goal.get('aliases', [])]
         keywords = [normalize(x) for x in goal.get('keywords', [])]
         description = normalize(goal.get('description', ''))
         category = normalize(goal.get('category', ''))
+        domains = [normalize(x) for x in goal.get('domains', [])]
         context = normalize(goal.get('context', ''))
         origin = normalize(goal.get('origin', ''))
         route_values = [normalize(r.get('value', '')) for r in goal.get('routes', [])]
@@ -101,6 +114,7 @@ class KnowledgeBase:
             *keywords,
             description,
             category,
+            *domains,
             context,
             origin,
             *route_values,
@@ -115,7 +129,12 @@ class KnowledgeBase:
         }
 
     def categories(self) -> list[str]:
-        return sorted({g.get('category', 'Altro') for g in self.goals}, key=str.lower)
+        domains = {
+            domain
+            for goal in self.goals
+            for domain in self._goal_domains(goal)
+        }
+        return sorted(domains, key=str.lower)
 
     def route_kinds(self) -> list[str]:
         return sorted(
@@ -145,7 +164,7 @@ class KnowledgeBase:
         q_tokens = q.split()
         hits: list[SearchHit] = []
         for goal in self.goals:
-            if category and category != 'Tutte' and goal.get('category') != category:
+            if category and category != 'Tutte' and category not in self._goal_domains(goal):
                 continue
             idx = self._index[goal['id']]
             if not q:
