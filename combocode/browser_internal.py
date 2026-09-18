@@ -47,6 +47,78 @@ def find_opera_executable() -> str | None:
     return None
 
 
+
+def find_browser_executable(browser: str) -> str | None:
+    name = str(browser or '').strip().lower()
+    if name == 'opera':
+        return find_opera_executable()
+
+    aliases = {
+        'chrome': ('chrome.exe', 'chrome'),
+        'edge': ('msedge.exe', 'msedge'),
+        'firefox': ('firefox.exe', 'firefox'),
+    }
+    if name not in aliases:
+        return None
+
+    for executable_name in aliases[name]:
+        found = shutil.which(executable_name)
+        if found:
+            return found
+
+    local = os.environ.get('LOCALAPPDATA')
+    program_files = os.environ.get('PROGRAMFILES')
+    program_files_x86 = os.environ.get('PROGRAMFILES(X86)')
+    candidates: list[Path] = []
+
+    if name == 'chrome':
+        for base in (local, program_files, program_files_x86):
+            if base:
+                candidates.append(Path(base) / 'Google' / 'Chrome' / 'Application' / 'chrome.exe')
+    elif name == 'edge':
+        for base in (local, program_files, program_files_x86):
+            if base:
+                candidates.append(Path(base) / 'Microsoft' / 'Edge' / 'Application' / 'msedge.exe')
+    elif name == 'firefox':
+        for base in (program_files, program_files_x86):
+            if base:
+                candidates.append(Path(base) / 'Mozilla Firefox' / 'firefox.exe')
+
+    for candidate in candidates:
+        if candidate.is_file():
+            return str(candidate)
+    return None
+
+
+def launch_browser_internal(
+    url: str,
+    browser: str,
+    executable: str | None = None,
+) -> None:
+    name = str(browser or '').strip().lower()
+    value = str(url or '').strip()
+
+    if name == 'opera':
+        launch_opera_internal(value, executable=executable)
+        return
+
+    prefixes = {
+        'chrome': ('chrome://',),
+        'edge': ('edge://',),
+        'firefox': ('about:',),
+    }
+    if name not in prefixes:
+        raise ValueError(f'Browser interno non supportato: {browser}')
+    if not value.lower().startswith(prefixes[name]):
+        raise ValueError(f'Route interna non valida per {browser}: {value}')
+
+    browser_exe = executable or find_browser_executable(name)
+    if not browser_exe:
+        raise FileNotFoundError(
+            f'{browser.capitalize()} non trovato. ComboCode conosce la route ma non trova il browser.'
+        )
+    subprocess.Popen([browser_exe, value])
+
 def _navigate_internal_via_address_bar(value: str) -> None:
     user32 = ctypes.windll.user32
     SW_RESTORE = 9
