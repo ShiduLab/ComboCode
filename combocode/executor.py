@@ -5,7 +5,7 @@ import subprocess
 import sys
 import time
 
-from .browser_internal import launch_opera_internal
+from .browser_internal import launch_opera_internal, launch_browser_internal
 
 
 class ExecutionError(RuntimeError):
@@ -136,6 +136,8 @@ def execute_route(route: dict) -> None:
         # Handler espliciti del database.
         if handler == 'opera_internal':
             launch_opera_internal(value)
+        elif handler == 'browser_internal':
+            launch_browser_internal(value, str(route.get('browser', '')))
         elif handler == 'uri':
             os.startfile(value)  # type: ignore[attr-defined]
         elif handler == 'control':
