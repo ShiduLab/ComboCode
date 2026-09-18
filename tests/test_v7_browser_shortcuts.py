@@ -1,6 +1,8 @@
 from pathlib import Path
 import json, unittest
 
+from combocode.engine import KnowledgeBase
+
 ROOT = Path(__file__).resolve().parents[1]
 
 class V7BrowserShortcuts(unittest.TestCase):
@@ -18,6 +20,24 @@ class V7BrowserShortcuts(unittest.TestCase):
         cats = {g['category'] for g in self.goals}
         for expected in ['Browser · Opera', 'Browser · Chrome', 'Browser · Edge', 'Browser · Firefox', 'Browser · Browser comuni']:
             self.assertIn(expected, cats)
+
+    def test_browser_specific_shortcut_settings_are_discoverable(self):
+        kb = KnowledgeBase.from_pack_dir(ROOT/'combocode/data/packs')
+        expected = {
+            'Browser · Chrome': 'chrome://extensions/shortcuts',
+            'Browser · Edge': 'edge://extensions/shortcuts',
+            'Browser · Firefox': 'about:keyboard',
+            'Browser · Opera': 'opera://settings/keyboardShortcuts',
+        }
+        for category, url in expected.items():
+            with self.subTest(category=category):
+                hits = kb.search('shortcut', category=category, limit=None)
+                values = [
+                    route.get('value', '')
+                    for hit in hits
+                    for route in hit.goal.get('routes', [])
+                ]
+                self.assertTrue(any(url in value for value in values), (category, url))
 
     def test_navigation_basics_present(self):
         values = {r[1] for r in self.rows}
