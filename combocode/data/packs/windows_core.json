@@ -1460,6 +1460,38 @@
       ]
     },
     {
+      "id": "sys.windows-security",
+      "name": "Sicurezza di Windows",
+      "category": "Sicurezza",
+      "description": "Apre direttamente l'app Sicurezza di Windows.",
+      "aliases": [
+        "sicurezza",
+        "windows security",
+        "sicurezza windows",
+        "windows defender"
+      ],
+      "keywords": [
+        "sicurezza",
+        "protezione",
+        "antivirus",
+        "defender",
+        "firewall",
+        "minacce"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "windowsdefender:",
+          "handler": "uri",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows built-in URI",
+          "note": "Apre direttamente l'app Sicurezza di Windows."
+        }
+      ]
+    },
+    {
       "id": "sys.firewall",
       "name": "Firewall di Windows",
       "category": "Sicurezza",
