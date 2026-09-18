@@ -152,11 +152,12 @@ class ComboCodeUI:
             if active_button == button:
                 return 'break'
 
-        popup = tk.Toplevel(self.root)
+        owner = button.winfo_toplevel()
+        popup = tk.Toplevel(owner)
         popup.withdraw()
         popup.overrideredirect(True)
         try:
-            popup.transient(self.root)
+            popup.transient(owner)
         except Exception:
             pass
 
