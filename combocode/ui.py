@@ -38,7 +38,7 @@ class ComboCodeUI:
         self._icon_image = None
         self._brand_image = None
         self._native_icon_handles = []
-        self._dropdown_menus = []
+        self._active_dropdown = None
         self.icon_ico = icon_ico
 
         self.root = tk.Tk()
@@ -121,46 +121,196 @@ class ComboCodeUI:
         self.root.after(1500, self._poll_system_theme)
 
     def _make_dropdown(self, parent, variable, values, callback, width=18):
+        values = tuple(values)
         button = ttk.Menubutton(
             parent,
             textvariable=variable,
             style='Dropdown.TMenubutton',
             width=width,
         )
-        menu = tk.Menu(button, tearoff=False)
-        for value in values:
-            menu.add_command(
-                label=value,
-                command=lambda v=value, var=variable, cb=callback: self._select_dropdown(var, v, cb),
-            )
-        button.configure(menu=menu)
-        self._dropdown_menus.append(menu)
-        self._style_dropdown_menu(menu)
+        button.bind(
+            '<Button-1>',
+            lambda _e, b=button, var=variable, vals=values, cb=callback:
+                self._toggle_dropdown_popup(b, var, vals, cb),
+        )
+        button.bind(
+            '<Return>',
+            lambda _e, b=button, var=variable, vals=values, cb=callback:
+                self._toggle_dropdown_popup(b, var, vals, cb),
+        )
+        button.bind(
+            '<space>',
+            lambda _e, b=button, var=variable, vals=values, cb=callback:
+                self._toggle_dropdown_popup(b, var, vals, cb),
+        )
         return button
+
+    def _toggle_dropdown_popup(self, button, variable, values, callback):
+        if self._active_dropdown is not None:
+            active_popup, active_button, _active_listbox = self._active_dropdown
+            self._close_active_dropdown()
+            if active_button == button:
+                return 'break'
+
+        popup = tk.Toplevel(self.root)
+        popup.withdraw()
+        popup.overrideredirect(True)
+        try:
+            popup.transient(self.root)
+        except Exception:
+            pass
+
+        p = self.palette
+        frame = tk.Frame(
+            popup,
+            background=p.field,
+            highlightbackground=p.accent,
+            highlightthickness=1,
+            borderwidth=0,
+        )
+        frame.pack(fill='both', expand=True)
+
+        visible_rows = min(18, max(1, len(values)))
+        char_width = max(18, min(48, max((len(str(v)) for v in values), default=18) + 2))
+        listbox = tk.Listbox(
+            frame,
+            height=visible_rows,
+            width=char_width,
+            activestyle='none',
+            exportselection=False,
+            borderwidth=0,
+            highlightthickness=0,
+            font=('Segoe UI', 10),
+        )
+        self._style_dropdown_listbox(listbox)
+        listbox.pack(side='left', fill='both', expand=True)
+
+        if len(values) > visible_rows:
+            scrollbar = ttk.Scrollbar(frame, orient='vertical', command=listbox.yview)
+            scrollbar.pack(side='right', fill='y')
+            listbox.configure(yscrollcommand=scrollbar.set)
+
+        for value in values:
+            listbox.insert(tk.END, value)
+
+        current = variable.get()
+        if current in values:
+            idx = values.index(current)
+            listbox.selection_set(idx)
+            listbox.activate(idx)
+            listbox.see(idx)
+        elif values:
+            listbox.selection_set(0)
+            listbox.activate(0)
+
+        listbox.bind(
+            '<ButtonRelease-1>',
+            lambda _e, lb=listbox, var=variable, vals=values, cb=callback:
+                self._choose_dropdown_value(lb, var, vals, cb),
+        )
+        listbox.bind(
+            '<Return>',
+            lambda _e, lb=listbox, var=variable, vals=values, cb=callback:
+                self._choose_dropdown_value(lb, var, vals, cb),
+        )
+        listbox.bind('<Escape>', lambda _e: self._close_active_dropdown())
+        listbox.bind('<MouseWheel>', lambda e, lb=listbox: self._scroll_dropdown(e, lb))
+        listbox.bind('<Button-4>', lambda e, lb=listbox: self._scroll_dropdown(e, lb))
+        listbox.bind('<Button-5>', lambda e, lb=listbox: self._scroll_dropdown(e, lb))
+        listbox.bind(
+            '<FocusOut>',
+            lambda _e, pop=popup: pop.after(20, lambda: self._close_dropdown_if_unfocused(pop)),
+        )
+
+        popup.update_idletasks()
+        popup_width = max(button.winfo_width(), popup.winfo_reqwidth())
+        popup_height = popup.winfo_reqheight()
+        x = button.winfo_rootx()
+        y = button.winfo_rooty() + button.winfo_height()
+
+        screen_w = popup.winfo_screenwidth()
+        screen_h = popup.winfo_screenheight()
+        x = min(x, max(0, screen_w - popup_width))
+        if y + popup_height > screen_h:
+            y = max(0, button.winfo_rooty() - popup_height)
+
+        popup.geometry(f'{popup_width}x{popup_height}+{x}+{y}')
+        self._active_dropdown = (popup, button, listbox)
+        popup.deiconify()
+        popup.lift()
+        listbox.focus_set()
+        return 'break'
+
+    def _choose_dropdown_value(self, listbox, variable, values, callback):
+        selected = listbox.curselection()
+        if not selected:
+            return 'break'
+        value = values[selected[0]]
+        self._close_active_dropdown()
+        self._select_dropdown(variable, value, callback)
+        return 'break'
+
+    def _scroll_dropdown(self, event, listbox):
+        if getattr(event, 'num', None) == 4:
+            units = -1
+        elif getattr(event, 'num', None) == 5:
+            units = 1
+        else:
+            delta = getattr(event, 'delta', 0)
+            if not delta:
+                return 'break'
+            units = -int(delta / 120)
+            if units == 0:
+                units = -1 if delta > 0 else 1
+        listbox.yview_scroll(units, 'units')
+        return 'break'
+
+    def _close_dropdown_if_unfocused(self, popup):
+        if self._active_dropdown is None:
+            return
+        active_popup, _button, _listbox = self._active_dropdown
+        if active_popup != popup:
+            return
+        try:
+            focus = popup.focus_get()
+            if focus is not None and focus.winfo_toplevel() == popup:
+                return
+        except Exception:
+            pass
+        self._close_active_dropdown()
+
+    def _close_active_dropdown(self):
+        if self._active_dropdown is None:
+            return 'break'
+        popup, _button, _listbox = self._active_dropdown
+        self._active_dropdown = None
+        try:
+            popup.destroy()
+        except Exception:
+            pass
+        return 'break'
 
     def _select_dropdown(self, variable, value, callback):
         variable.set(value)
         callback()
 
-    def _style_dropdown_menu(self, menu):
+    def _style_dropdown_listbox(self, listbox):
         p = self.palette
         try:
-            menu.configure(
+            listbox.configure(
                 background=p.field,
                 foreground=p.text,
-                activebackground=p.accent,
-                activeforeground=p.selection_text,
-                selectcolor=p.accent,
-                borderwidth=1,
-                relief='solid',
-                font=('Segoe UI', 10),
+                selectbackground=p.accent,
+                selectforeground=p.selection_text,
             )
         except Exception:
             pass
 
     def _restyle_dropdown_menus(self):
-        for menu in self._dropdown_menus:
-            self._style_dropdown_menu(menu)
+        if self._active_dropdown is None:
+            return
+        _popup, _button, listbox = self._active_dropdown
+        self._style_dropdown_listbox(listbox)
 
     def _build_ui(self, brand_png: Path | None):
         root = self.root
