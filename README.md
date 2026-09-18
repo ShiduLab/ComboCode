@@ -5,7 +5,9 @@
 
 **Versione attuale: 8.0.1**
 
-**Download Windows:** [ComboCode v8.0.1](https://github.com/ShiduLab/ComboCode/releases/tag/v8.0.1)
+**Download Windows:** [ComboCode v8.0.1](https://github.com/ShiduLab/ComboCode/releases/tag/v8.0.1) 
+<img width="1280" height="719" alt="image" src="https://github.com/user-attachments/assets/185e1865-6ca7-4a72-8418-82940169a0c7" />
+
 
 ComboCode è un motore locale, keyboard-first, per trovare e usare shortcut, comandi, pannelli e route di accesso a Windows e alle applicazioni.
 
