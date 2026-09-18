@@ -1,0 +1,130 @@
+{
+  "name": "Browser Settings URLs — Windows",
+  "version": "1.0.0",
+  "updated": "2026-09-18",
+  "note": "Pagine interne verificate per la gestione delle scorciatoie nei browser supportati. Ogni voce resta in Browser url's ed è mindlinkata al browser in cui funziona.",
+  "goals": [
+    {
+      "id": "browser.chrome.internal.extension-shortcuts",
+      "name": "Scorciatoie estensioni — Chrome",
+      "category": "Browser url's",
+      "domains": [
+        "Browser · Chrome"
+      ],
+      "description": "Apre la pagina di Chrome per visualizzare e modificare le scorciatoie assegnate alle estensioni.",
+      "aliases": [
+        "scorciatoie chrome",
+        "shortcut chrome",
+        "shortcuts chrome",
+        "keyboard shortcuts chrome",
+        "chrome://extensions/shortcuts",
+        "scorciatoie estensioni"
+      ],
+      "keywords": [
+        "browser",
+        "chrome",
+        "shortcut",
+        "shortcuts",
+        "keyboard",
+        "scorciatoie",
+        "estensioni",
+        "extensions"
+      ],
+      "platform": "Windows 10/11 · Chrome",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "chrome://extensions/shortcuts",
+          "handler": "browser_internal",
+          "browser": "chrome",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Documentata nella community ufficiale Google Chrome (2026)",
+          "source": "https://support.google.com/chrome/thread/390820635/",
+          "note": "Chrome consente da questa pagina di assegnare e modificare le scorciatoie delle estensioni; non rimappa i comandi nativi del browser."
+        }
+      ]
+    },
+    {
+      "id": "browser.edge.internal.extension-shortcuts",
+      "name": "Scorciatoie estensioni — Edge",
+      "category": "Browser url's",
+      "domains": [
+        "Browser · Edge"
+      ],
+      "description": "Apre la pagina di Edge per visualizzare e modificare le scorciatoie assegnate alle estensioni.",
+      "aliases": [
+        "scorciatoie edge",
+        "shortcut edge",
+        "shortcuts edge",
+        "keyboard shortcuts edge",
+        "edge://extensions/shortcuts",
+        "scorciatoie estensioni"
+      ],
+      "keywords": [
+        "browser",
+        "edge",
+        "shortcut",
+        "shortcuts",
+        "keyboard",
+        "scorciatoie",
+        "estensioni",
+        "extensions"
+      ],
+      "platform": "Windows 10/11 · Edge",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "edge://extensions/shortcuts",
+          "handler": "browser_internal",
+          "browser": "edge",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Documentata da Microsoft Community Hub",
+          "source": "https://techcommunity.microsoft.com/discussions/edgeinsiderdiscussions/suggestion-keyboard-shortcuts-to-run-extension/2971426",
+          "note": "Edge consente da questa pagina di assegnare e modificare le scorciatoie delle estensioni."
+        }
+      ]
+    },
+    {
+      "id": "browser.firefox.internal.keyboard-shortcuts",
+      "name": "Personalizza scorciatoie da tastiera — Firefox",
+      "category": "Browser url's",
+      "domains": [
+        "Browser · Firefox"
+      ],
+      "description": "Apre la pagina interna di Firefox per personalizzare le scorciatoie da tastiera del browser.",
+      "aliases": [
+        "scorciatoie firefox",
+        "shortcut firefox",
+        "shortcuts firefox",
+        "keyboard shortcuts firefox",
+        "about:keyboard",
+        "personalizza scorciatoie"
+      ],
+      "keywords": [
+        "browser",
+        "firefox",
+        "shortcut",
+        "shortcuts",
+        "keyboard",
+        "scorciatoie",
+        "tasti rapidi"
+      ],
+      "platform": "Windows 10/11 · Firefox 147+",
+      "routes": [
+        {
+          "kind": "URI",
+          "value": "about:keyboard",
+          "handler": "browser_internal",
+          "browser": "firefox",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Documentata da Mozilla Support (Firefox 147+)",
+          "source": "https://support.mozilla.org/en-US/kb/customize-keyboard-shortcuts-firefox",
+          "note": "Da Firefox 147 permette di personalizzare numerose scorciatoie native del browser."
+        }
+      ]
+    }
+  ]
+}
