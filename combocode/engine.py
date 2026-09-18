@@ -184,7 +184,8 @@ class KnowledgeBase:
                 'safety': row.route.get('safety', 'SAFE'),
                 'verified': row.route.get('verified', ''),
             }
-            primary = normalize(str(mapping.get(sort_by, mapping['goal'])))
+            raw_primary = str(mapping.get(sort_by, mapping['goal']))
+            primary = raw_primary.lower() if sort_by == 'cat' else normalize(raw_primary)
             return (
                 primary,
                 normalize(row.goal.get('name', '')),
