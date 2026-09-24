@@ -141,7 +141,46 @@ function searchGoals(query, category='Tutte') {
 }
 
 function td(text, cls='') { const x=document.createElement('td'); x.textContent=text ?? ''; if(cls)x.className=cls; return x; }
-function selectRow(tbody, tr) { tbody.querySelectorAll('tr').forEach(r=>r.classList.remove('selected')); tr?.classList.add('selected'); }
+
+function prepareRow(tr) {
+  tr.tabIndex = -1;
+  return tr;
+}
+
+function selectRow(tbody, tr) {
+  tbody.querySelectorAll('tr').forEach(r => {
+    r.classList.remove('selected');
+    r.tabIndex = -1;
+  });
+  if (tr) {
+    tr.classList.add('selected');
+    tr.tabIndex = 0;
+  }
+}
+
+function bindRowNavigation(table) {
+  table.addEventListener('keydown', e => {
+    if (!['ArrowUp','ArrowDown','Home','End'].includes(e.key)) return;
+
+    const body = table.tBodies[0];
+    const rows = [...body.rows];
+    if (!rows.length) return;
+
+    const selected = body.querySelector('tr.selected');
+    let index = selected ? rows.indexOf(selected) : 0;
+
+    if (e.key === 'ArrowUp') index = Math.max(0, index - 1);
+    if (e.key === 'ArrowDown') index = Math.min(rows.length - 1, index + 1);
+    if (e.key === 'Home') index = 0;
+    if (e.key === 'End') index = rows.length - 1;
+
+    e.preventDefault();
+    const next = rows[index];
+    next.click();
+    next.focus({preventScroll:true});
+    next.scrollIntoView({block:'nearest'});
+  });
+}
 
 function refreshSearch() {
   const rows = searchGoals(els.globalSearch.value, els.globalCategory.value);
@@ -154,9 +193,9 @@ function refreshSearch() {
   }
   const body=els.goalTable.tBodies[0]; body.innerHTML='';
   for (const {goal} of rows) {
-    const tr=document.createElement('tr'); tr.dataset.id=goal.id;
+    const tr=prepareRow(document.createElement('tr')); tr.dataset.id=goal.id;
     tr.append(td(`${state.favorites.has(goal.id)?'★ ':''}${goal.name}`)); tr.append(td(goal.category||''));
-    tr.addEventListener('click',()=>showGoal(goal,tr)); body.append(tr);
+    tr.addEventListener('click',()=>{showGoal(goal,tr);tr.focus({preventScroll:true});}); body.append(tr);
   }
   if (rows.length) showGoal(rows[0].goal, body.rows[0]); else clearGoal();
   setStatus(`${rows.length} obiettivi trovati · ${state.goals.length} nell’archivio · ${state.version}`);
@@ -167,9 +206,9 @@ function showGoal(goal,tr) {
   els.goalTitle.textContent=goal.name||'ComboCode'; els.goalDescription.textContent=goal.description||'Un obiettivo, più route.';
   const body=els.routeTable.tBodies[0]; body.innerHTML='';
   (goal.routes||[]).forEach((route,i)=>{
-    const row=document.createElement('tr'); row.dataset.index=i;
+    const row=prepareRow(document.createElement('tr')); row.dataset.index=i;
     row.append(td(`${route.kind||'ROUTE'}  ·  ${route.value||''}`)); row.append(td(route.safety||'SAFE','center'));
-    row.addEventListener('click',()=>showSearchRoute(goal,route,row)); body.append(row);
+    row.addEventListener('click',()=>{showSearchRoute(goal,route,row);row.focus({preventScroll:true});}); body.append(row);
   });
   els.searchFavorite.textContent = state.favorites.has(goal.id)?'★ Preferito':'☆ Preferito';
   if ((goal.routes||[]).length) showSearchRoute(goal,goal.routes[0],body.rows[0]); else updateSearchButtons(null);
@@ -247,9 +286,9 @@ function archiveRows() {
 function refreshArchive() {
   const rows=archiveRows(); const body=els.archiveTable.tBodies[0]; body.innerHTML=''; state.currentArchive=null;
   rows.forEach((x,i)=>{
-    const tr=document.createElement('tr'); tr.dataset.index=i;
+    const tr=prepareRow(document.createElement('tr')); tr.dataset.index=i;
     tr.append(td(x.goal.name));tr.append(td(x.route.kind||'','center'));tr.append(td(x.route.value||''));tr.append(td(x.goal.category||''));tr.append(td(x.route.safety||'SAFE','center'));tr.append(td(x.route.verified||'non verificato'));
-    tr.addEventListener('click',()=>showArchiveRow(x,tr));body.append(tr);
+    tr.addEventListener('click',()=>{showArchiveRow(x,tr);tr.focus({preventScroll:true});});body.append(tr);
   });
   const routeCount=state.goals.reduce((n,g)=>n+(g.routes||[]).length,0);
   els.archiveSummary.textContent=`${rows.length} route visualizzate · archivio: ${state.goals.length} obiettivi / ${routeCount} route · ordine ${state.archiveSort.col} ${state.archiveSort.desc?'↓':'↑'}`;
@@ -273,9 +312,9 @@ function refreshMine(selectId=null) {
   rows.sort((a,b)=>normalize(a.goal.context).localeCompare(normalize(b.goal.context)) || normalize(a.goal.name).localeCompare(normalize(b.goal.name)));
   const body=els.mineTable.tBodies[0]; body.innerHTML=''; state.currentMine=null;
   rows.forEach(x=>{
-    const tr=document.createElement('tr'); tr.dataset.id=x.goal.id;
+    const tr=prepareRow(document.createElement('tr')); tr.dataset.id=x.goal.id;
     tr.append(td(x.goal.name));tr.append(td(x.route.kind||'','center'));tr.append(td(x.route.value||''));tr.append(td(x.goal.context||''));tr.append(td(x.route.safety||'SAFE','center'));
-    tr.addEventListener('click',()=>showMineRow(x,tr));body.append(tr);
+    tr.addEventListener('click',()=>{showMineRow(x,tr);tr.focus({preventScroll:true});});body.append(tr);
   });
   els.mineSummary.textContent=`${rows.length} shortcut personali · archivio locale del browser`;
   els.mineDetail.textContent=''; [els.mineExecute,els.mineCopy,els.mineEdit,els.mineDelete].forEach(b=>b.disabled=true); els.mineExecuteHint.innerHTML='';
@@ -353,6 +392,7 @@ function setStatus(text){els.statusText.textContent=text}
 let toastTimer; function toast(text){els.toast.textContent=text;els.toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>els.toast.classList.remove('show'),1600)}
 
 function bindUI() {
+  [els.goalTable, els.routeTable, els.archiveTable, els.mineTable].forEach(bindRowNavigation);
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
   els.globalSearch.addEventListener('input',refreshSearch); els.globalCategory.addEventListener('change',refreshSearch); els.clearGlobal.addEventListener('click',()=>{els.globalSearch.value='';refreshSearch();els.globalSearch.focus()});
   els.goalTable.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const c=th.dataset.sort;if(state.searchSort.col===c)state.searchSort.desc=!state.searchSort.desc;else state.searchSort={col:c,desc:false};refreshSearch()}));
