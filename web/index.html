@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="it">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <meta name="theme-color" content="#16191d">
+  <title>ComboCode — ShiduLab</title>
+  <link rel="icon" href="assets/combocode-icon.png">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="app-shell" id="app">
+    <header class="topbar">
+      <div class="search-wrap">
+        <input id="globalSearch" class="search-input" type="search" autocomplete="off" spellcheck="false" placeholder="Cosa vuoi aprire o fare?" aria-label="Cerca in ComboCode">
+        <button id="clearGlobal" class="btn compact" title="Azzera ricerca" aria-label="Azzera ricerca">×</button>
+      </div>
+      <select id="globalCategory" class="select" aria-label="Categoria"><option>Tutte</option></select>
+    </header>
+
+    <nav class="tabs" aria-label="Sezioni ComboCode">
+      <button class="tab active" data-tab="search">CERCA</button>
+      <button class="tab" data-tab="all">TUTTI</button>
+      <button class="tab" data-tab="mine">MIE</button>
+    </nav>
+
+    <section id="tab-search" class="panel tabpage active">
+      <div class="search-grid">
+        <div class="pane results-pane">
+          <div class="table-wrap tall">
+            <table class="tree-table" id="goalTable">
+              <thead><tr><th data-sort="goal">Obiettivo</th><th data-sort="cat">Categoria</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+        </div>
+        <div class="pane detail-pane">
+          <h1 id="goalTitle">ComboCode</h1>
+          <p id="goalDescription">Un obiettivo, più route.</p>
+          <div class="section-label">ROUTE DISPONIBILI</div>
+          <div class="table-wrap route-wrap">
+            <table class="tree-table" id="routeTable">
+              <thead><tr><th>Tipo / comando</th><th class="center">Stato</th></tr></thead>
+              <tbody></tbody>
+            </table>
+          </div>
+          <p id="routeDetail" class="muted route-detail"></p>
+          <div class="actions search-actions">
+            <button id="searchExecute" class="btn accent">APRI / ESEGUI</button>
+            <button id="searchCopy" class="btn">COPIA</button>
+            <button id="searchFavorite" class="btn">☆ Preferito</button>
+            <button id="searchExport" class="btn">ESPORTA .MD</button>
+            <button id="searchSaveMine" class="btn">SALVA NELLE MIE</button>
+            <button id="searchSource" class="btn">FONTE</button>
+          </div>
+          <p id="searchExecuteHint" class="execute-hint"></p>
+        </div>
+      </div>
+    </section>
+
+    <section id="tab-all" class="panel tabpage">
+      <div class="filterbar">
+        <label for="archiveSearch">Filtra archivio:</label>
+        <input id="archiveSearch" class="input grow" type="search" autocomplete="off" spellcheck="false">
+        <label for="archiveKind">Tipo:</label>
+        <select id="archiveKind" class="select small"><option>TUTTI</option></select>
+        <label for="archiveCategory">Categoria:</label>
+        <select id="archiveCategory" class="select medium"><option>Tutte</option></select>
+        <button id="archiveReset" class="btn">AZZERA</button>
+      </div>
+      <div class="table-wrap archive-wrap">
+        <table class="tree-table" id="archiveTable">
+          <thead><tr>
+            <th data-sort="goal">Obiettivo</th><th data-sort="kind" class="center">Tipo</th><th data-sort="value">Comando / combinazione</th><th data-sort="cat">Categoria</th><th data-sort="safety" class="center">Sicurezza</th><th data-sort="verified">Verifica</th>
+          </tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div id="archiveSummary" class="summary muted"></div>
+      <div class="detailbar">
+        <p id="archiveDetail" class="muted grow"></p>
+        <div class="actions nowrap">
+          <button id="archiveExecute" class="btn accent">APRI / ESEGUI</button>
+          <button id="archiveCopy" class="btn">COPIA</button>
+          <button id="archiveSaveMine" class="btn">SALVA NELLE MIE</button>
+          <button id="archiveSource" class="btn">FONTE</button>
+        </div>
+      </div>
+      <p id="archiveExecuteHint" class="execute-hint footer-hint"></p>
+    </section>
+
+    <section id="tab-mine" class="panel tabpage">
+      <div class="filterbar minebar">
+        <label for="mineSearch">Le mie shortcut:</label>
+        <input id="mineSearch" class="input grow" type="search" autocomplete="off" spellcheck="false">
+        <button id="mineClear" class="btn compact">×</button>
+        <button id="mineAdd" class="btn accent">+ AGGIUNGI SHORTCUT</button>
+        <button id="mineImport" class="btn">IMPORTA</button>
+        <button id="mineExport" class="btn">ESPORTA</button>
+        <input id="mineImportFile" type="file" accept="application/json,.json" hidden>
+      </div>
+      <div class="table-wrap mine-wrap">
+        <table class="tree-table" id="mineTable">
+          <thead><tr><th>A cosa serve</th><th class="center">Tipo</th><th>Tasti / stringa / gesto</th><th>Contesto</th><th class="center">Sicurezza</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="detailbar">
+        <p id="mineDetail" class="muted grow"></p>
+        <div class="actions nowrap">
+          <button id="mineExecute" class="btn accent">APRI / ESEGUI</button>
+          <button id="mineCopy" class="btn">COPIA</button>
+          <button id="mineEdit" class="btn">MODIFICA</button>
+          <button id="mineDelete" class="btn">ELIMINA</button>
+        </div>
+      </div>
+      <p id="mineExecuteHint" class="execute-hint footer-hint"></p>
+      <div id="mineSummary" class="summary muted"></div>
+    </section>
+
+    <footer class="footer">
+      <div id="statusText">Scrivi cosa vuoi ottenere.</div>
+      <div class="brand" title="ShiduLab">
+        <img src="assets/shidulab-botolo-mark.png" alt="ShiduLab">
+        <span>ShiduLab</span>
+      </div>
+    </footer>
+  </main>
+
+  <dialog id="mineDialog" class="modal">
+    <form method="dialog" id="mineForm">
+      <h2 id="mineDialogTitle">ComboCode — Aggiungi shortcut</h2>
+      <div class="form-grid">
+        <label>A cosa serve</label><input id="fName" required>
+        <label>Tipo</label><select id="fKind"><option>HOTKEY</option><option>MOUSE</option><option>KEY+MOUSE</option><option>RUN</option><option>CMD</option><option>POWERSHELL</option><option>URI</option><option>APP</option><option>ALTRO</option></select>
+        <label>Tasti / stringa / gesto</label><input id="fValue" required>
+        <label>Contesto</label><input id="fContext">
+        <label>Alias (separati da virgola)</label><input id="fAliases">
+        <label>Sicurezza</label><select id="fSafety"><option>SAFE</option><option>CAUTION</option><option>ELEVATED</option><option>DESTRUCTIVE</option></select>
+        <label>Note</label><textarea id="fNote" rows="5"></textarea>
+      </div>
+      <p class="muted example">Esempi: CTRL + ALT + S · CTRL + WHEEL_UP · control keyboard · ms-settings:display</p>
+      <div class="actions modal-actions">
+        <button value="cancel" class="btn">ANNULLA</button>
+        <button id="mineSave" value="default" class="btn accent">SALVA</button>
+      </div>
+    </form>
+  </dialog>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>
