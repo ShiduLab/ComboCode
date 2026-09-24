@@ -29,7 +29,7 @@ exe = EXE(
     a.binaries,
     a.datas,
     [],
-    name='ComboCode J8.0.1',
+    name='ComboCode J8.0.2',
     icon='assets/combocode-icon.ico',
     debug=False,
     bootloader_ignore_signals=False,
