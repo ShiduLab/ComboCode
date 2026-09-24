@@ -1,0 +1,13 @@
+{
+  "name": "ComboCode — ShiduLab",
+  "short_name": "ComboCode",
+  "description": "Keyboard-first command and shortcut launcher for Windows.",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#16191d",
+  "theme_color": "#16191d",
+  "icons": [
+    {"src":"assets/combocode-icon.png","sizes":"any","type":"image/png","purpose":"any maskable"}
+  ]
+}
