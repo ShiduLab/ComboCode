@@ -17,6 +17,7 @@ const state = {
   searchSort: {col: null, desc: false},
   archiveSort: {col: 'goal', desc: false},
   editingMineId: null,
+  keyboardList: 'goal',
   version: 'ComboCode Web'
 };
 
@@ -128,9 +129,9 @@ function setTab(name) {
   state.activeTab = name;
   document.querySelectorAll('.tab').forEach(b=>b.classList.toggle('active',b.dataset.tab===name));
   document.querySelectorAll('.tabpage').forEach(p=>p.classList.toggle('active',p.id===`tab-${name}`));
-  if (name==='search') refreshSearch();
-  if (name==='all') refreshArchive();
-  if (name==='mine') refreshMine();
+  if (name==='search') { state.keyboardList='goal'; refreshSearch(); }
+  if (name==='all') { state.keyboardList='archive'; refreshArchive(); }
+  if (name==='mine') { state.keyboardList='mine'; refreshMine(); }
 }
 
 function searchGoals(query, category='Tutte') {
@@ -158,28 +159,33 @@ function selectRow(tbody, tr) {
   }
 }
 
-function bindRowNavigation(table) {
-  table.addEventListener('keydown', e => {
-    if (!['ArrowUp','ArrowDown','Home','End'].includes(e.key)) return;
+function navigateSelectedTable(key) {
+  const tableMap = {
+    goal: els.goalTable,
+    route: els.routeTable,
+    archive: els.archiveTable,
+    mine: els.mineTable
+  };
+  const table = tableMap[state.keyboardList];
+  if (!table) return false;
 
-    const body = table.tBodies[0];
-    const rows = [...body.rows];
-    if (!rows.length) return;
+  const body = table.tBodies[0];
+  const rows = [...body.rows];
+  if (!rows.length) return false;
 
-    const selected = body.querySelector('tr.selected');
-    let index = selected ? rows.indexOf(selected) : 0;
+  const selected = body.querySelector('tr.selected');
+  let index = selected ? rows.indexOf(selected) : 0;
 
-    if (e.key === 'ArrowUp') index = Math.max(0, index - 1);
-    if (e.key === 'ArrowDown') index = Math.min(rows.length - 1, index + 1);
-    if (e.key === 'Home') index = 0;
-    if (e.key === 'End') index = rows.length - 1;
+  if (key === 'ArrowUp') index = Math.max(0, index - 1);
+  else if (key === 'ArrowDown') index = Math.min(rows.length - 1, index + 1);
+  else if (key === 'Home') index = 0;
+  else if (key === 'End') index = rows.length - 1;
+  else return false;
 
-    e.preventDefault();
-    const next = rows[index];
-    next.click();
-    next.focus({preventScroll:true});
-    next.scrollIntoView({block:'nearest'});
-  });
+  const next = rows[index];
+  next.click();
+  next.scrollIntoView({block:'nearest'});
+  return true;
 }
 
 function refreshSearch() {
@@ -195,7 +201,7 @@ function refreshSearch() {
   for (const {goal} of rows) {
     const tr=prepareRow(document.createElement('tr')); tr.dataset.id=goal.id;
     tr.append(td(`${state.favorites.has(goal.id)?'★ ':''}${goal.name}`)); tr.append(td(goal.category||''));
-    tr.addEventListener('click',()=>{showGoal(goal,tr);tr.focus({preventScroll:true});}); body.append(tr);
+    tr.addEventListener('click',()=>{state.keyboardList='goal';showGoal(goal,tr);}); body.append(tr);
   }
   if (rows.length) showGoal(rows[0].goal, body.rows[0]); else clearGoal();
   setStatus(`${rows.length} obiettivi trovati · ${state.goals.length} nell’archivio · ${state.version}`);
@@ -208,7 +214,7 @@ function showGoal(goal,tr) {
   (goal.routes||[]).forEach((route,i)=>{
     const row=prepareRow(document.createElement('tr')); row.dataset.index=i;
     row.append(td(`${route.kind||'ROUTE'}  ·  ${route.value||''}`)); row.append(td(route.safety||'SAFE','center'));
-    row.addEventListener('click',()=>{showSearchRoute(goal,route,row);row.focus({preventScroll:true});}); body.append(row);
+    row.addEventListener('click',()=>{state.keyboardList='route';showSearchRoute(goal,route,row);}); body.append(row);
   });
   els.searchFavorite.textContent = state.favorites.has(goal.id)?'★ Preferito':'☆ Preferito';
   if ((goal.routes||[]).length) showSearchRoute(goal,goal.routes[0],body.rows[0]); else updateSearchButtons(null);
@@ -316,7 +322,7 @@ function refreshArchive() {
   rows.forEach((x,i)=>{
     const tr=prepareRow(document.createElement('tr')); tr.dataset.index=i;
     tr.append(td(x.goal.name));tr.append(td(x.route.kind||'','center'));tr.append(td(x.route.value||''));tr.append(td(x.goal.category||''));tr.append(td(x.route.safety||'SAFE','center'));tr.append(td(x.route.verified||'non verificato'));
-    tr.addEventListener('click',()=>{showArchiveRow(x,tr);tr.focus({preventScroll:true});});body.append(tr);
+    tr.addEventListener('click',()=>{state.keyboardList='archive';showArchiveRow(x,tr);});body.append(tr);
   });
   const routeCount=state.goals.reduce((n,g)=>n+(g.routes||[]).length,0);
   els.archiveSummary.textContent=`${rows.length} route visualizzate · archivio: ${state.goals.length} obiettivi / ${routeCount} route · ordine ${state.archiveSort.col} ${state.archiveSort.desc?'↓':'↑'}`;
@@ -342,7 +348,7 @@ function refreshMine(selectId=null) {
   rows.forEach(x=>{
     const tr=prepareRow(document.createElement('tr')); tr.dataset.id=x.goal.id;
     tr.append(td(x.goal.name));tr.append(td(x.route.kind||'','center'));tr.append(td(x.route.value||''));tr.append(td(x.goal.context||''));tr.append(td(x.route.safety||'SAFE','center'));
-    tr.addEventListener('click',()=>{showMineRow(x,tr);tr.focus({preventScroll:true});});body.append(tr);
+    tr.addEventListener('click',()=>{state.keyboardList='mine';showMineRow(x,tr);});body.append(tr);
   });
   els.mineSummary.textContent=`${rows.length} shortcut personali · archivio locale del browser`;
   els.mineDetail.textContent=''; updateExecuteButton(els.mineExecute, null); [els.mineCopy,els.mineEdit,els.mineDelete].forEach(b=>b.disabled=true); els.mineExecuteHint.innerHTML='';
@@ -420,7 +426,6 @@ function setStatus(text){els.statusText.textContent=text}
 let toastTimer; function toast(text){els.toast.textContent=text;els.toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>els.toast.classList.remove('show'),1600)}
 
 function bindUI() {
-  [els.goalTable, els.routeTable, els.archiveTable, els.mineTable].forEach(bindRowNavigation);
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
   els.globalSearch.addEventListener('input',refreshSearch); els.globalCategory.addEventListener('change',refreshSearch); els.clearGlobal.addEventListener('click',()=>{els.globalSearch.value='';refreshSearch();els.globalSearch.focus()});
   els.goalTable.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const c=th.dataset.sort;if(state.searchSort.col===c)state.searchSort.desc=!state.searchSort.desc;else state.searchSort={col:c,desc:false};refreshSearch()}));
@@ -437,6 +442,14 @@ function bindUI() {
 
   document.addEventListener('keydown',e=>{
     if(e.key==='Escape' && els.mineDialog.open){els.mineDialog.close();return}
+
+    const tag = document.activeElement?.tagName;
+    const typing = tag==='INPUT' || tag==='TEXTAREA' || tag==='SELECT';
+    if(!typing && ['ArrowUp','ArrowDown','Home','End'].includes(e.key) && navigateSelectedTable(e.key)){
+      e.preventDefault();
+      return;
+    }
+
     if(e.ctrlKey && (e.key.toLowerCase()==='k'||e.key.toLowerCase()==='l')){e.preventDefault();els.globalSearch.focus();els.globalSearch.select()}
     if(e.ctrlKey&&e.key==='1'){e.preventDefault();setTab('search')} if(e.ctrlKey&&e.key==='2'){e.preventDefault();setTab('all')} if(e.ctrlKey&&e.key==='3'){e.preventDefault();setTab('mine')}
   });
@@ -449,7 +462,7 @@ function mapElements() {
 
 async function start() {
   mapElements(); bindUI(); setStatus('Caricamento archivio ComboCode…');
-  try { await loadCatalog(); refreshSearch(); refreshArchive(); refreshMine(); setTab('search'); if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js').catch(()=>{}); }
+  try { await loadCatalog(); refreshSearch(); refreshArchive(); refreshMine(); setTab('search'); if('serviceWorker' in navigator)navigator.serviceWorker.register('sw.js?v=20260924-3').catch(()=>{}); }
   catch(err){console.error(err);setStatus(`Errore caricamento: ${err.message}`);els.goalDescription.textContent='Impossibile caricare l’archivio ComboCode.';}
 }
 
