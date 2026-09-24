@@ -1,7 +1,7 @@
 {
   "name": "ComboCode Windows Core",
-  "version": "2.0.0",
-  "updated": "2026-09-12",
+  "version": "2.0.1",
+  "updated": "2026-09-24",
   "goals": [
     {
       "id": "windows.run",
@@ -1808,6 +1808,32 @@
           "verified": "Microsoft",
           "source": "https://learn.microsoft.com/en-us/windows/apps/develop/launch/launch-settings",
           "note": "URI ufficiale ms-settings:."
+        }
+      ]
+    },
+    {
+      "id": "sys.screensaver",
+      "name": "Impostazioni screen saver",
+      "category": "Sistema",
+      "description": "Apre direttamente le impostazioni dello screen saver.",
+      "aliases": [
+        "screen saver",
+        "screensaver",
+        "salvaschermo",
+        "impostazioni screen saver",
+        "protezione schermo"
+      ],
+      "platform": "Windows 10/11",
+      "routes": [
+        {
+          "kind": "RUN",
+          "value": "control desk.cpl,,@screensaver",
+          "handler": "cmd_run",
+          "executable": true,
+          "safety": "SAFE",
+          "verified": "Windows classic",
+          "source": "Windows Control Panel",
+          "note": "Route classica del Pannello di controllo per aprire direttamente le impostazioni screen saver."
         }
       ]
     },
