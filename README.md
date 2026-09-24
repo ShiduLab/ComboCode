@@ -3,9 +3,9 @@
 > L'utente non deve ricordare **come** si raggiunge qualcosa.  
 > Deve sapere soltanto **cosa vuole ottenere**.
 
-**Salto attuale: J8.0.1**
+**Salto attuale: J8.0.2**
 
-**Download Windows:** [ComboCode v8.0.1](https://github.com/ShiduLab/ComboCode/releases/tag/v8.0.1) 
+**Download Windows (release stabile):** [ComboCode v8.0.1](https://github.com/ShiduLab/ComboCode/releases/tag/v8.0.1) 
 <img width="1920" height="1082" alt="ComboCode v8 2 J" src="https://github.com/user-attachments/assets/cfc4465d-e931-45d3-93fb-b0b39374a7e6" />
 
 
@@ -17,6 +17,12 @@ L'idea centrale è semplice:
 **un obiettivo → più route**
 
 Per esempio, cercando `Connessioni di rete`, ComboCode può proporre più strade per arrivare allo stesso punto: RUN, CMD, URI o altre route disponibili.
+
+### J8.0.2
+
+Correzioni pubbliche:
+- corretto il form **MIE**: i campi di inserimento ricevono correttamente focus al primo rendering, senza dover minimizzare e massimizzare la finestra;
+- aggiunta la route **Impostazioni screen saver**: `control desk.cpl,,@screensaver`.
 
 ## Stato archivio J8
 
