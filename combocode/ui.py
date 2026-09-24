@@ -643,7 +643,6 @@ class ComboCodeUI:
         dialog = tk.Toplevel(self.root)
         dialog.title('ComboCode — Aggiungi shortcut' if not initial.get('id') else 'ComboCode — Modifica shortcut')
         dialog.transient(self.root)
-        dialog.grab_set()
         dialog.resizable(True, False)
         try:
             if self.icon_ico and self.icon_ico.exists():
@@ -745,7 +744,19 @@ class ComboCodeUI:
 
         dialog.protocol('WM_DELETE_WINDOW', dialog.destroy)
         dialog.bind('<Escape>', lambda _e: dialog.destroy())
-        name_entry.focus_set()
+
+        def activate_form():
+            try:
+                dialog.lift()
+                dialog.focus_force()
+                name_entry.focus_force()
+            except tk.TclError:
+                pass
+
+        dialog.update_idletasks()
+        dialog.wait_visibility()
+        dialog.grab_set()
+        dialog.after_idle(activate_form)
         dialog.wait_window()
         return result['goal']
 
