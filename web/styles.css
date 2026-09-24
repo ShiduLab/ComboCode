@@ -15,7 +15,7 @@
 html,body{margin:0;width:100%;height:100%;overflow:hidden;background:var(--bg);color:var(--text);font-family:"Segoe UI",system-ui,sans-serif;font-size:14px}
 button,input,select,textarea{font:inherit}
 body{min-width:760px}
-.app-shell{position:fixed;inset:0;width:auto;height:auto;min-height:0;overflow:hidden;display:grid;grid-template-rows:auto auto minmax(0,1fr) auto;background:var(--bg)}
+.app-shell{position:fixed;inset:0;width:auto;height:auto;min-height:0;overflow:hidden;display:flex;flex-direction:column;background:var(--bg)}
 .topbar{display:grid;grid-template-columns:minmax(0,1fr) 260px;gap:10px;padding:14px 16px 8px}
 .search-wrap{display:grid;grid-template-columns:minmax(0,1fr) 38px;gap:5px}
 .search-input,.input,.select,.modal input,.modal select,.modal textarea{background:var(--field);color:var(--text);border:1px solid var(--border);outline:none;border-radius:0;padding:8px 10px}
@@ -27,8 +27,8 @@ body{min-width:760px}
 .tab{border:0;background:var(--bg);color:var(--muted);font-weight:600;padding:9px 16px;cursor:pointer}
 .tab:hover{color:var(--text)}
 .tab.active{background:var(--panel);color:var(--text)}
-.panel{margin:0 16px 8px;background:var(--panel);min-height:0;overflow:hidden}
-.tabpage{display:none;height:100%;min-height:0}
+.panel{margin:0 16px 8px;background:var(--panel);min-height:0;overflow:hidden;flex:1 1 auto}
+.tabpage{display:none;height:auto;min-height:0}
 .tabpage.active{display:block}
 #tab-all.active,#tab-mine.active{display:grid;grid-template-rows:auto minmax(0,1fr) auto auto auto}
 .search-grid{display:grid;grid-template-columns:minmax(330px,2fr) minmax(500px,3fr);height:100%;min-height:0;overflow:hidden}
@@ -68,7 +68,7 @@ body{min-width:760px}
 .toast{position:fixed;left:50%;bottom:28px;transform:translateX(-50%) translateY(20px);background:var(--text);color:var(--panel);padding:8px 14px;opacity:0;pointer-events:none;transition:.18s ease;z-index:9999}.toast.show{opacity:1;transform:translateX(-50%) translateY(0)}
 @media (max-width:1000px){.search-grid{grid-template-columns:42% 58%}.actions{gap:5px}.btn{padding:7px 9px}.filterbar{flex-wrap:wrap}}
 
-.topbar,.tabs,.footer{min-height:0}
+.topbar,.tabs,.footer{min-height:0;flex:0 0 auto}
 .footer{overflow:hidden}
 #tab-search,#tab-all,#tab-mine{max-height:100%;min-height:0}
 #tab-search.active{overflow:hidden}

@@ -3,6 +3,7 @@
 const DOWNLOAD_URL = 'https://github.com/ShiduLab/ComboCode/releases/latest';
 const MINE_KEY = 'combocode.web.userGoals.v1';
 const FAVORITES_KEY = 'combocode.web.favorites.v1';
+const WEB_BUILD = '20260924-4';
 
 const state = {
   standardGoals: [],
@@ -422,7 +423,7 @@ async function importMine(file) {
   } catch { alert('File JSON non valido per ComboCode.'); }
 }
 
-function setStatus(text){els.statusText.textContent=text}
+function setStatus(text){els.statusText.textContent=`${text} · Web ${WEB_BUILD}`}
 let toastTimer; function toast(text){els.toast.textContent=text;els.toast.classList.add('show');clearTimeout(toastTimer);toastTimer=setTimeout(()=>els.toast.classList.remove('show'),1600)}
 
 function bindUI() {
@@ -444,8 +445,15 @@ function bindUI() {
     if(e.key==='Escape' && els.mineDialog.open){els.mineDialog.close();return}
 
     const tag = document.activeElement?.tagName;
+    const blocksListArrows = tag==='TEXTAREA' || tag==='SELECT';
+
+    if(!blocksListArrows && ['ArrowUp','ArrowDown'].includes(e.key) && navigateSelectedTable(e.key)){
+      e.preventDefault();
+      return;
+    }
+
     const typing = tag==='INPUT' || tag==='TEXTAREA' || tag==='SELECT';
-    if(!typing && ['ArrowUp','ArrowDown','Home','End'].includes(e.key) && navigateSelectedTable(e.key)){
+    if(!typing && ['Home','End'].includes(e.key) && navigateSelectedTable(e.key)){
       e.preventDefault();
       return;
     }
