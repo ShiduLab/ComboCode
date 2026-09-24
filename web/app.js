@@ -253,15 +253,43 @@ function routeDescription(goal,route) {
 
 function executionHint(route) {
   if (!route || canWebExecute(route)) return '';
-  return 'Per usare questo comando scarica ComboCode';
+  const value = String(route.value || '').trim();
+  return value ? `“${value}” non può essere eseguito direttamente dal sito.` : 'La route selezionata non può essere eseguita direttamente dal sito.';
 }
 
 function hintHTML(route) {
-  const txt=executionHint(route); return txt ? `${txt} · <a href="${DOWNLOAD_URL}" target="_blank" rel="noopener">Download</a>` : '';
+  const txt=executionHint(route);
+  return txt ? `${txt} <a href="${DOWNLOAD_URL}" target="_blank" rel="noopener">Scarica ComboCode</a> oppure usa COPIA seguendo le istruzioni qui sopra.` : '';
+}
+
+function updateExecuteButton(button, route) {
+  const hasRoute = !!route;
+  const webReady = canWebExecute(route);
+  button.disabled = !hasRoute;
+  button.classList.toggle('manual-only', hasRoute && !webReady);
+  button.setAttribute('aria-disabled', hasRoute && !webReady ? 'true' : 'false');
+  button.title = hasRoute && !webReady ? 'Questa route richiede ComboCode o l’esecuzione manuale sul PC.' : '';
+}
+
+function handleExecute(route) {
+  if (!route) return;
+  if (canWebExecute(route)) {
+    executeWeb(route);
+    return;
+  }
+  const value = String(route.value || '').trim();
+  const message = [
+    value ? `Il comando selezionato è:\n\n${value}\n` : 'La route selezionata non è eseguibile dal sito.\n',
+    'Per eseguirla direttamente scarica ComboCode.',
+    '',
+    routeInstruction(route)
+  ].join('\n');
+  alert(message);
 }
 
 function updateSearchButtons(route) {
-  const ok=canWebExecute(route); els.searchExecute.disabled=!ok; els.searchCopy.disabled=!route;
+  updateExecuteButton(els.searchExecute, route);
+  els.searchCopy.disabled=!route;
   els.searchSource.disabled=!(route && route.source && /^https?:/i.test(route.source));
   els.searchExecuteHint.innerHTML=hintHTML(route);
 }
@@ -292,14 +320,14 @@ function refreshArchive() {
   });
   const routeCount=state.goals.reduce((n,g)=>n+(g.routes||[]).length,0);
   els.archiveSummary.textContent=`${rows.length} route visualizzate · archivio: ${state.goals.length} obiettivi / ${routeCount} route · ordine ${state.archiveSort.col} ${state.archiveSort.desc?'↓':'↑'}`;
-  els.archiveDetail.textContent=''; els.archiveExecute.disabled=true; els.archiveCopy.disabled=true; els.archiveSource.disabled=true; els.archiveExecuteHint.innerHTML='';
+  els.archiveDetail.textContent=''; updateExecuteButton(els.archiveExecute, null); els.archiveCopy.disabled=true; els.archiveSource.disabled=true; els.archiveExecuteHint.innerHTML='';
   if(rows.length) showArchiveRow(rows[0],body.rows[0]); setStatus(els.archiveSummary.textContent);
 }
 
 function showArchiveRow(x,tr) {
   state.currentArchive=x; selectRow(els.archiveTable.tBodies[0],tr);
   els.archiveDetail.textContent=`${x.goal.name} · ${routeDescription(x.goal,x.route)}`;
-  els.archiveExecute.disabled=!canWebExecute(x.route); els.archiveCopy.disabled=false;
+  updateExecuteButton(els.archiveExecute, x.route); els.archiveCopy.disabled=false;
   els.archiveSource.disabled=!(x.route.source && /^https?:/i.test(x.route.source)); els.archiveExecuteHint.innerHTML=hintHTML(x.route);
 }
 
@@ -317,7 +345,7 @@ function refreshMine(selectId=null) {
     tr.addEventListener('click',()=>{showMineRow(x,tr);tr.focus({preventScroll:true});});body.append(tr);
   });
   els.mineSummary.textContent=`${rows.length} shortcut personali · archivio locale del browser`;
-  els.mineDetail.textContent=''; [els.mineExecute,els.mineCopy,els.mineEdit,els.mineDelete].forEach(b=>b.disabled=true); els.mineExecuteHint.innerHTML='';
+  els.mineDetail.textContent=''; updateExecuteButton(els.mineExecute, null); [els.mineCopy,els.mineEdit,els.mineDelete].forEach(b=>b.disabled=true); els.mineExecuteHint.innerHTML='';
   const chosen=rows.findIndex(x=>x.goal.id===selectId); if(rows.length) showMineRow(rows[chosen>=0?chosen:0],body.rows[chosen>=0?chosen:0]);
   setStatus(els.mineSummary.textContent);
 }
@@ -325,7 +353,7 @@ function refreshMine(selectId=null) {
 function showMineRow(x,tr) {
   state.currentMine=x; selectRow(els.mineTable.tBodies[0],tr);
   els.mineDetail.textContent=`${x.goal.name} · ${routeDescription(x.goal,x.route)}`;
-  els.mineExecute.disabled=!canWebExecute(x.route); els.mineCopy.disabled=false; els.mineEdit.disabled=false; els.mineDelete.disabled=false; els.mineExecuteHint.innerHTML=hintHTML(x.route);
+  updateExecuteButton(els.mineExecute, x.route); els.mineCopy.disabled=false; els.mineEdit.disabled=false; els.mineDelete.disabled=false; els.mineExecuteHint.innerHTML=hintHTML(x.route);
 }
 
 async function copyText(text) {
@@ -396,13 +424,13 @@ function bindUI() {
   document.querySelectorAll('.tab').forEach(b=>b.addEventListener('click',()=>setTab(b.dataset.tab)));
   els.globalSearch.addEventListener('input',refreshSearch); els.globalCategory.addEventListener('change',refreshSearch); els.clearGlobal.addEventListener('click',()=>{els.globalSearch.value='';refreshSearch();els.globalSearch.focus()});
   els.goalTable.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const c=th.dataset.sort;if(state.searchSort.col===c)state.searchSort.desc=!state.searchSort.desc;else state.searchSort={col:c,desc:false};refreshSearch()}));
-  els.searchExecute.addEventListener('click',()=>executeWeb(state.currentRoute)); els.searchCopy.addEventListener('click',()=>copyText(state.currentRoute?.value)); els.searchFavorite.addEventListener('click',toggleFavorite); els.searchExport.addEventListener('click',()=>exportMarkdown(state.currentGoal,state.currentRoute)); els.searchSaveMine.addEventListener('click',()=>cloneToMine(state.currentGoal,state.currentRoute)); els.searchSource.addEventListener('click',()=>openSource(state.currentRoute));
+  els.searchExecute.addEventListener('click',()=>handleExecute(state.currentRoute)); els.searchCopy.addEventListener('click',()=>copyText(state.currentRoute?.value)); els.searchFavorite.addEventListener('click',toggleFavorite); els.searchExport.addEventListener('click',()=>exportMarkdown(state.currentGoal,state.currentRoute)); els.searchSaveMine.addEventListener('click',()=>cloneToMine(state.currentGoal,state.currentRoute)); els.searchSource.addEventListener('click',()=>openSource(state.currentRoute));
 
   [els.archiveSearch,els.archiveKind,els.archiveCategory].forEach(x=>x.addEventListener(x.tagName==='INPUT'?'input':'change',refreshArchive)); els.archiveReset.addEventListener('click',()=>{els.archiveSearch.value='';els.archiveKind.value='TUTTI';els.archiveCategory.value='Tutte';refreshArchive()});
   els.archiveTable.querySelectorAll('th[data-sort]').forEach(th=>th.addEventListener('click',()=>{const c=th.dataset.sort;if(state.archiveSort.col===c)state.archiveSort.desc=!state.archiveSort.desc;else state.archiveSort={col:c,desc:false};refreshArchive()}));
-  els.archiveExecute.addEventListener('click',()=>executeWeb(currentArchiveRoute())); els.archiveCopy.addEventListener('click',()=>copyText(currentArchiveRoute()?.value)); els.archiveSaveMine.addEventListener('click',()=>state.currentArchive&&cloneToMine(state.currentArchive.goal,state.currentArchive.route)); els.archiveSource.addEventListener('click',()=>openSource(currentArchiveRoute()));
+  els.archiveExecute.addEventListener('click',()=>handleExecute(currentArchiveRoute())); els.archiveCopy.addEventListener('click',()=>copyText(currentArchiveRoute()?.value)); els.archiveSaveMine.addEventListener('click',()=>state.currentArchive&&cloneToMine(state.currentArchive.goal,state.currentArchive.route)); els.archiveSource.addEventListener('click',()=>openSource(currentArchiveRoute()));
 
-  els.mineSearch.addEventListener('input',()=>refreshMine()); els.mineClear.addEventListener('click',()=>{els.mineSearch.value='';refreshMine();els.mineSearch.focus()}); els.mineAdd.addEventListener('click',()=>openMineDialog()); els.mineEdit.addEventListener('click',()=>state.currentMine&&openMineDialog(state.currentMine.goal)); els.mineDelete.addEventListener('click',deleteMine); els.mineExecute.addEventListener('click',()=>executeWeb(currentMineRoute())); els.mineCopy.addEventListener('click',()=>copyText(currentMineRoute()?.value));
+  els.mineSearch.addEventListener('input',()=>refreshMine()); els.mineClear.addEventListener('click',()=>{els.mineSearch.value='';refreshMine();els.mineSearch.focus()}); els.mineAdd.addEventListener('click',()=>openMineDialog()); els.mineEdit.addEventListener('click',()=>state.currentMine&&openMineDialog(state.currentMine.goal)); els.mineDelete.addEventListener('click',deleteMine); els.mineExecute.addEventListener('click',()=>handleExecute(currentMineRoute())); els.mineCopy.addEventListener('click',()=>copyText(currentMineRoute()?.value));
   els.mineExport.addEventListener('click',exportMine); els.mineImport.addEventListener('click',()=>els.mineImportFile.click()); els.mineImportFile.addEventListener('change',()=>{const f=els.mineImportFile.files[0];if(f)importMine(f);els.mineImportFile.value='' });
   els.mineForm.addEventListener('submit',saveMineForm);
   els.mineForm.querySelector('button[value="cancel"]').addEventListener('click',()=>els.mineDialog.close());
