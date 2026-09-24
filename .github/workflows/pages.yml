@@ -1,0 +1,59 @@
+name: Deploy ComboCode Web
+
+on:
+  push:
+    branches: [ main ]
+    paths:
+      - 'web/**'
+      - 'combocode/data/packs/**'
+      - 'assets/**'
+      - 'VERSION'
+      - '.github/workflows/pages.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v5
+
+      - name: Build static site
+        shell: bash
+        run: |
+          rm -rf _site
+          mkdir -p _site/assets _site/data/packs
+          cp web/index.html web/styles.css web/app.js web/manifest.webmanifest web/sw.js _site/
+          cp VERSION _site/VERSION
+          cp assets/combocode-icon.png assets/shidulab-botolo-mark.png _site/assets/
+          cp combocode/data/packs/*.json _site/data/packs/
+          python - <<'PY'
+          import json
+          from pathlib import Path
+          names = sorted(p.name for p in Path('_site/data/packs').glob('*.json'))
+          Path('_site/packs-index.json').write_text(json.dumps(names, ensure_ascii=False, indent=2), encoding='utf-8')
+          PY
+
+      - name: Configure Pages
+        uses: actions/configure-pages@v5
+
+      - name: Upload Pages artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: _site
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4
