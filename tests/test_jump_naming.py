@@ -13,10 +13,10 @@ class JumpNamingTests(unittest.TestCase):
         spec = (ROOT / 'ComboCode.spec').read_text(encoding='utf-8')
         workflow = (ROOT / '.github/workflows/windows.yml').read_text(encoding='utf-8')
         app = (ROOT / 'combocode/app.py').read_text(encoding='utf-8')
-        self.assertIn("name='ComboCode J8.0.1'", spec)
-        self.assertIn('ComboCode-Windows-J8.0.1', workflow)
-        self.assertIn('dist/ComboCode J8.0.1.exe', workflow)
-        self.assertIn('ShiduLab.ComboCode.J8.0.1', app)
+        self.assertIn("name='ComboCode J8.0.2'", spec)
+        self.assertIn('ComboCode-Windows-J8.0.2', workflow)
+        self.assertIn('dist/ComboCode J8.0.2.exe', workflow)
+        self.assertIn('ShiduLab.ComboCode.J8.0.2', app)
 
 
 if __name__ == '__main__':
