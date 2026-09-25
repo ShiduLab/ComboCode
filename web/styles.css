@@ -74,3 +74,4 @@ body{min-width:760px}
 #tab-search.active{overflow:hidden}
 .search-actions{flex:0 0 auto}
 .route-detail,.execute-hint{flex:0 0 auto}
+@media (max-width:920px) and (orientation:landscape) and (hover:none) and (pointer:coarse){body{min-width:0}}
